@@ -22,16 +22,8 @@ $config['home']					= 'HomeHomeController';
 
 //----------- EXERCICI 1 -----------------
 $config['home']					    = 'Exercici1HomeController';
-$config['mono1']					= 'Exercici1MicosgransController';
-$config['mono2']					= 'Exercici1MicosgransController';
-$config['mono3']					= 'Exercici1MicosgransController';
-$config['mono4']					= 'Exercici1MicosgransController';
-$config['mono5']					= 'Exercici1MicosgransController';
-$config['mono6']					= 'Exercici1MicospetitsController';
-$config['mono7']					= 'Exercici1MicospetitsController';
-$config['mono8']					= 'Exercici1MicospetitsController';
-$config['mono9']					= 'Exercici1MicospetitsController';
-$config['mono10']					= 'Exercici1MicospetitsController';
+$config['micosGrans']			    = 'Exercici1MicosgransController';
+$config['micosPetits']				= 'Exercici1MicospetitsController';
 
 //----------------------------------------
 
