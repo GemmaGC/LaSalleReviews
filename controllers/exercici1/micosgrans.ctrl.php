@@ -16,9 +16,7 @@ class Exercici1MicosgransController extends Controller
     public function build()
     {
         //Crida a un mètode que mostrarà contingut per pantalla.
-
-
-        $this->mostraImatge();
+        //$this->mostraInfo();
 
 
         // Caldrà sempre definir una vista per cada controllador. Pot quedar definidar
@@ -36,8 +34,9 @@ class Exercici1MicosgransController extends Controller
      * Aquest m�tode nom�s passar� un valor a la vista si s'envia un valor pel
      * formulari definit a: instances/<la_vostra_instancia>/templates/home/home.tpl.
      */
-    protected function mostraImatge()
+    protected function mostraInfo()
     {
+        /*
         // Per capturar una variable enviada mitjan�ant un formulari HTML pels m�todes GET/POST, has de fer servir
         // la class Filter de la seg�ent manera.
         $nom = Filter::getString('nom');
@@ -46,6 +45,8 @@ class Exercici1MicosgransController extends Controller
         if($nom) {
             $this->assign('nom_usuari',$nom);
         }
+        */
+
     }
 
 
