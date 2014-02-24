@@ -1,29 +1,17 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-14 18:18:44
+<?php /* Smarty version 2.6.14, created on 2014-02-24 17:47:10
          compiled from home/home.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['head']; ?>
 
 
 	<!-- Això és un comentari HTML -->
-		<div id="success">Felicitacions! Ja tens el Frameworklite instal·lat!</div>
+		<div id="success">HOME DEL GRUP 1: CLAUDIA DAUDÉN, YLENIA GÓMEZ-RAYA, GEMMA GUITERAS</div>
 
+	<div>
+		<ul>
+			<li><a href="#">EXERCICI 1: MONOS</a></li>
+		</ul>
 
-
-	<div class="block">
-		<div class="inner-block">
-		<h2>Exemple Formulari</h2>
-	<?php if ($this->_tpl_vars['nom_usuari']): ?>
-		<p>Benvingut a Projectes Web, <strong><?php echo $this->_tpl_vars['nom_usuari']; ?>
-</strong>!</p>
-	<?php else: ?>
-		<p>Hola! Com et dius? </p>
-		<form action="" method="POST">
-			<input type="text" name="nom">
-			<input type="submit" name="submit" value="Enviar">
-		</form>
-	<?php endif; ?>
-		</div>
 	</div>
-
 
 	
 <div class="clear"></div>
