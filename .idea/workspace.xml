@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8bcda30-9972-47d1-9a21-b8472b637792" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configure/base.config.php" afterPath="$PROJECT_DIR$/configure/base.config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configure/dispatcher.config.php" afterPath="$PROJECT_DIR$/configure/dispatcher.config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/home/home.ctrl.php" afterPath="$PROJECT_DIR$/controllers/home/home.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home/home.tpl" afterPath="$PROJECT_DIR$/templates/home/home.tpl" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,10 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.ctrl.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.ctrl.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="5" selection-start="403" selection-end="403" vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="1095">
+            <state line="16" column="5" selection-start="403" selection-end="403" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/home/home.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="3" selection-start="537" selection-end="537" vertical-scroll-proportion="0.5053599" vertical-offset="0" max-vertical-offset="653">
               <folding />
             </state>
           </provider>
@@ -73,6 +80,7 @@
         <option value="$PROJECT_DIR$/configure/base.config.php" />
         <option value="$PROJECT_DIR$/configure/dispatcher.config.php" />
         <option value="$PROJECT_DIR$/controllers/home/home.ctrl.php" />
+        <option value="$PROJECT_DIR$/templates/home/home.tpl" />
       </list>
     </option>
   </component>
@@ -150,6 +158,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="htdocs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -165,6 +191,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -421,7 +451,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="403" selection-end="403" vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="1095">
+        <state line="16" column="5" selection-start="403" selection-end="403" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="3" selection-start="537" selection-end="537" vertical-scroll-proportion="0.5053599" vertical-offset="0" max-vertical-offset="653">
           <folding />
         </state>
       </provider>

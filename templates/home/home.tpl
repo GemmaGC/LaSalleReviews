@@ -5,7 +5,7 @@
 	<div id="success">Felicitacions! Ja tens el Frameworklite instal·lat!</div>
 
 
-
+<!--
 	<div class="block">
 		<div class="inner-block">
 		<h2>Exemple Formulari</h2>
@@ -20,7 +20,7 @@
 	{	/if}
 		</div>
 	</div>
-
+-->
 
 	
 <div class="clear"></div>
