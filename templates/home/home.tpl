@@ -2,10 +2,12 @@
 
 	<!-- Això és un comentari HTML -->
 	{* Això és un comentari en Smarty *}
+
+<!--
 	<div id="success">Felicitacions! Ja tens el Frameworklite instal·lat!</div>
 
 
-<!--
+
 	<div class="block">
 		<div class="inner-block">
 		<h2>Exemple Formulari</h2>
@@ -21,6 +23,11 @@
 		</div>
 	</div>
 -->
+
+    <div>
+        <a href="exercici1/home.tpl">Exercici 1</a>
+
+    </div>
 
 	
 <div class="clear"></div>

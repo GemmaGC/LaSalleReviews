@@ -1,13 +1,15 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-24 17:35:27
+<?php /* Smarty version 2.6.14, created on 2014-02-24 17:47:11
          compiled from home/home.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['head']; ?>
 
 
 	<!-- Això és un comentari HTML -->
-		<div id="success">Felicitacions! Ja tens el Frameworklite instal·lat!</div>
-
-
+	
 <!--
+	<div id="success">Felicitacions! Ja tens el Frameworklite instal·lat!</div>
+
+
+
 	<div class="block">
 		<div class="inner-block">
 		<h2>Exemple Formulari</h2>
@@ -24,6 +26,11 @@
 		</div>
 	</div>
 -->
+
+    <div>
+        <a href="exercici1/home.tpl">Exercici 1</a>
+
+    </div>
 
 	
 <div class="clear"></div>
