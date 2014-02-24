@@ -37,3 +37,12 @@ $config['HomeHomeController']			= PATH_CONTROLLERS . 'home/home.ctrl.php';
 // Controllers compartits per tota la p�gina
 $config['SharedHeadController']			= PATH_CONTROLLERS . 'shared/head.ctrl.php';
 $config['SharedFooterController']		= PATH_CONTROLLERS . 'shared/footer.ctrl.php';
+
+//----------- EXERCICI 1 -----------------
+//Controllers exercici 1
+
+$config['Exercici1HomeController']		        = PATH_CONTROLLERS . 'exercici1/home.ctrl.php';
+$config['Exercici1MicospetitsController']		= PATH_CONTROLLERS . 'exercici1/micospetits.ctrl.php';
+$config['Exercici1MicosgransController']		= PATH_CONTROLLERS . 'exercici1/micosgrans.ctrl.php';
+
+//----------------------------------------
