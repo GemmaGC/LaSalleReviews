@@ -13,7 +13,7 @@ if( strpos( $_SERVER['HTTP_HOST'], '.local' ) !== false )
 }
 else
 {
-	echo 'Error -> Instancia de pruebas para uso local con el nombre <i>default.local</i>';
+	echo 'Error -> Instancia de pruebas para uso local con el nombre <i>g1.local</i>';
 	exit;
 }
 

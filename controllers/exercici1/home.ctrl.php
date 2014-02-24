@@ -19,6 +19,10 @@ class Exercici1HomeController extends Controller
 		// aqui o dins d'un altre m�tode cridat a build().		
 		// El fitxer referenciat es troba a: instances/<la_vostra_instancia>/templates/home/home.tpl
 		$this->setLayout($this->view);	
+
+
+
+		//HOLAAAA!
 	
 	}
 	
