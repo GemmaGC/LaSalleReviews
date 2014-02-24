@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8bcda30-9972-47d1-9a21-b8472b637792" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/micosgrans.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/micosgrans.ctrl.php" />
+=======
+>>>>>>> 77f4260bc395f06721dc65a6bf9166feaaf3e1a4
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="g1.iws" />
@@ -29,7 +32,38 @@
       <file leaf-file-name="micosgrans.ctrl.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/exercici1/micosgrans.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="47" column="10" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.5546875" vertical-offset="350" max-vertical-offset="1110">
+=======
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="general.config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configure/general.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configure/db.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configure/base.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+>>>>>>> 77f4260bc395f06721dc65a6bf9166feaaf3e1a4
               <folding />
             </state>
           </provider>
@@ -38,7 +72,20 @@
       <file leaf-file-name="home.ctrl.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="26" column="40" selection-start="764" selection-end="764" vertical-scroll-proportion="-10.541667" vertical-offset="137" max-vertical-offset="1095">
+=======
+            <state line="53" column="0" selection-start="0" selection-end="1838" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="1095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.ctrl.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/exerici1/home.ctrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="0" selection-start="843" selection-end="843" vertical-scroll-proportion="0.7428115" vertical-offset="0" max-vertical-offset="810">
+>>>>>>> 77f4260bc395f06721dc65a6bf9166feaaf3e1a4
               <folding />
             </state>
           </provider>
@@ -304,6 +351,16 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/controllers/exerici1/home.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 77f4260bc395f06721dc65a6bf9166feaaf3e1a4
     <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="360">
@@ -334,6 +391,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="26" column="40" selection-start="764" selection-end="764" vertical-scroll-proportion="-10.541667" vertical-offset="137" max-vertical-offset="1095">
           <folding />
         </state>
@@ -342,13 +400,20 @@
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677">
+=======
+        <state line="53" column="0" selection-start="0" selection-end="1838" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="1095">
+>>>>>>> 77f4260bc395f06721dc65a6bf9166feaaf3e1a4
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/micosgrans.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="47" column="10" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.5546875" vertical-offset="350" max-vertical-offset="1110">
+=======
+        <state line="31" column="0" selection-start="843" selection-end="843" vertical-scroll-proportion="0.7428115" vertical-offset="0" max-vertical-offset="810">
+>>>>>>> 77f4260bc395f06721dc65a6bf9166feaaf3e1a4
           <folding />
         </state>
       </provider>
