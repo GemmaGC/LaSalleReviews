@@ -7,7 +7,7 @@ if( strpos( $_SERVER['HTTP_HOST'], '.local' ) !== false )
 	/**
 	 * Entorn de desenvolupament (el vostre ordinador)
 	 */
-	define( 'URL_ABSOLUTE', 'http://default.local');
+	define( 'URL_ABSOLUTE', 'http://g1.local');
 	define( 'DEV_MODE' , true );
 	define( 'SQL_DEBUG', true );
 }

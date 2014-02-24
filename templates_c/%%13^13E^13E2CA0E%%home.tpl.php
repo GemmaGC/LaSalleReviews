@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-14 18:18:44
+<?php /* Smarty version 2.6.14, created on 2014-02-24 17:35:27
          compiled from home/home.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['head']; ?>
 
@@ -7,7 +7,7 @@
 		<div id="success">Felicitacions! Ja tens el Frameworklite instal·lat!</div>
 
 
-
+<!--
 	<div class="block">
 		<div class="inner-block">
 		<h2>Exemple Formulari</h2>
@@ -23,7 +23,7 @@
 	<?php endif; ?>
 		</div>
 	</div>
-
+-->
 
 	
 <div class="clear"></div>
