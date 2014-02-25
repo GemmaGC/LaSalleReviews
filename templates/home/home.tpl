@@ -13,7 +13,7 @@
 
 	<nav>
 		<ul>
-			<li><a href="">EXERCICI 1: MONOS</a></li>
+			<li><a href="{$url.global}/exercici1/home.html">EXERCICI 1: MONOS</a></li>
 			<li><a href="">EXERCICI 2: PRÒXIMAMENT</a></li>
 			<li><a href="">EXERCICI 3: PRÒXIMAMENT</a></li>
 			<li><a href="">EXERCICI 4: PRÒXIMAMENT</a></li>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-25 17:32:25
+<?php /* Smarty version 2.6.14, created on 2014-02-25 17:45:35
          compiled from home/home.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['head']; ?>
 
@@ -15,7 +15,8 @@
 
 	<nav>
 		<ul>
-			<li><a href="">EXERCICI 1: MONOS</a></li>
+			<li><a href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/exercici1/home.html">EXERCICI 1: MONOS</a></li>
 			<li><a href="">EXERCICI 2: PRÒXIMAMENT</a></li>
 			<li><a href="">EXERCICI 3: PRÒXIMAMENT</a></li>
 			<li><a href="">EXERCICI 4: PRÒXIMAMENT</a></li>
