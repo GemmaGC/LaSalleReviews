@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-25 17:25:41
+<?php /* Smarty version 2.6.14, created on 2014-02-25 17:32:25
          compiled from shared/head.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -22,7 +22,7 @@
 	<body>
 		<div class="main_header">
 			<header>
-				<div class="site-logo">PROJECTES WEB</div>
+				<div class="site-logo">PROJECTES WEB: Grup 1</div>
 			</header>
 		</div>
 		

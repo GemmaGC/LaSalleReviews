@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-25 17:21:05
+<?php /* Smarty version 2.6.14, created on 2014-02-25 17:32:25
          compiled from home/home.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['head']; ?>
 
