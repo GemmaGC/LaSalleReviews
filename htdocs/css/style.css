@@ -1,106 +1,115 @@
 *{
-	font-size:13px;
-	font-family: sans-serif;
+	font-size: 16px;
+	font-family: calibri;
 }
+
 body
 {
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 
-.main_header,footer
+.info
 {
-	width:100%;
-	background-color:#464F4F;
-	
+	margin-bottom: 30px;
 }
 
-.site-logo a
+.main_header
 {
-	display:block;
-	color:white;
-	font-size: 24px;
-	font-weight:bold;
-	padding: 12px;
-	text-shadow: 0px 1px 1px rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100px;
+
+	border-bottom: 3px solid #2E9AFE;
+	background-color: #58D3F7;
+}
+
+ul li
+{
+	padding: 10px 10px;
+	font-size: 16px;
+}
+
+
+.site-logo
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 60px;
+	font-weight: bold;
+	padding-top: 16px;
+	text-align: center;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.9);
 }
 
 footer
 {
-	text-align:right;
-	padding:6px 0;
+	display: block;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	margin-top: 103px;
+	color: white;	
+	border-top: 2px solid #2E9AFE;
+	background-color: #58D3F7;
 }
 
-footer a
+
+#success p
 {
-	margin:0 6px;
-	color:white;
+	margin-top: 60px;
+	margin-bottom: 35px;
+	color: black;
+	font-size: 24px;
+	font-weight: bold; 
 }
-
-#success
-{
-	color: white;
-	font-size: 20px;
-	font-weight:bold;
-
-	padding: 8px; 
-	text-shadow: 0px 1px 1px rgba(0,0,0,0.35);
-	border:2px solid #3bb02b;
-	border-radius:8px;
-	background-color:#90DE95;
-}
+ 
 
 #wrapper
 {
-	position:relative;
-	margin:24px auto;
-	width:980px;
+	position: relative;
+	margin: 24px auto;
+	width: 980px;
 }
 
-.block
-{
-	position:relative;
-	float:left;
-	background-color:#DAEAEB;
-	border:2px solid #84BCBF;
-	border-radius:8px;
-	margin-right:12px;
-	
-	
-}
-.block:last-child
-{
-	margin-right:0;
-}
-
-.block h2
-{
-	font-size:16px;
-	font-weight:bold;
-	margin:0;
-	padding:0;
-	color: #26545E;
-	text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
-}
-
-.inner-block
-{
-	padding:16px 12px;
-}
-
-.inner-block table
-{
-	width:100%;
-}
-
-.inner-block td
-{
-	width:50%
-}
 
 .clear
 {
-	content:"";
-	padding-top:24px;
-	clear:left;
+	content: "";
+	padding-top: 24px;
+	clear: left;
 }
+
+a:link 
+{
+	color: black;
+	text-decoration:none;
+}     
+
+a:visited 
+{
+	color: black;
+	text-decoration:none;
+}  
+
+a:hover 
+{
+	color: #2E9AFE;
+}  
+
+a:active 
+{ 
+	color: black;
+	text-decoration:none;
+}  
+
+
+
+
+
+
+
+
+
+
+
