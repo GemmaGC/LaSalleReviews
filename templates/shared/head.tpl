@@ -19,7 +19,7 @@
 	<body>
 		<div class="main_header">
 			<header>
-				<div class="site-logo">PROJECTES WEB: Grup 1</div>
+				<div class="site-logo">PROJECTES WEB</div>
 			</header>
 		</div>
 		
