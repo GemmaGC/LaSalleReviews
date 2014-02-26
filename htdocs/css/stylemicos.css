@@ -9,11 +9,11 @@ body{
 	margin: 0;
 	padding: 0;
 
-    /*background:url(../imag/exercici1/bg.jpg);
+    background:url(../imag/exercici1/bg.jpg);
     background-size:100% 100%;
-    background-repeat:no-repeat;*/
+    background-repeat:no-repeat;
 
-	background: #000000;/* url(../imag/bg.jpg) repeat top left;*/
+	/*background: url(../imag/bg.jpg) repeat top left;*/
 	font-weight: 400;
 	font-size: 15px;
 	color: #416c80;
