@@ -15,10 +15,10 @@
          */
         public function build()
         {
-            //getParams
+            /*
             $info = $this->getParams();
 
-            echo '<pre>';print_r( $info );echo '</pre>';
+            echo '<pre>';print_r( $info );echo '</pre>';*/
 
             // Caldr� sempre definir una vista per cada controllador. Pot quedar definidar
             // aqui o dins d'un altre m�tode cridat a build().

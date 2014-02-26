@@ -15,16 +15,11 @@
          */
         public function build()
         {
-            $info = $this->getParams();
-            echo '<pre>';print_r( $info );echo '</pre>';
-            //Crida a un m�tode que mostrar� contingut per pantalla.
+            /*$info = $this->getParams();
+            echo '<pre>';print_r( $info );echo '</pre>';*/
 
-
-            //$this->salutacio();
-
-
-            // Caldr� sempre definir una vista per cada controllador. Pot quedar definidar
-            // aqui o dins d'un altre m�tode cridat a build().
+            // Caldrà sempre definir una vista per cada controllador. Pot quedar definidar
+            // aqui o dins d'un altre mètode cridat a build().
             // El fitxer referenciat es troba a: instances/<la_vostra_instancia>/templates/home/home.tpl
             $this->setLayout($this->view);
 
