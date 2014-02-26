@@ -26,15 +26,7 @@
             $this->setLayout($this->view);
 
 
-
-
-
         }
-
-
-
-
-
 
 
         /**
