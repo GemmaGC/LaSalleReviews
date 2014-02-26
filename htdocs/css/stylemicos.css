@@ -16,12 +16,9 @@ body{
 	overflow-x: hidden;
 }
 
-.imatge{
+.img{
     max-height: 194px;
     max-width: 259px;
-    position:fixed;
-    top:5px;
-    right:5px;
 }
 
 a.next {

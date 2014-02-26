@@ -30,7 +30,7 @@
       <file leaf-file-name="micos.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="40" selection-start="677" selection-end="677" vertical-scroll-proportion="0.55130166" vertical-offset="60" max-vertical-offset="795">
+            <state line="28" column="35" selection-start="679" selection-end="679" vertical-scroll-proportion="0.55130166" vertical-offset="60" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -48,7 +48,7 @@
       <file leaf-file-name="stylemicos.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="1" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3930">
+            <state line="18" column="4" selection-start="266" selection-end="266" vertical-scroll-proportion="-5.4615383" vertical-offset="128" max-vertical-offset="3885">
               <folding />
             </state>
           </provider>
@@ -582,14 +582,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3930">
+        <state line="18" column="4" selection-start="266" selection-end="266" vertical-scroll-proportion="-5.4615383" vertical-offset="128" max-vertical-offset="3885">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="40" selection-start="677" selection-end="677" vertical-scroll-proportion="0.55130166" vertical-offset="60" max-vertical-offset="795">
+        <state line="28" column="35" selection-start="679" selection-end="679" vertical-scroll-proportion="0.55130166" vertical-offset="60" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
