@@ -35,11 +35,6 @@
 
                     <a class="next" href="{$url.global}/micos/">Següent</a>
 
-<!--                    <input type="hidden" value="{math equation='x - y' x=$img y=1}" name="valor" id="valor"><a>Anterior</a></input>
-
-
-                    <input type="hidden" value="{math equation='x + y' x=$img y=1}" name="valor" id="valor">Següent</input>
--->
                 </div>
             </section>
 
