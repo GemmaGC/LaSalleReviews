@@ -19,6 +19,7 @@ body{
 .img{
     max-height: 194px;
     max-width: 259px;
+    margin-top:-30px;
 }
 
 a.next {
