@@ -9,8 +9,8 @@
 
     <nav>
         <ul>
-            <li><a href="">MONOS PETITS</a></li>
-            <li><a href="">MONOS GRANS</a></li>
+            <li><a href="{$url.global}/micosPetits">MONOS PETITS</a></li>
+            <li><a href="{$url.global}/micosGrans">MONOS GRANS</a></li>
         </ul>
     </nav>
 

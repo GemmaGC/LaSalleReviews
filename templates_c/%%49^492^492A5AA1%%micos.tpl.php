@@ -1,8 +1,10 @@
-{$modules.head}
+<?php /* Smarty version 2.6.14, created on 2014-02-26 11:20:48
+         compiled from exercici1/micos.tpl */ ?>
+<?php echo $this->_tpl_vars['modules']['head']; ?>
+
 
     <!-- Això és un comentari HTML -->
-    {* Això és un comentari en Smarty *}
-    <div id = "success">
+        <div id = "success">
         <p>MICOS MACOS!</p>
     </div>
 
@@ -14,7 +16,8 @@
 
     <nav>
         <ul>
-            <li><a href="{$url.global}/exercici1">EXERCICI 1: MONOS</a></li>
+            <li><a href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/exercici1">EXERCICI 1: MONOS</a></li>
             <li><a href="">EXERCICI 2: PRÒXIMAMENT</a></li>
             <li><a href="">EXERCICI 3: PRÒXIMAMENT</a></li>
             <li><a href="">EXERCICI 4: PRÒXIMAMENT</a></li>
@@ -23,4 +26,4 @@
 
 -->
     <div class="clear"></div>
-{$modules.footer}
+<?php echo $this->_tpl_vars['modules']['footer']; ?>
