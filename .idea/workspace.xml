@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="" />
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +26,7 @@
       <file leaf-file-name="micos.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.6094946" vertical-offset="142" max-vertical-offset="795">
+            <state line="36" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.8269525" vertical-offset="0" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -580,7 +577,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.6094946" vertical-offset="142" max-vertical-offset="795">
+        <state line="36" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.8269525" vertical-offset="0" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
