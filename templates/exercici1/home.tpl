@@ -9,7 +9,7 @@
 
     <nav>
         <ul>
-            <li><a href="{$url.global}/micos">Començar presentació</a></li>
+            <li><a href="{$url.global}/micos/1">Començar presentació</a></li>
         </ul>
     </nav>
 

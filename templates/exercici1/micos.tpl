@@ -23,22 +23,19 @@
         <div id="container">
 
 
-
             <section>
                 <div class="clr"></div>
                 <figure class="container_buttons">
-                    <img class="img" src="imag/exercici1/{$img_anterior}.jpg">
+                    <img class="img" src="imag/exercici1/{$img}.jpg">
                 </figure>
                 <div class="container_buttons">
+<!--
+                        <a class="prev" href="{$url.global}/micos/{math equation="x - y" x=$img y=1}">Anterior</a>
 
-                    {if $img_anterior > 0}
-                        <a class="prev" href="{$url.global}/micos/{$img_anterior}">Anterior</a>
-                    {/if}
 
-                    {if $img_posterior < 11}
-                        <a class="next" href="{$url.global}/micos/{$img_posterior}">Següent</a>
-                    {/if}
+                        <a class="next" href="{$url.global}/micos/{math equation="x + y" x=$img y=1}">Següent</a>
 
+-->
                 </div>
             </section>
 
