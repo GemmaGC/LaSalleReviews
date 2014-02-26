@@ -13,7 +13,7 @@ body{
     background-size:100% 100%;
     background-repeat:no-repeat;*/
 
-	background: #f8f8f8 url(../imag/bg.jpg) repeat top left;
+	background: #f8f8f8;/* url(../imag/bg.jpg) repeat top left;*/
 	font-weight: 400;
 	font-size: 15px;
 	color: #416c80;
