@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php /* Smarty version 2.6.14, created on 2014-02-26 15:46:38
+=======
+<?php /* Smarty version 2.6.14, created on 2014-02-26 15:29:41
+>>>>>>> 6efb1776b31a4ad334705642732b9d51b22aa16d
          compiled from exercici1/micos.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'math', 'exercici1/micos.tpl', 33, false),)), $this); ?>
