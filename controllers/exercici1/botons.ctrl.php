@@ -10,10 +10,13 @@ class Exercici1BotonsController extends Controller
     {
         $info = $this->getParams();
 
-        $img_anterior = 0;
-        $img_posterior = 2;
 
         $this->setLayout($this->view);
+
+        $this->assign('img', 1);
+
+        //$info[url_arguments][1];
+
 
     }
 
