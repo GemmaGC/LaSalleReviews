@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configure/base.config.php" afterPath="$PROJECT_DIR$/configure/base.config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/home/home.ctrl.php" afterPath="$PROJECT_DIR$/controllers/home/home.ctrl.php" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,19 +26,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home/home.tpl">
+      <file leaf-file-name="home.ctrl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="450">
+            <state line="52" column="2" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-22.916666" vertical-offset="230" max-vertical-offset="870">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="home.ctrl.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
+        <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="35" selection-start="469" selection-end="469" vertical-scroll-proportion="0.421875" vertical-offset="0" max-vertical-offset="855">
+            <state line="68" column="2" selection-start="2191" selection-end="2191" vertical-scroll-proportion="0.8828125" vertical-offset="455" max-vertical-offset="1110">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.ctrl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/shared/footer.ctrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="270">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.ctrl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/shared/head.ctrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="315">
               <folding />
             </state>
           </provider>
@@ -80,6 +97,7 @@
         <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
         <option value="$PROJECT_DIR$/configure/base.config.php" />
         <option value="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" />
+        <option value="$PROJECT_DIR$/controllers/home/home.ctrl.php" />
       </list>
     </option>
   </component>
@@ -150,6 +168,10 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -196,6 +218,20 @@
               <option name="myItemId" value="g1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -208,6 +244,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -244,6 +284,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="exercici1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="error" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,6 +418,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/error/error404.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/configure/base.config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="1659" selection-end="1659" vertical-scroll-proportion="-22.833334" vertical-offset="97" max-vertical-offset="750">
@@ -367,9 +439,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
+    <entry file="file://$PROJECT_DIR$/controllers/shared/head.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
           <folding />
         </state>
       </provider>
@@ -381,16 +453,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
+    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+        <state line="52" column="2" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-22.916666" vertical-offset="230" max-vertical-offset="870">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
+    <entry file="file://$PROJECT_DIR$/controllers/shared/footer.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="469" selection-end="469" vertical-scroll-proportion="0.421875" vertical-offset="0" max-vertical-offset="855">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="2" selection-start="2191" selection-end="2191" vertical-scroll-proportion="0.8828125" vertical-offset="455" max-vertical-offset="1110">
           <folding />
         </state>
       </provider>
