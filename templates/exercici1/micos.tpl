@@ -30,7 +30,7 @@
                 <!--</figure>-->
                 <div class="container_buttons">
 
-                    {if $prev_img > 1}
+                    {if $prev_img > 0}
                         <a class="prev" href="{$url.global}/micos/{$prev_img}">Anterior</a>
                     {/if}
                     {if $next_img < 10}
