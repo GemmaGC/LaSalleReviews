@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/css/stylemicos.css" afterPath="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
     </list>
     <ignored path="g1.iws" />
@@ -26,19 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="micos.tpl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="micos.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="44" selection-start="688" selection-end="688" vertical-scroll-proportion="-14.375" vertical-offset="75" max-vertical-offset="795">
+            <state line="33" column="24" selection-start="886" selection-end="886" vertical-scroll-proportion="0.6431853" vertical-offset="75" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stylemicos.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="stylemicos.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="19" selection-start="594" selection-end="594" vertical-scroll-proportion="0.56374806" vertical-offset="353" max-vertical-offset="3900">
+            <state line="48" column="23" selection-start="598" selection-end="598" vertical-scroll-proportion="-14.115385" vertical-offset="353" max-vertical-offset="3900">
               <folding />
             </state>
           </provider>
@@ -77,8 +77,8 @@
         <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
         <option value="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" />
         <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
-        <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
         <option value="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
+        <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
       </list>
     </option>
   </component>
@@ -570,16 +570,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
+    <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="44" selection-start="688" selection-end="688" vertical-scroll-proportion="-14.375" vertical-offset="75" max-vertical-offset="795">
+        <state line="48" column="23" selection-start="598" selection-end="598" vertical-scroll-proportion="-14.115385" vertical-offset="353" max-vertical-offset="3900">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
+    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="19" selection-start="594" selection-end="594" vertical-scroll-proportion="0.56374806" vertical-offset="353" max-vertical-offset="3900">
+        <state line="33" column="24" selection-start="886" selection-end="886" vertical-scroll-proportion="0.6431853" vertical-offset="75" max-vertical-offset="810">
           <folding />
         </state>
       </provider>

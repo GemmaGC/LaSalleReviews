@@ -30,11 +30,12 @@
                 <!--</figure>-->
                 <div class="container_buttons">
 
-                    <a class="prev" href="{$url.global}/micos/{$prev_img}">Anterior</a>
-
-
-                    <a class="next" href="{$url.global}/micos/{$next_img}">Següent</a>
-
+                    {if $prev_img > 1}
+                        <a class="prev" href="{$url.global}/micos/{$prev_img}">Anterior</a>
+                    {/if}
+                    {if $next_img < 10}
+                        <a class="next" href="{$url.global}/micos/{$next_img}">Següent</a>
+                    {/if}
                 </div>
             </section>
 
