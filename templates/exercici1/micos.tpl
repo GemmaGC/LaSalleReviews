@@ -26,14 +26,14 @@
             <section>
                 <div class="clr"></div>
                 <figure class="container_buttons">
-                    <img class="img" src="imag/exercici1/{$info}.jpg">
+                    <img class="img" src="{$url.global}/imag/exercici1/{$act_img}.jpg">
                 </figure>
                 <div class="container_buttons">
 
-                    <a class="prev" href="{$url.global}/micos/">Anterior</a>
+                    <a class="prev" href="{$url.global}/micos/{$prev_img}">Anterior</a>
 
 
-                    <a class="next" href="{$url.global}/micos/">Següent</a>
+                    <a class="next" href="{$url.global}/micos/{$next_img}">Següent</a>
 
                 </div>
             </section>
