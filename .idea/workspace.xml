@@ -2,6 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/imag/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/imag/left_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/imag/right_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates_c/%%3F^3FD^3FDC3B71%%home.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/exercici1/home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%13^13E^13E2CA0E%%home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%13^13E^13E2CA0E%%home.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%84^847^8471C765%%footer.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%84^847^8471C765%%footer.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%CD^CD1^CD1174A5%%head.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%CD^CD1^CD1174A5%%head.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configure/dispatcher.config.php" afterPath="$PROJECT_DIR$/configure/dispatcher.config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/shared/footer.tpl" afterPath="$PROJECT_DIR$/templates/shared/footer.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/shared/head.tpl" afterPath="$PROJECT_DIR$/templates/shared/head.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/home/home.ctrl.php" afterPath="$PROJECT_DIR$/controllers/home/home.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/home.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/home.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home/home.tpl" afterPath="$PROJECT_DIR$/templates/home/home.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/micospetits.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/micospetits.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/css/style.css" afterPath="$PROJECT_DIR$/htdocs/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="g1.iws" />
@@ -44,6 +64,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/templates/home/home.tpl" />
+      </list>
+    </option>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
@@ -83,6 +110,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="g1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -146,16 +183,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="exercici1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>

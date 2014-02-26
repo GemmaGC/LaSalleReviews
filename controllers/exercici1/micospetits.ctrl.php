@@ -4,7 +4,7 @@
  */
 class Exercici1MicospetitsController extends Controller
 {
-    protected $view = 'exercici1/micospetits.tpl';
+    protected $view = 'exercici1/micos.tpl';
 
     public function build()
     {

@@ -2,14 +2,23 @@
 
 	<!-- Això és un comentari HTML -->
 	{* Això és un comentari en Smarty *}
-	<div id="success">HOME DEL GRUP 1: CLAUDIA DAUDÉN, YLENIA GÓMEZ-RAYA, GEMMA GUITERAS</div>
-
-	<div>
-		<ul>
-			<li><a href="#">EXERCICI 1: MONOS</a></li>
-		</ul>
-
+	<div id = "success">
+		<p>BENVINGUT A LA HOME DEL GRUP 1!</p> 
 	</div>
+
+	<p id="components">Grup format per: CLAUDIA DAUDÉN, YLENIA GÓMEZ-RAYA i GEMMA GUITERAS</p>
+	<br/>
+	<p id = "info">Selecciona l'exercici que vols visualitzar:</p>
+
+
+	<nav>
+		<ul>
+			<li><a href="{$url.global}/exercici1">EXERCICI 1: MONOS</a></li>
+			<li><a href="">EXERCICI 2: PRÒXIMAMENT</a></li>
+			<li><a href="">EXERCICI 3: PRÒXIMAMENT</a></li>
+			<li><a href="">EXERCICI 4: PRÒXIMAMENT</a></li>
+		</ul>
+	</nav>
 
 	
 <div class="clear"></div>
