@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-26 18:57:21
+<?php /* Smarty version 2.6.14, created on 2014-02-26 18:58:04
          compiled from exercici1/micos.tpl */ ?>
 
     <!-- Això és un comentari HTML -->
@@ -28,7 +28,7 @@
             <section>
                 <div class="clr"></div>
                 <!--<figure class="container_buttons">-->
-                    <img class="imatge" src="<?php echo $this->_tpl_vars['url']['global']; ?>
+                    <img class="img" src="<?php echo $this->_tpl_vars['url']['global']; ?>
 /imag/exercici1/<?php echo $this->_tpl_vars['act_img']; ?>
 .jpg">
                 <!--</figure>-->
