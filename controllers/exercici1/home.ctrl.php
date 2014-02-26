@@ -15,6 +15,9 @@ class Exercici1HomeController extends Controller
 	 */
 	public function build()
 	{
+        //getParams
+        $info = $this->getParams();
+
 		// Caldr� sempre definir una vista per cada controllador. Pot quedar definidar 
 		// aqui o dins d'un altre m�tode cridat a build().		
 		// El fitxer referenciat es troba a: instances/<la_vostra_instancia>/templates/home/home.tpl
@@ -22,7 +25,7 @@ class Exercici1HomeController extends Controller
 
 
 
-		//HOLAAAA!
+
 	
 	}
 	
@@ -39,9 +42,11 @@ class Exercici1HomeController extends Controller
 	 *
 	 * @return array
 	 */
+    /*
 	public function loadModules() {
 		$modules['head']	= 'SharedHeadController';
 		$modules['footer']	= 'SharedFooterController';
 		return $modules;
 	}
+    */
 }
