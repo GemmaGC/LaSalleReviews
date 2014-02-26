@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/css/stylemicos.css" afterPath="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,28 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="micos.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="micos.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="44" selection-start="688" selection-end="688" vertical-scroll-proportion="0.55130166" vertical-offset="60" max-vertical-offset="795">
+            <state line="28" column="44" selection-start="688" selection-end="688" vertical-scroll-proportion="-14.375" vertical-offset="75" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="botons.ctrl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="60" selection-start="462" selection-end="462" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stylemicos.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="stylemicos.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="304" selection-end="304" vertical-scroll-proportion="-6.6153846" vertical-offset="128" max-vertical-offset="3885">
+            <state line="48" column="19" selection-start="594" selection-end="594" vertical-scroll-proportion="0.56374806" vertical-offset="353" max-vertical-offset="3900">
               <folding />
             </state>
           </provider>
@@ -86,8 +77,8 @@
         <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
         <option value="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" />
         <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
-        <option value="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
         <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
+        <option value="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
       </list>
     </option>
   </component>
@@ -565,13 +556,6 @@
         <state line="11" column="45" selection-start="314" selection-end="314" vertical-scroll-proportion="0.2578125" vertical-offset="0" max-vertical-offset="640" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="60" selection-start="462" selection-end="462" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="540">
@@ -579,16 +563,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
+    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="304" selection-end="304" vertical-scroll-proportion="-6.6153846" vertical-offset="128" max-vertical-offset="3885">
+        <state line="16" column="60" selection-start="462" selection-end="462" vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="640">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="44" selection-start="688" selection-end="688" vertical-scroll-proportion="0.55130166" vertical-offset="60" max-vertical-offset="795">
+        <state line="28" column="44" selection-start="688" selection-end="688" vertical-scroll-proportion="-14.375" vertical-offset="75" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="19" selection-start="594" selection-end="594" vertical-scroll-proportion="0.56374806" vertical-offset="353" max-vertical-offset="3900">
           <folding />
         </state>
       </provider>
