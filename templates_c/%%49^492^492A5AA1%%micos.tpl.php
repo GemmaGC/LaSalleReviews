@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-26 19:38:15
+<?php /* Smarty version 2.6.14, created on 2014-02-26 19:38:45
          compiled from exercici1/micos.tpl */ ?>
 
     <!-- Això és un comentari HTML -->
@@ -22,8 +22,11 @@
                 </header>
             </div>
 
+            <h1>Mico #<?php echo $this->_tpl_vars['act_img']; ?>
+</h1>
+            
                 <div id="container">
-                    
+
                     <section>
                         <div class="clr"></div>
 

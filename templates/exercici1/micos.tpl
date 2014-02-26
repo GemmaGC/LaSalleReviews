@@ -20,8 +20,10 @@
                 </header>
             </div>
 
+            <h1>Mico #{$act_img}</h1>
+            
                 <div id="container">
-                    
+
                     <section>
                         <div class="clr"></div>
 

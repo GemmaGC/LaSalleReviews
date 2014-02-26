@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/css/stylemicos.css" afterPath="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +28,7 @@
       <file leaf-file-name="micos.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="20" selection-start="570" selection-end="570" vertical-scroll-proportion="0.41347626" vertical-offset="75" max-vertical-offset="870">
+            <state line="23" column="12" selection-start="563" selection-end="563" vertical-scroll-proportion="0.41347626" vertical-offset="75" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -610,7 +608,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="20" selection-start="570" selection-end="570" vertical-scroll-proportion="0.41347626" vertical-offset="75" max-vertical-offset="870">
+        <state line="23" column="12" selection-start="563" selection-end="563" vertical-scroll-proportion="0.41347626" vertical-offset="75" max-vertical-offset="900">
           <folding />
         </state>
       </provider>
