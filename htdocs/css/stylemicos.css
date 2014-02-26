@@ -30,7 +30,7 @@ h1{
 }
 
 a.next {
-	margin-left: 15px;
+	margin-left: 17px;
 }
 
 a.prev {
@@ -75,7 +75,8 @@ a.retorn {
 
 .container_buttons_retorn {
     position:absolute;
-
+    left:550px;
+    top:190px;
 }
 
 .next {

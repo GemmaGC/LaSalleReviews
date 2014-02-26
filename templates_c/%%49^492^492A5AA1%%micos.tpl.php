@@ -1,8 +1,7 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-26 23:48:22
+<?php /* Smarty version 2.6.14, created on 2014-02-26 23:58:23
          compiled from exercici1/micos.tpl */ ?>
 
-    <!-- Això és un comentari HTML -->
-        <!DOCTYPE html>
+    <!DOCTYPE html>
 
     <html>
         <head>
@@ -21,12 +20,12 @@
                     <div class="site-logo">EXERCICI 1</div>
                 </header>
             </div>
-            <div class="clr"></div>
 
             <div id="container">
 
 
-                <div class="container_buttons_retorn">
+                <div class="button_retorn_container">
+                    <div class="clr"></div>
                     <a class="retorn" href="<?php echo $this->_tpl_vars['url']['global']; ?>
 /exercici1/home">Enrere</a>
                 </div>

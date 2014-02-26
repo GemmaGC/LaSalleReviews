@@ -1,6 +1,4 @@
 
-    <!-- Això és un comentari HTML -->
-    {* Això és un comentari en Smarty *}
     <!DOCTYPE html>
 
     <html>
@@ -19,12 +17,12 @@
                     <div class="site-logo">EXERCICI 1</div>
                 </header>
             </div>
-            <div class="clr"></div>
 
             <div id="container">
 
 
-                <div class="container_buttons_retorn">
+                <div class="button_retorn_container">
+                    <div class="clr"></div>
                     <a class="retorn" href="{$url.global}/exercici1/home">Enrere</a>
                 </div>
 
