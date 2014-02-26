@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%3F^3FD^3FDC3B71%%home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%3F^3FD^3FDC3B71%%home.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/css/stylemicos.css" afterPath="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
     </list>
     <ignored path="g1.iws" />
@@ -30,7 +28,7 @@
       <file leaf-file-name="micos.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="72" selection-start="479" selection-end="479" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="825">
+            <state line="47" column="17" selection-start="1408" selection-end="1408" vertical-scroll-proportion="-25.0" vertical-offset="105" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -39,7 +37,7 @@
       <file leaf-file-name="stylemicos.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="4" selection-start="103" selection-end="103" vertical-scroll-proportion="0.2437223" vertical-offset="0" max-vertical-offset="4005">
+            <state line="146" column="33" selection-start="4121" selection-end="4121" vertical-scroll-proportion="0.12596007" vertical-offset="2108" max-vertical-offset="4005">
               <folding />
             </state>
           </provider>
@@ -603,14 +601,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="72" selection-start="479" selection-end="479" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="825">
+        <state line="47" column="17" selection-start="1408" selection-end="1408" vertical-scroll-proportion="-25.0" vertical-offset="105" max-vertical-offset="825">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="4" selection-start="103" selection-end="103" vertical-scroll-proportion="0.2437223" vertical-offset="0" max-vertical-offset="4005">
+        <state line="146" column="33" selection-start="4121" selection-end="4121" vertical-scroll-proportion="0.12596007" vertical-offset="2108" max-vertical-offset="4005">
           <folding />
         </state>
       </provider>

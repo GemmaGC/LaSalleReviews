@@ -61,7 +61,7 @@ a.prev {
 }
 
 .next {
-	background-color:#3bb3e0;
+	/*background-color:#3bb3e0;*/
 	font-family: 'Open Sans', sans-serif;
 	font-size:12px;
 	text-decoration:none;
@@ -69,7 +69,7 @@ a.prev {
 	position:relative;
 	padding:10px 20px;
 	padding-right:50px;
-	background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	/*background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
 	background-image: -webkit-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
@@ -80,7 +80,7 @@ a.prev {
 	left top,
 	color-stop(0, rgb(44,160,202)),
 	color-stop(1, rgb(62,184,229))
-	);
+	);*/
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
@@ -93,7 +93,7 @@ a.prev {
 
 .next:active {
 	top:3px;
-	background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+	/*background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
 	background-image: -moz-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
 	background-image: -webkit-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
@@ -104,7 +104,7 @@ a.prev {
 	left top,
 	color-stop(0, rgb(62,184,229)),
 	color-stop(1, rgb(44,160,202))
-	);
+	);*/
 	-webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
 	-moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
 	-o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
@@ -112,10 +112,10 @@ a.prev {
 }
 
 .next::before {
-	background-color:#2591b4;
+	/*background-color:#2591b4;
 	background-image:url(../imag/right_arrow.png);
 	background-repeat:no-repeat;
-	background-position:center center;
+	background-position:center center;*/
 	content:"";
 	width:20px;
 	height:20px;
@@ -144,7 +144,7 @@ a.prev {
 
 
 .prev {
-	background-color:#3bb3e0;
+	/*background-color:#3bb3e0;*/
 	font-family: 'Open Sans', sans-serif;
 	font-size:12px;
 	text-decoration:none;
