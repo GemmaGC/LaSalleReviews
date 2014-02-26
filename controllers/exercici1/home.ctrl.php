@@ -18,6 +18,8 @@
             //getParams
             $info = $this->getParams();
 
+            echo '<pre>';print_r( $info );echo '</pre>';
+
             // Caldr� sempre definir una vista per cada controllador. Pot quedar definidar
             // aqui o dins d'un altre m�tode cridat a build().
             // El fitxer referenciat es troba a: instances/<la_vostra_instancia>/templates/home/home.tpl

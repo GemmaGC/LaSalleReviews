@@ -15,6 +15,8 @@
          */
         public function build()
         {
+            $info = $this->getParams();
+            echo '<pre>';print_r( $info );echo '</pre>';
             //Crida a un m�tode que mostrar� contingut per pantalla.
 
 
