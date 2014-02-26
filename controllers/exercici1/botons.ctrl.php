@@ -12,29 +12,8 @@ class Exercici1BotonsController extends Controller
 
         $this->setLayout($this->view);
 
-        $this->assign('info', $info[url_arguments][1]);
-        echo '<pre>';print_r( $info );echo '</pre>';
-        /*
-        $_POST['anterior'];
+        $this->assign('info', $info[url_arguments][0]);
 
-
-        $original = 1;
-
-        $valor = $info[url_arguments][1] - 1;
-        echo '<pre>';print_r( $valor );echo '</pre>';
-        $this->assign('prev_img', $valor);
-
-        //$this->assign('img', $original);
-
-        $valor = $info[url_arguments][1] + 1;
-        echo '<pre>';print_r( $valor );echo '</pre>';
-        $this->assign('next_img', $valor);
-
-        $valor = $info[url_arguments][1];
-        echo '<pre>';print_r( $valor );echo '</pre>';
-        $this->assign('img', $valor);
-        //$info[url_arguments][1];
-        */
 
     }
 

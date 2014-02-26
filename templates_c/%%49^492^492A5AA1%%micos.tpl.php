@@ -1,7 +1,5 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-26 16:37:34
+<?php /* Smarty version 2.6.14, created on 2014-02-26 18:47:48
          compiled from exercici1/micos.tpl */ ?>
-<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'math', 'exercici1/micos.tpl', 38, false),)), $this); ?>
 
     <!-- Això és un comentari HTML -->
         <!DOCTYPE html>
@@ -42,13 +40,6 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'math', 'exe
                     <a class="next" href="<?php echo $this->_tpl_vars['url']['global']; ?>
 /micos/">Següent</a>
 
-<!--                    <input type="hidden" value="<?php echo smarty_function_math(array('equation' => 'x - y','x' => $this->_tpl_vars['img'],'y' => 1), $this);?>
-" name="valor" id="valor"><a>Anterior</a></input>
-
-
-                    <input type="hidden" value="<?php echo smarty_function_math(array('equation' => 'x + y','x' => $this->_tpl_vars['img'],'y' => 1), $this);?>
-" name="valor" id="valor">Següent</input>
--->
                 </div>
             </section>
 
