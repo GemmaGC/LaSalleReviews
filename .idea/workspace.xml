@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/css/stylemicos.css" afterPath="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,19 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="micos.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="micos.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="12" selection-start="563" selection-end="563" vertical-scroll-proportion="0.41347626" vertical-offset="75" max-vertical-offset="900">
+            <state line="24" column="0" selection-start="552" selection-end="552" vertical-scroll-proportion="-11.25" vertical-offset="90" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stylemicos.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="stylemicos.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="9" selection-start="600" selection-end="601" vertical-scroll-proportion="-8.346154" vertical-offset="263" max-vertical-offset="4125">
+            <state line="68" column="10" selection-start="994" selection-end="994" vertical-scroll-proportion="0.76036865" vertical-offset="525" max-vertical-offset="4215">
               <folding />
             </state>
           </provider>
@@ -85,8 +87,8 @@
         <option value="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" />
         <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
         <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
-        <option value="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
         <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
+        <option value="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
       </list>
     </option>
   </component>
@@ -599,16 +601,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
+    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="9" selection-start="600" selection-end="601" vertical-scroll-proportion="-8.346154" vertical-offset="263" max-vertical-offset="4125">
+        <state line="24" column="0" selection-start="552" selection-end="552" vertical-scroll-proportion="-11.25" vertical-offset="90" max-vertical-offset="915">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
+    <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="12" selection-start="563" selection-end="563" vertical-scroll-proportion="0.41347626" vertical-offset="75" max-vertical-offset="900">
+        <state line="68" column="10" selection-start="994" selection-end="994" vertical-scroll-proportion="0.76036865" vertical-offset="525" max-vertical-offset="4215">
           <folding />
         </state>
       </provider>
