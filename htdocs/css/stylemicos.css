@@ -23,6 +23,12 @@ body{
 
 }
 
+.hiddenlink {
+    color: #000; /* same color as the surrounding text */
+    text-decoration: none; /* to remove the underline */
+    cursor: none; /* to make the cursor stay as a text cursor, not the hand */
+}
+
 .img{
     max-height: 194px;
     max-width: 259px;
@@ -50,10 +56,12 @@ a.prev {
 
 
 .container_buttons {
-	
-	margin: 0 auto;
-    position:fixed;
-	padding-top: 120px;
+
+    /*margin: 0 auto;*/
+    position:absolute;
+    left:110px;
+    top:400px;
+	/*padding-top: 120px;*/
 	/*background: rgba(255,255,255,0.3);
 	padding: 30px 20px 30px 20px;
 	border-radius: 10px;

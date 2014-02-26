@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/css/stylemicos.css" afterPath="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
     </list>
     <ignored path="g1.iws" />
@@ -25,19 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="micos.tpl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="micos.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="17" selection-start="1408" selection-end="1408" vertical-scroll-proportion="-25.0" vertical-offset="105" max-vertical-offset="825">
+            <state line="23" column="20" selection-start="570" selection-end="570" vertical-scroll-proportion="0.41347626" vertical-offset="75" max-vertical-offset="870">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stylemicos.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="stylemicos.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="4" selection-start="651" selection-end="651" vertical-scroll-proportion="0.50691247" vertical-offset="465" max-vertical-offset="4005">
+            <state line="32" column="9" selection-start="600" selection-end="601" vertical-scroll-proportion="-8.346154" vertical-offset="263" max-vertical-offset="4125">
               <folding />
             </state>
           </provider>
@@ -85,8 +87,8 @@
         <option value="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" />
         <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
         <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
-        <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
         <option value="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
+        <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
       </list>
     </option>
   </component>
@@ -599,16 +601,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
+    <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="17" selection-start="1408" selection-end="1408" vertical-scroll-proportion="-25.0" vertical-offset="105" max-vertical-offset="825">
+        <state line="32" column="9" selection-start="600" selection-end="601" vertical-scroll-proportion="-8.346154" vertical-offset="263" max-vertical-offset="4125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
+    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="4" selection-start="651" selection-end="651" vertical-scroll-proportion="0.50691247" vertical-offset="465" max-vertical-offset="4005">
+        <state line="23" column="20" selection-start="570" selection-end="570" vertical-scroll-proportion="0.41347626" vertical-offset="75" max-vertical-offset="870">
           <folding />
         </state>
       </provider>

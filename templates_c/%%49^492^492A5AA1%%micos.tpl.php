@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-26 19:22:35
+<?php /* Smarty version 2.6.14, created on 2014-02-26 19:38:15
          compiled from exercici1/micos.tpl */ ?>
 
     <!-- Això és un comentari HTML -->
@@ -18,15 +18,15 @@
 
             <div class="main_header">
                 <header>
-                    <div class="site-logo">EXERCICI 1 - Mico #<?php echo $this->_tpl_vars['act_img']; ?>
-</div>
+                    <div class="site-logo">EXERCICI 1</div>
                 </header>
             </div>
 
                 <div id="container">
-
+                    
                     <section>
                         <div class="clr"></div>
+
 
                         <img class="img" id="img" src="<?php echo $this->_tpl_vars['url']['global']; ?>
 /imag/exercici1/<?php echo $this->_tpl_vars['act_img']; ?>
@@ -38,6 +38,8 @@
                                 <a class="prev" href="<?php echo $this->_tpl_vars['url']['global']; ?>
 /micos/<?php echo $this->_tpl_vars['prev_img']; ?>
 ">Anterior</a>
+                            <?php else: ?>
+                                <a class="hiddenlink" href=""></a>
                             <?php endif; ?>
                             <?php if ($this->_tpl_vars['next_img'] < 11): ?>
                                 <a class="next" href="<?php echo $this->_tpl_vars['url']['global']; ?>

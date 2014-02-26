@@ -16,14 +16,15 @@
 
             <div class="main_header">
                 <header>
-                    <div class="site-logo">EXERCICI 1 - Mico #{$act_img}</div>
+                    <div class="site-logo">EXERCICI 1</div>
                 </header>
             </div>
 
                 <div id="container">
-
+                    
                     <section>
                         <div class="clr"></div>
+
 
                         <img class="img" id="img" src="{$url.global}/imag/exercici1/{$act_img}.jpg">
 
@@ -31,6 +32,8 @@
 
                             {if $prev_img > 0}
                                 <a class="prev" href="{$url.global}/micos/{$prev_img}">Anterior</a>
+                            {else}
+                                <a class="hiddenlink" href=""></a>
                             {/if}
                             {if $next_img < 11}
                                 <a class="next" href="{$url.global}/micos/{$next_img}">Següent</a>
