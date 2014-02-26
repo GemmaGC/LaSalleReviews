@@ -14,6 +14,10 @@ body{
 	color: #416c80;
 	overflow-y: scroll;
 	overflow-x: hidden;
+
+    background:url(../imag/exercici1/bg.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
 }
 
 .img{

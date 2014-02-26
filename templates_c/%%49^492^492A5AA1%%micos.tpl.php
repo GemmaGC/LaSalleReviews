@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-26 19:03:09
+<?php /* Smarty version 2.6.14, created on 2014-02-26 19:05:53
          compiled from exercici1/micos.tpl */ ?>
 
     <!-- Això és un comentari HTML -->
@@ -34,7 +34,7 @@
                 <!--</figure>-->
                 <div class="container_buttons">
 
-                    <?php if ($this->_tpl_vars['prev_img'] > 1): ?>
+                    <?php if ($this->_tpl_vars['prev_img'] > 0): ?>
                         <a class="prev" href="<?php echo $this->_tpl_vars['url']['global']; ?>
 /micos/<?php echo $this->_tpl_vars['prev_img']; ?>
 ">Anterior</a>
