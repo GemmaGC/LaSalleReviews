@@ -6,7 +6,7 @@
     <html>
         <head>
             <meta charset="UTF-8" />
-            <title>CSS buttons with pseudo-elements</title>
+            <title>Fotografies dels micos</title>
 
 
 
@@ -27,12 +27,17 @@
             <section>
                 <div class="clr"></div>
                 <figure class="container_buttons">
-                    <img src="hsdsd.jpg">
+                    <img class="img" src="imag/exercici1/{$img_anterior}.jpg">
                 </figure>
                 <div class="container_buttons">
 
-                    <a class="prev" href="#">Anterior</a>
-                    <a class="next" href="#">Següent</a>
+                    {if $img_anterior > 0}
+                        <a class="prev" href="{$url.global}/micos/{$img_anterior}">Anterior</a>
+                    {/if}
+
+                    {if $img_posterior < 11}
+                        <a class="next" href="{$url.global}/micos/{$img_posterior}">Següent</a>
+                    {/if}
 
                 </div>
             </section>

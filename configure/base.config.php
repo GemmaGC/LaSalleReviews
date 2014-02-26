@@ -41,8 +41,8 @@ $config['SharedFooterController']		= PATH_CONTROLLERS . 'shared/footer.ctrl.php'
 //----------- EXERCICI 1 -----------------
 //Controllers exercici 1
 
-$config['Exercici1HomeController']		        = PATH_CONTROLLERS . 'exercici1/home.ctrl.php';
-$config['Exercici1MicospetitsController']		= PATH_CONTROLLERS . 'exercici1/micospetits.ctrl.php';
-$config['Exercici1MicosgransController']		= PATH_CONTROLLERS . 'exercici1/micosgrans.ctrl.php';
+$config['Exercici1HomeController']		= PATH_CONTROLLERS . 'exercici1/home.ctrl.php';
+$config['Exercici1BotonsController']	= PATH_CONTROLLERS . 'exercici1/botons.ctrl.php';
+$config['Exercici1MicosController']		= PATH_CONTROLLERS . 'exercici1/micos.ctrl.php';
 
 //----------------------------------------

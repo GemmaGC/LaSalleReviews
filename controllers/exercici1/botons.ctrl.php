@@ -2,13 +2,17 @@
 /**
  * Micos Grans Controller: Controller dels micos grans.
  */
-class Exercici1MicospetitsController extends Controller
+class Exercici1BotonsController extends Controller
 {
     protected $view = 'exercici1/micos.tpl';
 
     public function build()
     {
         $info = $this->getParams();
+
+        $img_anterior = 1;
+        $img_posterior = 2;
+
         $this->setLayout($this->view);
 
     }

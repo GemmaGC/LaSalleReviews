@@ -1,21 +1,13 @@
-<<<<<<< HEAD
-<?php /* Smarty version 2.6.14, created on 2014-02-26 12:17:18
-=======
-<?php /* Smarty version 2.6.14, created on 2014-02-26 11:20:48
->>>>>>> 8f09abd7d68e45296eeac68fc55c5ee29327281c
+<?php /* Smarty version 2.6.14, created on 2014-02-26 13:28:39
          compiled from exercici1/micos.tpl */ ?>
-<?php echo $this->_tpl_vars['modules']['head']; ?>
 
     <!-- Això és un comentari HTML -->
-        <div id = "success">
-        <p>MICOS MACOS!</p>
-    </div>
+        <!DOCTYPE html>
 
-<<<<<<< HEAD
     <html>
         <head>
             <meta charset="UTF-8" />
-            <title>CSS buttons with pseudo-elements</title>
+            <title>Fotografies dels micos</title>
 
 
 
@@ -36,12 +28,22 @@
             <section>
                 <div class="clr"></div>
                 <figure class="container_buttons">
-                    <img src="hsdsd.jpg">
+                    <img class="img" src="imag/exercici1/<?php echo $this->_tpl_vars['img_anterior']; ?>
+.jpg">
                 </figure>
                 <div class="container_buttons">
 
-                    <a class="prev" href="#">Anterior</a>
-                    <a class="next" href="#">Següent</a>
+                    <?php if ($this->_tpl_vars['img_anterior'] > 0): ?>
+                        <a class="prev" href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/micos/<?php echo $this->_tpl_vars['img_anterior']; ?>
+">Anterior</a>
+                    <?php endif; ?>
+
+                    <?php if ($this->_tpl_vars['img_posterior'] < 11): ?>
+                        <a class="next" href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/micos/<?php echo $this->_tpl_vars['img_posterior']; ?>
+">Següent</a>
+                    <?php endif; ?>
 
                 </div>
             </section>
@@ -54,24 +56,3 @@
         </body>
 
     </html>
-=======
-<!--
-    <p id="components">Grup format per: CLAUDIA DAUDÉN, YLENIA GÓMEZ-RAYA i GEMMA GUITERAS</p>
-    <br/>
-    <p id = "info">Selecciona l'exercici que vols visualitzar:</p>
-
-
-    <nav>
-        <ul>
-            <li><a href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/exercici1">EXERCICI 1: MONOS</a></li>
-            <li><a href="">EXERCICI 2: PRÒXIMAMENT</a></li>
-            <li><a href="">EXERCICI 3: PRÒXIMAMENT</a></li>
-            <li><a href="">EXERCICI 4: PRÒXIMAMENT</a></li>
-        </ul>
-    </nav>
-
--->
-    <div class="clear"></div>
-<?php echo $this->_tpl_vars['modules']['footer']; ?>
->>>>>>> 8f09abd7d68e45296eeac68fc55c5ee29327281c

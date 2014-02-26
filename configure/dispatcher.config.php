@@ -21,9 +21,9 @@ $config['default']				= 'HomeHomeController';
 $config['home']					= 'HomeHomeController';
 
 //----------- EXERCICI 1 -----------------
-$config['exercici1']			= 'Exercici1HomeController';
-$config['micosGrans']	        = 'Exercici1MicosgransController';
-$config['micosPetits']	        = 'Exercici1MicospetitsController';
+$config['exercici1']		= 'Exercici1HomeController';
+$config['micos']	        = 'Exercici1MicosController';
+$config['micos']	        = 'Exercici1BotonsController';
 
 //----------------------------------------
 

@@ -16,6 +16,11 @@ body{
 	overflow-x: hidden;
 }
 
+.img{
+    max-height: 194px;
+    max-width: 259px;
+}
+
 a.next {
 	margin-left: 30px;
 }

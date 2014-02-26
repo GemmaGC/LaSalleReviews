@@ -5,12 +5,11 @@
     </div>
 
     <br/>
-    <p id = "info">Selecciona el tipus de monos que vols visualitzar:</p>
+    <p id = "info">En aquesta pàgina podràs veure imatges dels 10 micos més macos del món mundial. T'ho perdràs? No perdis ni un segon!</p>
 
     <nav>
         <ul>
-            <li><a href="{$url.global}/micosPetits">MONOS PETITS</a></li>
-            <li><a href="{$url.global}/micosGrans/imatge1">MONOS GRANS</a></li>
+            <li><a href="{$url.global}/micos">Començar presentació</a></li>
         </ul>
     </nav>
 
