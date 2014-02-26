@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-<?php /* Smarty version 2.6.14, created on 2014-02-26 15:46:38
-=======
-<?php /* Smarty version 2.6.14, created on 2014-02-26 15:29:41
->>>>>>> 6efb1776b31a4ad334705642732b9d51b22aa16d
+<?php /* Smarty version 2.6.14, created on 2014-02-26 16:37:34
          compiled from exercici1/micos.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'math', 'exercici1/micos.tpl', 33, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'math', 'exercici1/micos.tpl', 38, false),)), $this); ?>
 
     <!-- Això és un comentari HTML -->
         <!DOCTYPE html>
@@ -17,7 +13,8 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'math', 'exe
 
 
 
-            <link rel="stylesheet" type="text/css" href="css/stylemicos.css" />
+            <link rel="stylesheet" type="text/css" href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/css/stylemicos.css" />
 
         </head>
 
@@ -33,20 +30,24 @@ smarty_core_load_plugins(array('plugins' => array(array('function', 'math', 'exe
             <section>
                 <div class="clr"></div>
                 <figure class="container_buttons">
-                    <img class="img" src="imag/exercici1/<?php echo $this->_tpl_vars['img']; ?>
+                    <img class="img" src="imag/exercici1/<?php echo $this->_tpl_vars['info']; ?>
 .jpg">
                 </figure>
                 <div class="container_buttons">
-<!--
-                        <a class="prev" href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/micos/<?php echo smarty_function_math(array('equation' => "x - y",'x' => $this->_tpl_vars['img'],'y' => 1), $this);?>
-">Anterior</a>
+
+                    <a class="prev" href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/micos/">Anterior</a>
 
 
-                        <a class="next" href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/micos/<?php echo smarty_function_math(array('equation' => "x + y",'x' => $this->_tpl_vars['img'],'y' => 1), $this);?>
-">Següent</a>
+                    <a class="next" href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/micos/">Següent</a>
 
+<!--                    <input type="hidden" value="<?php echo smarty_function_math(array('equation' => 'x - y','x' => $this->_tpl_vars['img'],'y' => 1), $this);?>
+" name="valor" id="valor"><a>Anterior</a></input>
+
+
+                    <input type="hidden" value="<?php echo smarty_function_math(array('equation' => 'x + y','x' => $this->_tpl_vars['img'],'y' => 1), $this);?>
+" name="valor" id="valor">Següent</input>
 -->
                 </div>
             </section>

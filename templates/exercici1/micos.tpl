@@ -10,7 +10,7 @@
 
 
 
-            <link rel="stylesheet" type="text/css" href="css/stylemicos.css" />
+            <link rel="stylesheet" type="text/css" href="{$url.global}/css/stylemicos.css" />
 
         </head>
 
@@ -26,15 +26,19 @@
             <section>
                 <div class="clr"></div>
                 <figure class="container_buttons">
-                    <img class="img" src="imag/exercici1/{$img}.jpg">
+                    <img class="img" src="imag/exercici1/{$info}.jpg">
                 </figure>
                 <div class="container_buttons">
-<!--
-                        <a class="prev" href="{$url.global}/micos/{math equation="x - y" x=$img y=1}">Anterior</a>
+
+                    <a class="prev" href="{$url.global}/micos/">Anterior</a>
 
 
-                        <a class="next" href="{$url.global}/micos/{math equation="x + y" x=$img y=1}">Següent</a>
+                    <a class="next" href="{$url.global}/micos/">Següent</a>
 
+<!--                    <input type="hidden" value="{math equation='x - y' x=$img y=1}" name="valor" id="valor"><a>Anterior</a></input>
+
+
+                    <input type="hidden" value="{math equation='x + y' x=$img y=1}" name="valor" id="valor">Següent</input>
 -->
                 </div>
             </section>
