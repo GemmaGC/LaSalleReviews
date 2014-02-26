@@ -26,7 +26,7 @@
             <section>
                 <div class="clr"></div>
                 <figure class="container_buttons">
-                    <img class="img" src="{$url.global}/imag/exercici1/{$act_img}.jpg">
+                    <img class="imatge" src="{$url.global}/imag/exercici1/{$act_img}.jpg">
                 </figure>
                 <div class="container_buttons">
 
