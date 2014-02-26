@@ -7,7 +7,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	/*background: #f8f8f8 url(../imag/bg.jpg) repeat top left;*/
+    background: url(../imag/exercici1/bg.jpg) repeat top left;
 }
 
 .info
@@ -72,6 +72,7 @@ footer
 	position: relative;
 	margin: 24px auto;
 	width: 980px;
+
 }
 
 

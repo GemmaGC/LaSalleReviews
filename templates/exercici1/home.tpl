@@ -8,7 +8,7 @@
         <meta charset="UTF-8" />
         <title>Benvingut a l'exercici 1</title>
 
-        <link rel="stylesheet" type="text/css" href="{$url.global}/css/stylemicos.css" />
+        <link rel="stylesheet" type="text/css" href="{$url.global}/css/style.css" />
 
     </head>
 

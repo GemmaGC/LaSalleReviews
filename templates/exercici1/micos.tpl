@@ -21,10 +21,11 @@
             </div>
 
 
-            <h1>Mico #{$act_img}</h1>
+
 
             <div id="container">
 
+                    <h1>Mico #{$act_img}</h1>
                     <section>
                         <div class="clr"></div>
 
