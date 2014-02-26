@@ -44,12 +44,12 @@
          *
          * @return array
          */
-        /*
+
         public function loadModules() {
             $modules['head']	= 'SharedHeadController';
             $modules['footer']	= 'SharedFooterController';
             return $modules;
         }
-        */
+
     }
 ?>

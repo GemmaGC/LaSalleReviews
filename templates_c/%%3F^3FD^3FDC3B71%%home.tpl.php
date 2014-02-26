@@ -1,5 +1,9 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-26 11:04:24
+<?php /* Smarty version 2.6.14, created on 2014-02-26 11:13:23
          compiled from exercici1/home.tpl */ ?>
+<?php echo $this->_tpl_vars['modules']['head']; ?>
+
+
+<!--
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,12 +13,12 @@
 		<meta name="keywords" content="" />
 		<meta name="title" content="" /> 
 		-->
-		<meta name="robots" content="all" />
-		<!--
-		<meta name="expires" content="never" />
-		<meta name="distribution" content="world" />
-		-->
-		<title>EXERCICI 1</title>
+<!--	<meta name="robots" content="all" />
+        <!--
+        <meta name="expires" content="never" />
+        <meta name="distribution" content="world" />
+        -->
+<!--		<title>EXERCICI 1</title>
 		<link rel="stylesheet" href="/Applications/MAMP/htdocs/FrameworkLite/instances/g1/htdocs/css/style.css">
 	</head>
 
@@ -24,9 +28,9 @@
 				<div class="site-logo">PROJECTES WEB</div>
 			</header>
 		</div>
-		
-		<div id="wrapper">
 
+		<div id="wrapper">
+-->
 			<div id = "success">
 				<p>BENVINGUT A L'EXERCICI 1!</p> 
 			</div>
@@ -43,11 +47,13 @@
 
 			
 			<div class="clear"></div>
-		</div>
+            <!--		</div>
 
-		<footer>
-			<p>La Salle - Universitat Ramon Llull - curs 2013 / 2014</p>
-		</footer>
-			
-	</body>
-</html>
+                    <footer>
+                        <p>La Salle - Universitat Ramon Llull - curs 2013 / 2014</p>
+                    </footer>
+
+                </body>
+            </html>
+                        -->
+<?php echo $this->_tpl_vars['modules']['footer']; ?>
