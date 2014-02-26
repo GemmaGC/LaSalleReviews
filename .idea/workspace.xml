@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/css/stylemicos.css" afterPath="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
     </list>
     <ignored path="g1.iws" />
@@ -38,7 +37,7 @@
       <file leaf-file-name="botons.ctrl.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="54" selection-start="334" selection-end="334" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="585">
+            <state line="16" column="60" selection-start="462" selection-end="462" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -47,7 +46,7 @@
       <file leaf-file-name="stylemicos.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="18" selection-start="331" selection-end="331" vertical-scroll-proportion="0.46528804" vertical-offset="0" max-vertical-offset="3900">
+            <state line="22" column="9" selection-start="342" selection-end="342" vertical-scroll-proportion="0.4874446" vertical-offset="0" max-vertical-offset="3930">
               <folding />
             </state>
           </provider>
@@ -579,14 +578,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="54" selection-start="334" selection-end="334" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="585">
+        <state line="16" column="60" selection-start="462" selection-end="462" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="18" selection-start="331" selection-end="331" vertical-scroll-proportion="0.46528804" vertical-offset="0" max-vertical-offset="3900">
+        <state line="22" column="9" selection-start="342" selection-end="342" vertical-scroll-proportion="0.4874446" vertical-offset="0" max-vertical-offset="3930">
           <folding />
         </state>
       </provider>
