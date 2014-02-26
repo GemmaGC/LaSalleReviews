@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/css/stylemicos.css" afterPath="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
     </list>
     <ignored path="g1.iws" />
@@ -29,7 +30,7 @@
       <file leaf-file-name="micos.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="80" selection-start="695" selection-end="724" vertical-scroll-proportion="-11.875" vertical-offset="135" max-vertical-offset="810">
+            <state line="35" column="38" selection-start="1018" selection-end="1018" vertical-scroll-proportion="-16.25" vertical-offset="135" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
@@ -38,7 +39,7 @@
       <file leaf-file-name="stylemicos.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.48387095" vertical-offset="0" max-vertical-offset="3960">
+            <state line="14" column="4" selection-start="213" selection-end="213" vertical-scroll-proportion="0.32258064" vertical-offset="0" max-vertical-offset="4005">
               <folding />
             </state>
           </provider>
@@ -230,6 +231,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imag" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="imag" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercici1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -572,14 +613,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="80" selection-start="695" selection-end="724" vertical-scroll-proportion="-11.875" vertical-offset="135" max-vertical-offset="810">
+        <state line="35" column="38" selection-start="1018" selection-end="1018" vertical-scroll-proportion="-16.25" vertical-offset="135" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/imag/exercici1/bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.48387095" vertical-offset="0" max-vertical-offset="3960">
+        <state line="14" column="4" selection-start="213" selection-end="213" vertical-scroll-proportion="0.32258064" vertical-offset="0" max-vertical-offset="4005">
           <folding />
         </state>
       </provider>

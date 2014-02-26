@@ -33,7 +33,7 @@
                     {if $prev_img > 0}
                         <a class="prev" href="{$url.global}/micos/{$prev_img}">Anterior</a>
                     {/if}
-                    {if $next_img < 10}
+                    {if $next_img < 11}
                         <a class="next" href="{$url.global}/micos/{$next_img}">Següent</a>
                     {/if}
                 </div>
