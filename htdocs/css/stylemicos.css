@@ -100,7 +100,7 @@ a.prev {
 
 .next::before {
 	background-color:#2591b4;
-	background-image:url(../images/right_arrow.png);
+	background-image:url(../imag/right_arrow.png);
 	background-repeat:no-repeat;
 	background-position:center center;
 	content:"";
@@ -183,7 +183,7 @@ a.prev {
 
 .prev::before {
 	background-color:#2591b4;
-	background-image:url(../images/left_arrow.png);
+	background-image:url(../imag/left_arrow.png);
 	background-repeat:no-repeat;
 	background-position:center center;
 	content:"";
