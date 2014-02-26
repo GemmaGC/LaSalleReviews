@@ -10,7 +10,7 @@ class Exercici1BotonsController extends Controller
     {
         $info = $this->getParams();
 
-        $img_anterior = 1;
+        $img_anterior = 0;
         $img_posterior = 2;
 
         $this->setLayout($this->view);

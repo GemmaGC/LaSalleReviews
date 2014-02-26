@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-26 13:28:39
+<?php /* Smarty version 2.6.14, created on 2014-02-26 15:29:41
          compiled from exercici1/micos.tpl */ ?>
 
     <!-- Això és un comentari HTML -->
