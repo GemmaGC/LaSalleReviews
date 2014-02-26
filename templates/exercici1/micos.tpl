@@ -23,16 +23,19 @@
 
             <div id="container">
 
+
+                <div class="container_buttons_retorn">
+                    <a class="retorn" href="{$url.global}/exercici1/home">Enrere</a>
+                </div>
+
                     <h1>Mico #{$act_img}</h1>
-                    <a class="retorn" href="{$url.global}/exercici1/home">Tornar a Exercici 1</a>
+
+
+
 
                     <section>
 
-
-
                         <div class="clr"></div>
-
-
 
                         <img class="img" id="img" src="{$url.global}/imag/exercici1/{$act_img}.jpg">
 

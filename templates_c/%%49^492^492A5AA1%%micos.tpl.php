@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-26 23:00:05
+<?php /* Smarty version 2.6.14, created on 2014-02-26 23:48:22
          compiled from exercici1/micos.tpl */ ?>
 
     <!-- Això és un comentari HTML -->
@@ -25,18 +25,21 @@
 
             <div id="container">
 
+
+                <div class="container_buttons_retorn">
+                    <a class="retorn" href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/exercici1/home">Enrere</a>
+                </div>
+
                     <h1>Mico #<?php echo $this->_tpl_vars['act_img']; ?>
 </h1>
-                    <a class="retorn" href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/exercici1/home">Tornar a Exercici 1</a>
+
+
+
 
                     <section>
 
-
-
                         <div class="clr"></div>
-
-
 
                         <img class="img" id="img" src="<?php echo $this->_tpl_vars['url']['global']; ?>
 /imag/exercici1/<?php echo $this->_tpl_vars['act_img']; ?>

@@ -30,11 +30,10 @@
         <br/>
         <p id = "info">En aquesta pàgina podràs veure imatges dels 10 micos més macos del món mundial. T'ho perdràs? No perdis ni un segon!</p>
 
-        <nav>
-            <ul>
-                <li><a href="{$url.global}/micos/1">Començar presentació</a></li>
-            </ul>
-        </nav>
+            <div class="container_buttons">
+               <a class="next" href="{$url.global}/micos/1">Començar</a>
+               <a class="prev" href="{$url.global}/home">Enrere</a>
+            </div>
 
 
         <div class="clear"></div>

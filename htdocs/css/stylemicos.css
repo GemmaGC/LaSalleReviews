@@ -30,7 +30,7 @@ h1{
 }
 
 a.next {
-	margin-left: 30px;
+	margin-left: 15px;
 }
 
 a.prev {
@@ -72,10 +72,16 @@ a.retorn {
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.09) inset;*/
 }
 
+
+.container_buttons_retorn {
+    position:absolute;
+
+}
+
 .next {
 	background-color:#3bb3e0;
 	font-family: 'Open Sans', sans-serif;
-	font-size:12px;
+	font-size:14px;
 	text-decoration:none;
 	color:#fff;
 	position:absolute;
@@ -159,7 +165,7 @@ a.retorn {
 .prev {
 	background-color:#3bb3e0;
 	font-family: 'Open Sans', sans-serif;
-	font-size:12px;
+	font-size:14px;
 	text-decoration:none;
 	color:#fff;
 	position:absolute;
@@ -238,11 +244,11 @@ a.retorn {
 	box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 }
 
-
-.return {
+/*
+.retorn {
     background-color:#3bb3e0;
     font-family: 'Open Sans', sans-serif;
-    font-size:12px;
+    font-size:14px;
     text-decoration:none;
     color:#fff;
     position:absolute;
@@ -270,7 +276,7 @@ a.retorn {
     box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
 }
 
-.return:active {
+.retorn:active {
     top:3px;
     background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
     background-image: -o-linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
@@ -290,7 +296,7 @@ a.retorn {
     box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
 }
 
-.return::before {
+.retorn::before {
     background-color:#2591b4;
     background-image:url(../imag/left_arrow.png);
     background-repeat:no-repeat;
@@ -312,7 +318,7 @@ a.retorn {
     box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
 }
 
-.return:active::before {
+.retorn:active::before {
     top:50%;
     margin-top:-12px;
     -webkit-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
@@ -320,7 +326,7 @@ a.retorn {
     -o-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
     box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 }
-
+*/
 
 footer
 {
