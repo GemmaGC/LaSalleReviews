@@ -1,26 +1,51 @@
-{$modules.head}
+
 
     <!-- Això és un comentari HTML -->
     {* Això és un comentari en Smarty *}
-    <div id="container">
+    <!DOCTYPE html>
+
+    <html>
+        <head>
+            <meta charset="UTF-8" />
+            <title>CSS buttons with pseudo-elements</title>
 
 
 
-        <section>
-            <div class="clr"></div>
-            <figure class="container_buttons">
-                <img src="hsdsd.jpg">
-            </figure>
-            <div class="container_buttons">
+            <link rel="stylesheet" type="text/css" href="css/stylemicos.css" />
 
-                <a class="prev" href="#">Anterior</a>
-                <a class="next" href="#">Següent</a>
+        </head>
 
-            </div>
-        </section>
+        <body>
+        <div class="main_header">
+            <header>
+                <div class="site-logo">EXERCICI 1</div>
+            </header>
+        </div>
+        <div id="container">
 
-    </div>
 
+
+            <section>
+                <div class="clr"></div>
+                <figure class="container_buttons">
+                    <img src="hsdsd.jpg">
+                </figure>
+                <div class="container_buttons">
+
+                    <a class="prev" href="#">Anterior</a>
+                    <a class="next" href="#">Següent</a>
+
+                </div>
+            </section>
+
+        </div>
+        <footer>
+            <p>La Salle - Universitat Ramon Llull - curs 2013 / 2014</p>
+        </footer>
+
+        </body>
+
+    </html>
 <!--
     <p id="components">Grup format per: CLAUDIA DAUDÉN, YLENIA GÓMEZ-RAYA i GEMMA GUITERAS</p>
     <br/>
@@ -38,7 +63,7 @@
 
 
     <div class="clear"></div>
-{$modules.footer}
+
 =======
 <!DOCTYPE html>
 

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/css/stylemicos.css" afterPath="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,37 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="50" selection-start="253" selection-end="253" vertical-scroll-proportion="0.25267994" vertical-offset="0" max-vertical-offset="653">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dispatcher.config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="20" selection-start="863" selection-end="874" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="495">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configure/base.config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="70" selection-start="1439" selection-end="1439" vertical-scroll-proportion="-21.958334" vertical-offset="73" max-vertical-offset="750">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.ctrl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="897" selection-end="897" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="585">
+            <state line="11" column="50" selection-start="253" selection-end="253" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="375">
               <folding />
             </state>
           </provider>
@@ -73,16 +48,16 @@
       <file leaf-file-name="micos.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1440">
+            <state line="17" column="14" selection-start="341" selection-end="341" vertical-scroll-proportion="-0.625" vertical-offset="240" max-vertical-offset="1815">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/shared/head.tpl">
+      <file leaf-file-name="stylemicos.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="465">
+            <state line="185" column="32" selection-start="6156" selection-end="6156" vertical-scroll-proportion="-0.5288035" vertical-offset="3133" max-vertical-offset="3810">
               <folding />
             </state>
           </provider>
@@ -110,6 +85,7 @@
         <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
         <option value="$PROJECT_DIR$/controllers/exercici1/micospetits.ctrl.php" />
         <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
+        <option value="$PROJECT_DIR$/htdocs/css/stylemicos.css" />
       </list>
     </option>
   </component>
@@ -246,6 +222,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -511,30 +509,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="20" selection-start="863" selection-end="874" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configure/base.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="70" selection-start="1439" selection-end="1439" vertical-scroll-proportion="-21.958334" vertical-offset="73" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="897" selection-end="897" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
@@ -546,9 +523,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="897" selection-end="897" vertical-scroll-proportion="0.5972435" vertical-offset="0" max-vertical-offset="653">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configure/base.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="70" selection-start="1439" selection-end="1439" vertical-scroll-proportion="0.8070444" vertical-offset="73" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="50" selection-start="253" selection-end="253" vertical-scroll-proportion="0.25267994" vertical-offset="0" max-vertical-offset="653">
+        <state line="11" column="50" selection-start="253" selection-end="253" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="14" selection-start="341" selection-end="341" vertical-scroll-proportion="-0.625" vertical-offset="240" max-vertical-offset="1815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/css/stylemicos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="32" selection-start="6156" selection-end="6156" vertical-scroll-proportion="-0.5288035" vertical-offset="3133" max-vertical-offset="3810">
           <folding />
         </state>
       </provider>
