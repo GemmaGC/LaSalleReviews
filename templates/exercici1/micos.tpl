@@ -19,15 +19,19 @@
                     <div class="site-logo">EXERCICI 1</div>
                 </header>
             </div>
-
-
-
+            <div class="clr"></div>
 
             <div id="container">
 
                     <h1>Mico #{$act_img}</h1>
+                    <a class="retorn" href="{$url.global}/exercici1/home">Tornar a Exercici 1</a>
+
                     <section>
+
+
+
                         <div class="clr"></div>
+
 
 
                         <img class="img" id="img" src="{$url.global}/imag/exercici1/{$act_img}.jpg">
@@ -43,6 +47,7 @@
                                 <a class="next" href="{$url.global}/micos/{$next_img}">Següent</a>
                             {/if}
                         </div>
+
                     </section>
 
                 </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-26 21:50:48
+<?php /* Smarty version 2.6.14, created on 2014-02-26 23:00:05
          compiled from exercici1/micos.tpl */ ?>
 
     <!-- Això és un comentari HTML -->
@@ -21,16 +21,21 @@
                     <div class="site-logo">EXERCICI 1</div>
                 </header>
             </div>
-
-
-
+            <div class="clr"></div>
 
             <div id="container">
 
                     <h1>Mico #<?php echo $this->_tpl_vars['act_img']; ?>
 </h1>
+                    <a class="retorn" href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/exercici1/home">Tornar a Exercici 1</a>
+
                     <section>
+
+
+
                         <div class="clr"></div>
+
 
 
                         <img class="img" id="img" src="<?php echo $this->_tpl_vars['url']['global']; ?>
@@ -52,6 +57,7 @@
 ">Següent</a>
                             <?php endif; ?>
                         </div>
+
                     </section>
 
                 </div>
