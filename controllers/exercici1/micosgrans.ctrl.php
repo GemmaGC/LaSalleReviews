@@ -8,7 +8,8 @@ class Exercici1MicosgransController extends Controller
 
     public function build()
     {
-        $info = $this->getParams();
+        $info = $this->getParams().args(0) = "imatge1";
+        echo '<pre>';print_r( $info );echo '</pre>';
         $this->setLayout($this->view);
 
     }

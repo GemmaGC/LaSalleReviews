@@ -10,7 +10,7 @@
     <nav>
         <ul>
             <li><a href="{$url.global}/micosPetits">MONOS PETITS</a></li>
-            <li><a href="{$url.global}/micosGrans">MONOS GRANS</a></li>
+            <li><a href="{$url.global}/micosGrans/imatge1">MONOS GRANS</a></li>
         </ul>
     </nav>
 
