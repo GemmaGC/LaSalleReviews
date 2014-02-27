@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-26 23:58:23
+<?php /* Smarty version 2.6.14, created on 2014-02-27 11:29:33
          compiled from exercici1/micos.tpl */ ?>
 
     <!DOCTYPE html>
@@ -27,7 +27,7 @@
                 <div class="button_retorn_container">
                     <div class="clr"></div>
                     <a class="retorn" href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/exercici1/home">Enrere</a>
+/exercici1/home"><< Enrere</a>
                 </div>
 
                     <h1>Mico #<?php echo $this->_tpl_vars['act_img']; ?>

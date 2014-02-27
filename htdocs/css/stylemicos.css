@@ -60,23 +60,18 @@ a.retorn {
 
 
 .container_buttons {
-
-    /*margin: 0 auto;*/
     position:absolute;
     left:110px;
     top:360px;
-	/*padding-top: 120px;*/
-	/*background: rgba(255,255,255,0.3);
-	padding: 30px 20px 30px 20px;
-	border-radius: 10px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,0.09) inset;*/
 }
 
 
-.container_buttons_retorn {
+.go_back_container {
     position:absolute;
-    left:550px;
-    top:190px;
+    width: 200px;
+    height: 100px;
+    left:50px;
+    top:100px;
 }
 
 .next {
@@ -244,8 +239,8 @@ a.retorn {
 	-o-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 	box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 }
-
 /*
+
 .retorn {
     background-color:#3bb3e0;
     font-family: 'Open Sans', sans-serif;
@@ -327,8 +322,8 @@ a.retorn {
     -o-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
     box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 }
-*/
 
+*/
 footer
 {
 	display: block;
@@ -363,4 +358,32 @@ footer
 	padding-top: 16px;
 	text-align: center;
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.9);
+}
+
+
+a.menu:link
+{
+    font-size: 16px;
+    color: black;
+    text-decoration:none;
+}
+
+a.menu:visited
+{
+    font-size: 16px;
+    color: black;
+    text-decoration:none;
+}
+
+a.menu:hover
+{
+    font-size: 16px;
+    color: #2E9AFE;
+}
+
+a.menu:active
+{
+    font-size: 16px;
+    color: black;
+    text-decoration:none;
 }

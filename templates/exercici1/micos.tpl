@@ -23,7 +23,7 @@
 
                 <div class="button_retorn_container">
                     <div class="clr"></div>
-                    <a class="retorn" href="{$url.global}/exercici1/home">Enrere</a>
+                    <a class="retorn" href="{$url.global}/exercici1/home"><< Enrere</a>
                 </div>
 
                     <h1>Mico #{$act_img}</h1>
