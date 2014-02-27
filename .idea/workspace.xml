@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="micos.ctrl.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="micos.ctrl.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="38" selection-start="738" selection-end="738" vertical-scroll-proportion="0.515625" vertical-offset="0" max-vertical-offset="660">
+            <state line="22" column="38" selection-start="738" selection-end="738" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="botons.ctrl.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="botons.ctrl.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="39" selection-start="980" selection-end="980" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="780">
+            <state line="19" column="72" selection-start="583" selection-end="583" vertical-scroll-proportion="0.4453125" vertical-offset="0" max-vertical-offset="780">
               <folding />
             </state>
           </provider>
@@ -97,8 +97,8 @@
         <option value="$PROJECT_DIR$/configure/dispatcher.config.php" />
         <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
         <option value="$PROJECT_DIR$/controllers/error/error404.ctrl.php" />
-        <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
         <option value="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" />
+        <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
       </list>
     </option>
   </component>
@@ -710,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="39" selection-start="980" selection-end="980" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="22" selection-start="452" selection-end="452" vertical-scroll-proportion="-12.666667" vertical-offset="26" max-vertical-offset="690">
@@ -726,7 +719,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="38" selection-start="738" selection-end="738" vertical-scroll-proportion="0.515625" vertical-offset="0" max-vertical-offset="660">
+        <state line="22" column="38" selection-start="738" selection-end="738" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="72" selection-start="583" selection-end="583" vertical-scroll-proportion="0.4453125" vertical-offset="0" max-vertical-offset="780">
           <folding />
         </state>
       </provider>
