@@ -47,7 +47,7 @@
       <file leaf-file-name="micos.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="34" selection-start="557" selection-end="557" vertical-scroll-proportion="0.19754978" vertical-offset="246" max-vertical-offset="1020">
+            <state line="25" column="67" selection-start="590" selection-end="590" vertical-scroll-proportion="0.19754978" vertical-offset="246" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -727,7 +727,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="34" selection-start="557" selection-end="557" vertical-scroll-proportion="0.19754978" vertical-offset="246" max-vertical-offset="1020">
+        <state line="25" column="67" selection-start="590" selection-end="590" vertical-scroll-proportion="0.19754978" vertical-offset="246" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
