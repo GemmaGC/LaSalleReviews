@@ -24,6 +24,7 @@ $config['home']					= 'HomeHomeController';
 $config['exercici1']		= 'Exercici1HomeController';
 $config['micos']	        = 'Exercici1MicosController';
 $config['micos']	        = 'Exercici1BotonsController';
+$config['error']	        = 'ErrorError404Controller';
 
 //----------------------------------------
 

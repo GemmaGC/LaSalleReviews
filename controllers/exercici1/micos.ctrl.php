@@ -4,7 +4,7 @@
  */
 class Exercici1MicosController extends Controller
 {
-    //protected $view = 'exercici1/micos.tpl';
+    protected $view = 'exercici1/micos.tpl';
     protected $view2 = 'error/error404.tpl';
 
     public function build()
@@ -13,9 +13,11 @@ class Exercici1MicosController extends Controller
 
         if($info[url_arguments][0] < 1 || $info[url_arguments][0] > 10){
             $this->assign('img', $info[url_arguments][0]);
-            //$this->setLayout($this->view);
+            echo '<pre>';print_r( $this->view );echo '</pre>';
+            $this->setLayout($this->view);
         }else{
             $this->setLayout($this->view2);
+            echo '<pre>';print_r( $this->view2 );echo '</pre>';
         }
 
     }
