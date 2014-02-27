@@ -23,7 +23,7 @@
 
                 <div class="button_retorn_container">
 
-                    <a class="retorn" href="{$url.global}/exercici1">Tornar al menú</a>
+                    <a class="prev" href="{$url.global}/exercici1">Tornar al menú</a>
                 </div>
 
                     <h1>Mico #{$act_img}</h1>
