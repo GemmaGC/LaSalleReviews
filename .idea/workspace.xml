@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fde1ad4-db3e-43e5-8a70-8bc58211c23b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="micos.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="micos.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="67" selection-start="590" selection-end="590" vertical-scroll-proportion="0.19754978" vertical-offset="246" max-vertical-offset="1020">
+            <state line="24" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="-4.75" vertical-offset="246" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -62,10 +61,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="home.ctrl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="54" selection-start="850" selection-end="850" vertical-scroll-proportion="-13.208333" vertical-offset="43" max-vertical-offset="660">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="dispatcher.config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="26" column="54" selection-start="950" selection-end="950" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="botons.ctrl.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="2" selection-start="514" selection-end="514" vertical-scroll-proportion="0.25931928" vertical-offset="110" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -96,10 +113,10 @@
         <option value="$PROJECT_DIR$/configure/dispatcher.config.php" />
         <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
         <option value="$PROJECT_DIR$/controllers/error/error404.ctrl.php" />
-        <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
         <option value="$PROJECT_DIR$/templates/error/error404.tpl" />
         <option value="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" />
         <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
+        <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
       </list>
     </option>
   </component>
@@ -669,23 +686,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="43" selection-start="627" selection-end="627" vertical-scroll-proportion="0.48622367" vertical-offset="0" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/error/error404.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="55" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0234375" vertical-offset="0" max-vertical-offset="640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="54" selection-start="850" selection-end="850" vertical-scroll-proportion="0.5625" vertical-offset="0" max-vertical-offset="660">
           <folding />
         </state>
       </provider>
@@ -711,6 +714,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="-4.75" vertical-offset="246" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="54" selection-start="850" selection-end="850" vertical-scroll-proportion="-13.208333" vertical-offset="43" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="5" selection-start="189" selection-end="189" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="285">
@@ -725,9 +742,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
+    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="67" selection-start="590" selection-end="590" vertical-scroll-proportion="0.19754978" vertical-offset="246" max-vertical-offset="1020">
+        <state line="18" column="2" selection-start="514" selection-end="514" vertical-scroll-proportion="0.25931928" vertical-offset="110" max-vertical-offset="750">
           <folding />
         </state>
       </provider>
