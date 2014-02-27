@@ -27,8 +27,8 @@ h1{
 .img{
     max-height: 224px;
     max-width: 289px;
-    border: 7px solid rgba(255, 255, 255, .6);;
     border-radius: 5px;
+    border: 7px solid rgba(255, 255, 255, .6);;
 }
 
 a.next {
@@ -241,7 +241,7 @@ a.retorn {
 	-o-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 	box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 }
-/*
+
 
 .retorn {
     background-color:#3bb3e0;
@@ -325,7 +325,7 @@ a.retorn {
     box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 }
 
-*/
+
 footer
 {
 	display: block;
@@ -362,7 +362,7 @@ footer
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.9);
 }
 
-
+/*
 a.menu:link
 {
     font-size: 16px;
@@ -389,3 +389,6 @@ a.menu:active
     color: black;
     text-decoration:none;
 }
+
+
+*/

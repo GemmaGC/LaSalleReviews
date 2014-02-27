@@ -22,8 +22,8 @@
 
 
                 <div class="button_retorn_container">
-                    <div class="clr"></div>
-                    <a class="retorn" href="{$url.global}/exercici1/home"><< Enrere</a>
+
+                    <a class="retorn" href="{$url.global}/exercici1/home">Tornar al menú</a>
                 </div>
 
                     <h1>Mico #{$act_img}</h1>
@@ -35,7 +35,7 @@
 
                         <div class="clr"></div>
 
-                        <img class="img" id="img" src="{$url.global}/imag/exercici1/{$act_img}.jpg">
+                        <img class="img" src="{$url.global}/imag/exercici1/{$act_img}.jpg">
 
                         <div class="container_buttons">
 
