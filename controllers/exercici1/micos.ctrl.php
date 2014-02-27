@@ -10,6 +10,7 @@ class Exercici1MicosController extends Controller
     public function build()
     {
         $info = $this->getParams();
+        echo '<pre>';print_r( $info );echo '</pre>';
 
         if($info[url_arguments][0] < 1 || $info[url_arguments][0] > 10){
             $this->assign('img', $info[url_arguments][0]);
