@@ -21,7 +21,7 @@
             <div id="container">
 
 
-                <div class="button_retorn_container">
+                <div>
 
                     <a class="retorn" href="{$url.global}/exercici1">Tornar al menú</a>
                 </div>
