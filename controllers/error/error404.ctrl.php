@@ -7,10 +7,11 @@ class ErrorError404Controller extends Controller
 
 	public function build( )
 	{
-        /*$info = $this->getParams();
-        if($info < 1 || $info > 10){
+        $info = $this->getParams();
 
-        }*/
+        if($info[url_arguments][1] < 1 || $info[url_arguments][1] > 10){
+            $this->setLayout( 'error/error404.tpl' );
+        }
 
         $this->setLayout( 'error/error404.tpl' );
 	}

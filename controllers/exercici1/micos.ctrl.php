@@ -1,18 +1,22 @@
 <?php
 /**
- * Micos Grans Controller: Controller dels micos grans.
+ * Micos Controller: Controller dels micos.
  */
 class Exercici1MicosController extends Controller
 {
-    protected $view = 'exercici1/micos.tpl';
+    //protected $view = 'exercici1/micos.tpl';
+    protected $view2 = 'error/error404.tpl';
 
     public function build()
     {
         $info = $this->getParams();
 
-        $this->setLayout($this->view);
-
-        $this->assign('img', $info[url_arguments][1]);
+        if($info[url_arguments][0] < 1 || $info[url_arguments][0] > 10){
+            $this->assign('img', $info[url_arguments][0]);
+            //$this->setLayout($this->view);
+        }else{
+            $this->setLayout($this->view2);
+        }
 
     }
 
@@ -23,9 +27,10 @@ class Exercici1MicosController extends Controller
      *
      * @return array
      */
-    public function loadModules() {
+    /*public function loadModules() {
         $modules['head']	= 'SharedHeadController';
         $modules['footer']	= 'SharedFooterController';
         return $modules;
     }
+    */
 }
