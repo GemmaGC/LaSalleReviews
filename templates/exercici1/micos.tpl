@@ -38,7 +38,7 @@
                         <div class="container_buttons">
 
                             {if $prev_img > 0}
-                                <a class="prev" href="{$url.global}/micos/{$prev_img}">Anterior</a>
+                                <a class="prev" href="{$url.global}/micos/{$prev_img}">{$anterior}</a>
                             {else}
                                 <a href=""></a>
                             {/if}

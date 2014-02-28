@@ -9,6 +9,8 @@ class Exercici1MicosController extends Controller
     public function build()
     {
         $this->setLayout($this->view);
+
+        $this->assign('anterior', 'Anterior');
     }
 
 }
