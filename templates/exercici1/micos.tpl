@@ -21,9 +21,13 @@
             <div id="container">
 
 
+<<<<<<< HEAD
+                <div>
+=======
                 <div class="go_back_container">
 
                     <a class="prev" href="{$url.global}/exercici1">Enrere</a>
+>>>>>>> 740523df4262d6b2829926de3a94f026f4ea0d2b
 
                 </div>
 
