@@ -10,7 +10,7 @@ class Exercici1MicosController extends Controller
     {
         $this->setLayout($this->view);
 
-        $this->assign('anterior', Anterior);
+        $this->assign('anterior', 'Anterior');
     }
 
 }
