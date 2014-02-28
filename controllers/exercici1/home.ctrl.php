@@ -19,7 +19,7 @@
             $this->assign('titol', 'EXERCICI 1');
             $this->assign('benv', "BENVINGUT A L'EXERCICI 1!");
             $this->assign('exp', "En aquesta pàgina podràs veure imatges dels 10 micos més macos del món mundial. T'ho perdràs? No perdis ni un segon!");
-            $this->assign('url', '/micos/1');
+            $this->assign('micos', '/micos/1');
             $this->assign('enr', '/home');
         }
 

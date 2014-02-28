@@ -31,7 +31,7 @@
         <p id = "info">{$exp}</p>
 
             <div class="container_buttons">
-               <a class="next" href={$url}>Començar</a>
+               <a class="next" href={$micos}>Començar</a>
                <a class="prev" href={$enr}>Enrere</a>
             </div>
 
