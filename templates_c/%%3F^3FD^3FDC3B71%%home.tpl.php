@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-28 10:08:33
+<?php /* Smarty version 2.6.14, created on 2014-02-28 10:12:39
          compiled from exercici1/home.tpl */ ?>
 
 <!-- Això és un comentari HTML -->
@@ -36,10 +36,10 @@
 </p>
 
             <div class="container_buttons">
-               <a class="next" href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/micos/1">Començar</a>
-               <a class="prev" href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/home">Enrere</a>
+               <a class="next" href=<?php echo $this->_tpl_vars['url']; ?>
+>Començar</a>
+               <a class="prev" href=<?php echo $this->_tpl_vars['enr']; ?>
+>Enrere</a>
             </div>
 
 
