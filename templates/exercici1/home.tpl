@@ -6,7 +6,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Benvingut a l'exercici 1</title>
+        <title>{$benv}</title>
 
         <link rel="stylesheet" type="text/css" href="{$url.global}/css/style.css" />
 
