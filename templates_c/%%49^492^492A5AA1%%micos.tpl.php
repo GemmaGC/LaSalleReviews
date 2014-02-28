@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<?php /* Smarty version 2.6.14, created on 2014-02-27 19:51:33
-=======
-<?php /* Smarty version 2.6.14, created on 2014-02-27 21:28:12
->>>>>>> 740523df4262d6b2829926de3a94f026f4ea0d2b
+<?php /* Smarty version 2.6.14, created on 2014-02-28 09:31:23
          compiled from exercici1/micos.tpl */ ?>
 
     <!DOCTYPE html>
@@ -27,15 +23,10 @@
 
             <div id="container">
 
-
-<<<<<<< HEAD
-                <div>
-=======
                 <div class="go_back_container">
 
                     <a class="prev" href="<?php echo $this->_tpl_vars['url']['global']; ?>
 /exercici1">Enrere</a>
->>>>>>> 740523df4262d6b2829926de3a94f026f4ea0d2b
 
                 </div>
 
