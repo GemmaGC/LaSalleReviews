@@ -16,6 +16,7 @@
         public function build()
         {
             $this->setLayout($this->view);
+            $this->assign('titol', 'EXERCICI 1');
         }
 
 

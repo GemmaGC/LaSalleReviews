@@ -16,7 +16,7 @@
 
     <div class="main_header">
         <header>
-            <div class="site-logo">EXERCICI 1</div>
+            <div class="site-logo">{$titol}</div>
         </header>
     </div>
 
