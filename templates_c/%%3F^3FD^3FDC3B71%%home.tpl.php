@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-27 19:23:18
+<?php /* Smarty version 2.6.14, created on 2014-02-28 10:03:24
          compiled from exercici1/home.tpl */ ?>
 
 <!-- Això és un comentari HTML -->
@@ -18,7 +18,8 @@
 
     <div class="main_header">
         <header>
-            <div class="site-logo">EXERCICI 1</div>
+            <div class="site-logo"><?php echo $this->_tpl_vars['titol']; ?>
+</div>
         </header>
     </div>
 
