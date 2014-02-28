@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-28 10:03:24
+<?php /* Smarty version 2.6.14, created on 2014-02-28 10:07:12
          compiled from exercici1/home.tpl */ ?>
 
 <!-- Això és un comentari HTML -->
@@ -27,11 +27,12 @@
 
 
         <div id = "success">
-            <p>BENVINGUT A L'EXERCICI 1!</p>
+            <p><?php echo $this->_tpl_vars['benv']; ?>
+</p>
         </div>
 
         <br/>
-        <p id = "info">En aquesta pàgina podràs veure imatges dels 10 micos més macos del món mundial. T'ho perdràs? No perdis ni un segon!</p>
+        <p id = "info"></p>
 
             <div class="container_buttons">
                <a class="next" href="<?php echo $this->_tpl_vars['url']['global']; ?>

@@ -28,7 +28,7 @@
         </div>
 
         <br/>
-        <p id = "info">En aquesta pàgina podràs veure imatges dels 10 micos més macos del món mundial. T'ho perdràs? No perdis ni un segon!</p>
+        <p id = "info"></p>
 
             <div class="container_buttons">
                <a class="next" href="{$url.global}/micos/1">Començar</a>

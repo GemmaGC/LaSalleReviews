@@ -18,6 +18,7 @@
             $this->setLayout($this->view);
             $this->assign('titol', 'EXERCICI 1');
             $this->assign('benv', "BENVINGUT A L'EXERCICI 1!");
+            $this->assign('exp', "dsfsd");
         }
 
 
