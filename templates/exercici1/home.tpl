@@ -28,7 +28,7 @@
         </div>
 
         <br/>
-        <p id = "info"></p>
+        <p id = "info">{$exp}</p>
 
             <div class="container_buttons">
                <a class="next" href="{$url.global}/micos/1">Començar</a>

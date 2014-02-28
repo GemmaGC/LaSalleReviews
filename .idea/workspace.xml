@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8603792b-306a-4b05-ab86-64f3d1a19be9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/home.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/home.tpl" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.ctrl.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.ctrl.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="150" selection-start="799" selection-end="799" vertical-scroll-proportion="0.4165316" vertical-offset="43" max-vertical-offset="705">
+            <state line="20" column="150" selection-start="799" selection-end="799" vertical-scroll-proportion="-10.708333" vertical-offset="43" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="23" selection-start="562" selection-end="562" vertical-scroll-proportion="-16.25" vertical-offset="60" max-vertical-offset="690">
+            <state line="30" column="29" selection-start="568" selection-end="568" vertical-scroll-proportion="0.61904764" vertical-offset="60" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
@@ -85,8 +85,8 @@
       <list>
         <option value="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" />
         <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
-        <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
         <option value="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" />
+        <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
       </list>
     </option>
   </component>
@@ -286,16 +286,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
+    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="23" selection-start="562" selection-end="562" vertical-scroll-proportion="-16.25" vertical-offset="60" max-vertical-offset="690">
+        <state line="20" column="150" selection-start="799" selection-end="799" vertical-scroll-proportion="-10.708333" vertical-offset="43" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
+    <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="150" selection-start="799" selection-end="799" vertical-scroll-proportion="0.4165316" vertical-offset="43" max-vertical-offset="705">
+        <state line="30" column="29" selection-start="568" selection-end="568" vertical-scroll-proportion="0.61904764" vertical-offset="60" max-vertical-offset="690">
           <folding />
         </state>
       </provider>
