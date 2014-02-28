@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8603792b-306a-4b05-ab86-64f3d1a19be9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +38,7 @@
       <file leaf-file-name="micos.ctrl.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="46" selection-start="276" selection-end="276" vertical-scroll-proportion="0.2857143" vertical-offset="0" max-vertical-offset="630">
+            <state line="12" column="42" selection-start="272" selection-end="272" vertical-scroll-proportion="0.2857143" vertical-offset="0" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -296,7 +295,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="46" selection-start="276" selection-end="276" vertical-scroll-proportion="0.2857143" vertical-offset="0" max-vertical-offset="630">
+        <state line="12" column="42" selection-start="272" selection-end="272" vertical-scroll-proportion="0.2857143" vertical-offset="0" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
