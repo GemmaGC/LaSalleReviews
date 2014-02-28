@@ -24,7 +24,7 @@
 
 
         <div id = "success">
-            <p>BENVINGUT A L'EXERCICI 1!</p>
+            <p>{$benv}</p>
         </div>
 
         <br/>
