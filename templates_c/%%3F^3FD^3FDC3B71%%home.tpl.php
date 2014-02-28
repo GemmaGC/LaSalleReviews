@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-28 10:14:33
+<?php /* Smarty version 2.6.14, created on 2014-02-28 10:16:21
          compiled from exercici1/home.tpl */ ?>
 
 <!-- Això és un comentari HTML -->
@@ -7,7 +7,8 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Benvingut a l'exercici 1</title>
+        <title><?php echo $this->_tpl_vars['benv']; ?>
+</title>
 
         <link rel="stylesheet" type="text/css" href="<?php echo $this->_tpl_vars['url']['global']; ?>
 /css/style.css" />
