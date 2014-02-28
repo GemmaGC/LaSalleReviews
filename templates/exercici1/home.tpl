@@ -31,8 +31,8 @@
         <p id = "info">{$exp}</p>
 
             <div class="container_buttons">
-               <a class="next" href="{$url.global}/micos/1">Començar</a>
-               <a class="prev" href="{$url.global}/home">Enrere</a>
+               <a class="next" href={$url}>Començar</a>
+               <a class="prev" href={$enr}>Enrere</a>
             </div>
 
 
