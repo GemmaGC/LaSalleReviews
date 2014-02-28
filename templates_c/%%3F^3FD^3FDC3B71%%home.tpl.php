@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-28 10:07:12
+<?php /* Smarty version 2.6.14, created on 2014-02-28 10:08:33
          compiled from exercici1/home.tpl */ ?>
 
 <!-- Això és un comentari HTML -->
@@ -32,7 +32,8 @@
         </div>
 
         <br/>
-        <p id = "info"></p>
+        <p id = "info"><?php echo $this->_tpl_vars['exp']; ?>
+</p>
 
             <div class="container_buttons">
                <a class="next" href="<?php echo $this->_tpl_vars['url']['global']; ?>

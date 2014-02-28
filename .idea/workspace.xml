@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8603792b-306a-4b05-ab86-64f3d1a19be9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/home.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/home.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%3F^3FD^3FDC3B71%%home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%3F^3FD^3FDC3B71%%home.tpl.php" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +37,7 @@
       <file leaf-file-name="home.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="29" selection-start="568" selection-end="568" vertical-scroll-proportion="0.61904764" vertical-offset="60" max-vertical-offset="690">
+            <state line="29" column="13" selection-start="538" selection-end="538" vertical-scroll-proportion="0.5952381" vertical-offset="60" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
@@ -295,7 +295,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="29" selection-start="568" selection-end="568" vertical-scroll-proportion="0.61904764" vertical-offset="60" max-vertical-offset="690">
+        <state line="29" column="13" selection-start="538" selection-end="538" vertical-scroll-proportion="0.5952381" vertical-offset="60" max-vertical-offset="690">
           <folding />
         </state>
       </provider>
