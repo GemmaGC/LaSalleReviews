@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-28 10:00:21
+<?php /* Smarty version 2.6.14, created on 2014-02-28 10:20:47
          compiled from exercici1/micos.tpl */ ?>
 
     <!DOCTYPE html>
@@ -6,7 +6,8 @@
     <html>
         <head>
             <meta charset="UTF-8" />
-            <title>Fotografies dels micos</title>
+            <title><?php echo $this->_tpl_vars['benv']; ?>
+</title>
 
             <link rel="stylesheet" type="text/css" href="<?php echo $this->_tpl_vars['url']['global']; ?>
 /css/stylemicos.css" />
@@ -17,7 +18,8 @@
 
             <div class="main_header">
                 <header>
-                    <div class="site-logo">EXERCICI 1</div>
+                    <div class="site-logo"><?php echo $this->_tpl_vars['titol']; ?>
+</div>
                 </header>
             </div>
 
@@ -47,14 +49,16 @@
                             <?php if ($this->_tpl_vars['prev_img'] > 0): ?>
                                 <a class="prev" href="<?php echo $this->_tpl_vars['url']['global']; ?>
 /micos/<?php echo $this->_tpl_vars['prev_img']; ?>
-">Anterior</a>
+"><?php echo $this->_tpl_vars['ant']; ?>
+</a>
                             <?php else: ?>
                                 <a href=""></a>
                             <?php endif; ?>
                             <?php if ($this->_tpl_vars['next_img'] < 11): ?>
                                 <a class="next" href="<?php echo $this->_tpl_vars['url']['global']; ?>
 /micos/<?php echo $this->_tpl_vars['next_img']; ?>
-">Següent</a>
+"><?php echo $this->_tpl_vars['seg']; ?>
+</a>
                             <?php endif; ?>
                         </div>
 
