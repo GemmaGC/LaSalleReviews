@@ -20,15 +20,13 @@
 
             <div id="container">
 
+                <div class="go_back_container">
 
-                <div>
+                    <a class="prev" href="{$url.global}/exercici1">Enrere</a>
 
-                    <a class="retorn" href="{$url.global}/exercici1">Tornar al menú</a>
                 </div>
 
                     <h1>Mico #{$act_img}</h1>
-
-
 
 
                     <section>
@@ -40,7 +38,7 @@
                         <div class="container_buttons">
 
                             {if $prev_img > 0}
-                                <a class="prev" href="{$url.global}/micos/{$prev_img}">Anterior</a>
+                                <a class="prev" href="{$url.global}/micos/{$prev_img}">{$anterior}</a>
                             {else}
                                 <a href=""></a>
                             {/if}
