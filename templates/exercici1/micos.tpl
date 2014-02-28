@@ -4,7 +4,7 @@
     <html>
         <head>
             <meta charset="UTF-8" />
-            <title>Fotografies dels micos</title>
+            <title>{$benv}</title>
 
             <link rel="stylesheet" type="text/css" href="{$url.global}/css/stylemicos.css" />
 
@@ -14,7 +14,7 @@
 
             <div class="main_header">
                 <header>
-                    <div class="site-logo">EXERCICI 1</div>
+                    <div class="site-logo">{$titol}</div>
                 </header>
             </div>
 
@@ -38,12 +38,12 @@
                         <div class="container_buttons">
 
                             {if $prev_img > 0}
-                                <a class="prev" href="{$url.global}/micos/{$prev_img}">Anterior</a>
+                                <a class="prev" href="{$url.global}/micos/{$prev_img}">{$ant}</a>
                             {else}
                                 <a href=""></a>
                             {/if}
                             {if $next_img < 11}
-                                <a class="next" href="{$url.global}/micos/{$next_img}">Següent</a>
+                                <a class="next" href="{$url.global}/micos/{$next_img}">{$seg}</a>
                             {/if}
                         </div>
 
