@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-28 09:50:41
+<?php /* Smarty version 2.6.14, created on 2014-02-28 10:00:21
          compiled from exercici1/micos.tpl */ ?>
 
     <!DOCTYPE html>
@@ -26,8 +26,7 @@
                 <div class="go_back_container">
 
                     <a class="prev" href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/exercici1"><?php echo $this->_tpl_vars['enr']; ?>
-</a>
+/exercici1">Enrere</a>
 
                 </div>
 
@@ -48,16 +47,14 @@
                             <?php if ($this->_tpl_vars['prev_img'] > 0): ?>
                                 <a class="prev" href="<?php echo $this->_tpl_vars['url']['global']; ?>
 /micos/<?php echo $this->_tpl_vars['prev_img']; ?>
-"><?php echo $this->_tpl_vars['ant']; ?>
-</a>
+">Anterior</a>
                             <?php else: ?>
                                 <a href=""></a>
                             <?php endif; ?>
                             <?php if ($this->_tpl_vars['next_img'] < 11): ?>
                                 <a class="next" href="<?php echo $this->_tpl_vars['url']['global']; ?>
 /micos/<?php echo $this->_tpl_vars['next_img']; ?>
-"><?php echo $this->_tpl_vars['seg']; ?>
-</a>
+">Següent</a>
                             <?php endif; ?>
                         </div>
 

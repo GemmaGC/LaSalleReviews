@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8603792b-306a-4b05-ab86-64f3d1a19be9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
     </list>
     <ignored path="g1.iws" />
@@ -46,7 +47,7 @@
       <file leaf-file-name="micos.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="88" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.45238096" vertical-offset="315" max-vertical-offset="990">
+            <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -284,7 +285,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="88" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.45238096" vertical-offset="315" max-vertical-offset="990">
+        <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
