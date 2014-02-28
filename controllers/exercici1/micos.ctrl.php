@@ -5,17 +5,18 @@
 class Exercici1MicosController extends Controller
 {
     protected $view = 'exercici1/micos.tpl';
+    protected $text;
 
     public function build()
     {
         $this->setLayout($this->view);
 
-        $text = "Enrere";
-        $this->assign('enr', $text);
-        $text = "Anterior";
-        $this->assign('ant', $text);
-        $text = "Següent";
-        $this->assign('seg', $text);
+        $this->text = 'Enrere';
+        $this->assign('enr', $this->text);
+        $this->text = 'Anterior';
+        $this->assign('ant', $this->text);
+        $this->text = 'Següent';
+        $this->assign('seg', $this->text);
     }
 
 }
