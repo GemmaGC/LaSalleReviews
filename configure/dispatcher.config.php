@@ -17,8 +17,8 @@
  * 		-> Cal que "HolaIndexController" estigui declarada dins del fitxer "dispatcher.config.php"
  * 
  */
-$config['default']				= 'HomeHomeController';
-$config['home']					= 'HomeHomeController';
+$config['default']			= 'HomeHomeController';
+$config['home']				= 'HomeHomeController';
 
 $config['error']	        = 'ErrorError404Controller';
 
@@ -30,4 +30,6 @@ $config['micos']	        = 'Exercici1BotonsController';
 
 //----------- EXERCICI 2 -----------------
 $config['exercici2']		= 'Exercici2HomeController';
+$config['show']		        = 'ShowExercici2Controller';
+$config['import']		    = 'ImportExercici2Controller';
 //----------------------------------------

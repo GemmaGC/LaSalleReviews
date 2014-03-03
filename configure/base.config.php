@@ -51,5 +51,7 @@ $config['Exercici1MicosController']		= PATH_CONTROLLERS . 'exercici1/micos.ctrl.
 //Controllers exercici 2
 
 $config['Exercici2HomeController']		= PATH_CONTROLLERS . 'exercici2/home.ctrl.php';
+$config['ShowExercici2Controller']		= PATH_CONTROLLERS . 'exercici2/show.ctrl.php';
+$config['ImportExercici2Controller']	= PATH_CONTROLLERS . 'exercici2/import.ctrl.php';
 
 //----------------------------------------
