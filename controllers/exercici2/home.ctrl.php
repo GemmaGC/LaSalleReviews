@@ -11,7 +11,12 @@
          */
         public function build()
         {
+            $info = $this->getParams();
+
             $this->setLayout($this->view);
+            $this->assign('css', '/css/style.css');
+            $this->assign('afegir', '/import');
+            $this->assign('enr', '/home');
         }
 
 
