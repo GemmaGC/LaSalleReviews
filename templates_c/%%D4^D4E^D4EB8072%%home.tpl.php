@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-03 16:26:05
+<?php /* Smarty version 2.6.14, created on 2014-03-03 16:41:58
          compiled from exercici2/home.tpl */ ?>
 <!DOCTYPE html>
 
@@ -8,7 +8,7 @@
         <title>PROJECTES WEB</title>
 
         <link rel="stylesheet" type="text/css" href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/css/style.css" />
+/css/stylebbdd.css" />
 
     </head>
 
