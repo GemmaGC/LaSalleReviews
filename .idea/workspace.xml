@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8603792b-306a-4b05-ab86-64f3d1a19be9" name="Default" comment="">
-<<<<<<< HEAD
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%F8^F8A^F8A868DB%%error404.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%F8^F8A^F8A868DB%%error404.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/error/error404.tpl" afterPath="$PROJECT_DIR$/templates/error/error404.tpl" />
->>>>>>> 5dda6cacf2ad054533b1e9f7d7c227475d112587
-    </list>
+    <list default="true" id="124fcade-8326-4cfc-8b14-464f56580961" name="Default" comment="" />
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,102 +21,8 @@
   <component name="FavoritesManager">
     <favorites_list name="g1" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-<<<<<<< HEAD
-      <file leaf-file-name="micos.ctrl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="30" selection-start="64" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="360">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="micos.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="-3.75" vertical-offset="270" max-vertical-offset="990">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.config.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/configure/base.config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.18730159" vertical-offset="118" max-vertical-offset="750">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dispatcher.config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="55" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="540">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.ctrl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="42" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="735">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="botons.ctrl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="37" selection-start="728" selection-end="728" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="750">
-=======
-      <file leaf-file-name="error404.tpl" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/error/error404.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.046875" vertical-offset="0" max-vertical-offset="640">
->>>>>>> 5dda6cacf2ad054533b1e9f7d7c227475d112587
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindManager">
-    <FindUsagesManager>
-      <setting name="OPEN_NEW_TAB" value="false" />
-    </FindUsagesManager>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="changedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" />
-        <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
-        <option value="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/configure/dispatcher.config.php" />
-        <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
-=======
-        <option value="$PROJECT_DIR$/templates/error/error404.tpl" />
->>>>>>> 5dda6cacf2ad054533b1e9f7d7c227475d112587
-      </list>
-    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -168,112 +66,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercici1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="error" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercici1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="configure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -287,38 +79,34 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8603792b-306a-4b05-ab86-64f3d1a19be9" name="Default" comment="" />
-      <created>1393576111144</created>
-      <updated>1393576111144</updated>
+      <changelist id="124fcade-8326-4cfc-8b14-464f56580961" name="Default" comment="" />
+      <created>1393859064244</created>
+      <updated>1393859064244</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1276" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18416801" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18103448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> 5dda6cacf2ad054533b1e9f7d7c227475d112587
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -336,143 +124,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
-<<<<<<< HEAD
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="64" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="55" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="540">
-=======
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="315">
->>>>>>> 5dda6cacf2ad054533b1e9f7d7c227475d112587
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="8" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="42" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="735">
-=======
-        <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="990">
->>>>>>> 5dda6cacf2ad054533b1e9f7d7c227475d112587
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="37" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="750">
-<<<<<<< HEAD
-=======
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="835" selection-end="835" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="735" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.1904762" vertical-offset="0" max-vertical-offset="690" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.16079633" vertical-offset="0" max-vertical-offset="653">
->>>>>>> 5dda6cacf2ad054533b1e9f7d7c227475d112587
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="8" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="55" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="42" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0" vertical-offset="94" max-vertical-offset="735">
-=======
-        <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="0.035222054" vertical-offset="337" max-vertical-offset="990">
->>>>>>> 5dda6cacf2ad054533b1e9f7d7c227475d112587
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="37" selection-start="728" selection-end="728" vertical-scroll-proportion="0.390625" vertical-offset="110" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/error/error404.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="4" column="30" selection-start="64" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="-3.75" vertical-offset="270" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="37" selection-start="728" selection-end="728" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configure/base.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.18730159" vertical-offset="118" max-vertical-offset="750">
-=======
-        <state line="2" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.046875" vertical-offset="0" max-vertical-offset="640">
->>>>>>> 5dda6cacf2ad054533b1e9f7d7c227475d112587
-          <folding />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
 
