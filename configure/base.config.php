@@ -46,3 +46,10 @@ $config['Exercici1BotonsController']	= PATH_CONTROLLERS . 'exercici1/botons.ctrl
 $config['Exercici1MicosController']		= PATH_CONTROLLERS . 'exercici1/micos.ctrl.php';
 
 //----------------------------------------
+
+//----------- EXERCICI 2 -----------------
+//Controllers exercici 2
+
+$config['Exercici2HomeController']		= PATH_CONTROLLERS . 'exercici2/home.ctrl.php';
+
+//----------------------------------------
