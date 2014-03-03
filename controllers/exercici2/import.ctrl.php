@@ -8,7 +8,7 @@
  */
 class ImportExercici2Controller extends Controller
 {
-    protected $view = 'exercici2/home.tpl';
+    protected $view = 'exercici2/afegeix.tpl';
 
     /**
      * Aquest m�tode sempre s'executa i caldr� implementar-lo sempre.

@@ -28,7 +28,7 @@
         <p id = "info">{$exp}</p>
 
         <div class="container_buttons">
-            <a class="next" href={$micos}>Afegir_Imatge</a>
+            <a class="next" href={$afegir}>Afegir_Imatge</a>
             <a class="prev" href={$enr}>Enrere</a>
         </div>
 
