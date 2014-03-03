@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-03 16:36:18
+<?php /* Smarty version 2.6.14, created on 2014-03-03 16:41:51
          compiled from exercici2/home.tpl */ ?>
 <!DOCTYPE html>
 
@@ -7,8 +7,8 @@
         <meta charset="UTF-8" />
         <title>PROJECTES WEB</title>
 
-        <link rel="stylesheet" type="text/css" href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/css/style.css" />
+        <link rel="stylesheet" type="text/css" href=<?php echo $this->_tpl_vars['css']; ?>
+ />
 
     </head>
 
@@ -37,8 +37,6 @@
             <a class="prev" href=<?php echo $this->_tpl_vars['enr']; ?>
 >Enrere</a>
         </div>
-
-
 
         <div class="clear"></div>
     </div>
