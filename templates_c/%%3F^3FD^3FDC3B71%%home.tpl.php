@@ -1,7 +1,6 @@
-<?php /* Smarty version 2.6.14, created on 2014-02-28 10:16:21
+<?php /* Smarty version 2.6.14, created on 2014-03-03 15:57:44
          compiled from exercici1/home.tpl */ ?>
 
-<!-- Això és un comentari HTML -->
 <!DOCTYPE html>
 
 <html>
