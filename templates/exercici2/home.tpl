@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{$benv}</title>
+        <title>PROJECTES WEB</title>
 
         <link rel="stylesheet" type="text/css" href="{$url.global}/css/style.css" />
 
@@ -13,7 +13,7 @@
 
     <div class="main_header">
         <header>
-            <div class="site-logo">{$titol}</div>
+            <div class="site-logo">EXERCICI 2</div>
         </header>
     </div>
 
@@ -21,32 +21,19 @@
 
 
         <div id = "success">
-            <p>{$benv}</p>
+            <p>HOME EXERCICI 2</p>
         </div>
 
-        <form>
-            <fieldset>
-                <div>
-                    <label>Nom Imatge</label>
-                    <input type="text" name="name" required>
-                </div>
+        <br/>
+        <p id = "info">{$exp}</p>
 
-                <div>
-                    <label>Direcció Web Imatge</label>
-                    <input type="url" name="url" placeholder="http://yourweb.dom" required>
-                </div>
+        <div class="container_buttons">
+            <a class="next" href={$micos}>Afegir_Imatge</a>
+            <a class="prev" href={$enr}>Enrere</a>
+        </div>
 
-                <div>
-                    <label>Your Message</label>
-                    <textarea></textarea>
-                </div>
 
-                <button type="submit">Send Message</button>
-
-            </fieldset>
-
-        </form>
 
         <div class="clear"></div>
-
+    </div>
 {$modules.footer}
