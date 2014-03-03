@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="124fcade-8326-4cfc-8b14-464f56580961" name="Default" comment="" />
-=======
-    <list default="true" id="8603792b-306a-4b05-ab86-64f3d1a19be9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%13^13E^13E2CA0E%%home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%13^13E^13E2CA0E%%home.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%3F^3FD^3FDC3B71%%home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%3F^3FD^3FDC3B71%%home.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/home.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/home.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home/home.tpl" afterPath="$PROJECT_DIR$/templates/home/home.tpl" />
+    <list default="true" id="124fcade-8326-4cfc-8b14-464f56580961" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/exercici2/home.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configure/dispatcher.config.php" afterPath="$PROJECT_DIR$/configure/dispatcher.config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
->>>>>>> 1c4fe12dae7581e730807f73db0c7c36de28e672
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,62 +25,30 @@
   <component name="FavoritesManager">
     <favorites_list name="g1" />
   </component>
-<<<<<<< HEAD
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-=======
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.tpl" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/exercici2/home.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="41" selection-start="930" selection-end="930" vertical-scroll-proportion="0.7013782" vertical-offset="142" max-vertical-offset="855">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="botons.ctrl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="694" selection-end="694" vertical-scroll-proportion="-12.5" vertical-offset="45" max-vertical-offset="750">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.ctrl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
+        <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="32" selection-start="835" selection-end="835" vertical-scroll-proportion="-10.166667" vertical-offset="71" max-vertical-offset="735">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="micos.ctrl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
+      <file leaf-file-name="dispatcher.config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="330">
+            <state line="31" column="54" selection-start="1089" selection-end="1089" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home/home.tpl">
+      <file leaf-file-name="home.ctrl.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/exercici2/home.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="87" selection-start="502" selection-end="502" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="17" selection-start="1" selection-end="714" vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="660">
+            <state line="6" column="36" selection-start="156" selection-end="156" vertical-scroll-proportion="0.1458671" vertical-offset="0" max-vertical-offset="617">
               <folding />
             </state>
           </provider>
@@ -106,18 +67,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
-        <option value="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" />
-        <option value="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" />
-        <option value="$PROJECT_DIR$/templates/error/error404.tpl" />
-        <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
-        <option value="$PROJECT_DIR$/templates/home/home.tpl" />
-        <option value="$PROJECT_DIR$/templates/exercici2/home.tpl" />
-        <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
+        <option value="$PROJECT_DIR$/configure/dispatcher.config.php" />
+        <option value="$PROJECT_DIR$/controllers/exercici2/home.ctrl.php" />
       </list>
     </option>
   </component>
->>>>>>> 1c4fe12dae7581e730807f73db0c7c36de28e672
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="4" />
@@ -151,6 +105,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -159,8 +114,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-<<<<<<< HEAD
-=======
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="g1" />
@@ -182,24 +135,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -231,42 +166,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercici1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="error" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -285,40 +184,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="exercici1" />
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
->>>>>>> 1c4fe12dae7581e730807f73db0c7c36de28e672
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercici2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="124fcade-8326-4cfc-8b14-464f56580961" name="Default" comment="" />
@@ -329,18 +254,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1276" height="774" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18025078" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> 1c4fe12dae7581e730807f73db0c7c36de28e672
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -371,90 +292,35 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
-<<<<<<< HEAD
-=======
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/error/error404.tpl">
+    <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="990" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="37" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="0.035222054" vertical-offset="337" max-vertical-offset="990" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/error/error404.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.046875" vertical-offset="0" max-vertical-offset="640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="17" selection-start="1" selection-end="714" vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="87" selection-start="502" selection-end="502" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="330">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="835" selection-end="835" vertical-scroll-proportion="-10.166667" vertical-offset="71" max-vertical-offset="735">
+        <state line="24" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="0.5834684" vertical-offset="0" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
+    <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="694" selection-end="694" vertical-scroll-proportion="-12.5" vertical-offset="45" max-vertical-offset="750">
+        <state line="31" column="54" selection-start="1089" selection-end="1089" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici2/home.tpl">
+    <entry file="file://$PROJECT_DIR$/controllers/exercici2/home.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="41" selection-start="930" selection-end="930" vertical-scroll-proportion="0.7013782" vertical-offset="142" max-vertical-offset="855">
+        <state line="6" column="36" selection-start="156" selection-end="156" vertical-scroll-proportion="0.1458671" vertical-offset="0" max-vertical-offset="617">
           <folding />
         </state>
       </provider>
     </entry>
   </component>
->>>>>>> 1c4fe12dae7581e730807f73db0c7c36de28e672
 </project>
 
