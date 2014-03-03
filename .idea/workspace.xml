@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8603792b-306a-4b05-ab86-64f3d1a19be9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%F8^F8A^F8A868DB%%error404.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%F8^F8A^F8A868DB%%error404.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/error/error404.tpl" afterPath="$PROJECT_DIR$/templates/error/error404.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%13^13E^13E2CA0E%%home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%13^13E^13E2CA0E%%home.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%3F^3FD^3FDC3B71%%home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%3F^3FD^3FDC3B71%%home.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/home.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/home.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home/home.tpl" afterPath="$PROJECT_DIR$/templates/home/home.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +30,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="error404.tpl" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/error/error404.tpl">
+      <file leaf-file-name="home.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/exercici2/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.046875" vertical-offset="0" max-vertical-offset="640">
+            <state line="40" column="41" selection-start="930" selection-end="930" vertical-scroll-proportion="0.7013782" vertical-offset="142" max-vertical-offset="855">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="botons.ctrl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="694" selection-end="694" vertical-scroll-proportion="-12.5" vertical-offset="45" max-vertical-offset="750">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.ctrl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="32" selection-start="835" selection-end="835" vertical-scroll-proportion="-10.166667" vertical-offset="71" max-vertical-offset="735">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="micos.ctrl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="330">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/home/home.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="87" selection-start="502" selection-end="502" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="450">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="17" selection-start="1" selection-end="714" vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
@@ -50,9 +99,12 @@
       <list>
         <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
         <option value="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" />
-        <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
         <option value="$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php" />
         <option value="$PROJECT_DIR$/templates/error/error404.tpl" />
+        <option value="$PROJECT_DIR$/templates/exercici1/home.tpl" />
+        <option value="$PROJECT_DIR$/templates/home/home.tpl" />
+        <option value="$PROJECT_DIR$/templates/exercici2/home.tpl" />
+        <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
       </list>
     </option>
   </component>
@@ -118,6 +170,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercici2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -201,6 +289,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8603792b-306a-4b05-ab86-64f3d1a19be9" name="Default" comment="" />
@@ -218,7 +323,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18103448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18025078" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -250,6 +355,13 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/error/error404.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="44" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="315">
@@ -259,9 +371,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="990">
-          <folding />
-        </state>
+        <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="990" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
@@ -271,40 +381,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
+    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="835" selection-end="835" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="735" />
+        <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="0.035222054" vertical-offset="337" max-vertical-offset="990" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
+    <entry file="file://$PROJECT_DIR$/templates/error/error404.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.1904762" vertical-offset="0" max-vertical-offset="690" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.16079633" vertical-offset="0" max-vertical-offset="653">
+        <state line="2" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.046875" vertical-offset="0" max-vertical-offset="640">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
+    <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="73" selection-start="589" selection-end="589" vertical-scroll-proportion="0.035222054" vertical-offset="337" max-vertical-offset="990">
+        <state line="38" column="17" selection-start="1" selection-end="714" vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="87" selection-start="502" selection-end="502" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/exercici1/micos.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="32" selection-start="835" selection-end="835" vertical-scroll-proportion="-10.166667" vertical-offset="71" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="37" selection-start="728" selection-end="728" vertical-scroll-proportion="0.390625" vertical-offset="110" max-vertical-offset="750">
+        <state line="23" column="0" selection-start="694" selection-end="694" vertical-scroll-proportion="-12.5" vertical-offset="45" max-vertical-offset="750">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/error/error404.tpl">
+    <entry file="file://$PROJECT_DIR$/templates/exercici2/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="0.046875" vertical-offset="0" max-vertical-offset="640">
+        <state line="40" column="41" selection-start="930" selection-end="930" vertical-scroll-proportion="0.7013782" vertical-offset="142" max-vertical-offset="855">
           <folding />
         </state>
       </provider>

@@ -1,6 +1,4 @@
 
-<!-- Això és un comentari HTML -->
-{* Això és un comentari en Smarty *}
 <!DOCTYPE html>
 
 <html>

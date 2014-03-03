@@ -14,7 +14,7 @@
 	<nav>
 		<ul>
 			<li><a class="menu" href="{$url.global}/exercici1">EXERCICI 1: MONOS</a></li>
-			<li><a class="menu" href="">EXERCICI 2: PRÒXIMAMENT</a></li>
+			<li><a class="menu" href="{$url.global}/exercici2">EXERCICI 2: MONOS + BBDD</a></li>
 			<li><a class="menu" href="">EXERCICI 3: PRÒXIMAMENT</a></li>
 			<li><a class="menu" href="">EXERCICI 4: PRÒXIMAMENT</a></li>
 		</ul>
