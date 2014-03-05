@@ -20,6 +20,7 @@ class Exercici1BotonsController extends Controller
         if($info['url_arguments'][0] < 1 || $info['url_arguments'][0] > 10){
             $this->setLayout($this->view2);
         }else{
+
             $this->setLayout($this->view);
 
             $this->assign('exercici', '/exercici1');
