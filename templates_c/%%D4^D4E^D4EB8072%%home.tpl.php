@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-03 16:41:58
+<?php /* Smarty version 2.6.14, created on 2014-03-05 19:01:18
          compiled from exercici2/home.tpl */ ?>
 <!DOCTYPE html>
 
@@ -7,8 +7,8 @@
         <meta charset="UTF-8" />
         <title>PROJECTES WEB</title>
 
-        <link rel="stylesheet" type="text/css" href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/css/stylebbdd.css" />
+        <link rel="stylesheet" type="text/css" href=<?php echo $this->_tpl_vars['css']; ?>
+ />
 
     </head>
 
@@ -27,16 +27,22 @@
             <p>HOME EXERCICI 2</p>
         </div>
 
-        <br/>
+
+        <ul>
+            <li><a class="menu" href=<?php echo $this->_tpl_vars['afegir']; ?>
+>Afegeix Foto a la BBDD</a></li>
+            <li><a class="menu" href=<?php echo $this->_tpl_vars['mostrar']; ?>
+>Mostrar Fotos de la BBDD</a></li>
+        </ul>
+
         <p id = "info"><?php echo $this->_tpl_vars['exp']; ?>
 </p>
 
         <div class="container_buttons">
-            <a class="next" href=<?php echo $this->_tpl_vars['micos']; ?>
->Afegir_Imatge</a>
             <a class="prev" href=<?php echo $this->_tpl_vars['enr']; ?>
 >Enrere</a>
         </div>
+
 
 
 
