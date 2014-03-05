@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="124fcade-8326-4cfc-8b14-464f56580961" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%1A^1A2^1A2009D1%%afegeix.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%1A^1A2^1A2009D1%%afegeix.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici2/afegeix.tpl" afterPath="$PROJECT_DIR$/templates/exercici2/afegeix.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/exercici2/importa.model.php" afterPath="$PROJECT_DIR$/models/exercici2/importa.model.php" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,10 +34,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="afegeix.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="afegeix.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/exercici2/afegeix.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.39356816" vertical-offset="133" max-vertical-offset="810">
+            <state line="26" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="importa.model.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/exercici2/importa.model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="40" selection-start="140" selection-end="140" vertical-scroll-proportion="0.22970903" vertical-offset="0" max-vertical-offset="653">
               <folding />
             </state>
           </provider>
@@ -79,6 +86,7 @@
         <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
         <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
         <option value="$PROJECT_DIR$/templates/exercici2/afegeix.tpl" />
+        <option value="$PROJECT_DIR$/models/exercici2/importa.model.php" />
       </list>
     </option>
   </component>
@@ -130,6 +138,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -211,57 +237,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="exercici2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercici1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="g1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="configure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -368,11 +348,6 @@
         <state line="10" column="32" selection-start="299" selection-end="299" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="585" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/exercici2/importa.model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="631" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="62" selection-start="711" selection-end="711" vertical-scroll-proportion="0.5050505" vertical-offset="0" max-vertical-offset="735" />
@@ -431,7 +406,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici2/afegeix.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="0.39356816" vertical-offset="133" max-vertical-offset="810">
+        <state line="26" column="0" selection-start="408" selection-end="408" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/exercici2/importa.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="40" selection-start="140" selection-end="140" vertical-scroll-proportion="0.22970903" vertical-offset="0" max-vertical-offset="653">
           <folding />
         </state>
       </provider>
