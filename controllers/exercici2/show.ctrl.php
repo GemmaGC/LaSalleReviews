@@ -6,7 +6,7 @@
  * 	-> El controller fa un "extends Controller"
  * 	-> El controller necessitar� sempre un m�tode "public function build(){...}"
  */
-class ShowExercici2Controller extends Controller
+class Exercici2ShowController extends Controller
 {
     protected $view = 'exercici1/micos.tpl';
     protected $view2 = 'error/error404.tpl';
@@ -16,7 +16,7 @@ class ShowExercici2Controller extends Controller
      */
     public function build()
     {
-        
+
         $info = $this->getParams();
         $min = 1;
         $max = 10;
