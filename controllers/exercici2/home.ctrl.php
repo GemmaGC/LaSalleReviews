@@ -16,6 +16,7 @@
             $this->setLayout($this->view);
             $this->assign('css', '/css/style.css');
             $this->assign('afegir', '/afegeix');
+            $this->assign('mostrar', '/mostra');
             $this->assign('enr', '/home');
         }
 
