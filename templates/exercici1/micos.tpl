@@ -22,7 +22,7 @@
 
                 <div class="go_back_container">
 
-                    <a class="prev" href="{$url.global}/exercici1">Enrere</a>
+                    <a class="prev" href="{$exercici}">Enrere</a>
 
                 </div>
 
@@ -33,17 +33,17 @@
 
                         <div class="clr"></div>
 
-                        <img class="img" src="{$url.global}/imag/exercici1/{$act_img}.jpg">
+                        <img class="img" src="{$act_url}">
 
                         <div class="container_buttons">
 
                             {if $prev_img > 0}
-                                <a class="prev" href="{$url.global}/micos/{$prev_img}">Anterior</a>
+                                <a class="prev" href="{$prev_url}">Anterior</a>
                             {else}
                                 <a href=""></a>
                             {/if}
                             {if $next_img < 11}
-                                <a class="next" href="{$url.global}/micos/{$next_img}">Següent</a>
+                                <a class="next" href="{$next_url}">Següent</a>
                             {/if}
                         </div>
 
