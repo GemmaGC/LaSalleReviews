@@ -29,10 +29,10 @@
         <fieldset>
             <legend>Introdueix les dades:</legend>
 
-            <label for="nom">Email</label>
+            <label for="nom">Nom de la Imatge</label>
             <input id="nom" type="text" placeholder="Nom de la imatge..." required>
-
-            <label for="url">Password</label>
+            <br/>
+            <label for="url">Adreça de la Imatge</label>
             <input id="url" type="url" placeholder="http://yourweb.dom" required>
 
             <button type="submit" class="EnviaInfo">Envia</button>
