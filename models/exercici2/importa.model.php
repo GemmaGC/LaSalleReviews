@@ -7,6 +7,15 @@
  */
 
 
-/**
- *  INSERT sjabfj, hsajkf INTO jfdskwfbs
- */
+
+class Exercici2ImportaModel extends Model{
+
+
+
+    //$home_model = $this->
+
+    //$nomImatge = Filter::getString('nomImg');
+    //$urlImatge = Filter::getString('urlImg');
+
+
+}
