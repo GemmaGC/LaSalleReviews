@@ -6,22 +6,42 @@
  * 	-> El controller fa un "extends Controller"
  * 	-> El controller necessitar� sempre un m�tode "public function build(){...}"
  */
-class ShowExercici2Controller extends Controller
+class Exercici2ShowController extends Controller
 {
-    protected $view = 'exercici2/home.tpl';
+    protected $view = 'exercici1/micos.tpl';
+    protected $view2 = 'error/error404.tpl';
 
     /**
      * Aquest m�tode sempre s'executa i caldr� implementar-lo sempre.
      */
     public function build()
     {
-        /*$info = $this->getParams();
-        echo '<pre>';print_r( $info );echo '</pre>';*/
 
-        // Caldrà sempre definir una vista per cada controllador. Pot quedar definidar
-        // aqui o dins d'un altre mètode cridat a build().
-        // El fitxer referenciat es troba a: instances/<la_vostra_instancia>/templates/home/home.tpl
-        $this->setLayout($this->view);
+        $info = $this->getParams();
+        $min = 1;
+        $max = 10;
+
+        if($info['url_arguments'][0] < $min || $info['url_arguments'][0] > $max){
+            $this->setLayout($this->view2);
+        }else{
+            $this->setLayout($this->view);
+
+            $this->assign('exercici', '/exercici2');
+
+            $this->assign('min', $min-1);
+            $this->assign('max', $max+1);
+
+            $this->assign('titol', 'Mico #'.$info['url_arguments'][0]);
+
+            $this->assign('act_img', $info['url_arguments'][0]);
+            $this->assign('prev_img', ($info['url_arguments'][0]-1));
+            $this->assign('next_img', ($info['url_arguments'][0]+1));
+
+            $this->assign('act_url', '/imag/exercici1/'.$info['url_arguments'][0].'.jpg');
+            $this->assign('prev_url', '/micos/'.($info['url_arguments'][0]-1));
+            $this->assign('next_url', '/micos/'.($info['url_arguments'][0]+1));
+        }
+
 
     }
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-05 19:00:21
+<?php /* Smarty version 2.6.14, created on 2014-03-05 19:03:36
          compiled from exercici1/micos.tpl */ ?>
 
     <!DOCTYPE html>
@@ -30,7 +30,7 @@
 
                 </div>
 
-                    <h1>Mico #<?php echo $this->_tpl_vars['act_img']; ?>
+                    <h1><?php echo $this->_tpl_vars['titol']; ?>
 </h1>
 
 
@@ -43,13 +43,13 @@
 
                         <div class="container_buttons">
 
-                            <?php if ($this->_tpl_vars['prev_img'] > 0): ?>
+                            <?php if ($this->_tpl_vars['prev_img'] > $this->_tpl_vars['min']): ?>
                                 <a class="prev" href="<?php echo $this->_tpl_vars['prev_url']; ?>
 ">Anterior</a>
                             <?php else: ?>
                                 <a href=""></a>
                             <?php endif; ?>
-                            <?php if ($this->_tpl_vars['next_img'] < 11): ?>
+                            <?php if ($this->_tpl_vars['next_img'] < $this->_tpl_vars['max']): ?>
                                 <a class="next" href="<?php echo $this->_tpl_vars['next_url']; ?>
 ">Següent</a>
                             <?php endif; ?>

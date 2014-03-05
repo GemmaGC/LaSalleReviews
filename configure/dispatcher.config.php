@@ -30,6 +30,6 @@ $config['micos']	        = 'Exercici1BotonsController';
 
 //----------- EXERCICI 2 -----------------
 $config['exercici2']		= 'Exercici2HomeController';
-$config['mostra']		    = 'ShowExercici2Controller';
-$config['afegeix']		    = 'ImportExercici2Controller';
+$config['mostra']		    = 'Exercici2ShowController';
+$config['afegeix']		    = 'Exercici2ImportController';
 //----------------------------------------

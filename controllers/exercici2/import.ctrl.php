@@ -6,7 +6,7 @@
  * 	-> El controller fa un "extends Controller"
  * 	-> El controller necessitar� sempre un m�tode "public function build(){...}"
  */
-class ImportExercici2Controller extends Controller
+class Exercici2ImportController extends Controller
 {
     protected $view = 'exercici2/afegeix.tpl';
 

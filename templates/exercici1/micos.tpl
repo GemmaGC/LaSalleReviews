@@ -26,7 +26,7 @@
 
                 </div>
 
-                    <h1>Mico #{$act_img}</h1>
+                    <h1>{$titol}</h1>
 
 
                     <section>
@@ -37,12 +37,12 @@
 
                         <div class="container_buttons">
 
-                            {if $prev_img > 0}
+                            {if $prev_img > $min}
                                 <a class="prev" href="{$prev_url}">Anterior</a>
                             {else}
                                 <a href=""></a>
                             {/if}
-                            {if $next_img < 11}
+                            {if $next_img < $max}
                                 <a class="next" href="{$next_url}">Següent</a>
                             {/if}
                         </div>
