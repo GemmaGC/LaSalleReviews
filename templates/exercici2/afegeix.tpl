@@ -11,39 +11,34 @@
 
 <body>
 
-<div class="main_header">
-    <header>
-        <div class="site-logo">EXERCICI 2</div>
-    </header>
-</div>
-
-<div id="wrapper">
-
-
-    <div id = "success">
-        <p>HOLA QUE TAL ndskbvakrdbfhjasbv dkacbf vd</p>
+    <div class="main_header">
+        <header>
+            <div class="site-logo">EXERCICI 2</div>
+        </header>
     </div>
 
+    <div id="wrapper">
 
-    <form class="form-all">
-        <fieldset>
-            <legend>Introdueix les dades:</legend>
+        <form name="insert-form" class="insert-form" action="" method="post">
 
-            <label for="nom">Nom de la Imatge</label>
-            <input name="nomImg" id="nom" type="text" placeholder="Nom de la imatge..." required>
-            <br/>
-            <label for="url">Adreça de la Imatge</label>
-            <input name="urlImg" id="url" type="url" placeholder="http://yourweb.dom" required>
+            <div class="header">
+                <h1>AFEGIR IMATGE A LA BASE DE DADES</h1>
+                <span>Introdueix el nom i l'URL de la imatge.</span>
+            </div>
 
-            <button type="submit" class="EnviaInfo">Envia</button>
+            <div class="content">
+                <input name="imgName" type="text" class="input imgName" placeholder="Nom de la imatge.." />
+                <input name="imgURL" type="text" class="input imgURL" placeholder="URL de la imatge.." />
+            </div>
 
+            <div class="footer-form">
+                <input type="submit" name="submit" value="Enviar" class="button" />
 
-        </fieldset>
-    </form>
+            </div>
 
+        </form>
 
+    </div>
 
-    <div class="clear"></div>
-</div>
-
+    <div class="gradient"></div>
 {$modules.footer}
