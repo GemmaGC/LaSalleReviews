@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>PROJECTES WEB</title>
 
-    <link rel="stylesheet" type="text/css" href="stylebbdd.css" />
+    <link rel="stylesheet" type="text/css" href="/css/stylebbdd.css" />
 
 </head>
 

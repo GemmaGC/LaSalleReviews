@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-05 18:42:18
+<?php /* Smarty version 2.6.14, created on 2014-03-05 18:47:16
          compiled from exercici2/afegeix.tpl */ ?>
 <!DOCTYPE html>
 
@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <title>PROJECTES WEB</title>
 
-    <link rel="stylesheet" type="text/css" href="stylebbdd.css" />
+    <link rel="stylesheet" type="text/css" href="/css/stylebbdd.css" />
 
 </head>
 
