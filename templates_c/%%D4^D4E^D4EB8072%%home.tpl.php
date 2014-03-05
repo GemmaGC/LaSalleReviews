@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-03 16:41:51
+<?php /* Smarty version 2.6.14, created on 2014-03-03 16:41:58
          compiled from exercici2/home.tpl */ ?>
 <!DOCTYPE html>
 
@@ -7,8 +7,8 @@
         <meta charset="UTF-8" />
         <title>PROJECTES WEB</title>
 
-        <link rel="stylesheet" type="text/css" href=<?php echo $this->_tpl_vars['css']; ?>
- />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/css/stylebbdd.css" />
 
     </head>
 
@@ -32,11 +32,13 @@
 </p>
 
         <div class="container_buttons">
-            <a class="next" href=<?php echo $this->_tpl_vars['afegir']; ?>
+            <a class="next" href=<?php echo $this->_tpl_vars['micos']; ?>
 >Afegir_Imatge</a>
             <a class="prev" href=<?php echo $this->_tpl_vars['enr']; ?>
 >Enrere</a>
         </div>
+
+
 
         <div class="clear"></div>
     </div>
