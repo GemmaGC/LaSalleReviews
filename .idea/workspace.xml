@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="124fcade-8326-4cfc-8b14-464f56580961" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/error/error404.tpl" afterPath="$PROJECT_DIR$/templates/error/error404.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%1A^1A2^1A2009D1%%afegeix.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%1A^1A2^1A2009D1%%afegeix.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%F8^F8A^F8A868DB%%error404.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%F8^F8A^F8A868DB%%error404.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configure/dispatcher.config.php" afterPath="$PROJECT_DIR$/configure/dispatcher.config.php" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +26,17 @@
     <favorites_list name="g1" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="dispatcher.config.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="29" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.7619048" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -40,12 +52,12 @@
         <option value="$PROJECT_DIR$/configure/db.config.php" />
         <option value="$PROJECT_DIR$/configure/base.config.php" />
         <option value="$PROJECT_DIR$/controllers/exercici2/show.ctrl.php" />
-        <option value="$PROJECT_DIR$/configure/dispatcher.config.php" />
         <option value="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" />
         <option value="$PROJECT_DIR$/controllers/exercici2/import.ctrl.php" />
         <option value="$PROJECT_DIR$/templates/exercici2/home.tpl" />
         <option value="$PROJECT_DIR$/controllers/exercici2/home.ctrl.php" />
         <option value="$PROJECT_DIR$/templates/error/error404.tpl" />
+        <option value="$PROJECT_DIR$/configure/dispatcher.config.php" />
       </list>
     </option>
   </component>
@@ -267,14 +279,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1276" height="774" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25364667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25364667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -381,16 +393,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
+    <entry file="file://$PROJECT_DIR$/configure/base.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="2" selection-start="269" selection-end="269" vertical-scroll-proportion="0.23809524" vertical-offset="0" max-vertical-offset="630">
+        <state line="54" column="40" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.8095238" vertical-offset="255" max-vertical-offset="885">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configure/base.config.php">
+    <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="40" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.8095238" vertical-offset="255" max-vertical-offset="885">
+        <state line="34" column="29" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.7619048" vertical-offset="0" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
