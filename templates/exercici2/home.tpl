@@ -24,13 +24,20 @@
             <p>HOME EXERCICI 2</p>
         </div>
 
-        <br/>
+
+        <ul>
+            <li><a class="menu" href={$afegir}>Afegeix Foto a la BBDD</a></li>
+            <li><a class="menu" href={$mostrar}>Mostrar Fotos de la BBDD</a></li>
+        </ul>
+
         <p id = "info">{$exp}</p>
 
         <div class="container_buttons">
-            <a class="next" href={$afegir}>Afegir_Imatge</a>
             <a class="prev" href={$enr}>Enrere</a>
         </div>
+
+
+
 
         <div class="clear"></div>
     </div>
