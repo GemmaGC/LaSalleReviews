@@ -23,11 +23,12 @@ class Exercici1BotonsController extends Controller
 
             $this->setLayout($this->view);
 
-            $this->assign('exercici', '/exercici1');
+            $this->assign('enrere', '/exercici1');
 
             $this->assign('min', 0);
             $this->assign('max', 11);
 
+            $this->assign('header', 'EXERCICI 1');
             $this->assign('titol', 'Mico #'.$info['url_arguments'][0]);
 
             $this->assign('act_img', $info['url_arguments'][0]);
@@ -37,6 +38,7 @@ class Exercici1BotonsController extends Controller
             $this->assign('act_url', '/imag/exercici1/'.$info['url_arguments'][0].'.jpg');
             $this->assign('prev_url', '/micos/'.($info['url_arguments'][0]-1));
             $this->assign('next_url', '/micos/'.($info['url_arguments'][0]+1));
+
         }
 
 

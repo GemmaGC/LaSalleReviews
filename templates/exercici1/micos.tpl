@@ -1,61 +1,38 @@
 
-    <!DOCTYPE html>
+{$modules.head}
 
-    <html>
-        <head>
-            <meta charset="UTF-8" />
-            <title>Fotografies dels micos</title>
+    <div id="container">
 
-            <link rel="stylesheet" type="text/css" href="{$url.global}/css/stylemicos.css" />
+        <div class="go_back_container">
 
-        </head>
+            <a class="prev" href="{$enrere}">Enrere</a>
 
-        <body>
+        </div>
 
-            <div class="main_header">
-                <header>
-                    <div class="site-logo">EXERCICI 1</div>
-                </header>
-            </div>
+            <h1>{$titol}</h1>
 
-            <div id="container">
 
-                <div class="go_back_container">
+            <section>
 
-                    <a class="prev" href="{$exercici}">Enrere</a>
+                <div class="clr"></div>
 
+                <img class="img" src="{$act_url}">
+
+                <div class="container_buttons">
+
+                    {if $prev_img > $min}
+                        <a class="prev" href="{$prev_url}">Anterior</a>
+                    {else}
+                        <a href=""></a>
+                    {/if}
+                    {if $next_img < $max}
+                        <a class="next" href="{$next_url}">Següent</a>
+                    {/if}
                 </div>
 
-                    <h1>{$titol}</h1>
+            </section>
 
-
-                    <section>
-
-                        <div class="clr"></div>
-
-                        <img class="img" src="{$act_url}">
-
-                        <div class="container_buttons">
-
-                            {if $prev_img > $min}
-                                <a class="prev" href="{$prev_url}">Anterior</a>
-                            {else}
-                                <a href=""></a>
-                            {/if}
-                            {if $next_img < $max}
-                                <a class="next" href="{$next_url}">Següent</a>
-                            {/if}
-                        </div>
-
-                    </section>
-
-                </div>
-
-
-                <footer>
-                    <p>La Salle - Universitat Ramon Llull - curs 2013 / 2014</p>
-                </footer>
-
-            </body>
-
-    </html>
+        </div>
+        <div class="clear"></div>
+    </div>
+{$modules.footer}

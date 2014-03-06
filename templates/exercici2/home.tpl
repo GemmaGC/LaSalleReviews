@@ -1,25 +1,7 @@
-<!DOCTYPE html>
 
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>PROJECTES WEB</title>
+{$modules.head}
 
-        <link rel="stylesheet" type="text/css" href={$css} />
-
-    </head>
-
-    <body>
-
-    <div class="main_header">
-        <header>
-            <div class="site-logo">EXERCICI 2</div>
-        </header>
-    </div>
-
-    <div id="wrapper">
-
-
+<!--$header = EXERCICI 2-->
         <div id = "success">
             <p>HOME EXERCICI 2</p>
         </div>

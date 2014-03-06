@@ -38,8 +38,10 @@ $config['HomeHomeController']			= PATH_CONTROLLERS . 'home/home.ctrl.php';
 $config['SharedHeadController']			= PATH_CONTROLLERS . 'shared/head.ctrl.php';
 $config['SharedFooterController']		= PATH_CONTROLLERS . 'shared/footer.ctrl.php';
 
+
 //----------- EXERCICI 1 -----------------
-//Controllers exercici 1
+
+    //Controllers
 
 $config['Exercici1HomeController']		= PATH_CONTROLLERS . 'exercici1/home.ctrl.php';
 $config['Exercici1BotonsController']	= PATH_CONTROLLERS . 'exercici1/botons.ctrl.php';
@@ -47,11 +49,17 @@ $config['Exercici1MicosController']		= PATH_CONTROLLERS . 'exercici1/micos.ctrl.
 
 //----------------------------------------
 
-//----------- EXERCICI 2 -----------------
-//Controllers exercici 2
 
+
+//----------- EXERCICI 2 -----------------
+
+    //Controllers
 $config['Exercici2HomeController']		= PATH_CONTROLLERS . 'exercici2/home.ctrl.php';
-$config['Exercici2ShowController']		= PATH_CONTROLLERS . 'exercici2/show.ctrl.php';
-$config['Exercici2ImportController']	= PATH_CONTROLLERS . 'exercici2/import.ctrl.php';
+$config['Exercici2MostraController']    = PATH_CONTROLLERS . 'exercici2/mostra.ctrl.php';
+$config['Exercici2AfegeixController']	= PATH_CONTROLLERS . 'exercici2/afegeix.ctrl.php';
+
+    //Models
+$config['Exercici2AfegeixModel']        = PATH_MODELS .'exercici2/afegeix.model.php';
+$config['Exercici2MostraModel']        = PATH_MODELS .'exercici2/mostra.model.php';
 
 //----------------------------------------

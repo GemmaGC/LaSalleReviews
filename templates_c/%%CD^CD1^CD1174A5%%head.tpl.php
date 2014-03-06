@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-05 19:26:21
+<?php /* Smarty version 2.6.14, created on 2014-03-06 17:13:30
          compiled from shared/head.tpl */ ?>
 <!DOCTYPE html>
 <html>
@@ -22,6 +22,8 @@
 	<body>
 		<div class="main_header">
 			<header>
+				<!--<div class="site-logo"><?php echo $this->_tpl_vars['header']; ?>
+</div>-->
 				<div class="site-logo">PROJECTES WEB</div>
 			</header>
 		</div>

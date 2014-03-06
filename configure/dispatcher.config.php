@@ -24,12 +24,12 @@ $config['error']	        = 'ErrorError404Controller';
 
 //----------- EXERCICI 1 -----------------
 $config['exercici1']		= 'Exercici1HomeController';
-$config['micos']	        = 'Exercici1MicosController';
+//$config['micos']	        = 'Exercici1MicosController';
 $config['micos']	        = 'Exercici1BotonsController';
 //----------------------------------------
 
 //----------- EXERCICI 2 -----------------
 $config['exercici2']		= 'Exercici2HomeController';
-$config['mostra']		    = 'Exercici2ShowController';
-$config['afegeix']		    = 'Exercici2ImportController';
+$config['mostra']		    = 'Exercici2MostraController';
+$config['afegeix']		    = 'Exercici2AfegeixController';
 //----------------------------------------

@@ -4,7 +4,8 @@
      */
     class Exercici2HomeController extends Controller
     {
-        protected $view = 'exercici2/home.tpl';
+        protected $view_home = 'exercici2/home.tpl';
+        protected $view_head = 'shared/head.tpl';
 
         /**
          * Aquest m�tode sempre s'executa i caldr� implementar-lo sempre.
@@ -13,8 +14,11 @@
         {
             $info = $this->getParams();
 
-            $this->setLayout($this->view);
+            $this->setLayout($this->view_head);
             $this->assign('css', '/css/style.css');
+            $this->assign('header', 'EXERCICI 2');
+
+            $this->setLayout($this->view_home);
             $this->assign('afegir', '/afegeix');
             $this->assign('mostrar', '/mostra');
             $this->assign('enr', '/home');

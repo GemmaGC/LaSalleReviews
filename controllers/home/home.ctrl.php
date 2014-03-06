@@ -23,6 +23,8 @@
             // El fitxer referenciat es troba a: instances/<la_vostra_instancia>/templates/home/home.tpl
             $this->setLayout($this->view);
 
+            $this->assign('header', 'PROJECTES WEB');
+
         }
 
         public function loadModules() {

@@ -1,69 +1,46 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-05 19:29:31
+<?php /* Smarty version 2.6.14, created on 2014-03-06 16:09:35
          compiled from exercici1/micos.tpl */ ?>
 
-    <!DOCTYPE html>
+<?php echo $this->_tpl_vars['modules']['head']; ?>
 
-    <html>
-        <head>
-            <meta charset="UTF-8" />
-            <title>Fotografies dels micos</title>
 
-            <link rel="stylesheet" type="text/css" href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/css/stylemicos.css" />
+    <div id="container">
 
-        </head>
+        <div class="go_back_container">
 
-        <body>
-
-            <div class="main_header">
-                <header>
-                    <div class="site-logo">EXERCICI 1</div>
-                </header>
-            </div>
-
-            <div id="container">
-
-                <div class="go_back_container">
-
-                    <a class="prev" href="<?php echo $this->_tpl_vars['exercici']; ?>
+            <a class="prev" href="<?php echo $this->_tpl_vars['enrere']; ?>
 ">Enrere</a>
 
-                </div>
+        </div>
 
-                    <h1><?php echo $this->_tpl_vars['titol']; ?>
+            <h1><?php echo $this->_tpl_vars['titol']; ?>
 </h1>
 
 
-                    <section>
+            <section>
 
-                        <div class="clr"></div>
+                <div class="clr"></div>
 
-                        <img class="img" src="<?php echo $this->_tpl_vars['act_url']; ?>
+                <img class="img" src="<?php echo $this->_tpl_vars['act_url']; ?>
 ">
 
-                        <div class="container_buttons">
+                <div class="container_buttons">
 
-                            <?php if ($this->_tpl_vars['prev_img'] > $this->_tpl_vars['min']): ?>
-                                <a class="prev" href="<?php echo $this->_tpl_vars['prev_url']; ?>
+                    <?php if ($this->_tpl_vars['prev_img'] > $this->_tpl_vars['min']): ?>
+                        <a class="prev" href="<?php echo $this->_tpl_vars['prev_url']; ?>
 ">Anterior</a>
-                            <?php else: ?>
-                                <a href=""></a>
-                            <?php endif; ?>
-                            <?php if ($this->_tpl_vars['next_img'] < $this->_tpl_vars['max']): ?>
-                                <a class="next" href="<?php echo $this->_tpl_vars['next_url']; ?>
+                    <?php else: ?>
+                        <a href=""></a>
+                    <?php endif; ?>
+                    <?php if ($this->_tpl_vars['next_img'] < $this->_tpl_vars['max']): ?>
+                        <a class="next" href="<?php echo $this->_tpl_vars['next_url']; ?>
 ">Següent</a>
-                            <?php endif; ?>
-                        </div>
-
-                    </section>
-
+                    <?php endif; ?>
                 </div>
 
+            </section>
 
-                <footer>
-                    <p>La Salle - Universitat Ramon Llull - curs 2013 / 2014</p>
-                </footer>
-
-            </body>
-
-    </html>
+        </div>
+        <div class="clear"></div>
+    </div>
+<?php echo $this->_tpl_vars['modules']['footer']; ?>

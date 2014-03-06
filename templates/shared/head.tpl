@@ -19,6 +19,7 @@
 	<body>
 		<div class="main_header">
 			<header>
+				<!--<div class="site-logo">{$header}</div>-->
 				<div class="site-logo">PROJECTES WEB</div>
 			</header>
 		</div>

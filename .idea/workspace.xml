@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="124fcade-8326-4cfc-8b14-464f56580961" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/%%1A^1A2^1A2009D1%%afegeix.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates_c/%%3F^3FD^3FDC3B71%%home.tpl.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%13^13E^13E2CA0E%%home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%13^13E^13E2CA0E%%home.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/exercici2/afegeix.model.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/controllers/exercici2/import.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici2/afegeix.ctrl.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/controllers/exercici2/show.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici2/mostra.ctrl.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/models/exercici2/importa.model.php" afterPath="$PROJECT_DIR$/models/exercici2/mostra.model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%49^492^492A5AA1%%micos.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%84^847^8471C765%%footer.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%84^847^8471C765%%footer.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%CD^CD1^CD1174A5%%head.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%CD^CD1^CD1174A5%%head.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%D4^D4E^D4EB8072%%home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%D4^D4E^D4EB8072%%home.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%F8^F8A^F8A868DB%%error404.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%F8^F8A^F8A868DB%%error404.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici2/show.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici2/show.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici2/afegeix.tpl" afterPath="$PROJECT_DIR$/templates/exercici2/afegeix.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configure/base.config.php" afterPath="$PROJECT_DIR$/configure/base.config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configure/db.config.php" afterPath="$PROJECT_DIR$/configure/db.config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configure/dispatcher.config.php" afterPath="$PROJECT_DIR$/configure/dispatcher.config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/shared/head.tpl" afterPath="$PROJECT_DIR$/templates/shared/head.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/exercici2/home.ctrl.php" afterPath="$PROJECT_DIR$/controllers/exercici2/home.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/home/home.ctrl.php" afterPath="$PROJECT_DIR$/controllers/home/home.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici2/home.tpl" afterPath="$PROJECT_DIR$/templates/exercici2/home.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/exercici1/micos.tpl" afterPath="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="g1.iws" />
@@ -34,55 +45,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/exercici2/home.tpl">
+      <file leaf-file-name="mostra.model.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/exercici2/mostra.model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="652" selection-end="652" vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="735">
+            <state line="20" column="5" selection-start="144" selection-end="403" vertical-scroll-proportion="-0.21428572" vertical-offset="360" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.ctrl.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/exercici2/show.ctrl.php">
+      <file leaf-file-name="mostra.ctrl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/exercici2/mostra.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="10" selection-start="517" selection-end="517" vertical-scroll-proportion="0.11904762" vertical-offset="225" max-vertical-offset="915">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="import.ctrl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/exercici2/import.ctrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="31" selection-start="247" selection-end="247" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="afegeix.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/exercici2/afegeix.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="54" selection-start="148" selection-end="148" vertical-scroll-proportion="2.125" vertical-offset="156" max-vertical-offset="810">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dispatcher.config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="54" selection-start="1116" selection-end="1139" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="570">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configure/base.config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="32" selection-start="1837" selection-end="1860" vertical-scroll-proportion="-21.625" vertical-offset="231" max-vertical-offset="885">
+            <state line="45" column="0" selection-start="1311" selection-end="1311" vertical-scroll-proportion="-10.0" vertical-offset="435" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
@@ -101,18 +76,25 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/configure/db.config.php" />
-        <option value="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" />
-        <option value="$PROJECT_DIR$/templates/exercici2/home.tpl" />
         <option value="$PROJECT_DIR$/templates/error/error404.tpl" />
+        <option value="$PROJECT_DIR$/controllers/exercici1/home.ctrl.php" />
+        <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
+        <option value="$PROJECT_DIR$/controllers/exercici2/show.ctrl.php" />
+        <option value="$PROJECT_DIR$/configure/dispatcher.config.php" />
+        <option value="$PROJECT_DIR$/controllers/exercici2/import.ctrl.php" />
+        <option value="$PROJECT_DIR$/models/exercici2/importa.model.php" />
+        <option value="$PROJECT_DIR$/configure/base.config.php" />
+        <option value="$PROJECT_DIR$/templates/exercici2/home.tpl" />
+        <option value="$PROJECT_DIR$/controllers/home/home.ctrl.php" />
+        <option value="$PROJECT_DIR$/controllers/exercici2/home.ctrl.php" />
         <option value="$PROJECT_DIR$/templates/exercici2/afegeix.tpl" />
         <option value="$PROJECT_DIR$/templates/exercici1/micos.tpl" />
-        <option value="$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php" />
-        <option value="$PROJECT_DIR$/controllers/exercici2/home.ctrl.php" />
-        <option value="$PROJECT_DIR$/controllers/exercici2/import.ctrl.php" />
-        <option value="$PROJECT_DIR$/configure/base.config.php" />
-        <option value="$PROJECT_DIR$/configure/dispatcher.config.php" />
-        <option value="$PROJECT_DIR$/controllers/exercici2/show.ctrl.php" />
+        <option value="$PROJECT_DIR$/templates/shared/head.tpl" />
+        <option value="$PROJECT_DIR$/controllers/exercici2/mostra.ctrl.php" />
+        <option value="$PROJECT_DIR$/models/exercici2/mostra.model.php" />
+        <option value="$PROJECT_DIR$/configure/db.config.php" />
+        <option value="$PROJECT_DIR$/models/exercici2/afegeix.model.php" />
+        <option value="$PROJECT_DIR$/controllers/exercici2/afegeix.ctrl.php" />
       </list>
     </option>
   </component>
@@ -149,7 +131,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,8 +139,219 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shared" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercici2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercici1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercici2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exercici2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,14 +384,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1276" height="774" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25364667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25769854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -208,10 +401,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -231,73 +423,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="481" selection-end="481" vertical-scroll-proportion="0.3809524" vertical-offset="0" max-vertical-offset="630" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/exercici2/importa.model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="631" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="62" selection-start="711" selection-end="711" vertical-scroll-proportion="0.5050505" vertical-offset="0" max-vertical-offset="735" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/error/error404.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="97" selection-start="113" selection-end="113" vertical-scroll-proportion="0.025252525" vertical-offset="0" max-vertical-offset="594">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="431" selection-end="431" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configure/db.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="43" selection-start="591" selection-end="591" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici2/afegeix.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="54" selection-start="148" selection-end="148" vertical-scroll-proportion="2.125" vertical-offset="156" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="76" selection-start="591" selection-end="591" vertical-scroll-proportion="0.46191248" vertical-offset="0" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici2/home.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="45" selection-start="539" selection-end="539" vertical-scroll-proportion="0.4376013" vertical-offset="0" max-vertical-offset="675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici2/import.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="31" selection-start="247" selection-end="247" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
+        <state line="1" column="97" selection-start="113" selection-end="113" vertical-scroll-proportion="0.025252525" vertical-offset="0" max-vertical-offset="594" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configure/general.config.php">
@@ -307,30 +435,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configure/base.config.php">
+    <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="32" selection-start="1837" selection-end="1860" vertical-scroll-proportion="-21.625" vertical-offset="231" max-vertical-offset="885">
+        <state line="19" column="59" selection-start="644" selection-end="644" vertical-scroll-proportion="0.46191248" vertical-offset="0" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/exercici2/home.tpl">
+    <entry file="file://$PROJECT_DIR$/configure/base.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="652" selection-end="652" vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="735">
+        <state line="62" column="24" selection-start="2121" selection-end="2121" vertical-scroll-proportion="0.8095238" vertical-offset="375" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="54" selection-start="1116" selection-end="1139" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="570">
+        <state line="33" column="47" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.7380952" vertical-offset="0" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici2/show.ctrl.php">
+    <entry file="file://$PROJECT_DIR$/templates/home/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="517" selection-end="517" vertical-scroll-proportion="0.11904762" vertical-offset="225" max-vertical-offset="915">
+        <state line="0" column="15" selection-start="0" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shared/footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="631">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shared/head.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="60" selection-start="410" selection-end="410" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/exercici1/botons.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="37" selection-start="733" selection-end="733" vertical-scroll-proportion="0.21880065" vertical-offset="240" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/exercici2/home.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="43" selection-start="216" selection-end="216" vertical-scroll-proportion="-0.625" vertical-offset="90" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exercici1/micos.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="14" selection-start="15" selection-end="15" vertical-scroll-proportion="0.024711696" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exercici2/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="17" selection-start="469" selection-end="523" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/home/home.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="50" selection-start="937" selection-end="937" vertical-scroll-proportion="0.5952381" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/exercici2/afegeix.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.11904762" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/exercici2/afegeix.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="8" selection-start="597" selection-end="597" vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configure/db.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="43" selection-start="602" selection-end="602" vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exercici2/afegeix.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="447" selection-end="453" vertical-scroll-proportion="0.26190478" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/exercici2/mostra.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1311" selection-end="1311" vertical-scroll-proportion="-10.0" vertical-offset="435" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/exercici2/mostra.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="5" selection-start="144" selection-end="403" vertical-scroll-proportion="-0.21428572" vertical-offset="360" max-vertical-offset="990">
           <folding />
         </state>
       </provider>

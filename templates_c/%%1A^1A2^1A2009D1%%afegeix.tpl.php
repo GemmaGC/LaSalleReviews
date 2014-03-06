@@ -1,4 +1,7 @@
-{$modules.head}
+<?php /* Smarty version 2.6.14, created on 2014-03-06 17:13:35
+         compiled from exercici2/afegeix.tpl */ ?>
+<?php echo $this->_tpl_vars['modules']['head']; ?>
+
 
         <form name="insert-form" class="insert-form" action="" method="post">
 
@@ -22,4 +25,4 @@
     </div>
 
     <div class="gradient"></div>
-{$modules.footer}
+<?php echo $this->_tpl_vars['modules']['footer']; ?>

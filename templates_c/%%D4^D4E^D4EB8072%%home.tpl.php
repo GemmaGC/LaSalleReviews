@@ -1,28 +1,10 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-05 19:31:16
+<?php /* Smarty version 2.6.14, created on 2014-03-06 16:02:07
          compiled from exercici2/home.tpl */ ?>
-<!DOCTYPE html>
 
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>PROJECTES WEB</title>
-
-        <link rel="stylesheet" type="text/css" href=<?php echo $this->_tpl_vars['css']; ?>
- />
-
-    </head>
-
-    <body>
-
-    <div class="main_header">
-        <header>
-            <div class="site-logo">EXERCICI 2</div>
-        </header>
-    </div>
-
-    <div id="wrapper">
+<?php echo $this->_tpl_vars['modules']['head']; ?>
 
 
+<!--$header = EXERCICI 2-->
         <div id = "success">
             <p>HOME EXERCICI 2</p>
         </div>
