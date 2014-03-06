@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-05 19:32:04
+<?php /* Smarty version 2.6.14, created on 2014-03-06 21:17:04
          compiled from home/home.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['head']; ?>
 
@@ -23,6 +23,12 @@
 			<li><a class="menu" href="">EXERCICI 4: PRÒXIMAMENT</a></li>
 		</ul>
 	</nav>
+
+    <div >
+        <a href="/bd/monosdb.sql" download>
+            <img border="0" src="/bd/button.png" alt="baseDades">
+        </a>
+    </div>
 
 	
 <div class="clear"></div>

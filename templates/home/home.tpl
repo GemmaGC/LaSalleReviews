@@ -20,6 +20,12 @@
 		</ul>
 	</nav>
 
+    <div >
+        <a href="/bd/monosdb.sql" download>
+            <img border="0" src="/bd/button.png" alt="baseDades">
+        </a>
+    </div>
+
 	
 <div class="clear"></div>
 {$modules.footer}
