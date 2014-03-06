@@ -1,24 +1,24 @@
 
 {$modules.head}
 
-    <div id="container">
+    <div id="container_micos">
 
-        <div class="go_back_container">
+        <div class="go_back_container_micos">
 
             <a class="prev" href="{$enrere}">Enrere</a>
 
         </div>
 
-            <h1>{$titol}</h1>
+            <h1 class="info_mic">{$titol}</h1>
 
 
             <section>
 
                     <div class="clr"></div>
 
-                    <img class="img" src="{$act_url}">
+                    <img class="img_monos" src="{$act_url}">
 
-                    <div class="container_buttons">
+                    <div class="container_buttons_micos">
 
                         {if $prev_img > $min}
                             <a class="prev" href="{$prev_url}">Anterior</a>
