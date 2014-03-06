@@ -8,7 +8,7 @@
  */
 class Exercici2MostraController extends Controller
 {
-    protected $view = 'exercici1/micos.tpl';
+    protected $view = 'exercici2/mostra.tpl';
     protected $view2 = 'error/error404.tpl';
 
 
@@ -38,8 +38,16 @@ class Exercici2MostraController extends Controller
             $this->assign('header', 'EXERCICI 2');
             $this->assign('titol', 'Mico #'.$info['url_arguments'][0]);
 
+        $imatges = mysql_fetch_array($mostra_model->getImatges());
+            echo print_r(mysql_fetch_array($imatges));
             if($max != 0){
-                $imatges = $mostra_model->getImatges();
+                $imatges = mysql_fetch_array($mostra_model->getImatges());
+
+                while($row = $imatges)
+                {
+                    echo $row['nom_img'] . " " . $row['url_img'];
+                    echo "<br>";
+                }
 
                 $this->assign('min', $min-1);
                 $this->assign('max', $max+1);
