@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-05 19:01:18
+<?php /* Smarty version 2.6.14, created on 2014-03-05 19:31:16
          compiled from exercici2/home.tpl */ ?>
 <!DOCTYPE html>
 

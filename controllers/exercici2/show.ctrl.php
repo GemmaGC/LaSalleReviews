@@ -16,14 +16,16 @@ class Exercici2ShowController extends Controller
      */
     public function build()
     {
+       // echo 'ola k ase';
 
+        //$this->setLayout($this->view);
         $info = $this->getParams();
         $min = 1;
         $max = 10;
 
-        if($info['url_arguments'][0] < $min || $info['url_arguments'][0] > $max){
+        /*if($info['url_arguments'][0] < $min || $info['url_arguments'][0] > $max){
             $this->setLayout($this->view2);
-        }else{
+        }else{*/
             $this->setLayout($this->view);
 
             $this->assign('exercici', '/exercici2');
@@ -40,7 +42,7 @@ class Exercici2ShowController extends Controller
             $this->assign('act_url', '/imag/exercici1/'.$info['url_arguments'][0].'.jpg');
             $this->assign('prev_url', '/micos/'.($info['url_arguments'][0]-1));
             $this->assign('next_url', '/micos/'.($info['url_arguments'][0]+1));
-        }
+        //}
 
 
     }
