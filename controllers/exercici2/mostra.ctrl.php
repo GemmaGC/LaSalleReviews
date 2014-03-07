@@ -23,43 +23,39 @@ class Exercici2MostraController extends Controller
         $info = $this->getParams();
 
         $min = 1;
-        $max = $mostra_model->getImatges();
+        $max = count($mostra_model->getImatges());
 
         //echo $max;
 
         /*if($info['url_arguments'][0] < $min || $info['url_arguments'][0] > $max){
             $this->setLayout($this->view2);
         }else{*/
-            $this->setLayout($this->view);
+        $this->setLayout($this->view);
 
-            $this->assign('enrere', '/exercici2');
-            $this->assign('css', '/css/stylemicos.css');
+        $this->assign('enrere', '/exercici2');
+        $this->assign('css', '/css/stylemicos.css');
 
-            $this->assign('header', 'EXERCICI 2');
-            $this->assign('titol', 'Mico #'.$info['url_arguments'][0]);
+        $this->assign('header', 'EXERCICI 2');
+        $this->assign('titol', 'Mico #'.$info['url_arguments'][0]);
 
-            $imatges = mysql_fetch_array($mostra_model->getImatges());
             //echo print_r(mysql_fetch_array($imatges));
 
         if($max != 0){
-                $imatges = mysql_fetch_array($mostra_model->getImatges());
 
-                while($row = $imatges)
-                {
-                    echo $row['nom_img'] . " " . $row['url_img'];
-                    echo "<br>";
-                }
+            $imatges = $mostra_model->getImatges();
+            //echo var_dump($imatges);
+            echo $imatges[0]["url_img"];
 
-                $this->assign('min', $min-1);
-                $this->assign('max', $max+1);
+            $this->assign('min', $min-1);
+            $this->assign('max', $max+1);
 
-                $this->assign('act_img', $info['url_arguments'][0]);
-                $this->assign('prev_img', ($info['url_arguments'][0]-1));
-                $this->assign('next_img', ($info['url_arguments'][0]+1));
+            $this->assign('act_img', $imatges[0]["nom_img"]);
+            $this->assign('prev_img', $imatges[0]["nom_img"]);
+            $this->assign('next_img', $imatges[0]["nom_img"]);
 
-                $this->assign('act_url', '/imag/exercici1/'.$info['url_arguments'][0].'.jpg');
-                $this->assign('prev_url', '/micos/'.($info['url_arguments'][0]-1));
-                $this->assign('next_url', '/micos/'.($info['url_arguments'][0]+1));
+            $this->assign('act_url', $imatges[0]["url_img"]);
+            $this->assign('prev_url', $imatges[0]["url_img"]);
+            $this->assign('next_url', $imatges[0]["url_img"]);
             }
         //}
 

@@ -31,7 +31,8 @@ FROM
 QUERY;
 
         $result = $this->getAll( $sql );
-        //print_r (mysql_fetch_array($result));
+        return $result;
+        //echo var_dump($result);
     }
 
     //Retorna el nom i url de la primera imatge
@@ -47,6 +48,7 @@ WHERE
 QUERY;
 
         $result = $this->getAll( $sql );
+        return $result;
         //print_r (mysql_fetch_array($result));
     }
 
@@ -61,7 +63,8 @@ FROM
 QUERY;
 
         $result = $this->getAll( $sql );
-        //print_r (mysql_fetch_array($result));
+        return $result;
+        //echo var_dump($result);
     }
 
 
