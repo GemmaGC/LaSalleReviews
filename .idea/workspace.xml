@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="124fcade-8326-4cfc-8b14-464f56580961" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%13^13E^13E2CA0E%%home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%13^13E^13E2CA0E%%home.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home/home.tpl" afterPath="$PROJECT_DIR$/templates/home/home.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/htdocs/css/style.css" afterPath="$PROJECT_DIR$/htdocs/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="g1.iws" />
@@ -31,25 +28,25 @@
       <file leaf-file-name="mostra.model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/exercici2/mostra.model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="23" selection-start="555" selection-end="555" vertical-scroll-proportion="1.25" vertical-offset="360" max-vertical-offset="990">
+            <state line="27" column="23" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mostra.ctrl.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mostra.ctrl.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/exercici2/mostra.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="40" selection-start="1622" selection-end="1622" vertical-scroll-proportion="-32.5" vertical-offset="0" max-vertical-offset="1185">
+            <state line="25" column="46" selection-start="491" selection-end="692" vertical-scroll-proportion="0.1904762" vertical-offset="255" max-vertical-offset="1185">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/home/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="12" selection-start="790" selection-end="790" vertical-scroll-proportion="0.5952381" vertical-offset="0" max-vertical-offset="630">
+            <state line="25" column="12" selection-start="790" selection-end="790" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -58,7 +55,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htdocs/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="-9.230769" vertical-offset="0" max-vertical-offset="4785">
+            <state line="16" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="4785">
               <folding />
             </state>
           </provider>
@@ -67,7 +64,7 @@
       <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="12" selection-start="497" selection-end="586" vertical-scroll-proportion="-17.5" vertical-offset="30" max-vertical-offset="660">
+            <state line="30" column="12" selection-start="497" selection-end="586" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
@@ -211,6 +208,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistory" value="" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -251,7 +249,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2617504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26580226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -259,11 +257,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -292,6 +290,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici2/mostra.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="40" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="12" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="4785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="12" selection-start="497" selection-end="586" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exercici2/mostra.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/exercici2/mostra.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="23" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/exercici2/mostra.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="44" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1185">
           <folding />
         </state>
@@ -311,9 +351,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/configure/general.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="631">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="631" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/exercici1/home.ctrl.php">
@@ -390,42 +428,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/configure/db.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="40" selection-start="599" selection-end="599" vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/exercici2/mostra.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="40" selection-start="1622" selection-end="1622" vertical-scroll-proportion="-32.5" vertical-offset="0" max-vertical-offset="1185">
-          <folding />
-        </state>
+        <state line="21" column="40" selection-start="599" selection-end="599" vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="630" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/exercici1/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="12" selection-start="497" selection-end="586" vertical-scroll-proportion="-17.5" vertical-offset="30" max-vertical-offset="660">
+        <state line="30" column="12" selection-start="497" selection-end="586" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="660">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/exercici2/mostra.model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="23" selection-start="555" selection-end="555" vertical-scroll-proportion="1.25" vertical-offset="360" max-vertical-offset="990">
+        <state line="27" column="23" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="-9.230769" vertical-offset="0" max-vertical-offset="4785">
+        <state line="16" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="4785">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="12" selection-start="790" selection-end="790" vertical-scroll-proportion="0.5952381" vertical-offset="0" max-vertical-offset="630">
+        <state line="25" column="12" selection-start="790" selection-end="790" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/exercici2/mostra.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="46" selection-start="491" selection-end="692" vertical-scroll-proportion="0.1904762" vertical-offset="255" max-vertical-offset="1185">
           <folding />
         </state>
       </provider>
