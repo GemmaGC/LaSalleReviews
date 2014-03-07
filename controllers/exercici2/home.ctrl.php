@@ -13,6 +13,7 @@
         public function build()
         {
             $info = $this->getParams();
+            $mostra_model = $this->getClass( 'Exercici2MostraModel' ); //Importem el model per mostrar imatges
 
             $this->setLayout($this->view_head);
             $this->assign('css', '/css/style.css');
@@ -20,8 +21,14 @@
 
             $this->setLayout($this->view_home);
             $this->assign('afegir', '/afegeix');
-            $this->assign('mostrar', '/mostra');
             $this->assign('enr', '/home');
+
+            if(count($mostra_model->getImatges()) != 0){
+                $this->assign('mostrar', '/mostra/3');
+            }else{
+                //Mostra missatge error
+                $this->assign('mostrar', '/home');
+            }
         }
 
 

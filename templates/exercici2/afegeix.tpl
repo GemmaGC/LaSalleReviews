@@ -8,8 +8,8 @@
             </div>
 
             <div class="content_afegeix">
-                <input name="imgName" type="text" class="input imgName" placeholder="Nom de la imatge.." />
-                <input name="imgURL" type="text" class="input imgURL" placeholder="URL de la imatge.." />
+                <input name="imgName" type="text" class="input imgName" placeholder="Nom de la imatge.." required/>
+                <input name="imgURL" type="text" class="input imgURL" placeholder="URL de la imatge.." required/>
             </div>
 
             <div class="footer-form">

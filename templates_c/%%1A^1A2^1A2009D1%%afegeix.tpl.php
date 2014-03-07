@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-07 10:42:15
+<?php /* Smarty version 2.6.14, created on 2014-03-07 18:03:25
          compiled from exercici2/afegeix.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['head']; ?>
 
@@ -11,8 +11,8 @@
             </div>
 
             <div class="content_afegeix">
-                <input name="imgName" type="text" class="input imgName" placeholder="Nom de la imatge.." />
-                <input name="imgURL" type="text" class="input imgURL" placeholder="URL de la imatge.." />
+                <input name="imgName" type="text" class="input imgName" placeholder="Nom de la imatge.." required/>
+                <input name="imgURL" type="text" class="input imgURL" placeholder="URL de la imatge.." required/>
             </div>
 
             <div class="footer-form">

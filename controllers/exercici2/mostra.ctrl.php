@@ -22,14 +22,14 @@ class Exercici2MostraController extends Controller
 
         $info = $this->getParams();
 
-        $min = 1;
+        $min = 0;
         $max = count($mostra_model->getImatges());
 
         //echo $max;
 
-        /*if($info['url_arguments'][0] < $min || $info['url_arguments'][0] > $max){
+        if($info['url_arguments'][0] <= $min || $info['url_arguments'][0] > $max){
             $this->setLayout($this->view2);
-        }else{*/
+        }else{
         $this->setLayout($this->view);
 
         $this->assign('enrere', '/exercici2');
@@ -40,23 +40,28 @@ class Exercici2MostraController extends Controller
 
             //echo print_r(mysql_fetch_array($imatges));
 
-        if($max != 0){
+//        if($max != 0){
 
             $imatges = $mostra_model->getImatges();
             //echo var_dump($imatges);
-            echo $imatges[0]["url_img"];
 
             $this->assign('min', $min-1);
             $this->assign('max', $max+1);
 
-            $this->assign('act_img', $imatges[0]["nom_img"]);
-            $this->assign('prev_img', $imatges[0]["nom_img"]);
-            $this->assign('next_img', $imatges[0]["nom_img"]);
+            $id = $info['url_arguments'][0];
+            echo $id;
 
-            $this->assign('act_url', $imatges[0]["url_img"]);
-            $this->assign('prev_url', $imatges[0]["url_img"]);
-            $this->assign('next_url', $imatges[0]["url_img"]);
-            }
+            //for ($x=0; $x<$max; $x++){
+                $this->assign('act_img', $imatges[$id]["nom_img"]);
+                $this->assign('prev_img', $imatges[$id-1]["nom_img"]);
+                $this->assign('next_img', $imatges[$id+1]["nom_img"]);
+
+                $this->assign('act_url', $imatges[$id]["url_img"]);
+                $this->assign('prev_url', $imatges[$id-1]);
+                $this->assign('next_url', $imatges[$id+1]);
+
+            //}
+        }
         //}
 
 
