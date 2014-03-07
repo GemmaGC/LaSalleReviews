@@ -14,7 +14,7 @@
 
         <p id = "info">{$exp}</p>
 
-        <div class="container_buttons">
+        <div class="container_buttons_micos">
             <a class="prev" href={$enr}>Enrere</a>
         </div>
 

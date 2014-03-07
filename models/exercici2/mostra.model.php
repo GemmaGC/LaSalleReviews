@@ -23,11 +23,11 @@ class Exercici2MostraModel extends Model{
     //Retorna el número d'imatges que té la taula
     public function getNumImatges(){
 
-        $sql = <<<QUERY
-        SELECT
-            count(id) AS numImg
-        FROM
-            monos
+$sql = <<<QUERY
+SELECT
+    count(id) AS numImg
+FROM
+    monos
 QUERY;
 
         $result = $this->getAll( $sql );
@@ -36,13 +36,13 @@ QUERY;
     //Retorna el nom i url de la primera imatge
     public function getPrimeraImatge() {
 
-        $sql = <<<QUERY
-        SELECT
-            *
-        FROM
-            monos
-        WHERE
-            monos.id = 1
+$sql = <<<QUERY
+SELECT
+    *
+FROM
+    monos
+WHERE
+    monos.id = 1
 QUERY;
 
         $result = $this->getAll( $sql );
@@ -51,11 +51,11 @@ QUERY;
     //Retorna totes les imatges de la taula
     public function getImatges(){
 
-        $sql = <<<QUERY
-        SELECT
-            *
-        FROM
-            monos
+$sql = <<<QUERY
+SELECT
+    *
+FROM
+    monos
 QUERY;
 
         $result = $this->getAll( $sql );

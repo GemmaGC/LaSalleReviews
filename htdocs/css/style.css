@@ -1,3 +1,6 @@
+@import url("../css/stylebbdd.css");
+@import url("../css/stylemicos.css");
+
 *{
 	font-size: 16px;
 	font-family: calibri;
@@ -10,7 +13,7 @@ body
     background: url(../imag/exercici1/bg.jpg) repeat top left;
 }
 
-.info
+.info_micos
 {
 	margin-bottom: 30px;
 }
@@ -20,7 +23,6 @@ body
 {
 	width: 100%;
 	height: 100px;
-
 	border-bottom: 3px solid #2E9AFE;
 	background-color: #58D3F7;
 }
@@ -60,8 +62,8 @@ footer
 
 #success p
 {
-	margin-top: 60px;
-	margin-bottom: 35px;
+	margin-top: 16px;
+	margin-bottom: 20px;
 	color: black;
 	font-size: 24px;
 	font-weight: bold; 
@@ -311,3 +313,18 @@ img.alert {
 
 }
 
+#components {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+
+#info {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color:black;
+
+}

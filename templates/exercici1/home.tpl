@@ -1,24 +1,5 @@
+{$modules.head}
 
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{$benv}</title>
-
-        <link rel="stylesheet" type="text/css" href="{$url.global}/css/style.css" />
-
-    </head>
-
-    <body>
-
-    <div class="main_header">
-        <header>
-            <div class="site-logo">{$titol}</div>
-        </header>
-    </div>
-
-    <div id="wrapper">
 
 
         <div id = "success">
@@ -35,5 +16,7 @@
 
 
         <div class="clear"></div>
+
+
 
 {$modules.footer}

@@ -300,11 +300,11 @@ body {
 }
 
 
-.insert-form .header {
+.insert-form .header_afegeix{
     padding: 30px 30px 0px 30px;
 }
 
-.insert-form .header h1 {
+.insert-form .header_afegeix h1 {
     font-family: 'Bree Serif', serif;
     font-weight: 300;
     font-size: 28px;
@@ -314,7 +314,7 @@ body {
     margin-bottom: 5px;
 }
 
-.insert-form .header span {
+.insert-form .header_afegeix span {
     font-size: 15px;
     line-height: 17px;
     color: #678889;
@@ -323,12 +323,12 @@ body {
 }
 
 
-.insert-form .content {
+.insert-form .content_afegeix {
     padding: 0 30px 25px 30px;
 }
 
 
-.insert-form .content .input {
+.insert-form .content_afegeix .input {
     width: 188px;
     padding: 15px 25px;
 
@@ -348,16 +348,16 @@ body {
 }
 
 
-.insert-form .content .imgURL, .insert-form .content {
+.insert-form .content_afegeix .imgURL, .insert-form .content_afegeix {
     margin-top: 25px;
 }
 
-.insert-form .content .input:hover {
+.insert-form .content_afegeix .input:hover {
     background: #dfe9ec;
     color: #414848;
 }
 
-.insert-form .content .input:focus {
+.insert-form .content_afegeix .input:focus {
     background: #dfe9ec;
     color: #414848;
 
@@ -367,7 +367,7 @@ body {
 }
 
 
-.content input:focus + div{
+.content_afegeix input:focus + div{
     left: -46px;
 }
 
