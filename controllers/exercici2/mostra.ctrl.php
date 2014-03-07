@@ -23,9 +23,9 @@ class Exercici2MostraController extends Controller
         $info = $this->getParams();
 
         $min = 1;
-        $max = $mostra_model->getNumImatges();
+        $max = $mostra_model->getImatges();
 
-        echo $max;
+        //echo $max;
 
         /*if($info['url_arguments'][0] < $min || $info['url_arguments'][0] > $max){
             $this->setLayout($this->view2);
@@ -38,9 +38,10 @@ class Exercici2MostraController extends Controller
             $this->assign('header', 'EXERCICI 2');
             $this->assign('titol', 'Mico #'.$info['url_arguments'][0]);
 
-        $imatges = mysql_fetch_array($mostra_model->getImatges());
-            echo print_r(mysql_fetch_array($imatges));
-            if($max != 0){
+            $imatges = mysql_fetch_array($mostra_model->getImatges());
+            //echo print_r(mysql_fetch_array($imatges));
+
+        if($max != 0){
                 $imatges = mysql_fetch_array($mostra_model->getImatges());
 
                 while($row = $imatges)
