@@ -9,30 +9,29 @@
 
         </div>
 
-            <h1 class="info_mic">{$titol}</h1>
+        <h1 class="info_mic">{$titol}</h1>
 
 
-            <section>
+        <section>
 
-                    <div class="clr"></div>
+                <div class="clr"></div>
 
-                    <img class="img_monos" src="{$act_url}">
+                <img class="img_monos" src="{$act_url}">
 
-                    <div class="container_buttons_micos">
+                <div class="container_buttons_micos">
 
-                        {if $prev_img > $min}
-                            <a class="prev" href="{$prev_url}">Anterior</a>
-                        {else}
-                            <a href=""></a>
-                        {/if}
-                        {if $next_img < $max}
-                            <a class="next" href="{$next_url}">Següent</a>
-                        {/if}
-                    </div>
+                    {if $prev_img > $min+1}
+                        <a class="prev" href="{$prev_url}">Anterior</a>
+                    {else}
+                        <a href=""></a>
+                    {/if}
+                    {if $next_img < $max}
+                        <a class="next" href="{$next_url}">Següent</a>
+                    {/if}
+                </div>
 
-            </section>
+        </section>
 
-        </div>
-        <div class="clear"></div>
     </div>
+    <div class="clear"></div>
 {$modules.footer}

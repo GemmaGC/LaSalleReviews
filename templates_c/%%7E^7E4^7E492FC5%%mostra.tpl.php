@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-07 10:42:23
+<?php /* Smarty version 2.6.14, created on 2014-03-08 01:11:03
          compiled from exercici2/mostra.tpl */ ?>
 
 <?php echo $this->_tpl_vars['modules']['head']; ?>
@@ -26,7 +26,7 @@
 
                     <div class="container_buttons_micos">
 
-                        <?php if ($this->_tpl_vars['prev_img'] > $this->_tpl_vars['min']): ?>
+                        <?php if ($this->_tpl_vars['prev_img'] > $this->_tpl_vars['min']+1): ?>
                             <a class="prev" href="<?php echo $this->_tpl_vars['prev_url']; ?>
 ">Anterior</a>
                         <?php else: ?>
