@@ -15,18 +15,18 @@
             <section>
 
                     <div class="clr"></div>
-                    {assign var = 'urlm' value= 'url_img'}
+
                     <img class="img_monos" src="{$imgmonos[$nummono].url_img }">
 
                     <div class="container_buttons_micos">
 
-                        {if $prev_img > $min}
-                            <a class="prev" href="{$prev_url}">Anterior</a>
+                        {if $nummono > 0}
+                            <a class="prev" href="/mostra/{$nummono}">Anterior</a>
                         {else}
                             <a href=""></a>
                         {/if}
-                        {if $next_img < $max}
-                            <a class="next" href="{$next_url}">Següent</a>
+                        {if $nummono < $max}
+                            <a class="next" href="/mostra/{$siguiente}">Següent</a>
                         {/if}
                     </div>
 

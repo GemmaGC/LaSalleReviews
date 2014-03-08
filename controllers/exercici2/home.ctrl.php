@@ -24,7 +24,7 @@
             $this->assign('enr', '/home');
 
             if(count($mostra_model->getImatges()) != 0){
-                $this->assign('mostrar', '/mostra/3');
+                $this->assign('mostrar', '/mostra/1');
             }else{
                 //Mostra missatge error
                 $this->assign('mostrar', '/home');
