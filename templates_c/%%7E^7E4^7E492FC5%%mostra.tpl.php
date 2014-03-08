@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-03-07 10:42:23
+<?php /* Smarty version 2.6.14, created on 2014-03-08 21:17:54
          compiled from exercici2/mostra.tpl */ ?>
 
 <?php echo $this->_tpl_vars['modules']['head']; ?>
@@ -20,8 +20,8 @@
             <section>
 
                     <div class="clr"></div>
-
-                    <img class="img_monos" src="<?php echo $this->_tpl_vars['act_url']; ?>
+                    <?php $this->assign('urlm', 'url_img'); ?>
+                    <img class="img_monos" src="<?php echo $this->_tpl_vars['imgmonos'][$this->_tpl_vars['nummono']]['url_img']; ?>
 ">
 
                     <div class="container_buttons_micos">

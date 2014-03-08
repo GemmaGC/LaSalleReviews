@@ -15,8 +15,8 @@
             <section>
 
                     <div class="clr"></div>
-
-                    <img class="img_monos" src="{$act_url}">
+                    {assign var = 'urlm' value= 'url_img'}
+                    <img class="img_monos" src="{$imgmonos[$nummono].url_img }">
 
                     <div class="container_buttons_micos">
 

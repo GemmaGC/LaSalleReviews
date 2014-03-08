@@ -44,22 +44,20 @@ class Exercici2MostraController extends Controller
 
             $imatges = $mostra_model->getImatges();
             //echo var_dump($imatges);
-
+             $this->assign('imgmonos',$imatges);
+            $this->assign('nummono',$info['url_arguments'][0]-1);
             $this->assign('min', $min-1);
             $this->assign('max', $max+1);
 
-            $id = $info['url_arguments'][0];
-            echo $id;
-
             //for ($x=0; $x<$max; $x++){
-                $this->assign('act_img', $imatges[$id]["nom_img"]);
+                /*$this->assign('act_img', $imatges[$id]["nom_img"]);
                 $this->assign('prev_img', $imatges[$id-1]["nom_img"]);
                 $this->assign('next_img', $imatges[$id+1]["nom_img"]);
 
                 $this->assign('act_url', $imatges[$id]["url_img"]);
                 $this->assign('prev_url', $imatges[$id-1]);
                 $this->assign('next_url', $imatges[$id+1]);
-
+*/
             //}
         }
         //}
