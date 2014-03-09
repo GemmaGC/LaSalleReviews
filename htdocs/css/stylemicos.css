@@ -15,10 +15,13 @@ body{
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
+#info{
+    top:0px;
+}
 
 h1 .info_mic .bbdd {
     position:absolute;
-    top:130px;
+    top:110px;
     left:490px;
     font-family:"Arial","Verdana";
 }
