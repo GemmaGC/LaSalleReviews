@@ -16,10 +16,15 @@
 
                 <div class="clr"></div>
 
+<<<<<<< HEAD
                 <img class="img_monos" src="{$act_url}">
+=======
+                    <img class="img_monos" src="{$imgmonos[$nummono].url_img }">
+>>>>>>> 57d153eedc2dd04f16f6e86e751280765cf35846
 
                 <div class="container_buttons_micos">
 
+<<<<<<< HEAD
                     {if $prev_img > $min+1}
                         <a class="prev" href="{$prev_url}">Anterior</a>
                     {else}
@@ -29,6 +34,17 @@
                         <a class="next" href="{$next_url}">Següent</a>
                     {/if}
                 </div>
+=======
+                        {if $nummono > 0}
+                            <a class="prev" href="/mostra/{$nummono}">Anterior</a>
+                        {else}
+                            <a href=""></a>
+                        {/if}
+                        {if $nummono < $max}
+                            <a class="next" href="/mostra/{$siguiente}">Següent</a>
+                        {/if}
+                    </div>
+>>>>>>> 57d153eedc2dd04f16f6e86e751280765cf35846
 
         </section>
 

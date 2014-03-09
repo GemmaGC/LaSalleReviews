@@ -35,22 +35,7 @@ QUERY;
         //echo var_dump($result);
     }
 
-    //Retorna el nom i url de la primera imatge
-    public function getPrimeraImatge() {
 
-$sql = <<<QUERY
-SELECT
-    *
-FROM
-    monos
-WHERE
-    monos.id = 1
-QUERY;
-
-        $result = $this->getAll( $sql );
-        return $result;
-        //print_r (mysql_fetch_array($result));
-    }
 
     //Retorna totes les imatges de la taula
     public function getImatges(){

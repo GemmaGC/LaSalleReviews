@@ -22,8 +22,10 @@ class Exercici2AfegeixController extends Controller
 
         $nom_img = Filter::getString('imgName');
         $url_img = Filter::getString("imgURL");
+        if(Filter::getString('submit')){
+            $afegeix_model->afegeixImatge($nom_img, $url_img);
+        }
 
-        $afegeix_model->afegeixImatge($nom_img, $url_img);
 
 
 
