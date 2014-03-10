@@ -1,7 +1,11 @@
 {$modules.head}
 
-    {$modules.formulari}
-    {$modules.formulari}
-    {$modules.formulari}
+    <div class="fotos_container">
+        {$modules.formulari}
+        {$modules.formulari}
+        {$modules.formulari}
+    </div>
 
 {$modules.footer}
+
+
