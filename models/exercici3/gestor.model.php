@@ -27,24 +27,6 @@ QUERY;
     }
 
     /*
-     * Funció que retorna el número d'imatges que té la taula
-     ** $nom_taula: nom de la taula de la base de dades
-     */
-    public function getNumImatges($nom_taula){
-
-        $sql = <<<QUERY
-SELECT
-    count(id) AS numImg
-FROM
-    $nom_taula
-QUERY;
-
-        $result = $this->getAll( $sql );
-        return $result;
-    }
-
-
-    /*
      * Funció que retorna totes les imatges de la taula
      ** $nom_taula: nom de la taula de la base de dades
      */
