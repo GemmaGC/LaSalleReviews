@@ -44,8 +44,9 @@ class Exercici3MostraController extends Controller
     }
 
     public function loadModules() {
-        $modules['head']	= 'SharedHeadController';
-        $modules['footer']	= 'SharedFooterController';
+        $modules['head']	        = 'SharedHeadController';
+        $modules['footer']	        = 'SharedFooterController';
+        $modules['visualitzador']	= 'Exercici3MostraController';
         return $modules;
     }
 }

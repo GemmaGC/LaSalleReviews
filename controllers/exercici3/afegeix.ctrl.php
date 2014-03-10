@@ -19,8 +19,9 @@ class Exercici3AfegeixController extends Controller
 
         $nom_img = Filter::getString('imgName');
         $url_img = Filter::getString("imgURL");
+
         if(Filter::getString('submit')){
-            //$model->afegeixImatge($nom_img, $url_img, $animal);
+            $model->afegeixImatge($nom_img, $url_img, $animal);
         }
 
     }
@@ -28,7 +29,7 @@ class Exercici3AfegeixController extends Controller
     public function loadModules() {
         $modules['head']	    = 'SharedHeadController';
         $modules['footer']	    = 'SharedFooterController';
-        $modules['formulari']	= 'Exercici3AfegeixController';
+        $modules['formulari']	= 'Exercici3FormulariController';
         return $modules;
     }
 }

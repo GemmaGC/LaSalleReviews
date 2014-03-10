@@ -20,8 +20,9 @@ class Exercici3GestorModel extends Model{
             INSERT INTO $nom_taula
             VALUES ('', '$nom_img', '$url')
 QUERY;
-            $this->execute( $sql );
             var_dump($sql);
+            $this->execute( $sql );
+
         }
     }
 
