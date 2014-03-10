@@ -13,7 +13,6 @@ class Exercici3HomeController extends Controller
     public function build()
     {
         $info = $this->getParams();
-        $model = $this->getClass( 'Exercici3GestorModel' ); //Importem el model
 
         $this->setLayout($this->view_head);
         $this->assign('css', '/css/style.css');
@@ -23,13 +22,8 @@ class Exercici3HomeController extends Controller
         $this->assign('afegir', '/afegeixZoo');
         $this->assign('enr', '/home');
 
+        $this->assign('mostrar', '/mostraZoo');
 
-        if(count($model->getImatges()) != 0){
-            $this->assign('mostrar', '/mostraZoo/1');
-        }else{
-            //Mostra missatge error
-            $this->assign('mostrar', '/home');
-        }
     }
 
 
