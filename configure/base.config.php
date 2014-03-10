@@ -63,3 +63,16 @@ $config['Exercici2AfegeixModel']        = PATH_MODELS .'exercici2/afegeix.model.
 $config['Exercici2MostraModel']        = PATH_MODELS .'exercici2/mostra.model.php';
 
 //----------------------------------------
+
+
+
+//----------- EXERCICI 3 -----------------
+
+    //Controllers
+$config['Exercici3MostraController']    = PATH_CONTROLLERS . 'exercici3/mostra.ctrl.php';
+$config['Exercici3AfegeixController']	= PATH_CONTROLLERS . 'exercici3/afegeix.ctrl.php';
+
+    //Model
+$config['Exercici3GestorModel']        = PATH_MODELS .'exercici3/gestor.model.php';
+
+//----------------------------------------
