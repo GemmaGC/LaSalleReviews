@@ -4,7 +4,7 @@
     <form name="insert-form" class="insert-form" action="" method="post">
 
         <div class="header_afegeix">
-            <h1 class="bbdd">AFEGIR IMATGE {$animal} A LA BASE DE DADES</h1>
+            <h1 class="bbdd">AFEGIR {$animal} A LA BASE DE DADES</h1>
             <span>Introdueix el nom i l'URL de la imatge.</span>
         </div>
 

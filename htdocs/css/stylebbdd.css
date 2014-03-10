@@ -166,8 +166,7 @@ footer p {
     padding: 4px;
     width: 140px;
     margin: 10px;
-    display: block;
-}
+    /*display: block;*/}
 
 .form-all{
     padding: 30px;
@@ -437,7 +436,7 @@ body {
 
 
 .insert-form .footer-form .register {
-    display: block;
+    /*display: block;*/
     float: right;
     padding: 5px;
     margin-right: 20px;
@@ -464,5 +463,11 @@ body {
 
 
 .fotos_container {
-    display: inline-block;
+    display: inline-flex;
+}
+
+
+.insert-form {
+    margin-right: 20px;
+    margin-left: 20px;
 }
