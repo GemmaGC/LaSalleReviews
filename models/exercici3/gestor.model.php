@@ -21,6 +21,7 @@ class Exercici3GestorModel extends Model{
             VALUES ('', '$nom_img', '$url')
 QUERY;
             $this->execute( $sql );
+            var_dump($sql);
         }
     }
 
