@@ -463,3 +463,6 @@ body {
 }
 
 
+.fotos_container {
+    display: inline-block;
+}
