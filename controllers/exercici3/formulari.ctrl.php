@@ -5,7 +5,9 @@ class Exercici3FormulariController extends Controller
 
     public function build( )
     {
-        $this->assign( 'revision', self::REVISION );
+        $info = $this->getParams();
+        var_dump($info);
+        $this->assign( 'animal', $info['animal'] );
         $this->setLayout( 'exercici3/formulari.tpl' );
     }
 }

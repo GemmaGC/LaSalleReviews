@@ -14,8 +14,8 @@ class Exercici3AfegeixController extends Controller
 
         $this->setLayout($this->view);
 
-        $animal = 'monos';
-        $this->setParams( array( 'animals' => $animal ) );
+        $animal = 'MICO';
+        $this->setParams( array( 'animal' => $animal ) );
 
         $nom_img = Filter::getString('imgName');
         $url_img = Filter::getString("imgURL");
