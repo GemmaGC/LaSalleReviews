@@ -6,9 +6,9 @@
 
 
     <div class="fotos_container">
-        {$modules.formulari}
-        {$modules.formulari}
-        {$modules.formulari}
+        {$modules.formulari_mono}
+        {$modules.formulari_ornitorrinco}
+        {$modules.formulari_marmota}
     </div>
 
 {$modules.footer}
