@@ -39,4 +39,5 @@ $config['afegeix']		    = 'Exercici2AfegeixController';
 //----------- EXERCICI 3 -----------------
 $config['mostraZoo']		= 'Exercici3MostraController';
 $config['afegeixZoo']		= 'Exercici3AfegeixController';
+$config['exercici3']		= 'Exercici3HomeController';
 //----------------------------------------
