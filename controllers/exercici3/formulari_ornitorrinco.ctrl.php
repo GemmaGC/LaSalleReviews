@@ -1,5 +1,5 @@
 <?php
-class Exercici3FormulariController extends Controller
+class Exercici3FormulariOrnitorrincoController extends Controller
 {
     const REVISION = 31;
 
@@ -8,6 +8,6 @@ class Exercici3FormulariController extends Controller
         $info = $this->getParams();
         var_dump($info);
         $this->assign( 'animal', $info['animal'] );
-        $this->setLayout( 'exercici3/formulari.tpl' );
+        $this->setLayout( 'exercici3/formulari_ornitorrinco.tpl' );
     }
 }

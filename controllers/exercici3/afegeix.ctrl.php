@@ -27,9 +27,11 @@ class Exercici3AfegeixController extends Controller
     }
 
     public function loadModules() {
-        $modules['head']	    = 'SharedHeadController';
-        $modules['footer']	    = 'SharedFooterController';
-        $modules['formulari']	= 'Exercici3FormulariController';
+        $modules['head']	                = 'SharedHeadController';
+        $modules['footer']	                = 'SharedFooterController';
+        $modules['formulari_mono']	        = 'Exercici3FormulariMonoController';
+        $modules['formulari_ornitorrinco']	= 'Exercici3FormulariOrnitorrincoController';
+        $modules['formulari_marmota']	    = 'Exercici3FormulariMarmotaController';
         return $modules;
     }
 }
