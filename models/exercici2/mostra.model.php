@@ -8,7 +8,9 @@
 
 
 
-class Exercici2MostraModel extends Model{
+class
+
+Exercici2MostraModel extends Model{
 
     public function build(){
         $con=mysqli_connect("localhost","root","root","monosdb");

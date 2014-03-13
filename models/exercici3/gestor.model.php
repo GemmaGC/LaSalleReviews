@@ -14,7 +14,7 @@ class Exercici3GestorModel extends Model{
         // Check connection
         if (mysqli_connect_errno($con))
         {
-            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+            //echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }else{
             $sql = <<<QUERY
             INSERT INTO $nom_taula
