@@ -223,8 +223,8 @@ a.menu:active
 }
 
 body {
-    background: url(../imag/exercici1/bg.jpg) repeat top left
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    background: url(../imag/exercici1/bg.jpg) repeat top left;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica, Arial", "Lucida Grande", "sans-serif";
     font-weight:300;
     text-align: left;
     text-decoration: none;
