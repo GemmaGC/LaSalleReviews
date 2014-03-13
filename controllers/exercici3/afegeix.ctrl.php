@@ -14,14 +14,20 @@ class Exercici3AfegeixController extends Controller
 
         $this->setLayout($this->view);
 
-        $animal = 'MICO';
+        $animal = 'monos';
         $this->setParams( array( 'animal' => $animal ) );
 
         $nom_img = Filter::getString('imgName');
         $url_img = Filter::getString("imgURL");
 
-        if(Filter::getString('submit')){
-            $model->afegeixImatge($nom_img, $url_img, $animal);
+        if(Filter::getString('submit_mono')){
+        $model->afegeixImatge($nom_img, $url_img, 'monos');
+    }
+        if(Filter::getString('submit_marmota')){
+            $model->afegeixImatge($nom_img, $url_img, 'marmotas');
+        }
+        if(Filter::getString('submit_ornitorrinco')){
+            $model->afegeixImatge($nom_img, $url_img, 'ornitorincos');
         }
 
     }
