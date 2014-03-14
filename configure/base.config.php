@@ -76,6 +76,11 @@ $config['Exercici3FormulariMonoController']	            = PATH_CONTROLLERS . 'ex
 $config['Exercici3FormulariOrnitorrincoController']	    = PATH_CONTROLLERS . 'exercici3/formulari_ornitorrinco.ctrl.php';
 $config['Exercici3FormulariMarmotaController']	        = PATH_CONTROLLERS . 'exercici3/formulari_marmota.ctrl.php';
 $config['Exercici3VisualitzadorController']         	= PATH_CONTROLLERS . 'exercici3/visualitzador.ctrl.php';
+$config['Exercici3MostraMarmotaController']         	= PATH_CONTROLLERS . 'exercici3/mostra_marmota.ctrl.php';
+$config['Exercici3MostraMonoController']         	    = PATH_CONTROLLERS . 'exercici3/mostra_mono.ctrl.php';
+$config['Exercici3MostraOrnitorrincController']         = PATH_CONTROLLERS . 'exercici3/mostra_ornitorrinco.ctrl.php';
+$config['Exercici3MostraBotonsController']              = PATH_CONTROLLERS . 'exercici3/mostra_botons.ctrl.php';
+
 
     //Model
 $config['Exercici3GestorModel']             = PATH_MODELS .'exercici3/gestor.model.php';

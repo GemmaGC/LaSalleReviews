@@ -14,13 +14,13 @@ class Exercici3GestorModel extends Model{
         // Check connection
         if (mysqli_connect_errno($con))
         {
-            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+            //echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }else{
             $sql = <<<QUERY
             INSERT INTO $nom_taula
             VALUES ('', '$nom_img', '$url')
 QUERY;
-            //var_dump($sql);
+           // var_dump($sql);
             $this->execute( $sql );
 
         }
