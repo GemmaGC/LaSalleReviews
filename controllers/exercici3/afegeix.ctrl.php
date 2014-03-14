@@ -27,7 +27,7 @@ class Exercici3AfegeixController extends Controller
             $model->afegeixImatge($nom_img, $url_img, 'marmotas');
         }
         if(Filter::getString('submit_ornitorrinco')){
-            $model->afegeixImatge($nom_img, $url_img, 'ornitorincos');
+            $model->afegeixImatge($nom_img, $url_img, 'ornitorrincos');
         }
 
     }
