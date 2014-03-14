@@ -13,7 +13,7 @@
         </tr>
     </table>
 
-<table style="width:300px">
+<table>
     <tr>
         <td>hola</td>
     </tr>
