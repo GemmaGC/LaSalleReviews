@@ -17,6 +17,8 @@ class Exercici3AfegeixController extends Controller
         $animal = 'monos';
         $this->setParams( array( 'animal' => $animal ) );
 
+        $this->assign('enrere', '/exercici3');
+
         $nom_img = Filter::getString('imgName');
         $url_img = Filter::getString("imgURL");
 
