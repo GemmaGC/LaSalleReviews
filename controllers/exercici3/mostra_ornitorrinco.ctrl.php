@@ -8,9 +8,11 @@ class Exercici3MostraOrnitorrincoController extends Controller
     {
         $model = $this->getClass( 'Exercici3GestorModel' ); //Importem el model
         $imatges = $model->getImatges('ornitorrincos');
-        $this->setLayout($this->view);
+
 
         $this->assign('img', $imatges);
         $this->assign('num', 0);
+
+        $this->setLayout($this->view);
     }
 }

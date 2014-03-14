@@ -44,10 +44,11 @@ class Exercici3MostraController extends Controller
     }
 
     public function loadModules() {
+
         $modules['head']	                = 'SharedHeadController';
         $modules['footer']	                = 'SharedFooterController';
         //$modules['mostra_botons']	        = 'Exercici3MostraBotonsController';
-       // $modules['mostra_marmota']	    = 'Exercici3MostraMarmotaController';
+        $modules['mostra_marmota']	    = 'Exercici3MostraMarmotaController';
         //$modules['mostra_mono']	        = 'Exercici3MostraMonoController';
         //$modules['mostra_ornitorrinco']	= 'Exercici3MostraOrnitorrincoController';
         return $modules;

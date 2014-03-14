@@ -2,8 +2,8 @@
 
 <!--<div class="visualizador_container">-->
     <table>
-        <tr>
-            <td>{$modules.mostra_mono}</td>
+        <tr>ble
+            {$modules.mostra_mono}
         </tr>
         <tr>
             <td>{$modules.mostra_marmota}</td>
