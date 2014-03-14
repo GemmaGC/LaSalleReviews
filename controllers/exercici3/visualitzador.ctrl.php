@@ -8,4 +8,16 @@ class Exercici3VisualitzadorController extends Controller
         $this->assign( 'revision', self::REVISION );
         $this->setLayout( 'exercici3/visualitzador.tpl' );
     }
+
+
+    public function loadModules() {
+        $modules['head']	        = 'SharedHeadController';
+        $modules['footer']	        = 'SharedFooterController';
+        $modules['visualitzador']	= 'Exercici3MostraController';
+        return $modules;
+    }
+
+
+
+
 }
