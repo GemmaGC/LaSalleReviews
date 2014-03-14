@@ -19,6 +19,8 @@
             $this->assign('css', '/css/style.css');
             $this->assign('header', 'EXERCICI 2');
 
+            $this->assign('titol', 'HOME EXERCICI 2');
+
             $this->setLayout($this->view_home);
             $this->assign('afegir', '/afegeix');
             $this->assign('enr', '/home');

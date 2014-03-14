@@ -3,7 +3,7 @@
 
 <!--$header = EXERCICI 2-->
         <div id = "success">
-            <p>HOME EXERCICI 2</p>
+            <p>{$titol}</p>
         </div>
 
 

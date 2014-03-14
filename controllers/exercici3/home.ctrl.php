@@ -19,6 +19,7 @@ class Exercici3HomeController extends Controller
         $this->assign('header', 'EXERCICI 3');
 
         $this->setLayout($this->view_home);
+        $this->assign('titol', 'HOME EXERCICI 3');
         $this->assign('afegir', '/afegeixZoo');
         $this->assign('enr', '/home');
 

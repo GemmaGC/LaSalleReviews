@@ -14,6 +14,9 @@ class Exercici3AfegeixController extends Controller
 
         $this->setLayout($this->view);
 
+
+        $this->assign('enrere', '/exercici3');
+
         $animal = 'MICO';
         $this->setParams( array( 'animal' => $animal ) );
 

@@ -6,7 +6,7 @@ class Exercici3FormulariMonoController extends Controller
     public function build( )
     {
         $info = $this->getParams();
-        var_dump($info);
+        //var_dump($info);
         $this->assign( 'animal', $info['animal'] );
         $this->setLayout( 'exercici3/formulari_mono.tpl' );
     }
