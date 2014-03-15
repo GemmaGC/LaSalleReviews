@@ -18,7 +18,9 @@ class Exercici2AfegeixController extends Controller
 
         $afegeix_model = $this->getClass( 'Exercici2AfegeixModel' ); //Importem el model per carregar imatges
 
-        $this->setLayout($this->view);
+        $css = "/css/style.css";
+        $this->setParams( array( 'css' => $css ) );
+
 
         $nom_img = Filter::getString('imgName');
         $url_img = Filter::getString("imgURL");
@@ -27,6 +29,7 @@ class Exercici2AfegeixController extends Controller
         }
 
 
+        $this->setLayout($this->view);
 
 
     }

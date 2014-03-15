@@ -6,6 +6,10 @@ class SharedHeadController extends Controller
 
 	public function build( )
 	{
+
+        $info = $this->getParams();
+        $this->assign( 'css', $info['css'] );
+
 		$this->assign( 'revision', self::REVISION );
 		$this->setLayout( 'shared/head.tpl' );
 	}

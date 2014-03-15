@@ -12,10 +12,11 @@ class Exercici3AfegeixController extends Controller
 
         $model = $this->getClass( 'Exercici3GestorModel' ); //Importem el model
 
-        $this->setLayout($this->view);
+        $css = "/css/style.css";
+        $this->setParams( array( 'css' => $css ) );
 
-        $animal = 'monos';
-        $this->setParams( array( 'animal' => $animal ) );
+        //$animal = 'monos';
+        //$this->setParams( array( 'animal' => $animal ) );
 
         $this->assign('enrere', '/exercici3');
 
@@ -31,6 +32,9 @@ class Exercici3AfegeixController extends Controller
         if(Filter::getString('submit_ornitorrinco')){
             $model->afegeixImatge($nom_img, $url_img, 'ornitorrincos');
         }
+
+        $this->setLayout($this->view);
+
 
     }
 

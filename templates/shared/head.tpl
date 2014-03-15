@@ -13,7 +13,8 @@
 		<meta name="distribution" content="world" />
 		-->
 		<title>PROJECTES WEB</title>
-		<link rel="stylesheet" href="{$url.global}/css/style.css">
+		<!--<link rel="stylesheet" href="{$url.global}/css/style.css">-->
+        <link rel="stylesheet" href="{$css}">
 	</head>
 
 	<body>

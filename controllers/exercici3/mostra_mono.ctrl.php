@@ -10,10 +10,15 @@ class Exercici3MostraMonoController extends Controller
         $imatges = $model->getImatges('monos');
 
         $this->assign('numImg', count($imatges));
-        $this->assign('segona', 1);
-        $this->assign('tercera', 2);
+
+        $info = $this->getParams();
+
+        $num = $info['num'];
+        $this->assign('num', $num );
+        $this->assign('segona', $num+1);
+        $this->assign('tercera', $num+2);
+
         $this->assign('img', $imatges);
-        $this->assign('num', 0);
 
         $this->setLayout($this->view);
     }

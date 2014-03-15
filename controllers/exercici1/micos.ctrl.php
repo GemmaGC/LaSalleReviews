@@ -8,10 +8,14 @@ class Exercici1MicosController extends Controller
 
     public function build()
     {
-        $this->setLayout($this->view);
+        $css = "/css/style.css";
+        $this->setParams( array( 'css' => $css ) );
 
         $this->assign('ant', 'Anterior');
         $this->assign('seg', 'Següent');
+
+        $this->setLayout($this->view);
+
     }
 
 }

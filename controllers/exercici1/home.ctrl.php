@@ -15,12 +15,18 @@
          */
         public function build()
         {
-            $this->setLayout($this->view);
+
+            $css = "/css/style.css";
+            $this->setParams( array( 'css' => $css ) );
+
             $this->assign('titol', 'EXERCICI 1');
             $this->assign('benv', "BENVINGUT A L'EXERCICI 1!");
             $this->assign('exp', "Veuras uns micos maquíssims!");
             $this->assign('micos', '/micos/1');
             $this->assign('enr', '/home');
+
+            $this->setLayout($this->view);
+
         }
 
 

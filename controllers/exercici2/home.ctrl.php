@@ -15,13 +15,13 @@
             $info = $this->getParams();
             $mostra_model = $this->getClass( 'Exercici2MostraModel' ); //Importem el model per mostrar imatges
 
-            $this->setLayout($this->view_head);
-            $this->assign('css', '/css/style.css');
-            $this->assign('header', 'EXERCICI 2');
+
+            $css = "/css/style.css";
+            $this->setParams( array( 'css' => $css ) );
 
             $this->assign('titol', 'HOME EXERCICI 2');
 
-            $this->setLayout($this->view_home);
+
             $this->assign('afegir', '/afegeix');
             $this->assign('enr', '/home');
 
@@ -31,6 +31,8 @@
                 //Mostra missatge error
                 $this->assign('mostrar', '/home');
             }
+
+            $this->setLayout($this->view_home);
         }
 
 

@@ -7,6 +7,8 @@ class ErrorError404Controller extends Controller
 
 	public function build( )
 	{
+        $css = "/css/style.css";
+        $this->setParams( array( 'css' => $css ) );
 
         $this->setLayout( 'error/error404.tpl' );
 	}

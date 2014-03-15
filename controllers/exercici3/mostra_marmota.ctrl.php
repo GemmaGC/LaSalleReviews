@@ -10,12 +10,15 @@ class Exercici3MostraMarmotaController extends Controller
         $imatges = $model->getImatges('marmotas');
 
         $this->assign('numImg', count($imatges));
-        $this->assign('segona', 1);
-        $this->assign('tercera', 2);
-        $this->assign('img', $imatges);
-        $this->assign('num', 0);
 
-        var_dump($imatges[0]["url_img"]);
+        $info = $this->getParams();
+
+        $num = $info['num'];
+        $this->assign('num', $num );
+        $this->assign('segona', $num+1);
+        $this->assign('tercera', $num+2);
+
+        $this->assign('img', $imatges);
 
         $this->setLayout($this->view);
 

@@ -21,9 +21,11 @@
             // Caldrà sempre definir una vista per cada controllador. Pot quedar definidar
             // aqui o dins d'un altre mètode cridat a build().
             // El fitxer referenciat es troba a: instances/<la_vostra_instancia>/templates/home/home.tpl
-            $this->setLayout($this->view);
 
-            $this->assign('header', 'PROJECTES WEB');
+            $css = "/css/style.css";
+            $this->setParams( array( 'css' => $css ) );
+
+            $this->setLayout($this->view);
 
         }
 

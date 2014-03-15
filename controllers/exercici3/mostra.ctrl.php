@@ -13,9 +13,23 @@ class Exercici3MostraController extends Controller
     public function build()
     {
 
-            $this->setLayout($this->view);
+        $css = "/css/style.css";
+        $this->setParams( array( 'css' => $css ) );
 
-            $this->assign('header', 'EXERCICI 3');
+        $info = $this->getParams();
+
+        $this->assign('header', 'EXERCICI 3');
+
+        $this->setParams( array( 'num' => $info['url_arguments'][0] ) );
+
+        $this->assign('boto_ant', '/imag/botons/enrere.png');
+        $this->assign('url_ant', $info['url_arguments'][0]-3);
+
+        $this->assign('boto_seg', '/imag/botons/seg.png');
+        $this->assign('url_seg', $info['url_arguments'][0]+3);
+
+
+        $this->setLayout($this->view);
 
 
     }

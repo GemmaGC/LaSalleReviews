@@ -14,16 +14,17 @@ class Exercici3HomeController extends Controller
     {
         $info = $this->getParams();
 
-        $this->setLayout($this->view_head);
-        $this->assign('css', '/css/style.css');
-        $this->assign('header', 'EXERCICI 3');
+        $css = "/css/style.css";
+        $this->setParams( array( 'css' => $css ) );
 
-        $this->setLayout($this->view_home);
+
         $this->assign('titol', 'HOME EXERCICI 3');
         $this->assign('afegir', '/afegeixZoo');
         $this->assign('enr', '/home');
 
-        $this->assign('mostrar', '/mostraZoo');
+        $this->assign('mostrar', '/mostraZoo/0');
+
+        $this->setLayout($this->view_home);
 
     }
 
