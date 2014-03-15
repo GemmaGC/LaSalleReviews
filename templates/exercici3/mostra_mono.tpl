@@ -4,9 +4,9 @@
 
         <section>
 
-    <img class="img_monos" src="{$img[$num].url_imatge }">
-    <img class="img_monos" src="{$img[$num+1].url_imatge}">
-    <img class="img_monos" src="{$img[$num+2].url_imatge}">
+            <img class="img_mono" src="{$img[$num].url_img }">
+            {if $segona < $numImg}<img class="img_mono" src="{$img[$segona].url_img }">{/if}
+            {if $tercera < $numImg}<img class="img_mono" src="{$img[$tercera].url_img }">{/if}
 
    </section>
 

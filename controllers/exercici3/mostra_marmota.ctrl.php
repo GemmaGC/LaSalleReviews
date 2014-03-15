@@ -8,11 +8,15 @@ class Exercici3MostraMarmotaController extends Controller
     {
         $model = $this->getClass( 'Exercici3GestorModel' ); //Importem el model
         $imatges = $model->getImatges('marmotas');
+
         $this->assign('numImg', count($imatges));
         $this->assign('segona', 1);
         $this->assign('tercera', 2);
         $this->assign('img', $imatges);
         $this->assign('num', 0);
+
+        var_dump($imatges[0]["url_img"]);
+
         $this->setLayout($this->view);
 
     }

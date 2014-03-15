@@ -5,10 +5,10 @@
 
     <section>
 
-        <img class="img_marmota" src="{$img[$num].url_imatge }">
-        {if $num+1 < $numImg}<img class="img_marmota" src="{$img[$segona].url_imatge }">{/if}
-        {if $num+2 < $numImg}<img class="img_marmota" src="{$img[$tercera].url_imatge }">{/if}
-        {$numImg}
+        <img class="img_marmota" src="{$img[$num].url_img }">
+        {if $segona < $numImg}<img class="img_marmota" src="{$img[$segona].url_img }">{/if}
+        {if $tercera < $numImg}<img class="img_marmota" src="{$img[$tercera].url_img }">{/if}
+        {$img[$num].url_imatge}
 
     </section>
 

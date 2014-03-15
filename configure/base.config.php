@@ -77,7 +77,7 @@ $config['Exercici3AfegeixController']	                = PATH_CONTROLLERS . 'exer
 $config['Exercici3MostraController']                    = PATH_CONTROLLERS . 'exercici3/mostra.ctrl.php';
     $config['Exercici3MostraMarmotaController']         	= PATH_CONTROLLERS . 'exercici3/mostra_marmota.ctrl.php';
     $config['Exercici3MostraMonoController']         	    = PATH_CONTROLLERS . 'exercici3/mostra_mono.ctrl.php';
-    $config['Exercici3MostraOrnitorrincController']         = PATH_CONTROLLERS . 'exercici3/mostra_ornitorrinco.ctrl.php';
+    $config['Exercici3MostraOrnitorrincoController']         = PATH_CONTROLLERS . 'exercici3/mostra_ornitorrinco.ctrl.php';
     $config['Exercici3MostraBotonsController']              = PATH_CONTROLLERS . 'exercici3/mostra_botons.ctrl.php';
 
 
