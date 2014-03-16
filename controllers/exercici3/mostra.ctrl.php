@@ -20,6 +20,8 @@ class Exercici3MostraController extends Controller
 
         $this->assign('header', 'EXERCICI 3');
 
+        $this->assign('enrere', '/exercici3');
+
         $this->setParams( array( 'num' => $info['url_arguments'][0] ) );
 
         //És la forma més cutre de calcular el màxim de pàgines, ja ho optimitzarem

@@ -2,6 +2,12 @@
 
 <div class="visualizador_container">
 
+    <div class="go_back_container_micos">
+
+        <a class="prev" href="{$enrere}">Enrere</a>
+
+    </div>
+
     <table>
         <tr>
 
