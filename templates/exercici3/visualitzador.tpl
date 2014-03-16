@@ -6,13 +6,13 @@
         <tr>
 
             <td rowspan="3">
-                <a href="{$url_ant}"><img class="img_boto" src="{$boto_ant}"></a>
+                {if $num > $min} <a href="{$url_ant}"><img class="img_boto" src="{$boto_ant}"></a> {/if}
             </td>
 
             {$modules.mostra_mono}
 
             <td rowspan="3">
-                <a href="{$url_seg}"><img class="img_boto" src="{$boto_seg}"></a>
+                {if $num < $max} <a href="{$url_seg}"><img class="img_boto" src="{$boto_seg}"></a> {/if}
             </td>
         </tr>
 
