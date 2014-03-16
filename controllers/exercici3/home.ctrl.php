@@ -5,7 +5,7 @@
 class Exercici3HomeController extends Controller
 {
     protected $view_home = 'exercici2/home.tpl';
-    protected $view_head = 'shared/head.tpl';
+    protected $view_error = 'error/error404.tpl';
 
     /**
      * Aquest m�tode sempre s'executa i caldr� implementar-lo sempre.
@@ -17,14 +17,17 @@ class Exercici3HomeController extends Controller
         $css = "/css/style.css";
         $this->setParams( array( 'css' => $css ) );
 
+        if(count($info['url_arguments']) < 1){
+            $this->assign('titol', 'HOME EXERCICI 3');
+            $this->assign('afegir', '/afegeixZoo');
+            $this->assign('enr', '/home');
 
-        $this->assign('titol', 'HOME EXERCICI 3');
-        $this->assign('afegir', '/afegeixZoo');
-        $this->assign('enr', '/home');
+            $this->assign('mostrar', '/mostraZoo/0');
 
-        $this->assign('mostrar', '/mostraZoo/0');
-
-        $this->setLayout($this->view_home);
+            $this->setLayout($this->view_home);
+        }else{
+            $this->setLayout($this->view_error);
+        }
 
     }
 

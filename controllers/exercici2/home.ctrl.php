@@ -5,7 +5,7 @@
     class Exercici2HomeController extends Controller
     {
         protected $view_home = 'exercici2/home.tpl';
-        protected $view_head = 'shared/head.tpl';
+        protected $view_error = 'error/error404.tpl';
 
         /**
          * Aquest m�tode sempre s'executa i caldr� implementar-lo sempre.
@@ -13,26 +13,30 @@
         public function build()
         {
             $info = $this->getParams();
-            $mostra_model = $this->getClass( 'Exercici2MostraModel' ); //Importem el model per mostrar imatges
-
 
             $css = "/css/style.css";
             $this->setParams( array( 'css' => $css ) );
 
-            $this->assign('titol', 'HOME EXERCICI 2');
+            if(count($info['url_arguments']) < 1){
+                $mostra_model = $this->getClass( 'Exercici2MostraModel' ); //Importem el model per mostrar imatges
+
+                $this->assign('titol', 'HOME EXERCICI 2');
 
 
-            $this->assign('afegir', '/afegeix');
-            $this->assign('enr', '/home');
+                $this->assign('afegir', '/afegeix');
+                $this->assign('enr', '/home');
 
-            if(count($mostra_model->getImatges()) != 0){
-                $this->assign('mostrar', '/mostra/1');
+                if(count($mostra_model->getImatges()) != 0){
+                    $this->assign('mostrar', '/mostra/1');
+                }else{
+                    //Mostra missatge error
+                    $this->assign('mostrar', '/home');
+                }
+
+                $this->setLayout($this->view_home);
             }else{
-                //Mostra missatge error
-                $this->assign('mostrar', '/home');
+                $this->setLayout($this->view_error);
             }
-
-            $this->setLayout($this->view_home);
         }
 
 
