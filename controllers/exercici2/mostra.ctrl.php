@@ -29,7 +29,7 @@ class Exercici2MostraController extends Controller
             $this->setLayout($this->view2);
         }else{
 
-            $css = "/css/stylemicos.css";
+            $css = "/css/style.css";
             $this->setParams( array( 'css' => $css ) );
 
             $this->assign('enrere', '/exercici2');
