@@ -1,0 +1,32 @@
+.visualitzador {
+    position: fixed;
+    left: 320px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: -20px;
+    border: 7px solid rgba(255, 255, 255, .6);
+    width: 600px;
+    height: 400px;
+}
+
+.imatges_visualitzador {
+
+
+}
+
+
+.img_botoSeg {
+    height: 49px;
+    width: 49px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 160px;
+}
+.img_botoAnt {
+    height: 49px;
+    width: 49px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 160px;
+}
+

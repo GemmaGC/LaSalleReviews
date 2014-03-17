@@ -28,7 +28,7 @@ class Exercici3MostraController extends Controller
         $max = max($marm, $mon, $orn);
         $min = 0;
 
-        if(is_numeric($info['url_arguments'][0]) && $info['url_arguments'][0] >= $min && $info['url_arguments'][0] < $max+1 && count($info['url_arguments'])==1){
+        if(is_numeric($info['url_arguments'][0]) && $info['url_arguments'][0] >= $min && $info['url_arguments'][0] < $max+3 && count($info['url_arguments'])==1){
 
             $this->assign('header', 'EXERCICI 3');
             $this->assign('enrere', '/exercici3');

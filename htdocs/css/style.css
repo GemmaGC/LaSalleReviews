@@ -1,5 +1,7 @@
 @import url("../css/stylebbdd.css");
 @import url("../css/stylemicos.css");
+@import url("../css/stylevisualitzador.css");
+
 
 *{
 	font-size: 16px;
@@ -13,28 +15,9 @@ body
     background: url(../imag/exercici1/bg.jpg) repeat top left;
 }
 
-table{
-    padding-left: 150px;
-    width:900px;
-    height:450px;
-}
 
-tr{
 
-    min-width:100%;
-    min-height: 33%;
-}
 
-td.imatges{
-    min-height:100%;
-    min-width: 150px;
-}
-
-.img_taula{
-    max-height: 145px;
-    max-width: 145px;
-    padding: 5px;
-}
 
 .info_micos
 {
