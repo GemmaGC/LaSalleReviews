@@ -2,12 +2,12 @@
 
     <section>
 
-        <h1>ORNITORRINCS</h1>
+        <h1 class="nom_visualitzador">ORNITORRINCS</h1>
 
         {if $num < $numImg && $numImg != 0}
             <img class="img_taula" src="{$img[$num].url_img }">
         {else}
-            <br><p>No queden més imatges d'ornitorrincs!</p>
+            <br><p class="noMesFotos">No queden més imatges d'ornitorrincs!</p>
         {/if}
 
         {if $segona < $numImg && $numImg != 0} <img class="img_taula" src="{$img[$segona].url_img }">{/if}

@@ -1,14 +1,15 @@
 .visualitzador {
     position: absolute;
     left: 175px;
-    top: 10px;
+    top: -7px;
     border-radius: 5px;
     padding: 10px;
-    margin-top: -20px;
+    margin-top: 5px;
     border: 7px solid rgba(255, 255, 255, .6);
     width: 600px;
-    height: 425px;
-    margin: 0px auto;
+    height: 450px;
+    background-color: lightgray;
+    align-items: center;
 }
 
 
@@ -30,9 +31,21 @@
 .img_taula{
     max-height: 105px;
     max-width: 145px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 9px;
-    margin-top: 9px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+    border: 2px;
 
+
+}
+
+.nom_visualitzador {
+    text-align: center;
+}
+
+.noMesFotos {
+    text-align: center;
+    margin-bottom: 40px;
 }
