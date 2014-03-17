@@ -1,17 +1,14 @@
 .visualitzador {
-    position: fixed;
-    left: 320px;
+    position: absolute;
+    left: 175px;
+    top: 10px;
     border-radius: 5px;
     padding: 10px;
     margin-top: -20px;
     border: 7px solid rgba(255, 255, 255, .6);
     width: 600px;
-    height: 400px;
-}
-
-.imatges_visualitzador {
-
-
+    height: 425px;
+    margin: 0px auto;
 }
 
 
@@ -20,13 +17,22 @@
     width: 49px;
     float: right;
     margin-right: 100px;
-    margin-top: 160px;
+    margin-top: 185px;
 }
 .img_botoAnt {
     height: 49px;
     width: 49px;
     float: left;
     margin-left: 100px;
-    margin-top: 160px;
+    margin-top: 185px;
 }
 
+.img_taula{
+    max-height: 105px;
+    max-width: 145px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+
+}

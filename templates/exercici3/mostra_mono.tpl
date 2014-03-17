@@ -1,23 +1,19 @@
 
 
-    <div id="fila_micos">
+    <section>
 
-        <section>
+        <h1>MICOS</h1>
+        {if $num < $numImg && $numImg != 0}
+            <img class="img_taula" src="{$img[$num].url_img }">
+        {else}
+            <br><p>No queden més imatges de micos!</p>
+        {/if}
 
-                <h1>MICOS</h1>
-                {if $num < $numImg && $numImg != 0}
-                    <img class="img_taula" src="{$img[$num].url_img }">
-                {else}
-                    <br><p>No queden més imatges de micos!</p>
-                {/if}
+        {if $segona < $numImg && $numImg != 0} <img class="img_taula" src="{$img[$segona].url_img }">{/if}
 
-                {if $segona < $numImg && $numImg != 0} <img class="img_taula" src="{$img[$segona].url_img }">{/if}
+        {if $tercera < $numImg && $numImg != 0} <img class="img_taula" src="{$img[$tercera].url_img }">{/if}
 
-                {if $tercera < $numImg && $numImg != 0} <img class="img_taula" src="{$img[$tercera].url_img }">{/if}
-
-         </section>
-
-    </div>
+     </section>
 
 
 

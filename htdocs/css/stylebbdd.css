@@ -473,44 +473,5 @@ body {
 }
 
 
-/*
- CSS MOSTRAR IMATGES
-*/
-
-
-table{
-    padding-left: 150px;
-    width:900px;
-    height:450px;
-}
-
-tr{
-
-    min-width:100%;
-    min-height: 33%;
-}
-
-td.imatges{
-    min-height:100%;
-    min-width: 150px;
-}
-
-.img_taula{
-    max-height: 145px;
-    max-width: 145px;
-    padding: 5px;
-}
-
-
-.img_boto{
-    padding: 40px;
-    float:left;
-}
-
-/*
- FI CSS MOSTRAR IMATGES
-*/
-
-
 
 
