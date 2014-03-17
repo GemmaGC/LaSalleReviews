@@ -1,12 +1,16 @@
 @import url("../css/stylebbdd.css");
 @import url("../css/stylemicos.css");
 @import url("../css/stylevisualitzador.css");
+@import url("../css/styleEditRemove.css");
+
+
 
 
 *{
 	font-size: 16px;
 	font-family: calibri;
 }
+
 
 body
 {
@@ -16,14 +20,10 @@ body
 }
 
 
-
-
-
 .info_micos
 {
 	margin-bottom: 30px;
 }
-
 
 
 .main_header
@@ -52,6 +52,7 @@ ul li
 	text-align: center;
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.9);
 }
+
 
 footer
 {
@@ -82,7 +83,6 @@ footer
 	position: relative;
 	margin: 24px auto;
 	width: 980px;
-
 }
 
 
@@ -126,6 +126,7 @@ footer
     box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
 }
 
+
 .next:active {
     top:3px;
     background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
@@ -145,6 +146,7 @@ footer
     -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
     box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
 }
+
 
 .next::before {
     background-color:#2591b4;
@@ -167,6 +169,7 @@ footer
     -o-box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
     box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
 }
+
 
 .next:active::before {
     top:50%;
@@ -209,6 +212,7 @@ footer
     box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
 }
 
+
 .prev:active {
     top:3px;
     background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
@@ -228,6 +232,7 @@ footer
     -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
     box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
 }
+
 
 .prev::before {
     background-color:#2591b4;
@@ -250,6 +255,7 @@ footer
     -o-box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
     box-shadow: inset 0px 1px 0px #052756, 0px 1px 0px #60c9f0;
 }
+
 
 .prev:active::before {
     top:50%;
@@ -275,6 +281,7 @@ a.menu:link
     text-decoration:none;
 }
 
+
 a.menu:visited
 {
     font-size: 16px;
@@ -282,11 +289,13 @@ a.menu:visited
     text-decoration:none;
 }
 
+
 a.menu:hover
 {
     font-size: 16px;
     color: #2E9AFE;
 }
+
 
 a.menu:active
 {
@@ -306,10 +315,12 @@ a.menu:active
 
 }
 
+
 strong {
     font-weight: bold;
     font-size: 24px;
 }
+
 
 img.alert {
     max-height: 50px;
@@ -317,6 +328,7 @@ img.alert {
     margin-right: 10px;
     margin-bottom: -7px;
 }
+
 
 #components {
     font-size: 18px;
@@ -326,6 +338,7 @@ img.alert {
     margin-bottom: 25px;
 
 }
+
 
 #info {
     margin-top: 15px;

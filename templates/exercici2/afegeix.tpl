@@ -1,6 +1,6 @@
 {$modules.head}
 
-        <form name="insert-form" class="insert-form" action="" method="post">
+        <form name="insert-form1" class="insert-form" action="" method="post">
 
             <div class="header_afegeix">
                 <h1 class="bbdd">AFEGIR IMATGE A LA BASE DE DADES</h1>
