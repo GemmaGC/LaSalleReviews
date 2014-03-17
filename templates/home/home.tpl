@@ -7,7 +7,7 @@
 	</div>
 
 	<p id="components">Grup format per: CLAUDIA DAUDÉN, YLENIA GÓMEZ-RAYA i GEMMA GUITERAS</p>
-	<br/>
+
 	<p id = "info">Selecciona l'exercici que vols visualitzar:</p>
 
 
@@ -20,7 +20,7 @@
 		</ul>
 	</nav>
 
-    <div >
+    <div class="botoBBDD">
         <a href="/bd/monosdb.sql" download>
             <img border="0" src="/bd/button.png" alt="baseDades">
         </a>
