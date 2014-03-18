@@ -16,7 +16,7 @@
 			<li><a class="menu" href="{$url.global}/exercici1">EXERCICI 1: MONOS</a></li>
 			<li><a class="menu" href="{$url.global}/exercici2">EXERCICI 2: MONOS + BBDD</a></li>
 			<li><a class="menu" href="{$url.global}/exercici3">EXERCICI 3: ZOO</a></li>
-			<li><a class="menu" href="">EXERCICI 4: PRÒXIMAMENT</a></li>
+			<li><a class="menu" href="{$url.global}/exercici4">EXERCICI 4: EDITAR BASE DE DADES DEL ZOO</a></li>
 		</ul>
 	</nav>
 

@@ -71,18 +71,28 @@ $config['Exercici2MostraModel']         = PATH_MODELS .'exercici2/mostra.model.p
     //Controllers
 $config['Exercici3HomeController']		                = PATH_CONTROLLERS . 'exercici3/home.ctrl.php';
 $config['Exercici3AfegeixController']	                = PATH_CONTROLLERS . 'exercici3/afegeix.ctrl.php';
-    $config['Exercici3FormulariMonoController']	            = PATH_CONTROLLERS . 'exercici3/formulari_mono.ctrl.php';
-    $config['Exercici3FormulariOrnitorrincoController']	    = PATH_CONTROLLERS . 'exercici3/formulari_ornitorrinco.ctrl.php';
-    $config['Exercici3FormulariMarmotaController']	        = PATH_CONTROLLERS . 'exercici3/formulari_marmota.ctrl.php';
+$config['Exercici3FormulariMonoController']	            = PATH_CONTROLLERS . 'exercici3/formulari_mono.ctrl.php';
+$config['Exercici3FormulariOrnitorrincoController']	    = PATH_CONTROLLERS . 'exercici3/formulari_ornitorrinco.ctrl.php';
+$config['Exercici3FormulariMarmotaController']	        = PATH_CONTROLLERS . 'exercici3/formulari_marmota.ctrl.php';
 $config['Exercici3MostraController']                    = PATH_CONTROLLERS . 'exercici3/mostra.ctrl.php';
-    $config['Exercici3MostraMarmotaController']         	= PATH_CONTROLLERS . 'exercici3/mostra_marmota.ctrl.php';
-    $config['Exercici3MostraMonoController']         	    = PATH_CONTROLLERS . 'exercici3/mostra_mono.ctrl.php';
-    $config['Exercici3MostraOrnitorrincoController']         = PATH_CONTROLLERS . 'exercici3/mostra_ornitorrinco.ctrl.php';
-
-
+$config['Exercici3MostraMarmotaController']         	= PATH_CONTROLLERS . 'exercici3/mostra_marmota.ctrl.php';
+$config['Exercici3MostraMonoController']         	    = PATH_CONTROLLERS . 'exercici3/mostra_mono.ctrl.php';
+$config['Exercici3MostraOrnitorrincoController']        = PATH_CONTROLLERS . 'exercici3/mostra_ornitorrinco.ctrl.php';
 
 
     //Model
 $config['Exercici3GestorModel']             = PATH_MODELS .'exercici3/gestor.model.php';
+
+//----------------------------------------
+
+//----------- EXERCICI 4 -----------------
+
+//Controllers
+$config['Exercici4HomeController']		                = PATH_CONTROLLERS . 'exercici4/home.ctrl.php';
+
+
+
+//Model
+//$config['Exercici3GestorModel']             = PATH_MODELS .'exercici3/gestor.model.php';
 
 //----------------------------------------
