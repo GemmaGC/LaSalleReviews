@@ -9,8 +9,8 @@
         </div>
 
         <div class="content_modify">
-            <input name="newImgName" type="text" class="input imgName" placeholder="Nou nom de la imatge.." required/>
-            <input name="newImgURL" type="text" class="input imgURL" placeholder="Nova URL de la imatge.." required/>
+            <input name="newImgName" type="text" class="input_modifica imgName" placeholder="Nou nom de la imatge.." required/>
+            <input name="newImgURL" type="text" class="input_modifica imgURL" placeholder="Nova URL de la imatge.." required/>
         </div>
 
         <div class="footer_form">
