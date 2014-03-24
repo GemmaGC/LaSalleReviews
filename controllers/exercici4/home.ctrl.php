@@ -30,19 +30,44 @@ class Exercici4HomeController extends Controller
             $this->assign('numMicos', count($imatges));
             $this->assign('imgMicos', $imatges);
 
+
             $imatges = $model->getImatges('marmotas');
             $this->assign('numMarm', count($imatges));
             $this->assign('imgMarm', $imatges);
+
 
             $imatges = $model->getImatges('ornitorrincos');
             $this->assign('numOrni', count($imatges));
             $this->assign('imgOrni', $imatges);
 
+           if(Filter::getString('esborrar_mono')){
+                $model->esborraImatge(Filter::getString('id_mono'), 'monos');
+               header('Location: /esborrar',true,301);
+            }
+            if(Filter::getString('esborrar_marmota')){
 
+                $model->esborraImatge( Filter::getString('id_marmorta'),'marmotas');
+                header('Location: /esborrar',true,301);
+            }
+            if(Filter::getString('esborrar_ornitorrinco')){
+                $model->esborraImatge(Filter::getString('id_ornitorrinco'), 'ornitorrincos');
+                header('Location: /esborrar',true,301);
+            }
+            if(Filter::getString('editar_ornitorrinco')){
+                header('Location: /modificar',true,301);
+            }
+            if(Filter::getString('editar_mono')){
+                header('Location: /modificar',true,301);
+            }
+            if(Filter::getString('editar_marmota')){
+                header('Location: /modificar',true,301);
+            }
             $this->setLayout($this->view_home);
         }else{
             $this->setLayout($this->view_error);
         }
+
+
 
     }
 

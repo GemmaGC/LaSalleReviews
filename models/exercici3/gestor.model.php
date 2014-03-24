@@ -48,11 +48,12 @@ QUERY;
 
     }
 
-    public function esborraImatge($id, $nom_img, $url_img, $nom_taula)
+    public function esborraImatge($id,  $nom_taula)
     {
         $sql = <<<QUERY
         DELETE FROM $nom_taula
         WHERE id = $id
+
 QUERY;
 
         $this->execute( $sql );
