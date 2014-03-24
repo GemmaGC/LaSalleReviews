@@ -3,7 +3,7 @@
 	<!-- Això és un comentari HTML -->
 	{* Això és un comentari en Smarty *}
 	<div id = "success">
-		<p>BENVINGUT A LA HOME DEL GRUP 1!</p> 
+		<p>BENVINGUT A LA HOME DEL GRUP 1!</p>
 	</div>
 
 	<p id="components">Grup format per: CLAUDIA DAUDÉN, YLENIA GÓMEZ-RAYA i GEMMA GUITERAS</p>

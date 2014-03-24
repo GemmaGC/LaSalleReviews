@@ -14,6 +14,23 @@ class Exercici4HomeController extends Controller
     {
         $info = $this->getParams();
 
+        $model = $this->getClass( 'Exercici3GestorModel' ); //Importem el model
+
+        //Numero de micos, marmotes i ornitorrincs
+            $imatges = $model->getImatges('monos');
+            $this->assign('numMicos', count($imatges));
+            $this->assign('imgMicos', $imatges);
+
+            $imatges = $model->getImatges('marmotas');
+            $this->assign('numMarm', count($imatges));
+            $this->assign('imgMarm', $imatges);
+
+            $imatges = $model->getImatges('ornitorrincos');
+            $this->assign('numOrni', count($imatges));
+            $this->assign('imgOrni', $imatges);
+
+
+
         $css = "/css/style.css";
         $this->setParams( array( 'css' => $css ) );
 

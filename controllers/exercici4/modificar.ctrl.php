@@ -14,6 +14,8 @@ class Exercici4ModificarController extends Controller
     {
         $info = $this->getParams();
 
+
+
         $css = "/css/style.css";
         $this->setParams( array( 'css' => $css ) );
 
