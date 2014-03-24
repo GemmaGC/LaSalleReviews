@@ -15,7 +15,7 @@ Aqui falta llistar totes les fotos de les 3 galeries i posar enllaç d'editar i 
 
             <a class="btn  btn--icon  btn--add" href="../modificarMico" name="editar"><i>+</i><span>EDITAR</span></a>
             <a class="btn  btn--icon  btn--delete" href="../esborrar" name="esborrar"><i>×</i><span>ESBORRAR</span></a>
-            {*Session::getInstance()->set('monos', $id)*}
+
         </div>
     {/foreach}
 

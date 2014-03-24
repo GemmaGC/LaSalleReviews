@@ -8,5 +8,10 @@
 
 class Exercici4EsborrarController extends Controller
 {
+    protected $view = 'exercici4/esborrar.tpl';
 
+    public function build()
+    {
+        $this->setLayout($this->view);
+    }
 }
