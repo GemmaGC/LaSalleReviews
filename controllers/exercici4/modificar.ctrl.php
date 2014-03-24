@@ -44,13 +44,21 @@ class Exercici4ModificarController extends Controller
 
     protected function modifica()
     {
+        $info = Session::getInstance()->get($this->animal);
+
         $model = $this->getClass( 'Exercici3GestorModel' ); //Importem el model
+
         $nom_img = Filter::getString('newImgName');
+        if ($nom_img == null){ $nom_img = $info['nom_img'];}
+
         $url_img = Filter::getString("newImgURL");
+        if ($url_img == null){ $url_img = $info['url_img'];}
 
         if(Filter::getString('submit_canvis')){
-            $model->afegeixImatge($nom_img, $url_img, $this->animal);
+            $model->modificaImatge($info['id'], $nom_img, $url_img, $this->animal);
         }
+
+        Session::getInstance()->delete($this->animal);
     }
 
 

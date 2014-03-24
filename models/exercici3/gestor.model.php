@@ -34,4 +34,19 @@ QUERY;
         $result = $this->getAll( $sql );
         return $result;
     }
+
+
+    public function modificaImatge($id, $nom_img, $url_img, $nom_taula){
+
+        $sql = <<<QUERY
+        UPDATE $nom_taula
+        SET nom_img = $nom_img, url_img = $url_img
+        WHERE id = $id
+QUERY;
+        // var_dump($sql);
+        $this->execute( $sql );
+
+    }
+
+
 }
