@@ -43,7 +43,18 @@ QUERY;
         SET nom_img = $nom_img, url_img = $url_img
         WHERE id = $id
 QUERY;
-        // var_dump($sql);
+
+        $this->execute( $sql );
+
+    }
+
+    public function esborraImatge($id, $nom_img, $url_img, $nom_taula)
+    {
+        $sql = <<<QUERY
+        DELETE FROM $nom_taula
+        WHERE id = $id
+QUERY;
+
         $this->execute( $sql );
 
     }
