@@ -28,8 +28,16 @@ img.imatgeEditar {
 }
 
 
+h1.titol {
+    text-decoration: none;
+    color: #2E9AFE;
+    font-size: 20px;
+    font-weight: bold;
+}
 
-/* BOTONS EDITAR & ESBORRAR */
+
+
+/* BOTONS EDITAR & ESBORRAR : NO USADO DE MOMENTO PERO LO DEJO PARA UN FUTURO */
 
 /* Button */
 .btn {
