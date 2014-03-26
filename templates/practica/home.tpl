@@ -1,0 +1,4 @@
+{$modules.headPractica}
+
+
+{$modules.footerPractica}

@@ -50,11 +50,20 @@ $config['exercici3']		= 'Exercici3HomeController';
 
 //----------- EXERCICI 4 -----------------
 
-$config['exercici4']        = 'Exercici4HomeController';
-$config['modificar']		= 'Exercici4ModificarController';
-    $config['modificarMico']		    = 'Exercici4ModificarMicoController';
-    $config['modificarMarmota']		    = 'Exercici4ModificarMarmotaController';
-    $config['modificarOrnitorrinc']		= 'Exercici4ModificarOrnitorrincController';
-$config['esborrar']		    = 'Exercici4EsborrarController';
+$config['exercici4']                = 'Exercici4HomeController';
+$config['modificar']		        = 'Exercici4ModificarController';
+$config['modificarMico']		    = 'Exercici4ModificarMicoController';
+$config['modificarMarmota']		    = 'Exercici4ModificarMarmotaController';
+$config['modificarOrnitorrinc']		= 'Exercici4ModificarOrnitorrincController';
+$config['esborrar']		            = 'Exercici4EsborrarController';
+
+//----------------------------------------
+
+
+
+//----------- LA SALLE REVIEW -----------------
+
+$config['LaSalleReview']        = 'PracticaHomeController';
+
 
 //----------------------------------------

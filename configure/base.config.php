@@ -101,3 +101,17 @@ $config['Exercici4EsborrarController']		            = PATH_CONTROLLERS . 'exerci
 //$config['Exercici3GestorModel']             = PATH_MODELS .'exercici3/gestor.model.php';
 
 //----------------------------------------
+
+
+//----------- LA SALLE REVIEW -----------------
+
+//Controllers
+$config['PracticaHomeController']		                = PATH_CONTROLLERS . 'practica/home.ctrl.php';
+
+
+
+
+//Model
+//$config['Exercici3GestorModel']             = PATH_MODELS .'exercici3/gestor.model.php';
+
+//----------------------------------------

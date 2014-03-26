@@ -1,0 +1,202 @@
+@font-face {
+	font-family: Quicksand;
+	src: url(Quicksand-Light.otf);
+	font-weight: light;
+}
+
+@font-face {
+	font-family: Quicksand_bold;
+	src: url(Quicksand-Bold.otf);
+	font-weight: bold;
+}
+
+
+
+body {
+	margin: 0px auto;
+	font-family: Quicksand;
+}
+
+header {
+
+
+}
+
+footer {
+	
+	position:absolute;
+   	bottom:0;
+	width: 100%;
+	height: 100px;
+	border-top: 2px solid grey;
+	background-color: rgba(0,0,0,0.98);
+	color: grey;
+	display: inline-flex;
+	padding-left: 5%;
+	padding-right: 5%;
+
+}
+
+.main_header {
+	background-color: rgba(0,0,0,0.98);
+	width: 100%;
+	height: 80px;
+	border-bottom: 2px solid grey;
+	padding-top: 25px;	
+}
+
+.site-logo {
+	font-size: 40px;
+	color: grey;
+	padding-top: 50px;
+	margin-left: 50px;
+}
+
+.register_login_container {
+	display: inline-flex;
+	position: absolute;
+	left: 55%;
+	top: 60px;
+}
+
+.register {
+	font-size: 16px;
+	margin-right: 60px;
+	padding-top: 10px;
+
+}
+
+.input_login {
+	height: 25px;
+	border-style: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    
+}
+
+.input_login::-webkit-input-placeholder {
+   font-family: Quicksand;  
+   font-size: 12px;
+}
+:-moz-placeholder {
+   font-family: Quicksand;  
+   font-size: 12px;
+}
+::-moz-placeholder {
+   font-family: Quicksand;  
+   font-size: 12px;
+}
+:-ms-input-placeholder {
+   font-family: Quicksand;  
+   font-size: 12px;
+}
+   
+
+.login_button {
+	border: 1px solid #D1D1D1;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.1, #FFFFFF), color-stop(0.9, #D1D1D1) );
+	background: -moz-linear-gradient( center top, #FFFFFF 10%, #D1D1D1 90% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#D1D1D1');
+	background-color: #FFFFFF;
+	-moz-box-shadow: inset 0px 1px 2px 0px #FFFFFF;
+	-webkit-box-shadow: inset 0px 1px  2px 0px #FFFFFF;
+	box-shadow: inset 0px 1px  2px 0px #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-shadow: 1px 1px 2px #FFFFFF;
+	font-weight: bold;
+	margin: 5px 4px;
+	padding: 5px 4px;
+	color: #999999;
+	letter-spacing: 1px;
+	font-family: Quicksand_bold;
+	font-size: 14px;
+	width: 78px;
+	text-transform: capitalize;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.login_button:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.1, #D1D1D1), color-stop(0.9, #FFFFFF) );
+	background: -moz-linear-gradient( center top, #D1D1D1 10%, #FFFFFF 90% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1D1D1', endColorstr='#FFFFFF');
+	background-color: #D1D1D1;
+}
+.login_button:active {
+	position: relative;
+	top: 1px;
+	left: 0px;
+}
+
+
+
+
+
+a.site-logo {
+	text-decoration: none;
+}
+
+a.site-logo:link {
+	color: orange;
+}
+
+a.site-logo:visited {
+	color: orange;
+}
+
+a.site-logo:active {
+	color: orange;
+}
+
+a.site-logo:hover {
+	color: gray;
+}
+
+a.register{
+	text-decoration: none;
+}
+
+a.register:link {
+	color: white;
+}
+
+a.register:visited {
+	color: white;
+}
+
+a.register:active {
+	color: white;
+}
+
+a.register:hover {
+	color: orange;
+}
+
+
+.footer_title {
+	margin-top: 40px;
+	margin-right: 240px;
+}
+
+
+.footer_components {
+	margin-top: 40px;
+	margin-right: 240px;	
+}
+
+
+.footer_love {
+	margin-top: 40px;
+}
+
+
+
+
+
+
+
+
