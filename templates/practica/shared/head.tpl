@@ -13,17 +13,11 @@
 
                 <a href="#" class="site-logo">LA SALLE REVIEW</a>
 
-                <div class="register_login_container">
-
+                <nav class="register_login_container">
+                    <a href="#" class="register">ADD REVIEW</a>
                     <a href="#" class="register">SIGN UP</a>
-
-                    <form class="login_box" method="post">
-                        <input class="input_login"  type="text" placeholder="LOGIN" required/>
-                        <input class="input_login" type="password" placeholder="PASSWORD" required/>
-                        <input class="login_button" type="submit" value="LOGIN" />
-                    </form>
-
-                </div>
+                    <a href="#" class="register">LOG IN</a>
+                </nav>
 
             </header>
         </div>
