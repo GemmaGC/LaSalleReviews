@@ -117,4 +117,8 @@ $config['PracticaLoginController']		                = PATH_CONTROLLERS . 'practi
 $config['PracticaAddReviewController']		            = PATH_CONTROLLERS . 'practica/addReview.ctrl.php';
 
 
+//Model
+$config['PracticaReviewModel']             = PATH_MODELS .'practica/review.model.php';
+
+
 //----------------------------------------

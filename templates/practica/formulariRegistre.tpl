@@ -11,10 +11,10 @@
 
 		            <label for="login">NAME</label>
 		            <input name="newUser" id="name" type="text" class="input_form" placeholder="NAME" required/>
-
+<!--
 		        	<label for="name">LOGIN</label>
 		            <input name="newUser" id="login" type="text" class="input_form" placeholder="LOGIN" required/>
-
+-->
 					<label for="email">EMAIL</label>
 		            <input name="newEmail" id="email" type="email" class="input_form" placeholder="example@dom.com" required/>
 
