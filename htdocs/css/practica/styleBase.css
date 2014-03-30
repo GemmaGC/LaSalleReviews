@@ -1,7 +1,6 @@
-
-@import url("../css/practica/styleFormulariRegistreLogin.css");
-@import url("../css/practica/styleWelcomePage.css");
-@import url("../css/practica/styleAddReview.css");
+@import url("/htdocs/css/practica/styleFormulariRegistreLogin.css");
+@import url("/htdocs/css/practica/styleWelcomePage.css");
+@import url("/htdocs/css/practica/styleAddReview.css");
 
 
 
@@ -11,43 +10,42 @@
 
 @font-face {
     font-family: Quicksand_light;
-    src: url(../htdocs/fonts/Quicksand-Light.otf);
+    src: url("/htdocs/fonts/Quicksand-Light.otf");
 
 }
 
 @font-face {
     font-family: Quicksand_bold;
-    src: url(../htdocs/fonts/Quicksand-Bold.otf);
+    src: url(/htdocs/fonts/Quicksand-Bold.otf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: Quicksand_italic;
-    src: url(../htdocs/fonts/Quicksand-Italic.otf);
+    src: url(/htdocs/fonts/Quicksand-Italic.otf);
     font-style: italic;
 }
 
 @font-face {
     font-family: Quicksand_lightItalic;
-    src: url(../htdocs/fonts/Quicksand-LightItalic.otf);
+    src: url(/htdocs/fonts/Quicksand-LightItalic.otf);
     font-style: italic;
 }
 
 @font-face {
     font-family: Quicksand;
-    src: url(../htdocs/fonts/Quicksand-Regular.otf);
+    src: url(/htdocs/fonts/Quicksand-Regular.otf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: Quicksand_dash;
-    src: url(../htdocs/fonts/Quicksand-Dash.otf);
-
+    src: url(/htdocs/fonts/Quicksand_Dash.otf);
 }
 
 @font-face {
     font-family: Quicksand_boldItalic;
-    src: url(../htdocs/fonts/Quicksand-BoldItalic.otf);
+    src: url(/htdocs/fonts/Quicksand-BoldItalic.otf);
     font-weight: bold;
 }
 
