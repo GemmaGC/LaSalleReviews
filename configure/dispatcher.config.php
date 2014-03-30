@@ -65,6 +65,8 @@ $config['esborrar']		            = 'Exercici4EsborrarController';
 
 $config['LaSalleReview']        = 'PracticaHomeController';
 $config['logIn']                = 'PracticaLoginController';
+$config['register']             = 'PracticaRegistreController';
+$config['addReview']            = 'PracticaAddReviewController';
 
 
 //----------------------------------------

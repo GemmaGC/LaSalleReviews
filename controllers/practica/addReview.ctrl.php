@@ -1,8 +1,8 @@
 <?php
 
-class PracticaLoginController extends Controller
+class PracticaAddReviewController extends Controller
 {
-    protected $view = 'practica/formulariLogin.tpl';
+    protected $view = 'practica/addReview.tpl';
 
     public function build( )
     {

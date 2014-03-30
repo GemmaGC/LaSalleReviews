@@ -1,6 +1,6 @@
-@import url("/htdocs/css/practica/styleFormulariRegistreLogin.css");
-@import url("/htdocs/css/practica/styleWelcomePage.css");
-@import url("/htdocs/css/practica/styleAddReview.css");
+@import url("../practica/styleAddReview.css");
+@import url("../practica/styleWelcomePage.css");
+@import url("../practica/styleAddReview.css");
 
 
 
@@ -10,42 +10,42 @@
 
 @font-face {
     font-family: Quicksand_light;
-    src: url('/htdocs/fonts/Quicksand-Light.ttf');
+    src: url('../../fonts/Quicksand-Light.ttf');
 
 }
 
 @font-face {
     font-family: Quicksand_bold;
-    src: url(/htdocs/fonts/Quicksand-Bold.ttf);
+    src: url(../../fonts/Quicksand-Bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: Quicksand_italic;
-    src: url(/htdocs/fonts/Quicksand-Italic.ttf);
+    src: url(../../fonts/Quicksand-Italic.ttf);
     font-style: italic;
 }
 
 @font-face {
     font-family: Quicksand_lightItalic;
-    src: url(/htdocs/fonts/Quicksand-LightItalic.ttf);
+    src: url(../../fonts/Quicksand-LightItalic.ttf);
     font-style: italic;
 }
 
 @font-face {
     font-family: Quicksand;
-    src: url(/htdocs/fonts/Quicksand-Regular.ttf);
+    src: url(../../fonts/Quicksand-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: Quicksand_dash;
-    src: url(/htdocs/fonts/Quicksand_Dash.ttf);
+    src: url(../../fonts/Quicksand_Dash.ttf);
 }
 
 @font-face {
     font-family: Quicksand_boldItalic;
-    src: url(/htdocs/fonts/Quicksand-BoldItalic.ttf);
+    src: url(../../fonts/Quicksand-BoldItalic.ttf);
     font-weight: bold;
 }
 
@@ -167,8 +167,8 @@ footer {
     font-family: Quicksand_light;
     font-size: 16px;
 }
-
 */
+
 /* ----------------------------------------------------------------- */
 
 /* Detalls de l'enllaç que és el logo de LSR */

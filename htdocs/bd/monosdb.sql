@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.6
+-- version 4.1.8
 -- http://www.phpmyadmin.net
 --
--- Servidor: localhost
--- Tiempo de generación: 16-03-2014 a las 12:02:14
--- Versión del servidor: 5.5.33
--- Versión de PHP: 5.5.3
+-- Servidor: localhost:8889
+-- Tiempo de generación: 30-03-2014 a las 18:54:52
+-- Versión del servidor: 5.5.34
+-- Versión de PHP: 5.5.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -32,7 +32,6 @@ CREATE TABLE `marmotas` (
 --
 
 INSERT INTO `marmotas` (`id`, `nom_img`, `url_img`) VALUES
-(1, 'marmo1', 'http://4.bp.blogspot.com/_hKN2sxTxB4w/TUWWBpceAhI/AAAAAAAAAAU/Sn3xsu6JdkY/s220/marmota%2Bdormilona.g'),
 (2, 'marmo2', 'http://www.daeria.com/data/img/noticias/original/1328221015.jpg');
 
 -- --------------------------------------------------------
@@ -46,18 +45,17 @@ CREATE TABLE `monos` (
   `nom_img` varchar(50) NOT NULL,
   `url_img` varchar(500) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Volcado de datos para la tabla `monos`
 --
 
 INSERT INTO `monos` (`id`, `nom_img`, `url_img`) VALUES
-(1, 'mico1', 'http://funnytoofunny.com/wp-content/uploads/2013/09/Cute-Naughty-Funny-Monkey-Having-Fun.jpg'),
+(1, 'canvi de noom', 'http://cl.jroo.me/z3/e/h/p/a/a.aaa.jpg'),
 (2, 'mono2', 'http://www.funnypoon.com/wp-content/uploads/2012/11/Funny-Monkey-Wallpapers-for-you.jpg'),
 (3, 'monito', 'http://4.bp.blogspot.com/_Hl9Zac09Xsc/S_P0Qeqxy1I/AAAAAAAABGQ/6Ad8c17R7ik/s400/angry-monkey-7399791.jpg'),
-(4, 'mono', 'http://images.nationalgeographic.com/wpf/media-live/photos/000/007/cache/spider-monkey_719_600x450.jpg'),
-(5, 'monoo', 'http://www.geekosystem.com/wp-content/uploads/2014/01/monkey.jpg');
+(4, 'mono', 'http://images.nationalgeographic.com/wpf/media-live/photos/000/007/cache/spider-monkey_719_600x450.jpg');
 
 -- --------------------------------------------------------
 
@@ -80,3 +78,18 @@ INSERT INTO `ornitorrincos` (`id`, `nom_img`, `url_img`) VALUES
 (1, 'orni1', 'http://img3.wikia.nocookie.net/__cb20120322061100/p__/phineasandferbenespanol/es/images/f/f6/Perry.png'),
 (2, 'orni2', 'http://ambientalsustentavel.org/wp-content/uploads/2011/07/ornitorrinco.jpg.scaled600.jpg'),
 (3, 'orni3', 'http://plandemediosmazivos.files.wordpress.com/2011/09/ornitorrinco11.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuaris`
+--
+
+CREATE TABLE `usuaris` (
+  `login` varchar(7) NOT NULL COMMENT '2 lletres i 5 num',
+  `nom` int(20) NOT NULL,
+  `email` int(30) NOT NULL,
+  `password` int(20) NOT NULL COMMENT 'min 6 / max 20 caràcters',
+  PRIMARY KEY (`login`),
+  UNIQUE KEY `nom` (`nom`,`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Usuaris/es de la pàgina web La Salle Review';
