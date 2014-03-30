@@ -40,7 +40,7 @@ QUERY;
 
         $sql = <<<QUERY
         UPDATE $nom_taula
-        SET nom_img = $nom_img, url_img = $url_img
+        SET nom_img = "$nom_img", url_img = "$url_img"
         WHERE id = $id
 QUERY;
 

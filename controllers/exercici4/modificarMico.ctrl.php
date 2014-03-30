@@ -8,8 +8,7 @@ include_once( PATH_CONTROLLERS . 'exercici4/modificar.ctrl.php' );
 
 class Exercici4ModificarMicoController extends Exercici4ModificarController
 {
-    protected $animal  = 'monos';
-
+    protected $animal = 'monos';
 
 
 }

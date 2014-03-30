@@ -2,6 +2,11 @@
 
 {$modules.head}
 
+    <div class="go_back_container_micos">
+
+        <a class="prev" href="{$enrere}">Enrere</a>
+
+    </div>
     <form name="edit-form" class="modify_form" action="" method="post">
 
         <div class="header_modifica">
@@ -9,8 +14,8 @@
         </div>
 
         <div class="content_modify">
-            <input name="newImgName" type="text" class="input_modifica imgName" placeholder="{$nomImg}" required/>
-            <input name="newImgURL" type="text" class="input_modifica imgURL" placeholder="{$urlImg}" required/>
+            <input name="newImgName" type="text" class="input_modifica imgName" placeholder="{$nomImg}"/>
+            <input name="newImgURL" type="text" class="input_modifica imgURL" placeholder="{$urlImg}"/>
         </div>
 
         <div class="footer_form">

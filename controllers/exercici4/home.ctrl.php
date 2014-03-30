@@ -14,7 +14,7 @@ class Exercici4HomeController extends Controller
     {
         $info = $this->getParams();
 
-/*
+
         if(count($info['url_arguments']) < 1){
             $this->assign('titol', 'HOME EXERCICI 4');
             $this->assign('afegir', '/editaZoo');
@@ -26,7 +26,9 @@ class Exercici4HomeController extends Controller
             $model = $this->getClass( 'Exercici3GestorModel' ); //Importem el model
 
             //Numero de micos, marmotes i ornitorrincs
+
             $imatges = $model->getImatges('monos');
+
             $this->assign('numMicos', count($imatges));
             $this->assign('imgMicos', $imatges);
 
@@ -40,19 +42,21 @@ class Exercici4HomeController extends Controller
             $this->assign('numOrni', count($imatges));
             $this->assign('imgOrni', $imatges);
 
+            $values = explode( "-", Filter::getString("id") );
+            Session::getInstance()->set('id', $values[1]);
+
            //ESBORRAR
            if(Filter::getString('esborrar')){
-              $values = explode( "-", Filter::getString("id") );
               $model->esborraImatge($values[1], $values[0]);
               header('Location: /esborrar',true,301);
            }
 
             //MODIFICAR
             //$values = explode( "-", Filter::getString("id") );
-            if(Filter::getString('editar')){
+            /*if(Filter::getString('editar')){
                 $values = explode( "-", Filter::getString("id") );
                 //header('Location: /modificar/'.$values[0].'-'.$values[1],true,301);
-                /*if(strcmp($values[0], 'monos')){
+                if(strcmp($values[0], 'monos')){
                     header('Location: /modificarMico',true,301);
                 }
 
@@ -62,27 +66,36 @@ class Exercici4HomeController extends Controller
 
                 if(strcmp($values[0], 'ornitorrincos')){
                     header('Location: /modificarOrnitorrinc',true,301);
-                }*/
-            //}
+                }
+            }*/
 
 
-/*
             if(Filter::getString('editar_ornitorrinco')){
-                header('Location: /modificar',true,301);
+                $orni['nom'] = $values[2];
+                $orni['url'] = $values[3];
+                Session::getInstance()->set('ornitorrincos', $orni);
+                header('Location: /modificarOrnitorrinc',true,301);
             }
 
             if(Filter::getString('editar_mono')){
-                header('Location: /modificar',true,301);
+                $mono['nom'] = $values[2];
+                $mono['url'] = $values[3];
+                Session::getInstance()->set('nom', $values[2]);
+                Session::getInstance()->set('url', $values[3]);
+                header('Location: /modificarMico',true,301);
             }
 
             if(Filter::getString('editar_marmota')){
-                header('Location: /modificar',true,301);
-            }*/
+                $marmo['nom'] = $values[2];
+                $marmo['url'] = $values[3];
+                Session::getInstance()->set('marmotas', $marmo);
+                header('Location: /modificarMarmota',true,301);
+            }
 
             $this->setLayout($this->view_home);
-       /* }else{
+        }else{
             $this->setLayout($this->view_error);
-        }*/
+        }
 
 
 
