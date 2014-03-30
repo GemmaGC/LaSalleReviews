@@ -8,11 +8,10 @@
 
     </div>
 
-    <form name="edit-form" class="modify_form" action="" method="post">
-
-        <p>Imatge esborrada amb èxit! :D</p>
-
-    </form>
+    <section>
+        <img class = "esborrar" src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/like-512.png">
+        <h1 class = "esborrar">Imatge esborrada amb èxit! :D</h1>
+    </section>
 
 
 {$modules.footer}
