@@ -10,42 +10,42 @@
 
 @font-face {
     font-family: Quicksand_light;
-    src: url("/htdocs/fonts/Quicksand-Light.otf");
+    src: url('/htdocs/fonts/Quicksand-Light.ttf');
 
 }
 
 @font-face {
     font-family: Quicksand_bold;
-    src: url(/htdocs/fonts/Quicksand-Bold.otf);
+    src: url(/htdocs/fonts/Quicksand-Bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: Quicksand_italic;
-    src: url(/htdocs/fonts/Quicksand-Italic.otf);
+    src: url(/htdocs/fonts/Quicksand-Italic.ttf);
     font-style: italic;
 }
 
 @font-face {
     font-family: Quicksand_lightItalic;
-    src: url(/htdocs/fonts/Quicksand-LightItalic.otf);
+    src: url(/htdocs/fonts/Quicksand-LightItalic.ttf);
     font-style: italic;
 }
 
 @font-face {
     font-family: Quicksand;
-    src: url(/htdocs/fonts/Quicksand-Regular.otf);
+    src: url(/htdocs/fonts/Quicksand-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: Quicksand_dash;
-    src: url(/htdocs/fonts/Quicksand_Dash.otf);
+    src: url(/htdocs/fonts/Quicksand_Dash.ttf);
 }
 
 @font-face {
     font-family: Quicksand_boldItalic;
-    src: url(/htdocs/fonts/Quicksand-BoldItalic.otf);
+    src: url(/htdocs/fonts/Quicksand-BoldItalic.ttf);
     font-weight: bold;
 }
 
@@ -144,7 +144,7 @@ footer {
 }
 
 /* Canviem la lletra del placeholder dels formularis  */
-
+/*
 .input_form::-webkit-input-placeholder {
     font-family: Quicksand_light;
     font-size: 16px;
@@ -168,7 +168,7 @@ footer {
     font-size: 16px;
 }
 
-
+*/
 /* ----------------------------------------------------------------- */
 
 /* Detalls de l'enllaç que és el logo de LSR */
