@@ -11,12 +11,12 @@
         <div class="main_header">
             <header>
 
-                <a href="#" class="site-logo">LA SALLE REVIEW</a>
+                <a href="{$url.global}/LaSalleReview" class="site-logo">LA SALLE REVIEW</a>
 
                 <nav class="register_login_container">
-                    <a href="#" class="register">ADD REVIEW</a>
-                    <a href="#" class="register">SIGN UP</a>
-                    <a href="#" class="register">LOG IN</a>
+                    <a href="{$url.global}/addReview" class="register">ADD REVIEW</a>
+                    <a href="{$url.global}/register" class="register">SIGN UP</a>
+                    <a href="{$url.global}/logIn" class="register">LOG IN</a>
                 </nav>
 
             </header>

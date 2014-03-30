@@ -111,6 +111,10 @@ $config['SharedpracticaFooterController']		        = PATH_CONTROLLERS . 'practic
 
 //Controllers
 $config['PracticaHomeController']		                = PATH_CONTROLLERS . 'practica/home.ctrl.php';
+$config['PracticaBenvingudaController']		            = PATH_CONTROLLERS . 'practica/benvinguda.ctrl.php';
+$config['PracticaRegistreController']		            = PATH_CONTROLLERS . 'practica/registre.ctrl.php';
+$config['PracticaLoginController']		                = PATH_CONTROLLERS . 'practica/login.ctrl.php';
+//$config['PracticaHomeController']		                = PATH_CONTROLLERS . 'practica/home.ctrl.php';
 
 
 //----------------------------------------
