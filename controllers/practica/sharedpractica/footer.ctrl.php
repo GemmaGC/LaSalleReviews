@@ -1,11 +1,11 @@
 <?php
 
-class SharedpracticaHeadController extends Controller
+class SharedpracticaFooterController extends Controller
 {
 
     public function build( )
     {
-        $this->setLayout( 'practica/sharedpractica/footer.tpl' );
+        $this->setLayout( 'practica/shared/footer.tpl' );
     }
 }
 

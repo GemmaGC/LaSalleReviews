@@ -8,10 +8,4 @@ class Exercici4ModificarMarmotaController extends Exercici4ModificarController
 {
     protected $animal  = 'marmotas';
 
-    public function build()
-    {
-        parent::carregaTemplate();
-    }
-
-
 }

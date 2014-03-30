@@ -14,11 +14,11 @@ class Exercici4HomeController extends Controller
     {
         $info = $this->getParams();
 
-
+/*
         if(count($info['url_arguments']) < 1){
             $this->assign('titol', 'HOME EXERCICI 4');
             $this->assign('afegir', '/editaZoo');
-            $this->assign('enr', '/home');
+            $this->assign('enrere', '/home');
 
             $css = "/css/style.css";
             $this->setParams( array( 'css' => $css ) );
@@ -40,32 +40,49 @@ class Exercici4HomeController extends Controller
             $this->assign('numOrni', count($imatges));
             $this->assign('imgOrni', $imatges);
 
-           if(Filter::getString('esborrar_mono')){
-                $model->esborraImatge(Filter::getString('id_mono'), 'monos');
-               header('Location: /esborrar',true,301);
-            }
-            if(Filter::getString('esborrar_marmota')){
+           //ESBORRAR
+           if(Filter::getString('esborrar')){
+              $values = explode( "-", Filter::getString("id") );
+              $model->esborraImatge($values[1], $values[0]);
+              header('Location: /esborrar',true,301);
+           }
 
-                $model->esborraImatge( Filter::getString('id_marmorta'),'marmotas');
-                header('Location: /esborrar',true,301);
-            }
-            if(Filter::getString('esborrar_ornitorrinco')){
-                $model->esborraImatge(Filter::getString('id_ornitorrinco'), 'ornitorrincos');
-                header('Location: /esborrar',true,301);
-            }
+            //MODIFICAR
+            //$values = explode( "-", Filter::getString("id") );
+            if(Filter::getString('editar')){
+                $values = explode( "-", Filter::getString("id") );
+                //header('Location: /modificar/'.$values[0].'-'.$values[1],true,301);
+                /*if(strcmp($values[0], 'monos')){
+                    header('Location: /modificarMico',true,301);
+                }
+
+                if(strcmp($values[0], 'marmotas')){
+                    header('Location: /modificarMarmota',true,301);
+                }
+
+                if(strcmp($values[0], 'ornitorrincos')){
+                    header('Location: /modificarOrnitorrinc',true,301);
+                }*/
+            //}
+
+
+/*
             if(Filter::getString('editar_ornitorrinco')){
                 header('Location: /modificar',true,301);
             }
+
             if(Filter::getString('editar_mono')){
                 header('Location: /modificar',true,301);
             }
+
             if(Filter::getString('editar_marmota')){
                 header('Location: /modificar',true,301);
-            }
+            }*/
+
             $this->setLayout($this->view_home);
-        }else{
+       /* }else{
             $this->setLayout($this->view_error);
-        }
+        }*/
 
 
 

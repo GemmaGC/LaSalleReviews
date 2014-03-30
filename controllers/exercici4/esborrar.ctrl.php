@@ -13,8 +13,9 @@ class Exercici4EsborrarController extends Controller
     public function build()
     {
         $info = $this->getParams();
+
         $this->assign('titol', 'HOME EXERCICI 4');
-        $this->assign('enr', '/exercici4');
+        $this->assign('enrere', '/exercici4');
 
         $css = "/css/style.css";
         $this->setParams( array( 'css' => $css ) );

@@ -11,11 +11,4 @@ class Exercici4ModificarOrnitorrincController extends Exercici4ModificarControll
 
     protected $animal  = 'ornitorrincos';
 
-    public function build()
-    {
-        parent::carregaTemplate();
-    }
-
-
-
 }

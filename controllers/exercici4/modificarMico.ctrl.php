@@ -10,11 +10,6 @@ class Exercici4ModificarMicoController extends Exercici4ModificarController
 {
     protected $animal  = 'monos';
 
-    public function build()
-    {
-        Session::getInstance()->set('animal', 'monos');
-        parent::carregaTemplate();
-    }
 
 
 }

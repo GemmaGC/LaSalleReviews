@@ -29,6 +29,7 @@ class PracticaHomeController extends Controller
 
 
     public function loadModules() {
+
         $modules['headPractica']	= 'SharedpracticaHeadController';
         $modules['footerPractica']	= 'SharedpracticaFooterController';
         return $modules;

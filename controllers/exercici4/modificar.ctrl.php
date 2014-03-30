@@ -14,7 +14,30 @@ class Exercici4ModificarController extends Controller
      */
     public function build()
     {
-        carregaTemplate();
+        echo $this->animal;
+        $info = $this->getParams();
+
+        $css = "/css/style.css";
+        $this->setParams( array( 'css' => $css ) );
+
+        echo $info['url_arguments'][0];
+        $values = explode( "-", $info['url_arguments'][0] );
+        var_dump($values);
+
+        if(count($info['url_arguments']) <= 1){
+            $this->assign('titol', 'MODIFICAR EXERCICI 4');
+            $this->assign('head', 'Modifica el nom o la URL de la imatge de '.$this->animal);
+            $this->assign('nomImg', 'Nou nom de la imatge de  '.$this->animal);
+            $this->assign('urlImg', 'Nova URL de la imatge de '.$this->animal);
+
+
+            $this->assign('afegir', '/editaZoo');
+            $this->assign('enr', '/home');
+
+            $this->setLayout($this->view_home);
+        }else{
+            $this->setLayout($this->view_error);
+        }
 
     }
 
@@ -41,7 +64,7 @@ class Exercici4ModificarController extends Controller
             $this->setLayout($this->view_error);
         }
     }
-
+/*
     protected function modifica()
     {
         $info = Session::getInstance()->get($this->animal);
@@ -60,7 +83,7 @@ class Exercici4ModificarController extends Controller
 
         Session::getInstance()->delete($this->animal);
     }
-
+*/
 
     /**
      * With this method you can load other modules that we will need in our page. You will have these modules availables in your template inside the "modules" array (example: {$modules.head}).

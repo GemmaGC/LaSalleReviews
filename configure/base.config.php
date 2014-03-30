@@ -105,13 +105,12 @@ $config['Exercici4EsborrarController']		            = PATH_CONTROLLERS . 'exerci
 
 //----------- LA SALLE REVIEW -----------------
 
+//Controllers compartits
+$config['SharedpracticaHeadController']		            = PATH_CONTROLLERS . 'practica/sharedpractica/head.ctrl.php';
+$config['SharedpracticaFooterController']		        = PATH_CONTROLLERS . 'practica/sharedpractica/footer.ctrl.php';
+
 //Controllers
 $config['PracticaHomeController']		                = PATH_CONTROLLERS . 'practica/home.ctrl.php';
 
-
-
-
-//Model
-//$config['Exercici3GestorModel']             = PATH_MODELS .'exercici3/gestor.model.php';
 
 //----------------------------------------
