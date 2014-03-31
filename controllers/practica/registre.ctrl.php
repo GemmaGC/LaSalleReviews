@@ -13,32 +13,63 @@ class PracticaRegistreController extends Controller
             $model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
             if(Filter::getString('submit_button')){
+
                 $usuari['nom'] = Filter::getString('newUser');
-                Session::getInstance()->set('nom', $usuari['nom']);
-
                 $usuari['email'] = Filter::getString("newEmail");
-                Session::getInstance()->set('email', $usuari['email']);
-
                 $usuari['password'] = Filter::getString("newPassword");
-                Session::getInstance()->set('password', $usuari['password']);
 
                 //Validem els camps
                 $usuaris = $model->getTot('usuaris');
                 $var = 0;
+                $this->assign('vNom', 0);
+                $this->assign('vMail', 0);
+                $this->assign('vPas', 0);
+                $this->assign('url_creu', '../imag/creu.png');
+
                 foreach($usuaris as $u)
                 {
-                    if(!strcmp($u['nom'], $usuari['nom'])  || !strcmp($u['email'], $usuari['email']) || !strcmp($u['password'], $usuari['password']))
+                    if(!strcmp($u['nom'], $usuari['nom'])) //Comprovem que el nom d'usuari sigui únic
                     {
+                        $this->assign('vNom', 1);
+                        $this->assign('nom', $usuari['nom']);
+                        $this->assign('email', $usuari['email']);
+                        $this->assign('password', $usuari['password']);
                         $var = 1;
-                        echo "Hi ha algun camp incorrecte.";
-                        break;
                     }
+
+                    if(!strcmp($u['email'], $usuari['email'])) //Comprovem que l'email sigui únic
+                    {
+                        $this->assign('val', 1);
+                        $this->assign('vMail', $usuari['nom']);
+                        $this->assign('email', $usuari['email']);
+                        $this->assign('password', $usuari['password']);
+                        $var = 1;
+                    }
+
+
                 }
+                if(strlen($usuari['password']) < 6 || strlen($usuari['password']) > 20 ) //Comprovem que la contrassenya tingui entre 6 i 20 caràcters
+                {
+                    $this->assign('vPas', 1);
+
+                    $this->assign('nom', $usuari['nom']);
+                    $this->assign('email', $usuari['email']);
+                    $this->assign('password', $usuari['password']);
+                    $var = 1;
+                }
+
                 //Si tots són correctes afegim l'usuari a la base de dades i redirigim per activar el compte d'usuari
                 if ($var == 0){
 
+
                     $login = PracticaRegistreController::generaLogin();
                     $model->afegeixUsuari($login, $usuari['nom'],$usuari['email'], $usuari['password']);
+
+                    Session::getInstance()->set('nom', $usuari['nom']);
+                    Session::getInstance()->set('email', $usuari['email']);
+                    Session::getInstance()->set('password', $usuari['password']);
+                    Session::getInstance()->set('login', $login);
+
                     header('Location: /register/activa',true,301);
                 }
 
