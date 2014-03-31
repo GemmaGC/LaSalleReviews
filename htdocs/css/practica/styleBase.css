@@ -259,7 +259,7 @@ input.notValid{
 }
 
 #s{
-    transition:all 0.2s ease-out;
+    transition:all 0.5s ease-out;
     width:1px;
     border-radius:0;
     box-shadow:none;
@@ -276,13 +276,18 @@ input.notValid{
     opacity:1;
 }
 
+#s:hover{
+    width:21em;
+    opacity:1;
+}
+
 .searcher_label{
     padding-left: 1px;
     display:inline-block;
     margin-top:0.3em;
     color:black;
     font-size:14px;
-    text-shadow:0 0 0.1em rgba(60,60,60,0.3);
+   
     position: relative;
     left:0.1em;
 }
