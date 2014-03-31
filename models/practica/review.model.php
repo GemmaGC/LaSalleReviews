@@ -27,14 +27,17 @@ QUERY;
 
     public function getUltim($nom_taula){
         $sql = <<<QUERY
-        SELECT TOP (1)
+        SELECT
             *
         FROM
             $nom_taula
         ORDER BY
             id DESC
+        LIMIT
+            1
 QUERY;
         $result = $this->getAll($sql);
+        //var_dump($result);
         return $result;
     }
 

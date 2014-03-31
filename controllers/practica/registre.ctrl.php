@@ -36,11 +36,9 @@ class PracticaRegistreController extends Controller
                 }
                 //Si tots són correctes afegim l'usuari a la base de dades i redirigim per activar el compte d'usuari
                 if ($var == 0){
-                    echo 1;
-                    $usuari['login'] = PracticaRegistreController::generaLogin();
-                    echo 2;
-                    //$usuari['login'] = "ls00000";
-                    $model->afegeixUsuari($usuari['login'], $usuari['nom'],$usuari['email'], $usuari['password']);
+
+                    $login = PracticaRegistreController::generaLogin();
+                    $model->afegeixUsuari($login, $usuari['nom'],$usuari['email'], $usuari['password']);
                     header('Location: /register/activa',true,301);
                 }
 
@@ -48,7 +46,7 @@ class PracticaRegistreController extends Controller
 
             $this->setLayout($this->view);
 
-        }else if(strcmp($info['url_arguments'][1], "activa")){
+        }else if(!strcmp($info['url_arguments'][1], "activa")){
 
             $link = "/benvinguda";
             $this->assign('link', $link);
@@ -60,17 +58,23 @@ class PracticaRegistreController extends Controller
 
     public function generaLogin()
     {
-        echo "login";
         $model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
         $ant = $model->getUltim('usuaris');
+        //var_dump($ant);
+        echo $ant[0]["id"];
         if (!empty($ant))
         {
-            $login = 'ls'.$ant['id'];
+            //var_dump($ant);
+            //$login['id'] = $ant[0]["id"] + 00001;
+
+            $login = 'ls'.(string)$ant[0]['id'];
 
         }else{
+            //$login['id'] = 00000;
             $login = 'ls00000';
         }
 
+        //var_dump($login);
         return $login;
     }
 
