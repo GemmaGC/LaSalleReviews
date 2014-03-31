@@ -27,8 +27,8 @@ QUERY;
 
     public function getUltim($nom_taula){
         $sql = <<<QUERY
-        SELECT
-            TOP 1 *
+        SELECT TOP (1)
+            *
         FROM
             $nom_taula
         ORDER BY
