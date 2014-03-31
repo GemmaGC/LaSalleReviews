@@ -119,6 +119,13 @@ p.notValid{
     display: inline-block;
 }
 
+.linkActiva{
+    border:0;
+    background-color:transparent;
+    color: blue;
+    text-decoration:underline;
+}
+
 .content_form {
 
 }
