@@ -7,7 +7,7 @@ class PracticaReviewModel extends Model{
 
         $sql = <<<QUERY
         INSERT INTO usuaris
-        VALUES ('$login', '$nom', '$email', '$password', 0)
+        VALUES ('', '$login', '$nom', '$email', '$password', 0)
 QUERY;
         $this->execute( $sql );
 
@@ -22,6 +22,19 @@ QUERY;
             $nom_taula
 QUERY;
         $result = $this->getAll( $sql );
+        return $result;
+    }
+
+    public function getUltim($nom_taula){
+        $sql = <<<QUERY
+        SELECT
+            TOP 1 *
+        FROM
+            $nom_taula
+        ORDER BY
+            id DESC
+QUERY;
+        $result = $this->getAll($sql);
         return $result;
     }
 
