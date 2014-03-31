@@ -15,7 +15,7 @@ class Exercici4HomeController extends Controller
         $info = $this->getParams();
 
 
-        if(count($info['url_arguments']) < 1){
+        if(!isset($info['url_arguments'])){
             $this->assign('titol', 'HOME EXERCICI 4');
             $this->assign('afegir', '/editaZoo');
             $this->assign('enrere', '/home');
