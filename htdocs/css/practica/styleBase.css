@@ -222,11 +222,93 @@ a.register:hover {
     clear: both;
 }
 
+input.notValid{
+    background: #F78181;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+/* Searcher */
 
 
 
 
+#container{
+    position: absolute;
+    top: -25px;
+    right: 7%;
+    margin:auto;
+    padding:3em 0 0;
+    text-align:center;
+}
 
+#searchform{
+    display:inline;
+    font-size:16px;
+    border-radius: 8em;
+    border:0.1em solid rgba(218,208,190,1);
+    box-shadow:0 0 0.3em rgba(60,60,60,0.4);
+    padding:0.4em;
+    background:white;
+}
+
+.icon_search {
+    padding-left: 4px;
+}
+
+#s{
+    transition:all 0.2s ease-out;
+    width:1px;
+    border-radius:0;
+    box-shadow:none;
+    outline: none;
+    padding:0;
+    margin:0;
+    border:0;
+    background-color: transparent;
+    opacity:0;
+}
+
+#s:focus{
+    width:21em;
+    opacity:1;
+}
+
+.searcher_label{
+    padding-left: 1px;
+    display:inline-block;
+    margin-top:0.3em;
+    color:black;
+    font-size:14px;
+    text-shadow:0 0 0.1em rgba(60,60,60,0.3);
+    position: relative;
+    left:0.1em;
+}
+
+.searcher_label::-webkit-input-placeholder {
+    font-family: Quicksand_light;
+    font-size: 14px;
+}
+
+
+:-moz-placeholder {
+    font-family: Quicksand_light;
+    font-size: 14px;
+}
+
+
+::-moz-placeholder {
+    font-family: Quicksand_light;
+    font-size: 14px;
+}
+
+
+:-ms-input-placeholder {
+    font-family: Quicksand_light;
+    font-size: 14px;
+}
 
 
 
