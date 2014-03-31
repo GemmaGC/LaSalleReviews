@@ -9,7 +9,7 @@ class PracticaRegistreController extends Controller
     {
         $info = $this->getParams();
 
-        if(count($info['url_arguments']) < 1){
+        if(!isset($info['url_arguments'])){
             $model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
             $usuari['nom'] = Filter::getString('newUser');
@@ -28,7 +28,8 @@ class PracticaRegistreController extends Controller
                 $var = 0;
                 foreach($usuaris as $u)
                 {
-                    if(strcmp($u['nom'], $usuari['nom']) || strcmp($u['email'], $usuari['email']) || strcmp($u['password'], $usuari['password'])){
+                    if(!strcmp($u['nom'], $usuari['nom'])  || !strcmp($u['email'], $usuari['email']) || !strcmp($u['password'], $usuari['password']))
+                    {
                         $var = 1;
                         echo "Hi ha algun camp incorrecte.";
                         break;
@@ -36,7 +37,10 @@ class PracticaRegistreController extends Controller
                 }
                 //Si tots són correctes afegim l'usuari a la base de dades i redirigim per activar el compte d'usuari
                 if ($var == 0){
-                    $usuari['login'] = generaLogin();
+                    echo 1;
+                    $usuari['login'] = PracticaRegistreController::generaLogin();
+                    echo 2;
+                    //$usuari['login'] = "ls00000";
                     $model->afegeixUsuari($usuari['login'], $usuari['nom'],$usuari['email'], $usuari['password']);
                     header('Location: /register/activa',true,301);
                 }
@@ -57,16 +61,17 @@ class PracticaRegistreController extends Controller
 
     public function generaLogin()
     {
+        echo "login";
         $model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
-        $tots = $model->getTots('usuaris');
-        $u = count($tots);
-        if ($u > 0)
+        $ant = $model->getUltim('usuaris');
+        if (!empty($ant))
         {
-            $num = $tots[$u-1]['login'];
+            $login = 'ls'.$ant['id'];
+
         }else{
-            $num = 00000;
+            $login = 'ls00000';
         }
-        $login = "ls".$num;
+
         return $login;
     }
 
