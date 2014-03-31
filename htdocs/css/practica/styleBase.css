@@ -177,15 +177,15 @@ a.site-logo {
 }
 
 a.site-logo:link {
-    color: orange;
+    color: #FFA500;
 }
 
 a.site-logo:visited {
-    color: orange;
+    color: #FFA500;
 }
 
 a.site-logo:active {
-    color: orange;
+    color: #FFA500;
 }
 
 a.site-logo:hover {
@@ -213,7 +213,7 @@ a.register:active {
 }
 
 a.register:hover {
-    color: orange;
+    color: #FFA500;
 }
 
 /* ----------------------------------------------------------------- */
