@@ -1,7 +1,7 @@
 
 {$modules.headPractica}
 
-            <form name="login-form" class="form" method="post">
+            <form name="login-form" class="form" method="post" onsubmit="return(validateFormLogin());">
 
 		        <div class="header_form">
 		            <h1>LOG IN!</h1>
@@ -10,7 +10,7 @@
 		        <div class="content_form">
 
                     <label for="email">EMAIL</label>
-                    <input name="newEmail" id="email" type="email" class="input_form" placeholder="example@dom.com" required/>
+                    <input name="newEmail" id="email" type="email" class="input_form" placeholder="example@dom.com"/>
 
 		            <label for="Password">PASSWORD</label>
 		            <input name="newPassword" id="Password" type="password" class="input_form" placeholder="PASSWORD" required/>
