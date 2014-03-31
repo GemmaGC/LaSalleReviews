@@ -42,35 +42,19 @@ class Exercici4HomeController extends Controller
             $this->assign('numOrni', count($imatges));
             $this->assign('imgOrni', $imatges);
 
-            $values = explode( "-", Filter::getString("id") );
-            Session::getInstance()->set('id', $values[1]);
 
+
+            $values = explode( "-", Filter::getString("id") );
            //ESBORRAR
            if(Filter::getString('esborrar')){
+
+              Session::getInstance()->set('id', $values[1]);
               $model->esborraImatge($values[1], $values[0]);
               header('Location: /esborrar',true,301);
            }
 
-            //MODIFICAR
-            //$values = explode( "-", Filter::getString("id") );
-            /*if(Filter::getString('editar')){
-                $values = explode( "-", Filter::getString("id") );
-                //header('Location: /modificar/'.$values[0].'-'.$values[1],true,301);
-                if(strcmp($values[0], 'monos')){
-                    header('Location: /modificarMico',true,301);
-                }
-
-                if(strcmp($values[0], 'marmotas')){
-                    header('Location: /modificarMarmota',true,301);
-                }
-
-                if(strcmp($values[0], 'ornitorrincos')){
-                    header('Location: /modificarOrnitorrinc',true,301);
-                }
-            }*/
-
-
             if(Filter::getString('editar_ornitorrinco')){
+                Session::getInstance()->set('id', $values[1]);
                 $orni['nom'] = $values[2];
                 $orni['url'] = $values[3];
                 Session::getInstance()->set('ornitorrincos', $orni);
@@ -78,6 +62,7 @@ class Exercici4HomeController extends Controller
             }
 
             if(Filter::getString('editar_mono')){
+                Session::getInstance()->set('id', $values[1]);
                 $mono['nom'] = $values[2];
                 $mono['url'] = $values[3];
                 Session::getInstance()->set('nom', $values[2]);
@@ -86,6 +71,7 @@ class Exercici4HomeController extends Controller
             }
 
             if(Filter::getString('editar_marmota')){
+                Session::getInstance()->set('id', $values[1]);
                 $marmo['nom'] = $values[2];
                 $marmo['url'] = $values[3];
                 Session::getInstance()->set('marmotas', $marmo);
