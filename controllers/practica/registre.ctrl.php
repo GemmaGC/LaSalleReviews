@@ -12,17 +12,16 @@ class PracticaRegistreController extends Controller
         if(!isset($info['url_arguments'])){
             $model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
-            $usuari['nom'] = Filter::getString('newUser');
-            Session::getInstance()->set('nom', $usuari['nom']);
-
-            $usuari['email'] = Filter::getString("newEmail");
-            Session::getInstance()->set('email', $usuari['email']);
-
-            $usuari['password'] = Filter::getString("newPassword");
-            Session::getInstance()->set('password', $usuari['password']);
-
-
             if(Filter::getString('submit_button')){
+                $usuari['nom'] = Filter::getString('newUser');
+                Session::getInstance()->set('nom', $usuari['nom']);
+
+                $usuari['email'] = Filter::getString("newEmail");
+                Session::getInstance()->set('email', $usuari['email']);
+
+                $usuari['password'] = Filter::getString("newPassword");
+                Session::getInstance()->set('password', $usuari['password']);
+
                 //Validem els camps
                 $usuaris = $model->getTot('usuaris');
                 $var = 0;
