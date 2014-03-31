@@ -37,8 +37,22 @@ QUERY;
             1
 QUERY;
         $result = $this->getAll($sql);
-        //var_dump($result);
         return $result;
     }
+
+    public function activaUsuari($login){
+        $sql = <<<QUERY
+        UPDATE
+            usuaris
+        SET
+            actiu = 1
+        WHERE
+            login = '$login'
+QUERY;
+        $this->execute( $sql );
+
+    }
+
+
 
 }

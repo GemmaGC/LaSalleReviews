@@ -70,7 +70,9 @@ class PracticaRegistreController extends Controller
             $this->assign('codi', $activa);
 
             if(Filter::getString('codi_activacio')){
-                header('Location: ../LaSalleReview',true,301);
+                $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
+                $this->model->activaUsuari($usuari['login']);
+                header('Location: /LaSalleReview',true,301);
             }
 
             $this->setLayout($this->view_activa);
