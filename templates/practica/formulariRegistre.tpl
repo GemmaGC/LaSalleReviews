@@ -7,9 +7,9 @@
 		            <h1>SIGN UP!</h1>
 		        </div>
 
-		        <div class="content_form">
+		        <div>
 
-		            <label for="login">NAME</label>
+		            <label for="name">NAME</label>
 		            <input name="newUser" id="name" type="text" class="input_form" placeholder="NAME" required/>
 <!--
 		        	<label for="name">LOGIN</label>
@@ -20,13 +20,16 @@
 
 		            <label for="Password">PASSWORD</label>
 		            <input name="newPassword" id="Password" type="password" class="input_form" placeholder="PASSWORD" required/>
-		        </div>
 
-		        <div class="footer_form">
-		            <input type="submit" name="submit_button" value="SIGN UP" class="button_form" />
-		        </div>
+
+                    <div class="footer_form">
+                        <input type="submit" name="submit_button" value="SIGN UP" class="button_form" />
+                    </div>
+
+                </div>
 
 		    </form>
+
 
 
 {$modules.footerPractica}

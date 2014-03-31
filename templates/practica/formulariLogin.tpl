@@ -14,11 +14,14 @@
 
 		            <label for="Password">PASSWORD</label>
 		            <input name="newPassword" id="Password" type="password" class="input_form" placeholder="PASSWORD" required/>
-		        </div>
 
-		        <div class="footer_form">
-		            <input type="submit" name="submit_button" value="LOG IN" class="button_form"/>
-		        </div>
+                    <div class="footer_form">
+                        <input type="submit" name="submit_button" value="LOG IN" class="button_form"/>
+                    </div>
+
+                </div>
+
+
 
 		    </form>
 
