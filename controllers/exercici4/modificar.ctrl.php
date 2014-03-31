@@ -21,7 +21,7 @@ class Exercici4ModificarController extends Controller
         $css = "/css/style.css";
         $this->setParams( array( 'css' => $css ) );
 
-        if(count($info['url_arguments']) <= 1){
+        if(count(!isset($info['url_arguments']) )){
             $this->assign('titol', 'MODIFICAR EXERCICI 4');
             $this->assign('head', 'Modifica el nom o la URL de la imatge de '.$this->animal);
             $this->assign('nomImg', 'Nou nom de la imatge de  '.$this->animal);
