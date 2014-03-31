@@ -3,7 +3,7 @@
 
             <form name="login-form" class="form" method="post">
 
-		        <div class="header_signup">
+		        <div class="header_form">
 		            <h1>LOG IN!</h1>
 		        </div>
 

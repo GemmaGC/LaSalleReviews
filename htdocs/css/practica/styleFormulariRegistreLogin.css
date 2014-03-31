@@ -3,24 +3,23 @@
 /* Estil formulari SIGN IN / LOG IN */
 
 .header_form {
-    font-family: Quicksand_bold;
+    font-family: Quicksand;
 }
 
 .form {
     position: absolute;
     top: 150px;
     left: 37%;
+    margin-bottom: 50px;
 }
+
+
 
 
 .input_form {
     position: absolute;
     top: 150px;
     left: 37%;
-}
-
-
-.input_form {
     width: 230px;
     height: 10px;
     padding: 15px 25px;
