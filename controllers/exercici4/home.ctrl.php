@@ -42,9 +42,8 @@ class Exercici4HomeController extends Controller
             $this->assign('numOrni', count($imatges));
             $this->assign('imgOrni', $imatges);
 
-
-
             $values = explode( "-", Filter::getString("id") );
+
            //ESBORRAR
            if(Filter::getString('esborrar')){
 
@@ -82,8 +81,6 @@ class Exercici4HomeController extends Controller
         }else{
             $this->setLayout($this->view_error);
         }
-
-
 
     }
 
