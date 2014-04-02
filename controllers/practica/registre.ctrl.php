@@ -14,7 +14,7 @@ class PracticaRegistreController extends Controller
 
             //Carreguem les imatges necessaries
             $this->assign('url_tick', '../imag/tick.gif');
-            $this->assign('url_creu', '../imag/creu.png');
+            $this->assign('url_creu', '../imag/creu2.png');
             $this->assign('val', 0);
             if(Filter::getString('submit_button')){
 
