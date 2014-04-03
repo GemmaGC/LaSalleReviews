@@ -8,9 +8,10 @@ class PracticaRegistreController extends Controller
     public function build( )
     {
         $info = $this->getParams();
+        $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
         if(!isset($info['url_arguments'])){
-            $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
+
 
             //Carreguem les imatges necessaries
             $this->assign('url_tick', '../imag/tick.gif');
@@ -70,7 +71,7 @@ class PracticaRegistreController extends Controller
             $this->assign('codi', $activa);
 
             if(Filter::getString('codi_activacio')){
-                $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
+                //$this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
                 $this->model->activaUsuari($usuari['login']);
                 header('Location: /LaSalleReview',true,301);
             }
