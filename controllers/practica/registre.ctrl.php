@@ -109,7 +109,22 @@ class PracticaRegistreController extends Controller
             if(!strcmp($u['nom'], $usuari['nom'])) //Comprovem que el nom d'usuari sigui únic
             {
                 $this->assign('vNom', 1);
+
                 $this->assign('nom', $usuari['nom']);
+                $this->assign('login', $usuari['login']);
+                $this->assign('email', $usuari['email']);
+                $this->assign('password', $usuari['password']);
+                $var = false;
+            }
+
+            if(!strcmp($u['login'], $usuari['login'])) //Comprovem que l'email sigui únic
+            {
+                //$this->assign('val', 1);
+
+                $this->assign('vLogin', 1);
+
+                $this->assign('nom', $usuari['nom']);
+                $this->assign('login', $usuari['login']);
                 $this->assign('email', $usuari['email']);
                 $this->assign('password', $usuari['password']);
                 $var = false;
@@ -117,8 +132,12 @@ class PracticaRegistreController extends Controller
 
             if(!strcmp($u['email'], $usuari['email'])) //Comprovem que l'email sigui únic
             {
-                $this->assign('val', 1);
-                $this->assign('vMail', $usuari['nom']);
+                //$this->assign('val', 1);
+
+                $this->assign('vMail', 1);
+
+                $this->assign('nom', $usuari['nom']);
+                $this->assign('login', $usuari['login']);
                 $this->assign('email', $usuari['email']);
                 $this->assign('password', $usuari['password']);
                 $var = false;

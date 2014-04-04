@@ -13,10 +13,10 @@
                             {if $vNom}<div class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;This name is already used!</p></div>{/if}</label>
                         <input name="newUser" id="name" type="text" class="input_form" {if !$vNom && !$vMail && !$vPas} placeholder="NAME" {else} value = "{$nom}" {/if} required/>
 
-                        <!--
-                    <label for="name">LOGIN</label>
-                    <input name="newUser" id="login" type="text" class="input_form" placeholder="LOGIN" required/>
-    -->
+
+                        <label for="name">LOGIN</label>
+                        <input name="newUser" id="login" type="text" class="input_form" placeholder="LOGIN" required/>
+
                         <label for="email">EMAIL <strong>*</strong>
                             {if $vMail}<div class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;This email is already used!</p></div>{/if}</label>
                         <input name="newEmail" id="email" type="email" class="input_form" {if !$vNom && !$vMail && !$vPas} placeholder="example@dom.com" {else} value = "{$email}" {/if} required/>
