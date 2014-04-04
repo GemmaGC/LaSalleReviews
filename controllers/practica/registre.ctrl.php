@@ -21,23 +21,25 @@ class PracticaRegistreController extends Controller
 
                 //Agafem les dades de l'usuari del formulari
                 $usuari['nom'] = Filter::getString('newUser');
+                $usuari['login'] = Filter::getString('newLogin');
                 $usuari['email'] = Filter::getString("newEmail");
                 $usuari['password'] = Filter::getString("newPassword");
 
 
 
-                $this->assign('vNom', 0); $this->assign('vMail', 0); $this->assign('vPas', 0);
+                $this->assign('vNom', 0); $this->assign('vLogin', 0); $this->assign('vMail', 0); $this->assign('vPas', 0);
 
                 //Si tots són correctes afegim l'usuari a la base de dades i redirigim per activar el compte d'usuari
                 if (PracticaRegistreController::comprovaCamps($usuari)){
-                    $usuari['login'] = PracticaRegistreController::generaLogin();
+                    //$usuari['login'] = PracticaRegistreController::generaLogin();
                     $this->model->afegeixUsuari($usuari['login'], $usuari['nom'],$usuari['email'], $usuari['password']);
 
                     //Session::getInstance()->set('usuari', $usuari);
                     Session::getInstance()->set('nom', $usuari['nom']);
+                    Session::getInstance()->set('login', $usuari['login']);
                     Session::getInstance()->set('email', $usuari['email']);
                     Session::getInstance()->set('password', $usuari['password']);
-                    Session::getInstance()->set('login', $usuari['login']);
+
 
                     /****** ENVIAR MAIL AMB CODI D'ACTIVACIÓ DE COMPTE *********/
 
@@ -102,7 +104,7 @@ class PracticaRegistreController extends Controller
     protected function comprovaCamps($usuari)
     {
         $usuaris = $this->model->getTot('usuaris');
-        $var = true;
+        //$var = true;
 
         foreach($usuaris as $u)
         {
@@ -117,7 +119,7 @@ class PracticaRegistreController extends Controller
                 $var = false;
             }
 
-            if(!strcmp($u['login'], $usuari['login'])) //Comprovem que l'email sigui únic
+            if(!strcmp($u['login'], $usuari['login']) || PracticaRegistrecontroller::comprovaLogin($u['login'])) //Comprovem que el login sigui unic, tingui una llargada de 7, 2 lletres i 2 num
             {
                 //$this->assign('val', 1);
 
@@ -149,6 +151,7 @@ class PracticaRegistreController extends Controller
             $this->assign('vPas', 1);
 
             $this->assign('nom', $usuari['nom']);
+            $this->assign('login', $usuari['login']);
             $this->assign('email', $usuari['email']);
             $this->assign('password', $usuari['password']);
             $var = false;
@@ -161,6 +164,27 @@ class PracticaRegistreController extends Controller
     protected function generaUrlActivacio($usuari)
     {
         return md5($usuari['nom'].$usuari['email'].$usuari['login']);
+    }
+
+    protected function comprovaLogin($var)
+    {
+        $ok = 0;
+        for ($i = 2; $i<sizeof($var); $i++)
+        {
+            for ($j = 0; $j<10; $j++)
+            {
+                if($var[$i] === $j)
+                {
+                    $ok++;
+                }
+            }
+        }
+        if ($ok === 5 && $var[0] === 'l' && $var[1] === 's')
+        {
+            return true;
+        }else{
+            return false;
+        }
     }
 
 
