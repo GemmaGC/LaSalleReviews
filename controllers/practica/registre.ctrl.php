@@ -135,6 +135,7 @@ class PracticaRegistreController extends Controller
                 //$this->assign('val', 1);
 
                 $this->assign('vMail', 1);
+                llll
 
                 $this->assign('nom', $usuari['nom']);
                 $this->assign('login', $usuari['login']);
