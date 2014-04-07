@@ -24,16 +24,21 @@
                 </div>
 
                 <nav class="register_login_container">
-                    <!-- Si NO està loguejat l'usuari...-->
-                    <a href="{$url.global}/addReview" class="register">ADD REVIEW</a>
-                    <a href="{$url.global}/register" class="register">SIGN UP</a>
-                    <a href="{$url.global}/logIn" class="register">LOG IN</a>
 
-                    <!-- Si JA està loguejat l'usuari...-->
-                    <a href="{$url.global}/addReview" class="register">ADD REVIEW</a>
-                    <div class="register">LOGIN DE L'USUARI</div>
-                    <a href="{$url.global}/logIn" class="register">LOG OUT</a>
+                    {if $log == 0}
+                        <!-- Si NO està loguejat l'usuari...-->
+                        <a href="{$url.global}/addReview" class="register">ADD REVIEW</a>
+                        <a href="{$url.global}/register" class="register">SIGN UP</a>
+                        <a href="{$url.global}/logIn" class="register">LOG IN</a>
 
+                    {elseif $log == 1}
+
+                        <!-- Si JA està loguejat l'usuari...-->
+                        <a href="{$url.global}/addReview" class="register">ADD REVIEW</a>
+                        <div class="register">{$nom} - {$login}</div>
+                        <a href="{$url.global}/logIn" class="register">LOG OUT</a>
+
+                    {/if}
                 </nav>
 
 

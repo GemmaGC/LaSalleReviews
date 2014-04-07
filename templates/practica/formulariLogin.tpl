@@ -13,10 +13,10 @@
 		        <div class="content_form">
 
                     <label for="email">EMAIL <strong>*</strong></label>
-                    <input name="newEmail" id="email" type="email" class="input_form" placeholder="example@dom.com"/>
+                    <input name="email" id="email" type="email" class="input_form" placeholder="example@dom.com"/>
 
 		            <label for="Password">PASSWORD <strong>*</strong></label>
-		            <input name="newPassword" id="Password" type="password" class="input_form" placeholder="PASSWORD" required/>
+		            <input name="password" id="Password" type="password" class="input_form" placeholder="PASSWORD" required/>
 
                     <div class="footer_form">
                         <input type="submit" name="submit_button" value="LOG IN" class="button_form"/>

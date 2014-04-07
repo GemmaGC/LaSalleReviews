@@ -60,6 +60,10 @@ class PracticaRegistreController extends Controller
 
             if(Filter::getString('codi_activacio')){
                 $this->model->activaUsuari($usuari['login']);
+                Session::getInstance()->delete('nom');
+                Session::getInstance()->delete('email');
+                Session::getInstance()->delete('login');
+                Session::getInstance()->delete('password');
                 header('Location: /benvinguda',true,301);
             }
 
