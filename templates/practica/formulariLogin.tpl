@@ -9,7 +9,7 @@
 
             <form name="login-form" class="form" method="post" onsubmit="return(validateFormLogin());">
 
-
+                {if (!$ok)}<h1>{$error}</h1>{/if}
 		        <div class="content_form">
 
                     <label for="email">EMAIL <strong>*</strong></label>
