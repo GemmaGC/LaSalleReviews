@@ -68,6 +68,7 @@ $config['benvinguda']           = 'PracticaBenvingudaController';
 
 $config['LaSalleReview']        = 'PracticaHomeController';
 $config['logIn']                = 'PracticaLoginController';
+$config['logOut']               = 'PracticaLogoutController';
 $config['addReview']            = 'PracticaAddReviewController';
 
 

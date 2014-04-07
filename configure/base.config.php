@@ -114,6 +114,7 @@ $config['PracticaHomeController']		                = PATH_CONTROLLERS . 'practic
 $config['PracticaBenvingudaController']		            = PATH_CONTROLLERS . 'practica/benvinguda.ctrl.php';
 $config['PracticaRegistreController']		            = PATH_CONTROLLERS . 'practica/registre.ctrl.php';
 $config['PracticaLoginController']		                = PATH_CONTROLLERS . 'practica/login.ctrl.php';
+$config['PracticaLogoutController']		                = PATH_CONTROLLERS . 'practica/logOut.ctrl.php';
 $config['PracticaAddReviewController']		            = PATH_CONTROLLERS . 'practica/addReview.ctrl.php';
 
 

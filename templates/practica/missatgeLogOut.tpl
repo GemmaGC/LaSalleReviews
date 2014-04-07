@@ -1,7 +1,7 @@
 {$modules.headPractica}
 
 			<div class="welcome_title">
-				<h1>YOU'VE JUST LOGGED OUT!</h1>
+				<h1>BYE BYE {$nom}! </br> YOU'VE JUST LOGGED OUT!</h1>
 			</div>
 
 			<p class="welcome_info">What do you want to do now?</p>

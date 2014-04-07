@@ -19,15 +19,14 @@ class PracticaLoginController extends Controller
 
                 $usuari = $this->model->buscaUsuari($u['email'], $u['password']);
 
-                                                                                                    //var_dump($usuari);
+                                                                                                      //var_dump($usuari[0]["nom"]);
                 if(!empty($usuari))
                 {
                                                                                                     //var_dump($usuari['actiu']);
-                    if(strcmp($usuari['actiu'], '1')){
-                                                                                                    //echo "activissim!";
+                    if(strcmp($usuari['actiu'], "1")){
 
-                        Session::getInstance()->set('nom', $usuari['nom']); //Només mostrarem el nom
-                        Session::getInstance()->set('login', $usuari['login']);
+                        Session::getInstance()->set('nom', $usuari[0]['nom']); //Només mostrarem el nom
+                        Session::getInstance()->set('login', $usuari[0]['login']);
                         //Session::getInstance()->set('email', $usuari['email']);
                         //Session::getInstance()->set('password', $usuari['password']);
                         Session::getInstance()->set('log', 1);
