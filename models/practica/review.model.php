@@ -53,6 +53,20 @@ QUERY;
 
     }
 
+    public function buscaUsuari($mail, $password)
+    {
+        $sql = <<<QUERY
+        SELECT
+            *
+        FROM
+            usuaris
+        WHERE
+            email = "$mail" AND password = "$password"
+QUERY;
+        $result = $this->getAll($sql);
+        return $result;
+    }
+
 
 
 }
