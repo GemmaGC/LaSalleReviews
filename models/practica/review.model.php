@@ -14,6 +14,7 @@ QUERY;
     }
 
 
+
     public function getTot($nom_taula){
         $sql = <<<QUERY
         SELECT
@@ -66,7 +67,15 @@ QUERY;
         $result = $this->getAll($sql);
         return $result;
     }
+//añadir un nuevo review
+    public function afegeixReview($title, $description, $subject, $date, $score, $image){
+        echo $title;
+        $sql = <<<QUERY
+        INSERT INTO review
+        VALUES ('$title', '$description', '$subject', '$date', '$score', '$image')
+QUERY;
+        $this->execute( $sql );
 
-
+    }
 
 }
