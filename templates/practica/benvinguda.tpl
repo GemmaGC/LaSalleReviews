@@ -7,8 +7,8 @@
 			<p class="welcome_info">Now that you have successfully registered, you can either go to the Home page or Log In.</p>
 
 			<div class="welcome_buttons_container">
-				<a href="#" class="welcome_button">HOME</a>
-				<a href="#" class="welcome_button">LOG IN</a>
+				<a href="{$url.global}/LaSalleReview" class="welcome_button">HOME</a>
+				<a href="{$url.global}/logIn" class="welcome_button">LOG IN</a>
 			</div>
 
 {$modules.footerPractica}

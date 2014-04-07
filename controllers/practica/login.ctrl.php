@@ -7,7 +7,15 @@ class PracticaLoginController extends Controller
     public function build( )
     {
 
-        $this->setLayout( $this->view );
+        $info = $this->getParams();
+        $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
+
+        if(!isset($info['url_arguments'])){
+
+
+            $this->setLayout( $this->view );
+        }
+
 
     }
 

@@ -5,6 +5,7 @@ class PracticaRegistreController extends Controller
     protected $view = 'practica/formulariRegistre.tpl';
     protected $view_activa = 'practica/activacio.tpl';
     protected $model;
+
     public function build( )
     {
         $info = $this->getParams();
@@ -31,10 +32,8 @@ class PracticaRegistreController extends Controller
 
                 //Si tots són correctes afegim l'usuari a la base de dades i redirigim per activar el compte d'usuari
                 if (PracticaRegistreController::comprovaCamps($usuari)){
-                    //$usuari['login'] = PracticaRegistreController::generaLogin();
                     $this->model->afegeixUsuari($usuari['login'], $usuari['nom'],$usuari['email'], $usuari['password']);
 
-                    //Session::getInstance()->set('usuari', $usuari);
                     Session::getInstance()->set('nom', $usuari['nom']);
                     Session::getInstance()->set('login', $usuari['login']);
                     Session::getInstance()->set('email', $usuari['email']);
@@ -43,19 +42,6 @@ class PracticaRegistreController extends Controller
 
                     /****** ENVIAR MAIL AMB CODI D'ACTIVACIÓ DE COMPTE *********/
 
-
-
-                    //echo $activa;
-                    /*$this->assign('val', 1);
-                    $activa = PracticaRegistreController::generaUrlActivacio($usuari);
-                    $this->assign('codi', $activa);
-
-                    var_dump(Filter::getString('codi_activacio'));
-
-                    if(Filter::getString('codi_activacio')){
-                        //header('Location: /register',true,301);
-                        echo "HOLA";
-                    }*/
                     header('Location: /register/activa',true,301);
                 }
 
@@ -73,9 +59,8 @@ class PracticaRegistreController extends Controller
             $this->assign('codi', $activa);
 
             if(Filter::getString('codi_activacio')){
-                //$this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
                 $this->model->activaUsuari($usuari['login']);
-                header('Location: /LaSalleReview',true,301);
+                header('Location: /benvinguda',true,301);
             }
 
             $this->setLayout($this->view_activa);
@@ -84,27 +69,10 @@ class PracticaRegistreController extends Controller
         }
     }
 
-    protected function generaLogin()
-    {
-        //$this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
-        $ant = $this->model->getUltim('usuaris');
-
-        if (!empty($ant))
-        {
-            $login = 'ls'.(string)$ant[0]['id'];
-
-        }else{
-            $login = 'ls00000';
-        }
-
-        return $login;
-    }
-
-
     protected function comprovaCamps($usuari)
     {
         $usuaris = $this->model->getTot('usuaris');
-        //$var = true;
+        $var = true;
 
         foreach($usuaris as $u)
         {
@@ -121,7 +89,6 @@ class PracticaRegistreController extends Controller
 
             if(!strcmp($u['login'], $usuari['login']) || PracticaRegistrecontroller::comprovaLogin($u['login'])) //Comprovem que el login sigui unic, tingui una llargada de 7, 2 lletres i 2 num
             {
-                //$this->assign('val', 1);
 
                 $this->assign('vLogin', 1);
 
@@ -134,8 +101,6 @@ class PracticaRegistreController extends Controller
 
             if(!strcmp($u['email'], $usuari['email'])) //Comprovem que l'email sigui únic
             {
-                //$this->assign('val', 1);
-
                 $this->assign('vMail', 1);
 
                 $this->assign('nom', $usuari['nom']);
@@ -156,7 +121,6 @@ class PracticaRegistreController extends Controller
             $this->assign('password', $usuari['password']);
             $var = false;
         }
-
         return $var;
     }
 
