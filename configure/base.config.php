@@ -90,9 +90,9 @@ $config['Exercici3GestorModel']             = PATH_MODELS .'exercici3/gestor.mod
 //Controllers
 $config['Exercici4HomeController']		                = PATH_CONTROLLERS . 'exercici4/home.ctrl.php';
 $config['Exercici4ModificarController']		            = PATH_CONTROLLERS . 'exercici4/modificar.ctrl.php';
-    $config['Exercici4ModificarMicoController']		            = PATH_CONTROLLERS . 'exercici4/modificarMico.ctrl.php';
-    $config['Exercici4ModificarMarmotaController']		        = PATH_CONTROLLERS . 'exercici4/modificarMarmota.ctrl.php';
-    $config['Exercici4ModificarOrnitorrincController']		    = PATH_CONTROLLERS . 'exercici4/modificarOrnitorrinc.ctrl.php';
+$config['Exercici4ModificarMicoController']		        = PATH_CONTROLLERS . 'exercici4/modificarMico.ctrl.php';
+$config['Exercici4ModificarMarmotaController']		    = PATH_CONTROLLERS . 'exercici4/modificarMarmota.ctrl.php';
+$config['Exercici4ModificarOrnitorrincController']		= PATH_CONTROLLERS . 'exercici4/modificarOrnitorrinc.ctrl.php';
 $config['Exercici4EsborrarController']		            = PATH_CONTROLLERS . 'exercici4/esborrar.ctrl.php';
 
 
@@ -119,7 +119,11 @@ $config['PracticaAddReviewController']		            = PATH_CONTROLLERS . 'practi
 
 
 //Model
-$config['PracticaReviewModel']             = PATH_MODELS .'practica/review.model.php';
+$config['PracticaReviewModel']          = PATH_MODELS .'practica/review.model.php';
 
+
+// Controller per errors 404 i 403
+$config['ErrorErrorP404Controller']		= PATH_CONTROLLERS . 'error/errorP404.ctrl.php';
+$config['ErrorErrorP403Controller']		= PATH_CONTROLLERS . 'error/errorP403.ctrl.php';
 
 //----------------------------------------

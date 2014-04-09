@@ -1,10 +1,10 @@
 <?php
-
-class ErrorError404Controller extends Controller
+class ErrorErrorP403Controller extends Controller
 {
-    protected $view = 'practica/error/errorP404.tpl';
 
-    public function build()
+    protected $view = 'practica/error/errorP403.tpl';
+
+    public function build( )
     {
         $this->setLayout( $this->view );
     }
