@@ -21,6 +21,8 @@ $config['default']			= 'HomeHomeController';
 $config['home']				= 'HomeHomeController';
 
 $config['error']	        = 'ErrorError404Controller';
+$config['errorP404']	    = 'ErrorErrorP404Controller';
+$config['errorP403']	    = 'ErrorErrorP403Controller';
 
 //----------- EXERCICI 1 -----------------
 
