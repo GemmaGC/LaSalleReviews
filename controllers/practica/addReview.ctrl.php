@@ -18,12 +18,12 @@ class PracticaAddReviewController extends Controller
                 //Agafem les dades que posa l'usuari al addreview
                 $review['title'] = Filter::getString('newTitle');
                 $review['description'] = Filter::getString('newDescription');
-                $review['subject'] = Filter::getString("newSubject");
-                $review['date'] = Filter::getString("newDate");
-                $review['score'] = Filter::getString("newScore");
-                $review['image'] = Filter::getString("newImage");
+                $review['subject'] = Filter::getString('newSubject');
+                $review['date'] = Filter::getString('newDate');
+                $review['score'] = Filter::getInteger('newScore');
+                $review['image'] = Filter::getString('newImage');
 
-
+var_dump($review);
 
                 //$this->assign('vNom', 0); $this->assign('vLogin', 0); $this->assign('vMail', 0); $this->assign('vPas', 0);
 
