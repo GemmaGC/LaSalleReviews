@@ -3,15 +3,16 @@
     margin: 0px auto;
     color: black;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
-    margin-top: 20px;
-
+    margin-top: 40px;
+    margin-bottom: -80px;
 }
 
 
 .error strong{
     font-weight: bold;
+    line-height: 60px;
     font-size: 30px;
 }
 
