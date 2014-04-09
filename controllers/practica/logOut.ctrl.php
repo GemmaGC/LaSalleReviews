@@ -1,27 +1,24 @@
 <?php
 
-class PracticaLogoutController extends Controller
+include_once( PATH_CONTROLLERS . 'practica/dosOpcions.ctrl.php' );
+
+class PracticaLogoutController extends PracticaDosOpcionsController
 {
-    protected $view = 'practica/missatgeLogOut.tpl';
+    protected $title = 'titol';
+    protected $subtitle = 'subtitol';
 
-    public function build( )
+
+    public function carregaTitols( )
     {
-        $nom = Session::getInstance()->get('nom');
-        $this->assign('nom', $nom);
 
+        $nom = Session::getInstance()->get('nom');
+        $this->title = "BYE BYE ".$nom."! </br> YOU'VE JUST LOGGED OUT!";
+
+        $this->subtitle = "What do you want to do now?";
 
         Session::getInstance()->delete('nom');
         Session::getInstance()->delete('login');
 
         Session::getInstance()->set('log', 0);
-
-        $this->setLayout( $this->view );
-    }
-
-    public function loadModules() {
-
-        $modules['headPractica']	= 'SharedpracticaHeadController';
-        $modules['footerPractica']	= 'SharedpracticaFooterController';
-        return $modules;
     }
 }
