@@ -16,7 +16,8 @@
      * under the License.
      */
 
-    require '../htdocs/src/facebook.php';
+
+    require_once("../facebook-php-sdk-master/src/facebook.php");
 
     class Facebook extends Controller
     {
@@ -27,47 +28,20 @@
          */
         public function build()
         {
-            // Create our Application instance (replace this with your appId and secret).
-            $facebook = new Facebook(array(
-                'appId'  => '344617158898614',
-                'secret' => '6dc8ac871858b34798bc2488200e503d',
-            ));
 
-// Get User ID
+
+            $config = array(
+                'appId' => '292309604263355',
+                'secret' => '06d50faaafd96c3986a6a8e9d749cf3d',
+                'fileUpload' => false, // optional
+                'allowSignedRequest' => false, // optional, but should be set to false for non-canvas apps
+            );
+
+            $facebook = new Facebook($config);
+
+            // Get User ID
             $user = $facebook->getUser();
-
-// We may or may not have this data based on whether the user is logged in.
-//
-// If we have a $user id here, it means we know the user is logged into
-// Facebook, but we don't know if the access token is valid. An access
-// token is invalid if the user logged out of Facebook.
-            $this->assign('user', $user);
-            if ($user) {
-                try {
-// Proceed knowing you have a logged in user who's authenticated.
-                    $user_profile = $facebook->api('/me');
-                } catch (FacebookApiException $e) {
-                    error_log($e);
-                    $user = null;
-                }
-            }
-
-// Login or logout url will be needed depending on current user state.
-            if ($user) {
-                $logoutUrl = $facebook->getLogoutUrl();
-                $this->assign('logoutUrl', $logoutUrl);
-
-            } else {
-                $statusUrl = $facebook->getLoginStatusUrl();
-                $loginUrl = $facebook->getLoginUrl();
-                $this->assign('statusUrl', $statusUrl);
-                $this->assign('loginUrl', $loginUrl);
-
-            }
-
-// This call will always work since we are fetching public data.
-            $naitik = $facebook->api('/naitik');
-            $this->assign('naitik', $naitik);
+            echo $user;
 
             $this->setLayout($this->view);
         }

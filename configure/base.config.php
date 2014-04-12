@@ -21,6 +21,7 @@ $config['uploader']						=  PATH_ENGINE . 'uploader.class.php';
 $config['dispatcher']					=  PATH_ENGINE . 'dispatcher.class.php';
 
 
+
 /** 
  * Controllers i Models 
  *
@@ -127,6 +128,7 @@ $config['PracticaReviewModel']          = PATH_MODELS .'practica/review.model.ph
 $config['ErrorErrorP404Controller']		= PATH_CONTROLLERS . 'error/errorP404.ctrl.php';
 $config['ErrorErrorP403Controller']		= PATH_CONTROLLERS . 'error/errorP403.ctrl.php';
 
-$config['Facebook']		= PATH_CONTROLLERS . 'practica/facebook.ctrl.php';
+$config['Facebook']		                = PATH_CONTROLLERS . 'practica/facebook.ctrl.php';
+$config['PracticaHolaController']		= PATH_CONTROLLERS . 'practica/hola.ctrl.php';
 
 //----------------------------------------

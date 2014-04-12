@@ -75,6 +75,7 @@ $config['benvinguda']           = 'PracticaBenvingudaController';
 $config['addReview']            = 'PracticaAddReviewController';
 
 $config['facebook']            = 'Facebook';
+$config['hola']            = 'PracticaHolaController';
 
 
 
