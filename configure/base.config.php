@@ -127,4 +127,6 @@ $config['PracticaReviewModel']          = PATH_MODELS .'practica/review.model.ph
 $config['ErrorErrorP404Controller']		= PATH_CONTROLLERS . 'error/errorP404.ctrl.php';
 $config['ErrorErrorP403Controller']		= PATH_CONTROLLERS . 'error/errorP403.ctrl.php';
 
+$config['Facebook']		= PATH_CONTROLLERS . 'practica/facebook.ctrl.php';
+
 //----------------------------------------
