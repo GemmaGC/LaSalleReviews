@@ -1,72 +1,103 @@
-
-
 /* pagina principal am reviews */
 
-.reviews {
-    margin-top: 50px;
+.Top10reviews {
+    margin-top: 80px;
+}
+
+.BestReview {
+    margin-top: 60px;
 }
 
 
-.reviews h1 {
-    margin-left: 45%;
+.Top10reviews h1 {
+    margin-left: 39%;
+    margin-right: 39%;
+}
+
+.BestReview h1 {
+    margin-left: 42%;
+    margin-right: 39%;
+}
+
+
+.section_bestreview {
+    width: 33%;
+    height: 50%;
+    padding: 2%;
+
+
+    margin: 0px auto;
+    padding-bottom: 6%;
 }
 
 
 .section_review {
-    width: 55%;
+    width: 33%;
     height: 50%;
     padding: 2%;
-    
-   
+
+
     margin: 0px auto;
     border-bottom: 1px solid #98C9ED;
-    padding-bottom: 7%;
+    padding-bottom: 3%;
 }
 
-.section_review_title {
+
+.section_review_title  {
     font-weight: bold;
+
 }
+
+p.titol_review{
+    display: inline-flex;
+    color: grey;
+    font-weight: normal;
+
+}
+
+p.data_review {
+    margin-right: 60%;
+}
+
 
 .section_review_body {
-     display: block;
-     text-align: justify;
+    display: block;
+    text-align: justify;
+}
+
+.separator {
+    margin: 0px auto;
+    border-bottom: 2px solid #98C9ED;
+    width: 50%;
 }
 
 
-.readmore_link {
-    float: right;
-    margin-top: 5%;
-    color: #FFA500;
-    
-}
 
-a.readmore_link{
+
+
+a.link_titol_review{
     text-decoration: none;
 }
 
-a.readmore_link:link {
+a.link_titol_review:link {
     color: #FFA500;
 }
 
-a.readmore_link:visited {
+a.link_titol_review:visited {
     color: #FFA500;
 }
 
-a.readmore_link:active {
+a.link_titol_review:active {
     color: #FFA500;
 }
 
-a.readmore_link:hover {
+a.link_titol_review:hover {
     color: grey;
 }
 
 
 
-
-
-
-
-
-
-
-
+.twitter-timeline {
+    float: right;
+    margin: 5%;
+}
