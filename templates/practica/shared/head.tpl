@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="robots" content="all" />
-        <title>PROJECTES WEB</title>
+        <title>LA SALLE REVIEW</title>
         <link rel="stylesheet" href="{$url.global}/css/practica/styleBase.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     </head>

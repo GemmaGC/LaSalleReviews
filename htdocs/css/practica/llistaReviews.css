@@ -1,0 +1,72 @@
+
+
+/* pagina principal am reviews */
+
+.reviews {
+    margin-top: 50px;
+}
+
+
+.reviews h1 {
+    margin-left: 45%;
+}
+
+
+.section_review {
+    width: 55%;
+    height: 50%;
+    padding: 2%;
+    
+   
+    margin: 0px auto;
+    border-bottom: 1px solid #98C9ED;
+    padding-bottom: 7%;
+}
+
+.section_review_title {
+    font-weight: bold;
+}
+
+.section_review_body {
+     display: block;
+     text-align: justify;
+}
+
+
+.readmore_link {
+    float: right;
+    margin-top: 5%;
+    color: #FFA500;
+    
+}
+
+a.readmore_link{
+    text-decoration: none;
+}
+
+a.readmore_link:link {
+    color: #FFA500;
+}
+
+a.readmore_link:visited {
+    color: #FFA500;
+}
+
+a.readmore_link:active {
+    color: #FFA500;
+}
+
+a.readmore_link:hover {
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
