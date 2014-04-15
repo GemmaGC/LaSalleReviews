@@ -27,7 +27,6 @@
 
                     {if $log == 0}
                         <!-- Si NO està loguejat l'usuari...-->
-                        <a href="{$url.global}/addReview" class="register">ADD REVIEW</a>
                         <a href="{$url.global}/register" class="register">SIGN UP</a>
                         <a href="{$url.global}/logIn" class="register">LOG IN</a>
 

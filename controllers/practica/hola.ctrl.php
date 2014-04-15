@@ -1,7 +1,7 @@
 <?php
 
 
-require_once("htdocs/facebook-php-sdk-master/src/facebook.php");
+require_once("facebook.php");
 class PracticaHolaController extends Controller
 {
 
