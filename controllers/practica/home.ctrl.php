@@ -37,9 +37,14 @@ class PracticaHomeController extends Controller
 
         $modules['headPractica']	= 'SharedpracticaHeadController';
         $modules['footerPractica']	= 'SharedpracticaFooterController';
+
+        // Moduls de la home especials
+        $modules['twitter']	        = 'PracticaTwitterController';
+        $modules['bestReview']	    = 'PracticaBestReviewController';
+        $modules['llistatReviews']	= 'PracticaLlistatReviewsController';
+
         return $modules;
     }
 
 
 }
-?>

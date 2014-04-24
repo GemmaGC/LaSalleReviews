@@ -74,8 +74,8 @@ $config['logOut']               = 'PracticaLogoutController';
 $config['benvinguda']           = 'PracticaBenvingudaController';
 $config['addReview']            = 'PracticaAddReviewController';
 
-$config['facebook']            = 'Facebook';
-$config['hola']            = 'PracticaHolaController';
+$config['facebook']             = 'Facebook';
+$config['hola']                 = 'PracticaHolaController';
 
 
 

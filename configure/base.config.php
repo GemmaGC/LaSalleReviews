@@ -115,9 +115,19 @@ $config['PracticaHomeController']		                = PATH_CONTROLLERS . 'practic
 $config['PracticaRegistreController']		            = PATH_CONTROLLERS . 'practica/registre.ctrl.php';
 $config['PracticaLoginController']		                = PATH_CONTROLLERS . 'practica/login.ctrl.php';
 $config['PracticaDosOpcionsController']		            = PATH_CONTROLLERS . 'practica/dosOpcions.ctrl.php';
-    $config['PracticaLogoutController']		                = PATH_CONTROLLERS . 'practica/logOut.ctrl.php';
-    $config['PracticaBenvingudaController']		            = PATH_CONTROLLERS . 'practica/benvinguda.ctrl.php';
+$config['PracticaLogoutController']		                = PATH_CONTROLLERS . 'practica/logOut.ctrl.php';
+$config['PracticaBenvingudaController']		            = PATH_CONTROLLERS . 'practica/benvinguda.ctrl.php';
 $config['PracticaAddReviewController']		            = PATH_CONTROLLERS . 'practica/addReview.ctrl.php';
+
+
+// Moduls de la home
+$config['PracticaLlistatReviewsController']		        = PATH_CONTROLLERS . 'practica/llistatReviews.ctrl.php';
+$config['PracticaBestReviewController']		            = PATH_CONTROLLERS . 'practica/bestReview.ctrl.php';
+$config['PracticaTwitterController']		            = PATH_CONTROLLERS . 'practica/twitter.ctrl.php';
+
+
+
+
 
 
 //Model
