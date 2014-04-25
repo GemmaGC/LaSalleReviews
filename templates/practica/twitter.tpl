@@ -1,3 +1,5 @@
+{literal}
+
 <a class="twitter-timeline" href="https://twitter.com/search?q=%23projectesWeb14" data-widget-id="455734456284753920">Tuits sobre "#projectesWeb14"</a>
 
 <script>
@@ -12,3 +14,6 @@
 	}
 	(document,"script","twitter-wjs");
 </script>
+
+
+{/literal}
