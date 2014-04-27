@@ -17,65 +17,14 @@ class Exercici4HomeController extends Controller
 
         if(!isset($info['url_arguments'])){
             $this->assign('titol', 'HOME EXERCICI 4');
-            $this->assign('afegir', '/editaZoo');
-            $this->assign('enrere', '/home');
+            $this->assign('modificar', '/visualitzarOpcions');
+            $this->assign('mostrar', '/galeriaZoo');
+            $this->assign('enr', '/home');
 
             $css = "/css/style.css";
             $this->setParams( array( 'css' => $css ) );
 
-            $model = $this->getClass( 'Exercici3GestorModel' ); //Importem el model
 
-            //Numero de micos, marmotes i ornitorrincs
-
-            $imatges = $model->getImatges('monos');
-
-            $this->assign('numMicos', count($imatges));
-            $this->assign('imgMicos', $imatges);
-
-
-            $imatges = $model->getImatges('marmotas');
-            $this->assign('numMarm', count($imatges));
-            $this->assign('imgMarm', $imatges);
-
-
-            $imatges = $model->getImatges('ornitorrincos');
-            $this->assign('numOrni', count($imatges));
-            $this->assign('imgOrni', $imatges);
-
-            $values = explode( "-", Filter::getString("id") );
-
-           //ESBORRAR
-           if(Filter::getString('esborrar')){
-
-              Session::getInstance()->set('id', $values[1]);
-              $model->esborraImatge($values[1], $values[0]);
-              header('Location: /esborrar',true,301);
-           }
-
-            if(Filter::getString('editar_ornitorrinco')){
-                Session::getInstance()->set('id', $values[1]);
-                $orni['nom'] = $values[2];
-                $orni['url'] = $values[3];
-                Session::getInstance()->set('ornitorrincos', $orni);
-                header('Location: /modificarOrnitorrinc',true,301);
-            }
-
-            if(Filter::getString('editar_mono')){
-                Session::getInstance()->set('id', $values[1]);
-                $mono['nom'] = $values[2];
-                $mono['url'] = $values[3];
-                Session::getInstance()->set('nom', $values[2]);
-                Session::getInstance()->set('url', $values[3]);
-                header('Location: /modificarMico',true,301);
-            }
-
-            if(Filter::getString('editar_marmota')){
-                Session::getInstance()->set('id', $values[1]);
-                $marmo['nom'] = $values[2];
-                $marmo['url'] = $values[3];
-                Session::getInstance()->set('marmotas', $marmo);
-                header('Location: /modificarMarmota',true,301);
-            }
 
             $this->setLayout($this->view_home);
         }else{

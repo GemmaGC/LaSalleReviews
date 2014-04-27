@@ -58,6 +58,8 @@ $config['modificarMico']		    = 'Exercici4ModificarMicoController';
 $config['modificarMarmota']		    = 'Exercici4ModificarMarmotaController';
 $config['modificarOrnitorrinc']		= 'Exercici4ModificarOrnitorrincController';
 $config['esborrar']		            = 'Exercici4EsborrarController';
+$config['modificar']	            = 'Exercici4VisualitzarOpcionsController';
+$config['mostrar']	                = 'Exercici4GaleriaZooController';
 
 //----------------------------------------
 
