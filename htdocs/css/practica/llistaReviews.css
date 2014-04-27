@@ -1,6 +1,6 @@
 /* pagina principal am reviews */
 
-.Top10reviews {
+.Last10reviews {
     margin-top: 80px;
 }
 
@@ -9,13 +9,13 @@
 }
 
 
-.Top10reviews h1 {
-    margin-left: 39%;
-    margin-right: 39%;
+.Last10reviews h1 {
+    margin-left: 37%;
+    margin-right: 37%;
 }
 
 .BestReview h1 {
-    margin-left: 42%;
+    margin-left: 41%;
     margin-right: 39%;
 }
 

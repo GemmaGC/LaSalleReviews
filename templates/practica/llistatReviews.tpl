@@ -5,9 +5,9 @@
 
 
 
-<div class="Top10reviews">
+<div class="Last10reviews">
 
-    <h1>TOP 10 REVIEWS</h1>
+    <h1>LAST 10 REVIEWS</h1>
 
     <section class="section_review">
 
