@@ -1,6 +1,9 @@
+<?php /* Smarty version 2.6.14, created on 2014-04-27 11:48:44
+         compiled from practica/mostrarReview.tpl */ ?>
 
 
-{$modules.headPractica}
+<?php echo $this->_tpl_vars['modules']['headPractica']; ?>
+
 
     <section class="section_review_show">
 
@@ -30,4 +33,4 @@
 
     </section>
 
-{$modules.footerPractica}
+<?php echo $this->_tpl_vars['modules']['footerPractica']; ?>

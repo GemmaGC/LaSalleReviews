@@ -8,6 +8,9 @@ class PracticaBestReviewController extends Controller {
     public function build( ){
         $this->setLayout( $this->view );
 
+        $this->assign('mostrarReview', '/Review');
     }
+
+
 }
 

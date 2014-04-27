@@ -118,6 +118,9 @@ $config['PracticaDosOpcionsController']		            = PATH_CONTROLLERS . 'pract
 $config['PracticaLogoutController']		                = PATH_CONTROLLERS . 'practica/logOut.ctrl.php';
 $config['PracticaBenvingudaController']		            = PATH_CONTROLLERS . 'practica/benvinguda.ctrl.php';
 $config['PracticaAddReviewController']		            = PATH_CONTROLLERS . 'practica/addReview.ctrl.php';
+$config['PracticaMostrarReviewController']		        = PATH_CONTROLLERS . 'practica/mostrarReview.ctrl.php';
+
+
 
 
 // Moduls de la home

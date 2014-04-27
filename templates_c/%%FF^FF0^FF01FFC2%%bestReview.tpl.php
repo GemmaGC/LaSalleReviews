@@ -1,3 +1,5 @@
+<?php /* Smarty version 2.6.14, created on 2014-04-27 11:35:09
+         compiled from practica/bestReview.tpl */ ?>
             
 
 
@@ -9,7 +11,8 @@
                 <section class="section_bestreview">
 
                     <div class="section_review_title">
-                        <a href="{$mostrarReview}" class="link_titol_review">TITOL TITOL REVIEW</a>
+                        <a href="<?php echo $this->_tpl_vars['mostrarReview']; ?>
+" class="link_titol_review">TITOL TITOL REVIEW</a>
                         <p class="titol_review  data_review ">12/06/2014</p>
                         <p class="titol_review">9.25 / 10</p>
                     </div>
