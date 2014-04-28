@@ -96,7 +96,9 @@ $config['Exercici4ModificarMarmotaController']		    = PATH_CONTROLLERS . 'exerci
 $config['Exercici4ModificarOrnitorrincController']		= PATH_CONTROLLERS . 'exercici4/modificarOrnitorrinc.ctrl.php';
 $config['Exercici4EsborrarController']		            = PATH_CONTROLLERS . 'exercici4/esborrar.ctrl.php';
 
-
+$config['Exercici4VisualitzarOpcionsController']		= PATH_CONTROLLERS . 'exercici4/visualitzarOpcions.ctrl.php';
+$config['Exercici4GaleriaZooController']		        = PATH_CONTROLLERS . 'exercici4/galeriaZoo.ctrl.php';
+$config['Exercici4MostradorController']		            = PATH_CONTROLLERS . 'exercici4/mostrador.ctrl.php';
 
 //Model
 //$config['Exercici3GestorModel']             = PATH_MODELS .'exercici3/gestor.model.php';

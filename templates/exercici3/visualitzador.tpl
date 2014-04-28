@@ -16,7 +16,7 @@
     </section>
 
     <div>
-        {if $num > $min} <a href="{$url_ant}"><img class="img_botoAnt" src="../imag/arrowOn2.png"></a> {/if}
+        {if $num > 1} <a href="{$url_ant}"><img class="img_botoAnt" src="../imag/arrowOn2.png"></a> {/if}
     </div>
 
     <div>

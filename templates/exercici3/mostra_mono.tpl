@@ -3,8 +3,8 @@
     <section>
 
         <h1 class="nom_visualitzador">MICOS</h1>
-        {if $num < $numImg && $numImg != 0}
-            <img class="img_taula" src="{$img[$num].url_img }">
+        {if $primera < $numImg && $numImg != 0}
+            <img class="img_taula" src="{$img[$primera].url_img }">
         {else}
             <br><p class="noMesFotos">No queden més imatges de micos!</p>
         {/if}
