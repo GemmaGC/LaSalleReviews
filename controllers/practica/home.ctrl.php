@@ -42,6 +42,7 @@ class PracticaHomeController extends Controller
         $modules['twitter']	        = 'PracticaTwitterController';
         $modules['bestReview']	    = 'PracticaBestReviewController';
         $modules['llistatReviews']	= 'PracticaLlistatReviewsController';
+        $modules['llistatImatges']	= 'PracticaLlistatImatgesController';
 
         return $modules;
     }

@@ -1,7 +1,12 @@
 /* pagina principal am reviews */
 
+
+
+
+
 .Last10reviews {
     margin-top: 80px;
+    width: 100%;
 }
 
 .BestReview {
@@ -10,8 +15,8 @@
 
 
 .Last10reviews h1 {
-    margin-left: 37%;
-    margin-right: 37%;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 .BestReview h1 {
@@ -32,7 +37,7 @@
 
 
 .section_review {
-    width: 33%;
+    width: 60%;
     height: 50%;
     padding: 2%;
 
@@ -73,7 +78,7 @@ p.data_review {
 .separator {
     margin: 0px auto;
     border-bottom: 2px solid #98C9ED;
-    width: 50%;
+    width: 80%;
 }
 
 
@@ -100,11 +105,21 @@ a.link_titol_review:hover {
 
 
 .twitter-timeline {
-    float: right;
-    margin: 5%;
-    align-items: center !important;
-    max-width: 30% !important;
+
+
+
+    max-width: 40% !important;
+
 
 }
 
 
+.llistats {
+    display: inline-flex;
+    width: 100%;
+}
+
+.twitter {
+    display: block;
+    align-content: center;
+}

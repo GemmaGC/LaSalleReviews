@@ -125,6 +125,7 @@ $config['PracticaMostrarReviewController']		        = PATH_CONTROLLERS . 'practi
 
 // Moduls de la home
 $config['PracticaLlistatReviewsController']		        = PATH_CONTROLLERS . 'practica/llistatReviews.ctrl.php';
+$config['PracticaLlistatImatgesController']		        = PATH_CONTROLLERS . 'practica/llistatImatges.ctrl.php';
 $config['PracticaBestReviewController']		            = PATH_CONTROLLERS . 'practica/bestReview.ctrl.php';
 $config['PracticaTwitterController']		            = PATH_CONTROLLERS . 'practica/twitter.ctrl.php';
 
