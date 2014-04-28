@@ -5,7 +5,7 @@
 
 
 .Last10reviews {
-    margin-top: 80px;
+    margin-bottom: 2%;
     width: 100%;
 }
 
@@ -80,7 +80,8 @@ p.data_review {
     margin: 0px auto;
     border-bottom: 2px solid #98C9ED;
     width: 80%;
-    margin-top: 5%;
+    margin-top: 7%;
+    margin-bottom: 7%;
 }
 
 
@@ -108,10 +109,10 @@ a.link_titol_review:hover {
 
 .twitter-timeline {
     width: 50% !important;
-    height: 300px;
+    height: 400px;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 5%;
+    margin-top: 2%;
 
 }
 
@@ -126,7 +127,6 @@ a.link_titol_review:hover {
 
 .Last10Images {
     width: 50%;
-    margin-top: 80px;
     display: inline-block;
     margin-right: 5%;
     margin-left: 7%;
