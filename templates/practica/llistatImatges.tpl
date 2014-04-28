@@ -9,38 +9,17 @@
 
         <h1>LAST 10 IMAGES</h1>
 
-        <section class="section_last">
-            <img class="section_last_img" src="imag/foto1.jpg">
-        </section>
-
-        <section class="section_last">
-            <img class="section_last_img" src="imag/foto1.jpg">
-        </section>
-        <section class="section_last">
-            <img class="section_last_img" src="imag/foto1.jpg">
-        </section>
-        <section class="section_last">
-            <img class="section_last_img" src="imag/foto1.jpg">
-        </section>
-        <section class="section_last">
-            <img class="section_last_img" src="imag/foto1.jpg">
-        </section>
-        <section class="section_last">
-            <img class="section_last_img" src="imag/foto1.jpg">
-        </section>
-        <section class="section_last">
-            <img class="section_last_img" src="imag/foto1.jpg">
-        </section>
-        <section class="section_last">
-            <img class="section_last_img" src="imag/foto1.jpg">
-        </section>
-        <section class="section_last">
-            <img class="section_last_img" src="imag/foto1.jpg">
-        </section>
-        <section class="section_last">
-            <img class="section_last_img" src="imag/foto1.jpg">
-        </section>
+        <img class="section_last_img" src="imag/foto1.jpg">
+        <img class="section_last_img" src="imag/foto1.jpg">
+        <img class="section_last_img" src="imag/foto1.jpg">
+        <img class="section_last_img" src="imag/foto1.jpg">
+        <img class="section_last_img" src="imag/foto1.jpg">
+        <img class="section_last_img" src="imag/foto1.jpg">
+        <img class="section_last_img" src="imag/foto1.jpg">
+        <img class="section_last_img" src="imag/foto1.jpg">
+        <img class="section_last_img" src="imag/foto1.jpg">
+        <img class="section_last_img" src="imag/foto1.jpg">
 
 
 
-</div>
+    </div>
