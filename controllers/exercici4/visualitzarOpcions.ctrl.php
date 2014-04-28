@@ -4,7 +4,7 @@
  */
 class Exercici4VisualitzarOpcionsController extends Controller
 {
-    protected $view_home = 'exercici4/galeriaZoo.tpl';
+    protected $view_home = 'exercici4/visualitzarOpcions.tpl';
     protected $view_error = 'error/error404.tpl';
 
     /**
@@ -14,10 +14,9 @@ class Exercici4VisualitzarOpcionsController extends Controller
     {
         $info = $this->getParams();
 
-
         if(!isset($info['url_arguments'])){
             $this->assign('modificar', '/opcionsZoo');
-            $this->assign('enrere', '/home');
+            $this->assign('enrere', '/exercici4');
 
             $css = "/css/style.css";
             $this->setParams( array( 'css' => $css ) );

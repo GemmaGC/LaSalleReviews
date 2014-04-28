@@ -1,25 +1,9 @@
 <?php
 
-class Exercici3MostraMonoController extends Controller
+include_once( PATH_CONTROLLERS . 'exercici4/mostrador.ctrl.php' );
+
+class Exercici3MostraMonoController extends Exercici4MostradorController
 {
     protected $view = 'exercici3/mostra_mono.tpl';
-
-    public function build()
-    {
-        $model = $this->getClass( 'Exercici3GestorModel' ); //Importem el model
-        $imatges = $model->getImatges('monos');
-
-        $this->assign('numImg', count($imatges));
-
-        $info = $this->getParams();
-
-        $num = $info['num'];
-        $this->assign('num', $num );
-        $this->assign('segona', $num+1);
-        $this->assign('tercera', $num+2);
-
-        $this->assign('img', $imatges);
-
-        $this->setLayout($this->view);
-    }
+    protected $animal = 'monos';
 }

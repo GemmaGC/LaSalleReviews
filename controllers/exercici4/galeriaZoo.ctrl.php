@@ -4,78 +4,49 @@
  */
 class Exercici4GaleriaZooController extends Controller
 {
-    protected $view_home = 'exercici4/visualitzarOpcions.tpl';
+    protected $view_home = 'exercici3/visualitzador.tpl';
     protected $view_error = 'error/error404.tpl';
-
+    protected $animal;
     /**
      * Aquest m�tode sempre s'executa i caldr� implementar-lo sempre.
      */
     public function build()
     {
+
+        $this->assign('header', 'EXERCICI 4');
+        $this->assign('enrere', '/exercici4');
+
         $info = $this->getParams();
+        $css = "/css/style.css";
+        $this->setParams( array( 'css' => $css ) );
 
+        $model = $this->getClass( 'Exercici3GestorModel' ); //Importem el model
+        $marm = $model->getImatges('marmotas');
+        $mon = $model->getImatges('monos');
+        $orn = $model->getImatges('ornitorrincos');
 
-        if(!isset($info['url_arguments'])){
-            $this->assign('titol', 'HOME EXERCICI 4');
-            $this->assign('modificar', '/opcionsZoo');
-            $this->assign('enrere', '/home');
+        $max = ceil(max(count($marm), count($mon), count($orn)) / 3);
 
-            $css = "/css/style.css";
-            $this->setParams( array( 'css' => $css ) );
+        if($info['url_arguments'][0] > 0 && $info['url_arguments'][0] <= $max){
 
-            $model = $this->getClass( 'Exercici3GestorModel' ); //Importem el model
+            $ter = ($info['url_arguments'][0] * 3) - 1;
+            $seg = $ter - 1;
+            $prim = $seg - 1;
 
-            //Numero de micos, marmotes i ornitorrincs
+            $this->setParams( array( 'num' => $info['url_arguments'][0] ) );
+            $this->setParams( array( 'prim' => $prim ) );
+            $this->setParams( array( 'seg' => $seg ) );
+            $this->setParams( array( 'ter' => $ter ) );
 
-            $imatges = $model->getImatges('monos');
+            $this->assign('max', $max);
+            $this->assign('num', $info['url_arguments'][0]);
 
-            $this->assign('numMicos', count($imatges));
-            $this->assign('imgMicos', $imatges);
+            $this->assign('boto_ant', '/imag/botons/enrere.png');
+            $this->assign('url_ant', $info['url_arguments'][0]-1);
 
+            $this->assign('boto_seg', '/imag/botons/seg.png');
+            $this->assign('url_seg', $info['url_arguments'][0]+1);
 
-            $imatges = $model->getImatges('marmotas');
-            $this->assign('numMarm', count($imatges));
-            $this->assign('imgMarm', $imatges);
-
-
-            $imatges = $model->getImatges('ornitorrincos');
-            $this->assign('numOrni', count($imatges));
-            $this->assign('imgOrni', $imatges);
-
-            $values = explode( "-", Filter::getString("id") );
-
-            //ESBORRAR
-            if(Filter::getString('esborrar')){
-
-                Session::getInstance()->set('id', $values[1]);
-                $model->esborraImatge($values[1], $values[0]);
-                header('Location: /esborrar',true,301);
-            }
-
-            if(Filter::getString('editar_ornitorrinco')){
-                Session::getInstance()->set('id', $values[1]);
-                $orni['nom'] = $values[2];
-                $orni['url'] = $values[3];
-                Session::getInstance()->set('ornitorrincos', $orni);
-                header('Location: /modificarOrnitorrinc',true,301);
-            }
-
-            if(Filter::getString('editar_mono')){
-                Session::getInstance()->set('id', $values[1]);
-                $mono['nom'] = $values[2];
-                $mono['url'] = $values[3];
-                Session::getInstance()->set('nom', $values[2]);
-                Session::getInstance()->set('url', $values[3]);
-                header('Location: /modificarMico',true,301);
-            }
-
-            if(Filter::getString('editar_marmota')){
-                Session::getInstance()->set('id', $values[1]);
-                $marmo['nom'] = $values[2];
-                $marmo['url'] = $values[3];
-                Session::getInstance()->set('marmotas', $marmo);
-                header('Location: /modificarMarmota',true,301);
-            }
 
             $this->setLayout($this->view_home);
         }else{
@@ -96,6 +67,11 @@ class Exercici4GaleriaZooController extends Controller
     public function loadModules() {
         $modules['head']	= 'SharedHeadController';
         $modules['footer']	= 'SharedFooterController';
+
+        $modules['mostra_marmota']	    = 'Exercici3MostraMarmotaController';
+        $modules['mostra_mono']	        = 'Exercici3MostraMonoController';
+        $modules['mostra_ornitorrinco']	= 'Exercici3MostraOrnitorrincoController';
+
         return $modules;
     }
 

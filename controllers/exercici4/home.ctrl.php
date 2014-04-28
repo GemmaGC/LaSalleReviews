@@ -18,7 +18,7 @@ class Exercici4HomeController extends Controller
         if(!isset($info['url_arguments'])){
             $this->assign('titol', 'HOME EXERCICI 4');
             $this->assign('modificar', '/visualitzarOpcions');
-            $this->assign('mostrar', '/galeriaZoo');
+            $this->assign('mostrar', '/galeriaZoo/1');
             $this->assign('enr', '/home');
 
             $css = "/css/style.css";
