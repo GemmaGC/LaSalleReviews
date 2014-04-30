@@ -5,6 +5,11 @@ class PracticaLlistatReviewsController extends Controller {
 
 
     public function build( ){
+        $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
+        //Recuperem totes les review
+        $reviews = $this->model->get10R();
+        $this->assign('reviews', $reviews);
+
         $this->setLayout( $this->view );
 
     }
