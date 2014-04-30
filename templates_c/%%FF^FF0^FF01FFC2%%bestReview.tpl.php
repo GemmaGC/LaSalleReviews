@@ -1,10 +1,10 @@
-<?php /* Smarty version 2.6.14, created on 2014-04-27 11:35:09
+<?php /* Smarty version 2.6.14, created on 2014-04-30 18:59:36
          compiled from practica/bestReview.tpl */ ?>
             
 
 
 
-            <div class="BestReview">
+            <div class="BestReview" id="bestRev">
                 
                 <h1>BEST REVIEW</h1>
 
@@ -24,5 +24,9 @@
                 </section>
 
             </div>
+
+            <section class="link_all_reviews_section">
+                <a href="#" class="link_all_reviews">SHOW ALL THE REVIEWS >> </a>
+            </section>
 
             <div class="separator"></div>

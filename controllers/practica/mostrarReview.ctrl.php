@@ -6,9 +6,13 @@ class PracticaMostrarReviewController extends Controller {
 
 
     public function build( ){
+
+        $info = $this->getParams();
+
+
         $this->setLayout( $this->view );
 
-        $this->assign('fullReview', '/Review');
+
     }
 
     /**

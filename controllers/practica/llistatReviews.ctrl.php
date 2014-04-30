@@ -12,6 +12,7 @@ class PracticaLlistatReviewsController extends Controller {
 
         $this->setLayout( $this->view );
 
+
     }
 }
 

@@ -2,7 +2,7 @@
 
 
 
-            <div class="BestReview">
+            <div class="BestReview" id="bestRev">
                 
                 <h1>BEST REVIEW</h1>
 
@@ -21,5 +21,9 @@
                 </section>
 
             </div>
+
+            <section class="link_all_reviews_section">
+                <a href="#" class="link_all_reviews">SHOW ALL THE REVIEWS >> </a>
+            </section>
 
             <div class="separator"></div>
