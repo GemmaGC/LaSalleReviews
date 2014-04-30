@@ -74,8 +74,8 @@
 
 
     <div class="block_paginacio">
-        <a class="boto_pre" href="#"></a>
-        <a class="boto_seg" href="#"></a>
+        <a class="boto_link separacio_links" href="#"> << </a>
+        <a class="boto_link" href="#"> >> </a>
     </div>
 
 
