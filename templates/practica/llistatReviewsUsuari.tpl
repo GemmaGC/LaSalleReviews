@@ -74,9 +74,8 @@
 
 
     <div class="block_paginacio">
-        <a href="#"><img class="link_pag_ant" src="imag/rewind.svg"></a>
-        <a href="#"><img class="link_pag_seg" src="imag/fast-forward.svg"></a>
-
+        <a class="boto_pre" href="#"></a>
+        <a class="boto_seg" href="#"></a>
     </div>
 
 

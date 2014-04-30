@@ -241,17 +241,33 @@ a.link_all_reviews:hover{
 .block_paginacio {
     margin-left: 18%;
     margin-right: 18%;
+    width: 100%;
+    height: 200px;
 }
 
 
-.link_pag_ant{
+.link_pag_ant {
     height: 30px;
     width: 30px;
     margin-right: 70%;
     padding-left: 10%;
+
 }
 
-.link_pag_seg{
-    height: 30px;
-    width: 30px;
+block_paginacio.boto_pre {
+    background-image: url(../imag/rewind_normal.png);
+    width: 100% !important;
+    height: 50% !important;
+}
+
+block_paginacio.boto_pre:hover {
+    /*background-image: url(../imag/rewind_hover.png);*/
+}
+
+block_paginacio.boto_seg {
+    /*background-image: url(../imag/fast-forward_normal.png);*/
+}
+
+block_paginacio.boto_seg:hover {
+    /*background-image: url(../imag/fast-forward_hover.png);*/
 }
