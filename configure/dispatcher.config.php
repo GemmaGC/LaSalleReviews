@@ -82,6 +82,9 @@ $config['Review']               = 'PracticaMostrarReviewController';
 $config['facebook']             = 'Facebook';
 $config['hola']                 = 'PracticaHolaController';
 
+$config['myReviews']            = 'PracticaLlistatReviewsUsuariController';
+
+
 
 
 

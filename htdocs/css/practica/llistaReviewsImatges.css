@@ -85,7 +85,7 @@ p.data_review {
 }
 
 
-a.link_titol_review{
+a.link_titol_review {
     text-decoration: none;
 }
 
@@ -101,7 +101,7 @@ a.link_titol_review:active {
     color: #FFA500;
 }
 
-a.link_titol_review:hover {
+a.link_titol_review:hover{
     color: grey;
 }
 
@@ -164,4 +164,94 @@ a.link_titol_review:hover {
 img.section_last_img {
     margin-left: 7%;
     margin-right: 7%;
+}
+
+
+.link_all_reviews_section {
+    margin-top: 130%;
+    padding-left: 4%;
+}
+
+
+.link_all_reviews {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+a.link_all_reviews {
+    text-decoration: none;
+}
+
+a.link_all_reviews:link {
+    color: #FFA500;
+}
+
+a.link_all_reviews:visited {
+    color: #FFA500;
+}
+
+a.link_all_reviews:active {
+    color: #FFA500;
+}
+
+a.link_all_reviews:hover{
+    color: grey;
+}
+
+.my_reviews h1 {
+    margin-left: 35%;
+    padding-left: 5%;
+    margin-right: 35%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+
+.all_review {
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+.margin_top_extra {
+    margin-top: 2%;
+    width: 60%;
+}
+
+
+/* BOTONS D'EDITAR / ELIMINAR lES REVIEWS DE CADA USUARI */
+
+.section_review_buttons {
+    display: block;
+    height: 50px;
+    margin-top: 7% !important;
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+.button_Option {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+/* BOTONS NEXT PAGE i ANT PAGE */
+
+.block_paginacio {
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+
+.link_pag_ant{
+    height: 30px;
+    width: 30px;
+    margin-right: 70%;
+    padding-left: 10%;
+}
+
+.link_pag_seg{
+    height: 30px;
+    width: 30px;
 }
