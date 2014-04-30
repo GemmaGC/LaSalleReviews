@@ -385,7 +385,6 @@ input.notValid{
     top:25%;
     left: -2.5%;
     font-size: 15px;
-
 }
 
 .menu_lateral_fixe_home li {
@@ -400,7 +399,7 @@ input.notValid{
 }
 
 .menu_lateral_fixe_home a:hover {
-    color: #FFA500;
+    color: #98C9ED;
 
 }
 
