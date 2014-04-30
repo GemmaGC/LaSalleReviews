@@ -375,3 +375,33 @@ input.notValid{
     font-family: Quicksand_light;
     font-size: 14px;
 }
+
+
+
+/* MENU LATERAL FIXE HOME*/
+
+.menu_lateral_fixe_home {
+    position: fixed;
+    top:25%;
+    left: -2.5%;
+    font-size: 15px;
+
+}
+
+.menu_lateral_fixe_home li {
+    margin-bottom: 5%;
+    list-style-type: none;
+}
+
+.menu_lateral_fixe_home a {
+    text-decoration: none;
+    color: grey;
+
+}
+
+.menu_lateral_fixe_home a:hover {
+    color: #FFA500;
+
+}
+
+

@@ -25,7 +25,7 @@
 
         <div class="section_review_buttons">
             <a href="#" class="welcome_button button_Option">EDIT</a>
-            <a href="#" class="welcome_button button_Option">DELETE</a>
+            <a href="#" class="welcome_button button_Option">DELETE</a>  <!-- D'aqui que vagi a duesOpcions i digui si vols eliminar o no -->
         </div>
 
     </section>
@@ -74,8 +74,9 @@
 
 
     <div class="block_paginacio">
-        <a class="boto_link separacio_links" href="#"> << </a>
-        <a class="boto_link" href="#"> >> </a>
+
+         <a class="boto_link separacio_links" href="#"> << </a>
+         <a class="boto_link" href="#"> >> </a>
     </div>
 
 
