@@ -4,6 +4,7 @@ class PracticaRegistreController extends Controller
 {
     protected $view = 'practica/formulariRegistre.tpl';
     protected $view_activa = 'practica/activacio.tpl';
+    protected $view_error = 'practica/error/errorP404.tpl';
     protected $model;
 
     public function build( )

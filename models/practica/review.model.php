@@ -67,6 +67,7 @@ QUERY;
         $result = $this->getAll($sql);
         return $result;
     }
+
 //añadir un nuevo review
     public function afegeixReview($title, $description, $subject, $date, $score, $image){
         echo $description;
@@ -77,5 +78,23 @@ QUERY;
         $this->execute( $sql );
 
     }
+
+    //Recupera les últimes 10 reviews
+    public function get10R(){
+        $sql = <<<QUERY
+        SELECT
+            *
+        FROM
+            review
+        ORDER BY
+            id DESC
+        LIMIT
+            10
+QUERY;
+        $result = $this->getAll($sql);
+        return $result;
+    }
+
+
 
 }

@@ -9,144 +9,20 @@
 
     <h1>LAST 10 REVIEWS</h1>
 
-    <section class="section_review">
+    {foreach from = $reviews item = r}
+        <section class="section_review">
 
-        <div class="section_review_title">
-            <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-            <p class="titol_review  data_review ">12/06/2014</p>
-            <p class="titol_review">9.25 / 10</p>
-        </div>
+            <div class="section_review_title">
+                <a href="{$r.id}" class="link_titol_review">{$r.title}</a>
+                <p class="titol_review  data_review ">{$r.date}</p>
+                <p class="titol_review">{$r.score} / 10</p>
+            </div>
 
-        <div class="section_review_body">
-            aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-        </div>
+            <div class="section_review_body">
+                {$r.description|truncate:50}
+            </div>
 
-    </section>
+        </section>
 
-    <section class="section_review">
-
-        <div class="section_review_title">
-            <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-            <p class="titol_review  data_review ">12/06/2014</p>
-            <p class="titol_review">9.25 / 10</p>
-        </div>
-
-        <div class="section_review_body">
-            aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-        </div>
-
-    </section>
-
-    <section class="section_review">
-
-        <div class="section_review_title">
-            <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-            <p class="titol_review  data_review ">12/06/2014</p>
-            <p class="titol_review">9.25 / 10</p>
-        </div>
-
-        <div class="section_review_body">
-            aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-        </div>
-
-    </section>
-
-    <section class="section_review">
-
-        <div class="section_review_title">
-            <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-            <p class="titol_review  data_review ">12/06/2014</p>
-            <p class="titol_review">9.25 / 10</p>
-        </div>
-
-        <div class="section_review_body">
-            aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-        </div>
-
-    </section>
-
-    <section class="section_review">
-
-        <div class="section_review_title">
-            <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-            <p class="titol_review  data_review ">12/06/2014</p>
-            <p class="titol_review">9.25 / 10</p>
-        </div>
-
-        <div class="section_review_body">
-            aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-        </div>
-
-    </section>
-
-    <section class="section_review">
-
-        <div class="section_review_title">
-            <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-            <p class="titol_review  data_review ">12/06/2014</p>
-            <p class="titol_review">9.25 / 10</p>
-        </div>
-
-        <div class="section_review_body">
-            aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-        </div>
-
-    </section>
-
-    <section class="section_review">
-
-        <div class="section_review_title">
-            <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-            <p class="titol_review  data_review ">12/06/2014</p>
-            <p class="titol_review">9.25 / 10</p>
-        </div>
-
-        <div class="section_review_body">
-            aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-        </div>
-
-    </section>
-
-    <section class="section_review">
-
-        <div class="section_review_title">
-            <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-            <p class="titol_review  data_review ">12/06/2014</p>
-            <p class="titol_review">9.25 / 10</p>
-        </div>
-
-        <div class="section_review_body">
-            aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-        </div>
-
-    </section>
-
-    <section class="section_review">
-
-        <div class="section_review_title">
-            <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-            <p class="titol_review  data_review ">12/06/2014</p>
-            <p class="titol_review">9.25 / 10</p>
-        </div>
-
-        <div class="section_review_body">
-            aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-        </div>
-
-    </section>
-
-    <section class="section_review">
-
-        <div class="section_review_title">
-            <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-            <p class="titol_review  data_review ">12/06/2014</p>
-            <p class="titol_review">9.25 / 10</p>
-        </div>
-
-        <div class="section_review_body">
-            aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-        </div>
-
-    </section>
-
+    {/foreach}
 </div>

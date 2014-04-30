@@ -3,6 +3,8 @@
 class PracticaAddReviewController extends Controller
 {
     protected $view = 'practica/addReview.tpl';
+    protected $view_error404 = 'practica/error/errorP404.tpl';
+    protected $view_error403 = 'practica/error/errorP403.tpl';
     protected $model;
 
 
@@ -12,9 +14,12 @@ class PracticaAddReviewController extends Controller
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
         $this->assign('val', 0);
 
-        if(!isset($info['url_arguments'])){
+        $login = Session::getInstance()->get('log');
+
+        if(!isset($info['url_arguments']) && $login > 0){
 
             if(Filter::getString('submit_button')){
+
 
                 //Agafem les dades que posa l'usuari al addreview
                 $review['title'] = Filter::getString('newTitle');
@@ -42,9 +47,19 @@ class PracticaAddReviewController extends Controller
 
                 }
 
+
                 /****** ENVIAR MAIL AMB CODI D'ACTIVACIÓ DE COMPTE *********/
             }
+
             $this->setLayout( $this->view );
+        }
+        else if(isset($info['url_arguments']))
+        {
+            $this->setLayout($this->view_error404);
+        }
+        else if($login == 0)
+        {
+            $this->setLayout($this->view_error403);
         }
     }
 
@@ -71,7 +86,6 @@ class PracticaAddReviewController extends Controller
 
 
 
-
         }
 
         //if(strlen($usuari['password']) < 6 || strlen($usuari['password']) > 20 ) //Comprovem que la contrassenya tingui entre 6 i 20 caràcters
@@ -84,7 +98,7 @@ class PracticaAddReviewController extends Controller
         $this->assign('date', $review['date']);
         $this->assign('score', $review['score']);
         $this->assign('image', $review['image']);
-         $var = true;
+        $var = true;
         //}
         return $var;
 

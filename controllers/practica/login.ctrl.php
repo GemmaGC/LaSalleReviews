@@ -3,6 +3,7 @@
 class PracticaLoginController extends Controller
 {
     protected $view = 'practica/formulariLogin.tpl';
+    protected $view_error = 'practica/error/errorP404.tpl';
     protected $model;
 
     public function build( )
@@ -46,6 +47,8 @@ class PracticaLoginController extends Controller
             }
 
             $this->setLayout( $this->view );
+        }else{
+            $this->setLayout( $this->view_error );
         }
 
 
