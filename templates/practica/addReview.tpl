@@ -7,7 +7,8 @@
 				<p>All the fields marked with a <strong>*</strong> are required.</p>
 			</div>
 
-			<form name="review-form" class="review_form" method="post">
+            <!--action="addReview/OK"-->
+			<form name="review-form" class="review_form" method="post" enctype="multipart/form-data" >
 
 		       
 

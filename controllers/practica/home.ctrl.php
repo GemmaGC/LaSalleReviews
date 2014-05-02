@@ -15,11 +15,11 @@ class PracticaHomeController extends Controller
      */
     public function build()
     {
-        $var = Session::getInstance()->get('log');
+        /*$var = Session::getInstance()->get('log');
         if(!isset($var))
         {
             Session::getInstance()->set('log', 0);
-        }
+        }*/
         $this->setLayout($this->view);
     }
 

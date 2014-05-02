@@ -69,11 +69,11 @@ QUERY;
     }
 
 //añadir un nuevo review
-    public function afegeixReview($title, $description, $subject, $date, $score, $image){
-        echo $description;
+    public function afegeixReview($title, $description, $subject, $date, $score, $image, $nom, $login, $data_creacio){
+
         $sql = <<<QUERY
         INSERT INTO review
-        VALUES ('$title', '$description', '$subject', '$date', '$score', '$image')
+        VALUES ('','$title', '$description', '$subject', '$date', '$score', '$image', '$nom', '$login', '$data_creacio')
 QUERY;
         $this->execute( $sql );
 

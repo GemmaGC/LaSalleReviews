@@ -6,7 +6,7 @@ if( DEV_MODE )
 	 * Aquest camps s'han d'omplir amb les dades del vostre servidor 
 	 * web local que teniu en el vostre ordenador instal�lat.
 	 */
-	$config['default']['db_driver']		= 'mysql';
+	$config['default']['db_driver']		= 'mysqli';
 	$config['default']['db_host']		= 'localhost';
 	$config['default']['db_user']		= 'root';
 	$config['default']['db_password']	= 'root';

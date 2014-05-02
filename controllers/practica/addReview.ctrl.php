@@ -10,16 +10,18 @@ class PracticaAddReviewController extends Controller
 
     public function build( )
     {
+
         $info = $this->getParams();
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
         $this->assign('val', 0);
 
         $login = Session::getInstance()->get('log');
+        $nom = Session::getInstance()->get('nom');
+        $dataC = date('d/m/Y', time());
 
         if(!isset($info['url_arguments']) && $login > 0){
 
             if(Filter::getString('submit_button')){
-
 
                 //Agafem les dades que posa l'usuari al addreview
                 $review['title'] = Filter::getString('newTitle');
@@ -28,27 +30,55 @@ class PracticaAddReviewController extends Controller
                 $review['date'] = Filter::getString('newDate');
                 $review['score'] = Filter::getInteger('newScore');
                 $review['image'] = Filter::getString('newImage');
-                $this->assign('vtitle', 0); $this->assign('description', 0);
+
+                /*$this->assign('vtitle', 0); $this->assign('description', 0);
                 $this->assign('subject', 0); $this->assign('date', 0);
-                $this->assign('score', 0); $this->assign('vimage', 0);
+                $this->assign('score', 0); $this->assign('vimage', 0);*/
 
 
 
-               if (PracticaAddReviewController::comprovaCamps($review)){
+               if ($this->comprovaCamps($review)){
 
-                $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image']);
-
-                Session::getInstance()->set('title', $review['title']);
-                Session::getInstance()->set('description', $review['description']);
-                Session::getInstance()->set('subject', $review['subject']);
-                Session::getInstance()->set('date', $review['date']);
-                Session::getInstance()->set('score', $review['score']);
-                Session::getInstance()->set('image', $review['image']);
-
-                }
+                   //IMATGE
+                   $dir = "/imag/img_usuaris/"; //recuerda que debe tener permisos de escritura ;)
+                   $ext = array('image/jpeg', 'image/gif', 'image/png', 'image/bmp'); //Puedes agregar más extenciones
 
 
-                /****** ENVIAR MAIL AMB CODI D'ACTIVACIÓ DE COMPTE *********/
+                   var_dump($_FILES);
+                   //foreach($_FILES as $archivo) {
+                   $attachtmp  = $_FILES['newImage']['tmp_name'];
+
+
+                   $attachtype = $_FILES['newImage']['type'];
+                   $attachname = $_FILES['newImage']['name'];
+
+                   //if(file_exists($attachtmp)) {
+                   if(is_uploaded_file($attachtmp)) {
+                       echo "2";
+                       if(in_array($attachtype,$ext)) {
+                           echo "3";
+                           $ruta = move_uploaded_file($attachtmp, "$dir/$attachname");
+                           echo ($ruta);
+                           //mysql_query("INSERT INTO picture (name) VALUES ('$ruta')");
+                       } else {
+                           echo "Esto no es una imagen :(";
+                           return false;
+                       }
+                   }
+                   //}
+                   //}
+
+                   $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], $nom, $login, $dataC);
+
+                    /*Session::getInstance()->set('title', $review['title']);
+                    Session::getInstance()->set('description', $review['description']);
+                    Session::getInstance()->set('subject', $review['subject']);
+                    Session::getInstance()->set('date', $review['date']);
+                    Session::getInstance()->set('score', $review['score']);
+                    Session::getInstance()->set('image', $review['image']);*/
+
+               }
+
             }
 
             $this->setLayout( $this->view );
@@ -65,47 +95,35 @@ class PracticaAddReviewController extends Controller
 
     protected function comprovaCamps($review)
     {
+        //Guardem totes les reviews de la base de dades per comparar qe els camps que han de ser únics no existeixin a cap altra review
         $reviews = $this->model->getTot('review');
-        $var = true;
 
+        //Per cada review de la base de dades...
         foreach($reviews as $r)
         {
-            if(!strcmp($r['title'], $review['title'])|| strlen($review['title']) > 100) //Comprovem que el titol sigui inferior a 100 caracters
+            //Comprovem que el titol no estigui repetit i tingui menys de 100 caràcters
+            if(!strcmp($r['title'], $review['title']) || strlen($review['title']) > 100)
             {
-                $this->assign('vtitle', 1);
-                $this->assign('title', $review['title']);
-                $this->assign('description', $review['description']);
-                $this->assign('subject', $review['subject']);
-                $this->assign('date', $review['date']);
-                $this->assign('score', $review['score']);
-                $this->assign('image', $review['image']);
+                $this->retornaCamps($review);
 
-
-                $var = false;
+                return false;
             }
-
-
 
         }
 
-        //if(strlen($usuari['password']) < 6 || strlen($usuari['password']) > 20 ) //Comprovem que la contrassenya tingui entre 6 i 20 caràcters
-      //  {
-        $this->assign('vimage', 1);
 
+
+        return true;
+    }
+
+    protected function retornaCamps($review)
+    {
         $this->assign('title', $review['title']);
         $this->assign('description', $review['description']);
         $this->assign('subject', $review['subject']);
         $this->assign('date', $review['date']);
         $this->assign('score', $review['score']);
         $this->assign('image', $review['image']);
-        $var = true;
-        //}
-        return $var;
-
-        // imagesx($img);
-        // imagesy($img);
-        //rescalar imagen
-       //resource imagescale ( resource $image , int $new_width [, int $new_height = -1 [, int $mode = IMG_BILINEAR_FIXED ]] )
     }
 
 

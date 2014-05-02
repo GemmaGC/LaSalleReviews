@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-04-09 19:15:21
+<?php /* Smarty version 2.6.14, created on 2014-05-02 18:36:49
          compiled from practica/addReview.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['headPractica']; ?>
 
@@ -10,7 +10,8 @@
 				<p>All the fields marked with a <strong>*</strong> are required.</p>
 			</div>
 
-			<form name="review-form" class="review_form" method="post">
+            <!--action="addReview/OK"-->
+			<form name="review-form" class="review_form" method="post" enctype="multipart/form-data" >
 
 		       
 
