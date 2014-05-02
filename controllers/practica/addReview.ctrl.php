@@ -40,32 +40,26 @@ class PracticaAddReviewController extends Controller
                if ($this->comprovaCamps($review)){
 
                    //IMATGE
-                   $dir = "/imag/img_usuaris/"; //recuerda que debe tener permisos de escritura ;)
+                   $dir = "imag/img_usuaris/"; //recuerda que debe tener permisos de escritura ;)
                    $ext = array('image/jpeg', 'image/gif', 'image/png', 'image/bmp'); //Puedes agregar más extenciones
 
 
-                   var_dump($_FILES);
                    //foreach($_FILES as $archivo) {
                    $attachtmp  = $_FILES['newImage']['tmp_name'];
-
-
                    $attachtype = $_FILES['newImage']['type'];
                    $attachname = $_FILES['newImage']['name'];
 
-                   //if(file_exists($attachtmp)) {
-                   if(is_uploaded_file($attachtmp)) {
-                       echo "2";
-                       if(in_array($attachtype,$ext)) {
-                           echo "3";
-                           $ruta = move_uploaded_file($attachtmp, "$dir/$attachname");
-                           echo ($ruta);
-                           //mysql_query("INSERT INTO picture (name) VALUES ('$ruta')");
-                       } else {
-                           echo "Esto no es una imagen :(";
-                           return false;
+                   if(file_exists($attachtmp)) {
+                       if(is_uploaded_file($attachtmp)) {
+                           if(in_array($attachtype, $ext)) {
+                               $directori = $dir . $attachname;
+                               $ruta = move_uploaded_file($attachtmp, $directori);
+                           } else {
+                               echo "Esto no es una imagen :(";
+                               //return false;
+                           }
                        }
                    }
-                   //}
                    //}
 
                    $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], $nom, $login, $dataC);
