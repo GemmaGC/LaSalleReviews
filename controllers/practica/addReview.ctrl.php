@@ -31,9 +31,9 @@ class PracticaAddReviewController extends Controller
                 $review['score'] = Filter::getInteger('newScore');
                 $review['image'] = Filter::getString('newImage');
 
-                /*$this->assign('vtitle', 0); $this->assign('description', 0);
+                /* $this->assign('vtitle', 0); $this->assign('description', 0);
                 $this->assign('subject', 0); $this->assign('date', 0);
-                $this->assign('score', 0); $this->assign('vimage', 0);*/
+                $this->assign('score', 0); $this->assign('vimage', 0); */
 
 
 
