@@ -17,7 +17,10 @@ class PracticaAddReviewController extends Controller
 
         $login = Session::getInstance()->get('log');
         $nom = Session::getInstance()->get('nom');
-        $dataC = date('d/m/Y', time());
+
+        date_default_timezone_set(date_default_timezone_get());
+        $dataC = date('Y.m.d', time());
+
 
         if(!isset($info['url_arguments']) && $login > 0){
 
