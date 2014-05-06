@@ -13,7 +13,7 @@
         <section class="section_review">
 
             <div class="section_review_title">
-                <a href="{$r.id}" class="link_titol_review">{$r.title}</a>
+                <a href="{$r.id}" class="link_titol_review">{$r.title}</a></br>
                 <p class="titol_review  data_review ">{$r.date}</p>
                 <p class="titol_review">{$r.score} / 10</p>
             </div>
