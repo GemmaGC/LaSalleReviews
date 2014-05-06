@@ -4,7 +4,7 @@
 	margin-bottom: 5%;
 }
 
-strong {
+.content_review_form strong {
 	color: red;
 	font-family: Quicksand_bold;
 }
