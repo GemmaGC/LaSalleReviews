@@ -49,7 +49,7 @@
 
                     <!-- PROVA JQUERY LOG IN -->
 
-                    <nav>
+                    <nav class="login_desplegable">
                         <ul>
                             <li id="login">
                                 <a id="login-trigger" href="#">

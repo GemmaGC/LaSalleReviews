@@ -428,7 +428,7 @@ input.notValid{
 /* --------------------------------------------------------------- */
 
 
-nav ul {
+.login_desplegable ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -439,17 +439,17 @@ nav ul {
     border-radius: 3px;
 }
 
-nav li {
+.login_desplegable li {
     float: left;
 }
 
-nav #login {
+.login_desplegable #login {
     border-right: 1px solid #ddd;
     box-shadow: 1px 0 0 #fff;
 }
 
-nav #login-trigger,
-nav #signup a {
+.login_desplegable #login-trigger,
+.login_desplegable #signup a {
     display: inline-block;
     *display: inline;
     *zoom: 1;
@@ -462,21 +462,21 @@ nav #signup a {
     text-shadow: 0 1px 0 #fff;
 }
 
-nav #signup a {
+.login_desplegable #signup a {
     border-radius: 0 3px 3px 0;
 }
 
-nav #login-trigger {
+.login_desplegable #login-trigger {
     border-radius: 3px 0 0 3px;
 }
 
-nav #login-trigger:hover,
-nav #login .active,
-nav #signup a:hover {
+.login_desplegable #login-trigger:hover,
+.login_desplegable #login .active,
+.login_desplegable #signup a:hover {
     background: #fff;
 }
 
-nav #login-content {
+.login_desplegable #login-content {
     display: none;
     position: absolute;
     top: 24px;
@@ -489,7 +489,7 @@ nav #login-content {
     border-radius: 3px 0 3px 3px;
 }
 
-nav li #login-content {
+.login_desplegable li #login-content {
     right: 0;
     width: 250px;
 }
