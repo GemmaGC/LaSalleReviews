@@ -10,6 +10,8 @@
 
         <script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="/js/practica/jquery.js"></script>
 
     </head>
 
@@ -44,6 +46,33 @@
                         <a href="{$url.global}/logOut" class="register">LOG OUT</a>
 
                     {/if}
+
+                    <!-- PROVA JQUERY LOG IN -->
+
+                    <nav>
+                        <ul>
+                            <li id="login">
+                                <a id="login-trigger" href="#">
+                                    Log in <span>▼</span>
+                                </a>
+                                <div id="login-content">
+                                    <form>
+                                        <fieldset id="inputs">
+                                            <input id="username" type="email" name="Email" placeholder="Your email address" required>
+                                            <input id="password" type="password" name="Password" placeholder="Password" required>
+                                        </fieldset>
+                                        <fieldset id="actions">
+                                            <input type="submit" id="submit" value="Log in">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- FI PROVA JQUERY LOG IN -->
+
+
                 </nav>
 
 
