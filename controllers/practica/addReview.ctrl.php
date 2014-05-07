@@ -20,6 +20,7 @@ class PracticaAddReviewController extends Controller
         $dataC = date('d/m/Y', time());
 
         if(!isset($info['url_arguments']) && $login > 0){
+            $this->assign('ok', true);
 
             if(Filter::getString('submit_button')){
 
@@ -36,41 +37,34 @@ class PracticaAddReviewController extends Controller
                 $this->assign('score', 0); $this->assign('vimage', 0);*/
 
 
-
+                //Si tots els camps del formulari són correctes...
                if ($this->comprovaCamps($review)){
 
-                   //IMATGE
-                   $dir = "imag/img_usuaris/"; //recuerda que debe tener permisos de escritura ;)
-                   $ext = array('image/jpeg', 'image/gif', 'image/png', 'image/bmp'); //Puedes agregar más extenciones
+                   /***********************/
+                   /*       IMATGE        */
+                   /***********************/
 
-
-                   //foreach($_FILES as $archivo) {
+                   //Guardem la imatge a la carpeta d'htdocs si tots els camps del formulari són correctes
+                   $dir = "imag/img_usuaris/";
                    $attachtmp  = $_FILES['newImage']['tmp_name'];
-                   $attachtype = $_FILES['newImage']['type'];
                    $attachname = $_FILES['newImage']['name'];
 
-                   if(file_exists($attachtmp)) {
-                       if(is_uploaded_file($attachtmp)) {
-                           if(in_array($attachtype, $ext)) {
-                               $directori = $dir . $attachname;
-                               $ruta = move_uploaded_file($attachtmp, $directori);
-                           } else {
-                               echo "Esto no es una imagen :(";
-                               //return false;
-                           }
-                       }
-                   }
-                   //}
+                   $directori = $dir . $attachname;
+                   move_uploaded_file($attachtmp, $directori);
+
+                   //Guardem la imatge en altres tamanys
+                   //$img100 = $this->canviaTamanyImatge($attachtmp, 100, 100);
+                   //$img704 = $this->canviaTamanyImatge($attachtmp, 704, 528);
+
+                   /***********************/
+                   /*       MODEL         */
+                   /***********************/
 
                    $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], $nom, $login, $dataC);
 
-                    /*Session::getInstance()->set('title', $review['title']);
-                    Session::getInstance()->set('description', $review['description']);
-                    Session::getInstance()->set('subject', $review['subject']);
-                    Session::getInstance()->set('date', $review['date']);
-                    Session::getInstance()->set('score', $review['score']);
-                    Session::getInstance()->set('image', $review['image']);*/
-
+               }else{
+                   $this->assign('ok', false);
+                   $this->retornaCamps($review);
                }
 
             }
@@ -87,6 +81,53 @@ class PracticaAddReviewController extends Controller
         }
     }
 
+    protected function canviaTamanyImatge($img_original, $Nwidth, $Nheight)
+    {
+        //Ancho y alto de la imagen original
+        list($width, $height)=getimagesize($img_original);
+
+        //Se calcula ancho y alto de la imagen final
+        /*$x_ratio = $max_ancho / $ancho;
+        $y_ratio = $max_alto / $alto;
+
+
+        //Si el ancho y el alto de la imagen no superan los maximos,
+        //ancho final y alto final son los que tiene actualmente
+        if( ($ancho <= $max_ancho) && ($alto <= $max_alto) ){//Si ancho
+            $ancho_final = $ancho;
+            $alto_final = $alto;
+        }
+        /*
+        * si proporcion horizontal*alto mayor que el alto maximo,
+        * alto final es alto por la proporcion horizontal
+        * es decir, le quitamos al ancho, la misma proporcion que
+        * le quitamos al alto
+        *
+        */
+        /*elseif (($x_ratio * $alto) < $max_alto){
+            $alto_final = ceil($x_ratio * $alto);
+            $ancho_final = $max_ancho;
+        }
+        /*
+        * Igual que antes pero a la inversa
+        */
+        /*else{
+            $ancho_final = ceil($y_ratio * $ancho);
+            $alto_final = $max_alto;
+        }*/
+
+        $dir = "imag/img_usuaris/";
+        $directori = $dir . $Nwidth . '_imatge';
+        $tmp = imagecreatetruecolor($Nwidth, $Nheight); //Creem una nova imatge blanca amb el nou tamany
+        imagecopyresampled($tmp, $img_original, 0, 0, 0, 0, $Nwidth, $Nheight, $width, $height); //Copiem la imatge original sobre la blanca
+var_dump($tmp);
+        move_uploaded_file($tmp, $directori);
+        imagedestroy($_FILES['newImage']); //Destruim l'arxiu temporal per alliberar memòria
+
+        return $tmp;
+
+    }
+
     protected function comprovaCamps($review)
     {
         //Guardem totes les reviews de la base de dades per comparar qe els camps que han de ser únics no existeixin a cap altra review
@@ -98,13 +139,24 @@ class PracticaAddReviewController extends Controller
             //Comprovem que el titol no estigui repetit i tingui menys de 100 caràcters
             if(!strcmp($r['title'], $review['title']) || strlen($review['title']) > 100)
             {
-                $this->retornaCamps($review);
-
+                echo "El títol no és correcte: o està repetit o és més llarg de 100 caràcters";
                 return false;
             }
 
         }
 
+        //Comprovem la imatge
+        $ext = array('image/jpg', 'image/jpeg', 'image/gif', 'image/png'); //Forcem que l'extensió només pugui ser jpg, gif o png
+        $attachtmp  = $_FILES['newImage']['tmp_name']; //Arxiu temporal
+        $attachtype = $_FILES['newImage']['type'];
+
+        $tamany = filesize($attachtmp); //Tamany de la imatge (en bytes)
+        $tMax = 2 * pow(10,6); //El tamany màxim de la imatge és de 2MB
+        if(!file_exists($attachtmp) || !is_uploaded_file($attachtmp) || !in_array($attachtype, $ext) || $tamany > $tMax)
+        {
+            echo "Error al carregar la imatge";
+            return false;
+        }
 
 
         return true;
@@ -117,7 +169,7 @@ class PracticaAddReviewController extends Controller
         $this->assign('subject', $review['subject']);
         $this->assign('date', $review['date']);
         $this->assign('score', $review['score']);
-        $this->assign('image', $review['image']);
+        $this->assign('image', $_FILES['newImage']['tmp_name']);
     }
 
 
