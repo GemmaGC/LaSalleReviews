@@ -8,6 +8,9 @@
         <link rel="javascript" type="text/javascript" href="/js/practica/scripts.js">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
+        <script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+
+
     </head>
 
     <body>

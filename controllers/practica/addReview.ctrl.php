@@ -17,7 +17,10 @@ class PracticaAddReviewController extends Controller
 
         $login = Session::getInstance()->get('log');
         $nom = Session::getInstance()->get('nom');
-        $dataC = date('d/m/Y', time());
+
+        date_default_timezone_set(date_default_timezone_get());
+        $dataC = date('Y.m.d', time());
+
 
         if(!isset($info['url_arguments']) && $login > 0){
             $this->assign('ok', true);
@@ -32,9 +35,9 @@ class PracticaAddReviewController extends Controller
                 $review['score'] = Filter::getInteger('newScore');
                 $review['image'] = Filter::getString('newImage');
 
-                /*$this->assign('vtitle', 0); $this->assign('description', 0);
+                /* $this->assign('vtitle', 0); $this->assign('description', 0);
                 $this->assign('subject', 0); $this->assign('date', 0);
-                $this->assign('score', 0); $this->assign('vimage', 0);*/
+                $this->assign('score', 0); $this->assign('vimage', 0); */
 
 
                 //Si tots els camps del formulari són correctes...

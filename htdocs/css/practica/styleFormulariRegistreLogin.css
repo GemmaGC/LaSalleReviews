@@ -130,10 +130,38 @@ p.notValid{
 .linkActiva{
     border:0;
     background-color:transparent;
-    color: blue;
-    text-decoration:underline;
+    color: #FFA500;
+    font-size: 15px;
+    text-decoration: underline;
+    margin-bottom: 200px;
+    margin-left: 38%;
+
+
 }
 
-.content_form {
+.linkActiva:hover{
+    color: grey;
 
+}
+
+.text_activa {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 18px;
+}
+
+.content_form strong{
+    color: red;
+    font-family: Quicksand_bold;
+}
+
+.form strong {
+    color: red;
+    font-family: Quicksand_bold;
+}
+
+
+.header_form strong {
+    color: red;
+    font-family: Quicksand_bold;
 }

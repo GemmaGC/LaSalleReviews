@@ -1,7 +1,7 @@
 {$modules.headPractica}
 
 
-    <div class="header_form" xmlns="http://www.w3.org/1999/html">
+    <div class="header_form">
         <h1>SIGN UP!</h1>
         <p>All the fields marked with a <strong>*</strong> are required.</p>
     </div>

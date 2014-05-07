@@ -150,4 +150,6 @@ $config['ErrorErrorP403Controller']		= PATH_CONTROLLERS . 'error/errorP403.ctrl.
 $config['Facebook']		                = PATH_CONTROLLERS . 'practica/facebook.ctrl.php';
 $config['PracticaHolaController']		= PATH_CONTROLLERS . 'practica/hola.ctrl.php';
 
+$config['PracticaResultadoBuscadorController']		= PATH_CONTROLLERS . 'practica/resultadoBuscador.ctrl.php';
+
 //----------------------------------------
