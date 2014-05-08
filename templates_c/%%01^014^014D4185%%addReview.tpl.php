@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-05 16:08:27
+<?php /* Smarty version 2.6.14, created on 2014-05-07 18:46:55
          compiled from practica/addReview.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['headPractica']; ?>
 
@@ -22,7 +22,7 @@
 " <?php else: ?> placeholder="TITLE" <?php endif; ?> required/>
 
 					<label for="description">DESCRIPTION <strong>*</strong></label></br>
-		        	<textarea  name="newDescription" id="description"   class="input_description_form" <?php if (! $this->_tpl_vars['ok']): ?> value = "<?php echo $this->_tpl_vars['description']; ?>
+		        	<textarea  name="newDescription" id="description" class="input_description_form" <?php if (! $this->_tpl_vars['ok']): ?> value = "<?php echo $this->_tpl_vars['description']; ?>
 " <?php else: ?> placeholder="DESCRIPTION" <?php endif; ?> required>
 		        	</textarea></br>
 
@@ -57,7 +57,8 @@
                     </br>
                     </br>
 					<label for="image">IMAGE <strong>*</strong></label>
-		            <input name="newImage" id="image" type="file" required/>
+		            <input name="newImage" id="image" type="file" <?php if (! $this->_tpl_vars['ok']): ?> value = "<?php echo $this->_tpl_vars['image']; ?>
+" <?php endif; ?> required/>
 
 
 					<div class="footer_form">

@@ -137,7 +137,7 @@ footer {
 .register {
     font-size: 16px;
     margin-right: 60px;
-    padding-top: 3%;
+    padding-top: 7%;
     color: white;
 
 }
@@ -421,8 +421,108 @@ input.notValid{
 
 
 
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/*                          LOG IN JQUERY                          */
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
 
 
+.login_desplegable ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    float: right;
+}
+
+.login_desplegable li {
+    float: left;
+}
+
+
+.login_desplegable #login-trigger,
+.login_desplegable #signup a {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-top: 17%;
+    color: white;
+    text-decoration: none;
+}
+
+
+.login_desplegable #signup a {
+    border-radius: 0 3px 3px 0;
+}
+
+.login_desplegable #login-trigger {
+    border-radius: 3px 0 0 3px;
+}
+
+
+
+.login_desplegable #login-content {
+    display: none;
+    position: absolute;
+    top: 52px;
+    right: 0;
+
+    background: #fff;
+    background-image: linear-gradient(top, #fff, #eee);
+    padding: 45px;
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+    border-radius: 3px 0 3px 3px;
+}
+
+.login_desplegable li #login-content {
+    width: 250px;
+}
+
+/*--------------------*/
+
+#inputs input {
+    background: #f1f1f1;
+    padding: 7px 5px;
+    margin: 0 0 5px 0;
+    width: 238px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #ccc inset;
+}
+
+#inputs input:focus {
+    background-color: #fff;
+    border-color: #e8c291;
+    outline: none;
+    box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+/*--------------------*/
+
+#login #actions {
+    margin: 10px 0 0 0;
+}
+
+.boto_login_desp {
+    width: 150px;
+}
+
+
+#login label {
+    float: right;
+    line-height: 30px;
+}
+
+#login label input {
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+
+.fieldset_login {
+    border: 0px;
+}
 
 
 

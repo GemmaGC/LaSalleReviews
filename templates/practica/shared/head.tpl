@@ -10,6 +10,8 @@
 
         <script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="/js/practica/jquery.js"></script>
 
 
     </head>
@@ -34,7 +36,29 @@
                     {if $log == 0}
                         <!-- Si NO està loguejat l'usuari...-->
                         <a href="{$url.global}/register" class="register">SIGN UP</a>
-                        <a href="{$url.global}/logIn" class="register">LOG IN</a>
+
+                        <!-- PROVA JQUERY LOG IN -->
+                        <nav class="login_desplegable">
+                            <ul>
+                                <li id="login">
+                                    <a id="login-trigger" href="#" class="login_trigger">
+                                        LOG IN <span>▼</span>
+                                    </a>
+                                    <div id="login-content">
+                                        <form>
+                                            <fieldset class="fieldset_login" id="inputs">
+                                                <input id="username" class="input_form" type="email" name="Email" placeholder="Your email address" required>
+                                                <input id="password" class="input_form" type="password" name="Password" placeholder="Password" required>
+                                            </fieldset>
+                                            <fieldset class="fieldset_login" id="actions">
+                                                <input type="submit" class="button_form boto_login_desp" id="submit" value="LOG IN">
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- FI PROVA JQUERY LOG IN -->
 
                     {elseif $log == 1}
 
@@ -45,6 +69,10 @@
                         <a href="{$url.global}/logOut" class="register">LOG OUT</a>
 
                     {/if}
+
+
+
+
                 </nav>
 
 
