@@ -18,7 +18,7 @@
 		            <input name="newTitle" id="title" type="text" class="input_title_form" {if !$ok} value = "{$title}" {else} placeholder="TITLE" {/if} required/>
 
 					<label for="description">DESCRIPTION <strong>*</strong></label></br>
-		        	<textarea  name="newDescription" id="description"   class="input_description_form" {if !$ok} value = "{$description}" {else} placeholder="DESCRIPTION" {/if} required>
+		        	<textarea  name="newDescription" id="description" class="input_description_form" {if !$ok} value = "{$description}" {else} placeholder="DESCRIPTION" {/if} required>
 		        	</textarea></br>
 
 					<label for="subject">SUBJECT <strong>*</strong></label>
@@ -48,7 +48,7 @@
                     </br>
                     </br>
 					<label for="image">IMAGE <strong>*</strong></label>
-		            <input name="newImage" id="image" type="file" required/>
+		            <input name="newImage" id="image" type="file" {if !$ok} value = "{$image}" {/if} required/>
 
 
 					<div class="footer_form">

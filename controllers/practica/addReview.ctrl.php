@@ -28,12 +28,14 @@ class PracticaAddReviewController extends Controller
             if(Filter::getString('submit_button')){
 
                 //Agafem les dades que posa l'usuari al addreview
-                $review['title'] = Filter::getString('newTitle');
-                $review['description'] = Filter::getString('newDescription');
-                $review['subject'] = Filter::getString('newSubject');
-                $review['date'] = Filter::getString('newDate');
-                $review['score'] = Filter::getInteger('newScore');
-                $review['image'] = Filter::getString('newImage');
+                $review['title']        =   Filter::getString('newTitle');
+                $review['description']  =   Filter::getString('newDescription');
+                $review['subject']      =   Filter::getString('newSubject');
+                $review['date']         =   Filter::getString('newDate');
+                $review['score']        =   Filter::getInteger('newScore');
+                //$review['image']        =   Filter::getString('newImage');
+                //echo '<pre>'; var_dumo($review); echo'</pre>';
+                echo $_FILES['newImage']['name'];
 
                 /* $this->assign('vtitle', 0); $this->assign('description', 0);
                 $this->assign('subject', 0); $this->assign('date', 0);
@@ -50,9 +52,9 @@ class PracticaAddReviewController extends Controller
                    //Guardem la imatge a la carpeta d'htdocs si tots els camps del formulari són correctes
                    $dir = "imag/img_usuaris/";
                    $attachtmp  = $_FILES['newImage']['tmp_name'];
-                   $attachname = $_FILES['newImage']['name'];
+                   $review['image'] = $_FILES['newImage']['name'];
 
-                   $directori = $dir . $attachname;
+                   $directori = $dir . $review['image'];
                    move_uploaded_file($attachtmp, $directori);
 
                    //Guardem la imatge en altres tamanys
@@ -64,7 +66,7 @@ class PracticaAddReviewController extends Controller
                    /***********************/
 
                    $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], $nom, $login, $dataC);
-
+                   unset($review);
                }else{
                    $this->assign('ok', false);
                    $this->retornaCamps($review);
