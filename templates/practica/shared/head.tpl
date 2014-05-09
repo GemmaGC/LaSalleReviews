@@ -51,7 +51,7 @@
                                                 <input id="password" class="input_form" type="password" name="Password" placeholder="Password" required>
                                             </fieldset>
                                             <fieldset class="fieldset_login" id="actions">
-                                                <input type="submit" class="button_form boto_login_desp" id="submit" value="LOG IN">
+                                                <input type="submit" class="button_form boto_login_desp" id="submit" value="LOG IN" name="submitButton">
                                             </fieldset>
                                         </form>
                                     </div>
