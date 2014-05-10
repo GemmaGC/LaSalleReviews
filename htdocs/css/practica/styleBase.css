@@ -278,6 +278,26 @@ a.register:hover {
     color: #FFA500;
 }
 
+a.login_trigger {
+    text-decoration: none;
+}
+
+a.login_trigger:link {
+    color: white;
+}
+
+a.login_trigger:visited {
+    color: white;
+}
+
+a.login_trigger:active {
+    color: white;
+}
+
+a.login_trigger:hover {
+    color: #FFA500 !important;
+}
+
 /* ----------------------------------------------------------------- */
 
 .content {
