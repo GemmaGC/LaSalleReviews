@@ -61,7 +61,7 @@ body {
     margin: 0px auto;
     font-family: Quicksand;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 
 }
 
@@ -146,6 +146,7 @@ footer {
 .user_info {
     color: #98C9ED;
 }
+
 
 .input_login {
     height: 25px;
@@ -382,7 +383,7 @@ input.notValid{
 
 
 .menu_lateral_fixe_home {
-    width: 100%;
+    width: 90%;
     margin-top: 2%;
     margin-left: 2%;
 }
@@ -432,8 +433,7 @@ input.notValid{
     margin: 0;
     padding: 0;
     list-style: none;
-    position: relative;
-    float: right;
+
 }
 
 .login_desplegable li {
@@ -444,8 +444,7 @@ input.notValid{
 .login_desplegable #login-trigger,
 .login_desplegable #signup a {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
+
     margin-top: 17%;
     color: white;
     text-decoration: none;
@@ -484,7 +483,7 @@ input.notValid{
 #inputs input {
     background: #f1f1f1;
     padding: 7px 5px;
-    margin: 0 0 5px 0;
+    margin: 0 0 15px 0;
     width: 238px;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -501,7 +500,7 @@ input.notValid{
 /*--------------------*/
 
 #login #actions {
-    margin: 10px 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .boto_login_desp {
@@ -510,7 +509,7 @@ input.notValid{
 
 
 #login label {
-    float: right;
+
     line-height: 30px;
 }
 
