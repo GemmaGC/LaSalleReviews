@@ -2,7 +2,7 @@
 
 require_once './src/mailchimp-mandrill-api-php/src/Mandrill.php'; //Not required with Composer
 
-class PracticaEmailActivacioController extends Controller
+class PracticaEmailActivacioController
 {
     protected $key;         //API key del mandrill
     protected $html;        //Contingut html del mail
@@ -14,19 +14,7 @@ class PracticaEmailActivacioController extends Controller
 
     public function build()
     {
-        $this->usuari['name'] = "Claudia";
-        $this->usuari['email'] = "cldauden@gmail.com";
 
-        $this->key = 'kvgn5iFAhFg5Ia5q3dOBlA';
-        $this->content = '<h1>Hola '. $this->usuari['name'] . '!</h1><br><p>Benvingut a LaSalleReview, per activar el teu compte fes click al link següent:</p>';
-        $this->subject = 'Activació compte LaSalleReview';
-        $this->from['email'] = 'g1@lasallereview.com';
-        $this->from['name'] = 'Grup 1 Projectes Web';
-        $this->to['email'] = $this->usuari['email'];
-        $this->to['name'] = $this->usuari['name'];
-        $this->to['type'] = 'to';
-
-        $this->generaCorreu();
     }
 
     protected function generaCorreu()

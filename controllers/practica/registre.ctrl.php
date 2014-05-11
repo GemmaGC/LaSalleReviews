@@ -1,5 +1,8 @@
 <?php
 
+include_once( 'practica/emailActivacio.ctrl.php' );
+require_once './src/mailchimp-mandrill-api-php/src/Mandrill.php'; //Not required with Composer
+
 class PracticaRegistreController extends Controller
 {
     protected $view = 'practica/formulariRegistre.tpl';
@@ -7,6 +10,7 @@ class PracticaRegistreController extends Controller
     protected $view_error = 'practica/error/errorP404.tpl';
     protected $model;
     protected $mail;
+    protected $usuari;
 
     public function build( )
     {
@@ -23,29 +27,28 @@ class PracticaRegistreController extends Controller
             if(Filter::getString('submit_button')){
 
                 //Agafem les dades de l'usuari del formulari
-                $usuari['nom'] = Filter::getString('newUser');
-                $usuari['login'] = Filter::getString('newLogin');
-                $usuari['email'] = Filter::getString("newEmail");
-                $usuari['password'] = Filter::getString("newPassword");
+                $this->usuari['nom'] = Filter::getString('newUser');
+                $this->usuari['login'] = Filter::getString('newLogin');
+                $this->usuari['email'] = Filter::getString("newEmail");
+                $this->usuari['password'] = Filter::getString("newPassword");
 
 
 
                 $this->assign('vNom', 0); $this->assign('vLogin', 0); $this->assign('vMail', 0); $this->assign('vPas', 0);
 
                 //Si tots són correctes afegim l'usuari a la base de dades i redirigim per activar el compte d'usuari
-                if (PracticaRegistreController::comprovaCamps($usuari)){
-                    $this->model->afegeixUsuari($usuari['login'], $usuari['nom'],$usuari['email'], $usuari['password']);
+                if (PracticaRegistreController::comprovaCamps($this->usuari)){
+                    $this->model->afegeixUsuari($this->usuari['login'], $this->usuari['nom'],$this->usuari['email'], $this->usuari['password']);
 
-                    Session::getInstance()->set('nom', $usuari['nom']);
-                    Session::getInstance()->set('login', $usuari['login']);
-                    Session::getInstance()->set('email', $usuari['email']);
-                    Session::getInstance()->set('password', $usuari['password']);
+                    Session::getInstance()->set('nom', $this->usuari['nom']);
+                    Session::getInstance()->set('login', $this->usuari['login']);
+                    Session::getInstance()->set('email', $this->usuari['email']);
+                    Session::getInstance()->set('password', $this->usuari['password']);
 
 
                     /****** ENVIAR MAIL AMB CODI D'ACTIVACIÓ DE COMPTE *********/
+                    $this->generaCorreu();
 
-                    $this->mail = new PracticaEmailActivacioController();
-echo "FET";
                     //header('Location: /register/activa',true,301);
                 }
 
@@ -54,16 +57,16 @@ echo "FET";
 
         }else if(strcmp($info['url_arguments'][1], "activa") != 0){
 
-            $usuari['nom'] = Session::getInstance()->get('nom');
-            $usuari['email'] = Session::getInstance()->get('email');
-            $usuari['password'] = Session::getInstance()->get('password');
-            $usuari['login'] = Session::getInstance()->get('login');
+            $this->usuari['nom'] = Session::getInstance()->get('nom');
+            $this->usuari['email'] = Session::getInstance()->get('email');
+            $this->usuari['password'] = Session::getInstance()->get('password');
+            $this->usuari['login'] = Session::getInstance()->get('login');
 
-            $activa = PracticaRegistreController::generaUrlActivacio($usuari);
+            $activa = $this->generaUrlActivacio($this->usuari);
             $this->assign('codi', $activa);
 
             if(Filter::getString('codi_activacio')){
-                $this->model->activaUsuari($usuari['login']);
+                $this->model->activaUsuari($this->usuari['login']);
                 Session::getInstance()->delete('nom');
                 Session::getInstance()->delete('email');
                 Session::getInstance()->delete('login');
@@ -133,11 +136,20 @@ echo "FET";
     }
 
 
+    /*
+     * Funció que genera la url d'activació de l'usuari i comprova que no s'hagi utilitzat encara
+     */
     protected function generaUrlActivacio($usuari)
     {
-        return md5($usuari['nom'].$usuari['email'].$usuari['login']);
+        $url = md5($usuari['nom'].$usuari['email'].$usuari['login']);
+
+        return $url;
     }
 
+
+    /*
+     * Funció que s'encarrega de controlar que el login és correcte
+     */
     protected function comprovaLogin($var)
     {
         $ok = 0;
@@ -157,6 +169,80 @@ echo "FET";
         }else{
             return false;
         }
+    }
+
+
+    /*
+     * Funció que carrega les dades del correu d'activació que s'enviarà a l'usuari i crida a la funció que el genera i l'envia.
+     */
+    protected function generaCorreu()
+    {
+        $key = 'kvgn5iFAhFg5Ia5q3dOBlA';
+        $pag = "g1.local/benvinguda";
+        $url = $this->generaUrlActivacio($this->usuari);
+        $content = '<h1>Hola '. $this->usuari['nom'] . '!</h1><p>Benvingut a LaSalleReview, per activar el teu compte fes click al link següent: </p><a href = ' . $pag . '>' . $url . '</a><br><br>Que gaudeixis de la web,<br><br><i>Equip del grup 1</i> :)';
+            //<form><input type="submit" name="codi_activacio" value="' . $url .'" class="linkActiva"/></form><br>Que gaudeixis de la web!<br><i>Equip del grup 1</i> :)';
+        $subject = 'Activació compte LaSalleReview';
+        $from['email'] = 'g1@lasallereview.com';
+        $from['name'] = 'Grup 1 Projectes Web';
+        $to['email'] = $this->usuari['email'];
+        $to['name'] = $this->usuari['nom'];
+        $to['type'] = 'to';
+
+        $this->enviaCorreu($key, $content, $subject, $from, $to);
+    }
+
+    /*
+     * Funció que s'encarrega de muntar i enviar el correu d'activació del compte gràcies a la API de Mandrill i les dades proporcionades
+     * @key         ->  codi de la API de Mandrill
+     * @content     ->  contingut del correu
+     * @subject     ->  subjecte del correu
+     * @from        ->  informació sobre nosaltres
+     * @to          ->  informació de l'usuari
+     */
+    protected function enviaCorreu($_key, $_content, $_subject, $_from, $_to)
+    {
+
+        $to = $_to['email'];
+        $subject = $_subject;
+        $from = $_from['email'];
+        $uri = 'https://mandrillapp.com/api/1.0/messages/send.json';
+        $api_key = $_key;
+        $content_text = strip_tags($_content);
+
+        $postString = '{
+            "key": "' . $api_key . '",
+            "message": {
+                "html": "' . $_content . '",
+                "text": "' . $content_text . '",
+                "subject": "' . $subject . '",
+                "from_email": "' . $from . '",
+                "from_name": "' . $from . '",
+                "to": [
+                    {
+                      "email": "' . $to . '",
+                      "name": "' . $to . '"
+                    }
+                ],
+                "track_opens": true,
+                "track_clicks": true,
+                "auto_text": true,
+                "url_strip_qs": true,
+                "preserve_recipients": true
+                },
+            "async": false
+            }';
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $uri);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true );
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true );
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $postString);
+
+        $result = curl_exec($ch);
+        var_dump($result);
     }
 
 

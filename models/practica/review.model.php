@@ -7,7 +7,7 @@ class PracticaReviewModel extends Model{
 
         $sql = <<<QUERY
         INSERT INTO usuaris
-        VALUES ('', '$login', '$nom', '$email', '$password', 0)
+        VALUES ('', '$login', '$nom', '$email', '$password', 0, 'url')
 QUERY;
         $this->execute( $sql );
 
