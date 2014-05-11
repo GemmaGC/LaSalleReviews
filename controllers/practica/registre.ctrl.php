@@ -6,6 +6,7 @@ class PracticaRegistreController extends Controller
     protected $view_activa = 'practica/activacio.tpl';
     protected $view_error = 'practica/error/errorP404.tpl';
     protected $model;
+    protected $mail;
 
     public function build( )
     {
@@ -43,7 +44,9 @@ class PracticaRegistreController extends Controller
 
                     /****** ENVIAR MAIL AMB CODI D'ACTIVACIÓ DE COMPTE *********/
 
-                    header('Location: /register/activa',true,301);
+                    $this->mail = new PracticaEmailActivacioController();
+echo "FET";
+                    //header('Location: /register/activa',true,301);
                 }
 
             }

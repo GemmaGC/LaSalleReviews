@@ -69,6 +69,7 @@ $config['galeriaZoo']	            = 'Exercici4GaleriaZooController';
 //----------- LA SALLE REVIEW -----------------
 
 $config['register']             = 'PracticaRegistreController';
+$config['mail']                 = 'PracticaEmailActivacioController';
 $config['benvinguda']           = 'PracticaBenvingudaController';
 
 $config['LaSalleReview']        = 'PracticaHomeController';
