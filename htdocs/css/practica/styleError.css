@@ -20,3 +20,18 @@
     width: 470px;
     height: 280px;
 }
+
+.bloc_error_403 {
+
+    font-size: 60px;
+    color: red;
+
+    margin-bottom: 5%;
+    margin-top: 13%;
+}
+
+
+.omplir {
+    height: 90px;
+}
+
