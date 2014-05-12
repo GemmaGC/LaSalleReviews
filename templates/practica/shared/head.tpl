@@ -41,7 +41,7 @@
                         <nav class="login_desplegable">
                             <ul>
                                 <li id="login">
-                                    <a id="login-trigger" href="#" class="login_trigger">LOG IN <span>&darr;</span></a>
+                                    <a id="login-trigger" href="#" class="login_trigger register">LOG IN <span>&darr;</span></a>
                                     <div id="login-content">
                                         <form>
                                             <fieldset class="fieldset_login" id="inputs">
