@@ -13,6 +13,9 @@ class PracticaDosOpcionsController extends Controller
         $this->assign('title', $this->title);
         $this->assign('subtitle', $this->subtitle);
 
+        $log = Session::getInstance()->get('log');
+        $this->assign('log', $log);
+
         $this->setLayout( $this->view );
     }
 

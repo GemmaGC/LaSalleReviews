@@ -1,13 +1,14 @@
 <?php
 
-include_once( 'practica/emailActivacio.ctrl.php' );
 require_once './src/mailchimp-mandrill-api-php/src/Mandrill.php'; //Not required with Composer
 
 class PracticaRegistreController extends Controller
 {
     protected $view = 'practica/formulariRegistre.tpl';
     protected $view_activa = 'practica/activacio.tpl';
-    protected $view_error = 'practica/error/errorP404.tpl';
+    protected $view_error404 = 'practica/error/errorP404.tpl';
+    protected $view_errorLog = 'practica/duesOpcions.tpl';
+
     protected $model;
     protected $mail;
     protected $usuari;
@@ -17,7 +18,7 @@ class PracticaRegistreController extends Controller
         $info = $this->getParams();
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
-        if(!isset($info['url_arguments'])){
+        if(!isset($info['url_arguments']) && Session::getInstance()->get('log') != '1'){
 
 
             //Carreguem les imatges necessaries
@@ -50,37 +51,19 @@ class PracticaRegistreController extends Controller
 
                     //Enviem el correu amb el codi d'activació del compte
                     $this->generaCorreu();
-
-                    //header('Location: /register/activa',true,301);
                 }
 
             }
             $this->setLayout($this->view);
 
-        }else if(strcmp($info['url_arguments'][1], "activa") != 0){
+        }else if (Session::getInstance()->get('log') == '1'){
+            $this->assign('title', 'Hey! You have already logged in!');
+            $this->assign('subtitle', 'You can go to the menu by clicking below');
+            $this->assign('log', 1);
+            $this->setLayout($this->view_errorLog);
 
-            //Guardem les instàncies per reomplir els camps al formulari
-            $this->usuari['nom'] = Session::getInstance()->get('nom');
-            $this->usuari['email'] = Session::getInstance()->get('email');
-            $this->usuari['password'] = Session::getInstance()->get('password');
-            $this->usuari['login'] = Session::getInstance()->get('login');
-
-            $activa = $this->generaUrlActivacio($this->usuari);
-            $this->assign('codi', $activa);
-
-            if(Filter::getString('codi_activacio')){
-                $this->model->activaUsuari($this->usuari['login']);
-
-                Session::getInstance()->delete('nom');
-                Session::getInstance()->delete('email');
-                Session::getInstance()->delete('login');
-                Session::getInstance()->delete('password');
-                header('Location: /benvinguda',true,301);
-            }
-
-            $this->setLayout($this->view_activa);
         }else{
-            $this->setLayout($this->view_error);
+            $this->setLayout($this->view_error404);
         }
     }
 
@@ -188,13 +171,11 @@ class PracticaRegistreController extends Controller
     {
         $key = "kvgn5iFAhFg5Ia5q3dOBlA";
         $pag = "g1.local/benvinguda";
-        //$url = $this->generaUrlActivacio($this->usuari);
         $url = $this->usuari['url'];
             $titol = '<h1>Hi '. $this->usuari['nom'] . '!</h1>';
             $benvinguda = '<p>Welcome to LaSalleReview, you activate your account by clicking on the link below: </p>';
-            $link = '<form method='."post".' action='.$pag.'><input type='."submit".' name='."codi_activacio".' value='.$url.'/></form>';
+            $link = '<form method='."post".' action='.$pag.'><input type='."submit".' name='."codi_activacio".' value='.$url.' /></form>';
             $despedida = '<br><br>Enjoy,<br><br><i>Team 1</i> :)';
-        //$content = '<h1>Hi '. $this->usuari['nom'] . '!</h1><p>Welcome to LaSalleReview, you activate your account by clicking on the link below: </p><a href = ' . $pag . '>' . $url . '</a><br><br>Enjoy,<br><br><i>Team 1</i> :)';
         $content = $titol . $benvinguda . $link . $despedida;
 
         $subject = 'Activate account on LaSalleReview';
@@ -259,7 +240,6 @@ class PracticaRegistreController extends Controller
         curl_setopt($ch, CURLOPT_POSTFIELDS, $postString);
 
         $result = curl_exec($ch);
-        var_dump($result);
     }
 
 

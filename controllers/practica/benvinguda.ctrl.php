@@ -9,17 +9,33 @@ class PracticaBenvingudaController extends PracticaDosOpcionsController
 
     public function carregaTitols()
     {
-        $this->title = "WELCOME TO LA SALLE REVIEW!";
-        $this->subtitle = "Now that you have successfully registered, you can either go to the Home page or Log In.";
 
-        $usuari = $this::dadesUsuari();
-        var_dump($usuari);
+        $nom = $this::dadesUsuari();
+
+        $this->title = "WELCOME TO LA SALLE REVIEW ".$nom."!";
+        $this->subtitle = "Now that you have successfully registered, you can either go to the Home page";
+
 
     }
 
 
     protected function dadesUsuari()
     {
-        return Filter::getString('codi_activacio');
+        $model = $this->getClass( 'PracticaReviewModel' );
+
+        //Busquem l'usuari que correspon a la url d'activació del compte
+        $url = Filter::getString('codi_activacio');
+        $usuari = $model->buscaFromUrl($url);
+
+        //Activem l'usuari
+        $model->activaUsuari($usuari[0]['login']);
+
+        //Fem el login (guardem les variables de sessió corresponents)
+        Session::getInstance()->set('nom', $usuari[0]['nom']);
+        Session::getInstance()->set('login', $usuari[0]['login']);
+        Session::getInstance()->set('log', 1);
+
+        return $usuari[0]['nom'];
+
     }
 }

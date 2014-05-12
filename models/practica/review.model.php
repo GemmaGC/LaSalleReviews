@@ -102,6 +102,24 @@ QUERY;
         return $result;
     }
 
+    /**
+     * Funció que busca a un usuari amb una url d'activació concreta
+     * @param $url
+     * @return mixed
+     */
+    public function buscaFromUrl($url)
+    {
+        $sql = <<<QUERY
+        SELECT
+            *
+        FROM
+            usuaris
+        WHERE
+            urlActivacio = "$url"
+QUERY;
+        $result = $this->getAll($sql);
+        return $result;
+    }
 
     /**************/
     /*   REVIEWS  */

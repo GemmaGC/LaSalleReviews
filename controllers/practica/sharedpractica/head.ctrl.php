@@ -18,11 +18,8 @@ class SharedpracticaHeadController extends Controller
 
         if (is_null($log))
         {
-            //echo "hola";
-
             if(Filter::getString('submitButton'))
             {
-                //echo "adeu";
                 $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
                 $u['email'] = Filter::getString("Email");
