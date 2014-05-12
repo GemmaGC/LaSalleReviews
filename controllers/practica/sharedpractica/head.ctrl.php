@@ -47,6 +47,8 @@ class SharedpracticaHeadController extends Controller
         $this->setLayout( 'practica/shared/head.tpl' );
 		//$this->setLayout( 'practica/shared/head.tpl' );
 	}
+
+
 }
 
 

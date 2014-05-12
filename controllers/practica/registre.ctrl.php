@@ -10,8 +10,9 @@ class PracticaRegistreController extends Controller
     protected $view_errorLog = 'practica/duesOpcions.tpl';
 
     protected $model;
-    protected $mail;
     protected $usuari;
+
+    //protected $mail;
 
     public function build( )
     {
@@ -50,6 +51,9 @@ class PracticaRegistreController extends Controller
                 //////////////
 
                     //Enviem el correu amb el codi d'activació del compte
+                    /*$mail = new PracticaMailController();
+                    $mail->build();
+                    $mail->generaCorreu($this->usuari);*/
                     $this->generaCorreu();
                 }
 
@@ -127,18 +131,6 @@ class PracticaRegistreController extends Controller
     }
 
     /**
-     * Funció que genera la url d'activació de l'usuari i comprova que no s'hagi utilitzat encara
-     * @param $usuari
-     * @return string
-     */
-    protected function generaUrlActivacio($usuari)
-    {
-        $url = md5($usuari['nom'].$usuari['email'].$usuari['login']);
-
-        return $url;
-    }
-
-    /**
      * Funció que s'encarrega de controlar que el login és correcte
      * @param $var
      * @return bool
@@ -165,17 +157,29 @@ class PracticaRegistreController extends Controller
     }
 
     /**
+     * Funció que genera la url d'activació de l'usuari i comprova que no s'hagi utilitzat encara
+     * @param $usuari
+     * @return string
+     */
+    protected function generaUrlActivacio($usuari)
+    {
+        $url = md5($usuari['nom'].$usuari['email'].$usuari['login']);
+
+        return $url;
+    }
+
+    /**
      * Funció que carrega les dades del correu d'activació que s'enviarà a l'usuari i crida a la funció que el genera i l'envia.
      */
-    protected function generaCorreu()
+    public function generaCorreu()
     {
         $key = "kvgn5iFAhFg5Ia5q3dOBlA";
         $pag = "g1.local/benvinguda";
         $url = $this->usuari['url'];
-            $titol = '<h1>Hi '. $this->usuari['nom'] . '!</h1>';
-            $benvinguda = '<p>Welcome to LaSalleReview, you activate your account by clicking on the link below: </p>';
-            $link = '<form method='."post".' action='.$pag.'><input type='."submit".' name='."codi_activacio".' value='.$url.' /></form>';
-            $despedida = '<br><br>Enjoy,<br><br><i>Team 1</i> :)';
+        $titol = '<h1>Hi '. $this->usuari['nom'] . '!</h1>';
+        $benvinguda = '<p>Welcome to LaSalleReview, you activate your account by clicking on the link below: </p>';
+        $link = '<form method='."post".' action='.$pag.'><input type='."submit".' name='."codi_activacio".' value='.$url.' /></form>';
+        $despedida = '<br><br>Enjoy,<br><br><i>Team 1</i> :)';
         $content = $titol . $benvinguda . $link . $despedida;
 
         $subject = 'Activate account on LaSalleReview';
@@ -238,10 +242,8 @@ class PracticaRegistreController extends Controller
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $postString);
-
         $result = curl_exec($ch);
     }
-
 
     public function loadModules() {
 
