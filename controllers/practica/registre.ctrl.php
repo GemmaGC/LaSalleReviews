@@ -24,6 +24,7 @@ class PracticaRegistreController extends Controller
             $this->assign('url_tick', '../imag/tick.gif');
             $this->assign('url_creu', '../imag/creu2.png');
             $this->assign('val', 0);
+
             if(Filter::getString('submit_button')){
 
                 //Agafem les dades de l'usuari del formulari
@@ -32,21 +33,22 @@ class PracticaRegistreController extends Controller
                 $this->usuari['email'] = Filter::getString("newEmail");
                 $this->usuari['password'] = Filter::getString("newPassword");
 
-
-
                 $this->assign('vNom', 0); $this->assign('vLogin', 0); $this->assign('vMail', 0); $this->assign('vPas', 0);
 
                 //Si tots són correctes afegim l'usuari a la base de dades i redirigim per activar el compte d'usuari
                 if (PracticaRegistreController::comprovaCamps($this->usuari)){
-                    $this->model->afegeixUsuari($this->usuari['login'], $this->usuari['nom'],$this->usuari['email'], $this->usuari['password']);
+                    $this->usuari['url'] = $this::generaUrlActivacio($this->usuari);
+                    $this->model->afegeixUsuari($this->usuari['login'], $this->usuari['nom'],$this->usuari['email'], $this->usuari['password'], $this->usuari['url']);
 
+
+                //CREC QE NO CAL GUARDAR TANTES INSTANCIES, NOMES CALEN NOM I LOGIN
                     Session::getInstance()->set('nom', $this->usuari['nom']);
                     Session::getInstance()->set('login', $this->usuari['login']);
                     Session::getInstance()->set('email', $this->usuari['email']);
                     Session::getInstance()->set('password', $this->usuari['password']);
+                //////////////
 
-
-                    /****** ENVIAR MAIL AMB CODI D'ACTIVACIÓ DE COMPTE *********/
+                    //Enviem el correu amb el codi d'activació del compte
                     $this->generaCorreu();
 
                     //header('Location: /register/activa',true,301);
@@ -57,6 +59,7 @@ class PracticaRegistreController extends Controller
 
         }else if(strcmp($info['url_arguments'][1], "activa") != 0){
 
+            //Guardem les instàncies per reomplir els camps al formulari
             $this->usuari['nom'] = Session::getInstance()->get('nom');
             $this->usuari['email'] = Session::getInstance()->get('email');
             $this->usuari['password'] = Session::getInstance()->get('password');
@@ -67,6 +70,7 @@ class PracticaRegistreController extends Controller
 
             if(Filter::getString('codi_activacio')){
                 $this->model->activaUsuari($this->usuari['login']);
+
                 Session::getInstance()->delete('nom');
                 Session::getInstance()->delete('email');
                 Session::getInstance()->delete('login');
@@ -80,6 +84,10 @@ class PracticaRegistreController extends Controller
         }
     }
 
+    /**
+     * @param $usuari
+     * @return bool
+     */
     protected function comprovaCamps($usuari)
     {
         $usuaris = $this->model->getTot('usuaris');
@@ -135,9 +143,10 @@ class PracticaRegistreController extends Controller
         return $var;
     }
 
-
-    /*
+    /**
      * Funció que genera la url d'activació de l'usuari i comprova que no s'hagi utilitzat encara
+     * @param $usuari
+     * @return string
      */
     protected function generaUrlActivacio($usuari)
     {
@@ -146,9 +155,10 @@ class PracticaRegistreController extends Controller
         return $url;
     }
 
-
-    /*
+    /**
      * Funció que s'encarrega de controlar que el login és correcte
+     * @param $var
+     * @return bool
      */
     protected function comprovaLogin($var)
     {
@@ -171,20 +181,27 @@ class PracticaRegistreController extends Controller
         }
     }
 
-
-    /*
+    /**
      * Funció que carrega les dades del correu d'activació que s'enviarà a l'usuari i crida a la funció que el genera i l'envia.
      */
     protected function generaCorreu()
     {
-        $key = 'kvgn5iFAhFg5Ia5q3dOBlA';
+        $key = "kvgn5iFAhFg5Ia5q3dOBlA";
         $pag = "g1.local/benvinguda";
-        $url = $this->generaUrlActivacio($this->usuari);
-        $content = '<h1>Hola '. $this->usuari['nom'] . '!</h1><p>Benvingut a LaSalleReview, per activar el teu compte fes click al link següent: </p><a href = ' . $pag . '>' . $url . '</a><br><br>Que gaudeixis de la web,<br><br><i>Equip del grup 1</i> :)';
-            //<form><input type="submit" name="codi_activacio" value="' . $url .'" class="linkActiva"/></form><br>Que gaudeixis de la web!<br><i>Equip del grup 1</i> :)';
-        $subject = 'Activació compte LaSalleReview';
+        //$url = $this->generaUrlActivacio($this->usuari);
+        $url = $this->usuari['url'];
+            $titol = '<h1>Hi '. $this->usuari['nom'] . '!</h1>';
+            $benvinguda = '<p>Welcome to LaSalleReview, you activate your account by clicking on the link below: </p>';
+            $link = '<form method='."post".' action='.$pag.'><input type='."submit".' name='."codi_activacio".' value='.$url.'/></form>';
+            $despedida = '<br><br>Enjoy,<br><br><i>Team 1</i> :)';
+        //$content = '<h1>Hi '. $this->usuari['nom'] . '!</h1><p>Welcome to LaSalleReview, you activate your account by clicking on the link below: </p><a href = ' . $pag . '>' . $url . '</a><br><br>Enjoy,<br><br><i>Team 1</i> :)';
+        $content = $titol . $benvinguda . $link . $despedida;
+
+        $subject = 'Activate account on LaSalleReview';
+
         $from['email'] = 'g1@lasallereview.com';
         $from['name'] = 'Grup 1 Projectes Web';
+
         $to['email'] = $this->usuari['email'];
         $to['name'] = $this->usuari['nom'];
         $to['type'] = 'to';
@@ -192,13 +209,13 @@ class PracticaRegistreController extends Controller
         $this->enviaCorreu($key, $content, $subject, $from, $to);
     }
 
-    /*
+    /**
      * Funció que s'encarrega de muntar i enviar el correu d'activació del compte gràcies a la API de Mandrill i les dades proporcionades
-     * @key         ->  codi de la API de Mandrill
-     * @content     ->  contingut del correu
-     * @subject     ->  subjecte del correu
-     * @from        ->  informació sobre nosaltres
-     * @to          ->  informació de l'usuari
+     * @param $_key         ->  codi de la API de Mandrill
+     * @param $_content     ->  contingut del correu
+     * @param $_subject     ->  subjecte del correu
+     * @param $_from        ->  informació sobre nosaltres
+     * @param $_to          ->  informació de l'usuari
      */
     protected function enviaCorreu($_key, $_content, $_subject, $_from, $_to)
     {

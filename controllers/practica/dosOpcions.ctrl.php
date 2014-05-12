@@ -9,7 +9,6 @@ class PracticaDosOpcionsController extends Controller
 
     public function build( )
     {
-
         $this::carregaTitols();
         $this->assign('title', $this->title);
         $this->assign('subtitle', $this->subtitle);

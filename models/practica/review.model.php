@@ -2,19 +2,15 @@
 
 class PracticaReviewModel extends Model{
 
+    /**************/
+    /*  GENERALS  */
+    /**************/
 
-    public function afegeixUsuari($login, $nom, $email, $password){
-
-        $sql = <<<QUERY
-        INSERT INTO usuaris
-        VALUES ('', '$login', '$nom', '$email', '$password', 0, 'url')
-QUERY;
-        $this->execute( $sql );
-
-    }
-
-
-
+    /**
+     * Funció que torna tota la taula
+     * @param $nom_taula    -> nom de la taula de la que volem obtenir tots els valors
+     * @return mixed        -> valors de la taula
+     */
     public function getTot($nom_taula){
         $sql = <<<QUERY
         SELECT
@@ -26,6 +22,11 @@ QUERY;
         return $result;
     }
 
+    /**
+     * Funció que s'encarrega de tornar l'última fila de la taula
+     * @param $nom_taula    -> taula de la que volem obtenir l'última fila
+     * @return mixed        -> valors de l'última fila
+     */
     public function getUltim($nom_taula){
         $sql = <<<QUERY
         SELECT
@@ -41,6 +42,33 @@ QUERY;
         return $result;
     }
 
+
+    /**************/
+    /*   USUARIS  */
+    /**************/
+
+    /**
+     * Afegeix un nou usuari a la base de dades, a la taula 'usuaris'
+     * @param $login        -> Login de l'usuari
+     * @param $nom          -> nom de l'usuari
+     * @param $email        -> email de l'usuari
+     * @param $password     -> contrassenya de l'usuari
+     * @param $url          -> url d'activació del compte de l'usuari
+     */
+    public function afegeixUsuari($login, $nom, $email, $password, $url){
+
+        $sql = <<<QUERY
+        INSERT INTO usuaris
+        VALUES ('', '$login', '$nom', '$email', '$password', 0, '$url')
+QUERY;
+        $this->execute( $sql );
+
+    }
+
+    /**
+     * Funció que s'encarrega d'activar l'usuari
+     * @param $login    -> login de l'usuari a activar
+     */
     public function activaUsuari($login){
         $sql = <<<QUERY
         UPDATE
@@ -54,6 +82,12 @@ QUERY;
 
     }
 
+    /**
+     * Funció que busca l'usuari amb el correu, contrassenya
+     * @param $mail         -> mail de l'usuari
+     * @param $password     -> contrassenya de l'usuari
+     * @return mixed        -> totes les dades de l'usuari
+     */
     public function buscaUsuari($mail, $password)
     {
         $sql = <<<QUERY
@@ -68,7 +102,23 @@ QUERY;
         return $result;
     }
 
-//añadir un nuevo review
+
+    /**************/
+    /*   REVIEWS  */
+    /**************/
+
+    /**
+     * Funció que afegeix una nova review a la base de dades
+     * @param $title
+     * @param $description
+     * @param $subject
+     * @param $date
+     * @param $score
+     * @param $image
+     * @param $nom
+     * @param $login
+     * @param $data_creacio
+     */
     public function afegeixReview($title, $description, $subject, $date, $score, $image, $nom, $login, $data_creacio){
 
         $sql = <<<QUERY
@@ -79,7 +129,10 @@ QUERY;
 
     }
 
-    //Recupera les últimes 10 reviews
+    /**
+     * Funció que retorna les últimes 10 reviews
+     * @return mixed
+     */
     public function get10R(){
         $sql = <<<QUERY
         SELECT
@@ -94,7 +147,6 @@ QUERY;
         $result = $this->getAll($sql);
         return $result;
     }
-
 
 
 }
