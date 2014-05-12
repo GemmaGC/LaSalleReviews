@@ -43,7 +43,7 @@
                                 <li id="login">
                                     <a id="login-trigger" href="#" class="login_trigger register">LOG IN <span>&darr;</span></a>
                                     <div id="login-content">
-                                        <form>
+                                        <form method="post" action="{$url.global}/LaSalleReview">
                                             <fieldset class="fieldset_login" id="inputs">
                                                 <input id="username" class="input_form" type="email" name="Email" placeholder="Your email address" required>
                                                 <input id="password" class="input_form" type="password" name="Password" placeholder="Password" required>

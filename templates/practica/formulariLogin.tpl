@@ -13,7 +13,7 @@
 		        <div class="content_form">
 
                     <label for="email">EMAIL <strong>*</strong></label>
-                    <input name="email" id="email" type="email" class="input_form" placeholder="example@dom.com"/>
+                    <input name="email" id="email" type="email" class="input_form" placeholder="example@dom.com" value="{$mail}" required/>
 
 		            <label for="Password">PASSWORD <strong>*</strong></label>
 		            <input name="password" id="Password" type="password" class="input_form" placeholder="PASSWORD" required/>
