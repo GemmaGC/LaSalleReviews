@@ -2,21 +2,24 @@
 
 include_once( PATH_CONTROLLERS . 'practica/registre.ctrl.php' );
 
-class PracticaMailController extends PracticaRegistreController
+//class PracticaMailController extends PracticaRegistreController
+class PracticaMailController
 {
     protected $usuari;
     protected $mail;
-    protected $view = 'practica/duesOpcions.tpl';
+    //protected $view = 'practica/duesOpcions.tpl';
 
-    public function build()
+    public function build($_usuari)
     {
-        //$this->generaCorreu();
+        $this->usuari = $_usuari;
+
+        $this->generaCorreu();
 
         /*$this->assign('title', 'Hey! The email has been sent!');
         $this->assign('subtitle', 'You can go to the home-page or resend the activation code if you don'."'".'t receive it');
         $this->assign('log', 0); $this->assign('send', 1);
-*/
-        $this->setLayout($this->view);
+
+        $this->setLayout($this->view);*/
     }
 
 
