@@ -32,7 +32,7 @@ class PracticaMailController
         $pag = "g1.local/benvinguda";
         $url = $this->usuari['url'];
         $titol = '<h1>Hi '. $this->usuari['nom'] . '!</h1>';
-        $benvinguda = '<p>Welcome to LaSalleReview, you activate your account by clicking on the link below: </p>';
+        $benvinguda = '<p>Welcome to LaSalleReview, in order to activate your account click on the link below: </p>';
         $link = '<form method='."post".' action='.$pag.'><input type='."submit".' name='."codi_activacio".' value='.$url.' /></form>';
         $despedida = '<br><br>Enjoy,<br><br><i>Team 1</i> :)';
         $content = $titol . $benvinguda . $link . $despedida;
