@@ -3,7 +3,7 @@
 include_once( PATH_CONTROLLERS . 'practica/registre.ctrl.php' );
 
 //class PracticaMailController extends PracticaRegistreController
-class PracticaMailController
+class PracticaMailAuxiliar
 {
     protected $usuari;
     protected $mail;

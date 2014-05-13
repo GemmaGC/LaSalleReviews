@@ -1,7 +1,7 @@
 <?php
 
 require_once './src/mailchimp-mandrill-api-php/src/Mandrill.php'; //Not required with Composer
-include_once( PATH_CONTROLLERS . 'practica/classesAuxiliars/mail.ctrl.php' );
+include_once( PATH_CONTROLLERS . 'practica/classesAuxiliars/mail.aux.php' );
 
 class PracticaRegistreController extends Controller
 {
@@ -52,7 +52,7 @@ class PracticaRegistreController extends Controller
                 //////////////
 
                     //Enviem el correu amb el codi d'activació del compte
-                    $mail = new PracticaMailController();
+                    $mail = new PracticaMailAuxiliar();
                     $mail->build($this->usuari);
                     $mail->generaCorreu($this->usuari);
 
