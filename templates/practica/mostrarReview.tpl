@@ -9,15 +9,15 @@
                 <img class="section_review_img" src="{$r.image}">
 
                 <div class="section_review_title section_review_title_show">
-                    <a class="titol_review">{$r.title}  </a></br>
+                    <h1>{$r.title}</h1>
                     <p class="titol_review  data_review ">{$r.date}</p>
-                    <p class="titol_review">{$r.score} / 10</p>
+                    <p class="titol_review">{$r.score} / 10</p></br>
                     <p class="titol_review">{$r.subject} </p>
                 </div>
 
 
 
-                <div class="section_review_body">
+                <div class="section_review_body section_review_body_show">
                     {$r.description}
                 </div>
 
@@ -33,4 +33,3 @@
     {/foreach}
 
 {$modules.footerPractica}
-}

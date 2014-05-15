@@ -1,7 +1,7 @@
 {$modules.headPractica}
 
-    <section>
+    <div class="noResultsPage">
         <h3>Sorry, no reviews matched your search.<br>Please try again.</h3>
-    </section>
+    </div>
 
 {$modules.footerPractica}

@@ -35,3 +35,17 @@
     height: 90px;
 }
 
+
+
+/* PAGINA NO RESULTATS BUSCADOR */
+
+.noResultsPage {
+    align-content: center;
+    margin-top: 17%;
+    margin-bottom: 150px;
+
+    width: 100%;
+
+    line-height: 250%;
+    text-align: center;
+}
