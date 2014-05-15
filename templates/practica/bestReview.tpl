@@ -1,25 +1,27 @@
-            
 
 
 
-            <div class="BestReview" id="bestRev">
-                
-                <h1>BEST REVIEW</h1>
+            {foreach from = $mostrarReview item = m}
 
-                <section class="section_bestreview">
+                    <div class="BestReview" id="bestRev">
 
-                    <div class="section_review_title">
-                        <a href="{$mostrarReview}" class="link_titol_review">TITOL TITOL REVIEW</a>
-                        <p class="titol_review  data_review ">12/06/2014</p>
-                        <p class="titol_review">9.25 / 10</p>
-                    </div>
+                        <h1>BEST REVIEW</h1>
 
-                    <div class="section_review_body">    
-                            aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-                    </div>
+                        <section class="section_bestreview">
 
-                </section>
 
+                            <div class="section_review_title">
+                                <a href="{$m}" class="link_titol_review">{$m.title}</a></br>
+                                <p class="titol_review  data_review ">{$m.date}</p>
+                                <p class="titol_review">{$m.score} / 10</p>
+                            </div>
+
+                            <div class="section_review_body">
+                                {$m.description|truncate:50}
+                            </div>
+
+                        </section>
+            {/foreach}
             </div>
 
             <section class="link_all_reviews_section">

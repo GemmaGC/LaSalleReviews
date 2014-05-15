@@ -198,5 +198,34 @@ QUERY;
 
     }
 
+    public function getMaxP(){
+
+        $sql = <<<QUERY
+        SELECT DISTINCT
+            *
+        FROM
+            review
+           ORDER BY
+            score DESC
+        LIMIT
+            1
+
+
+QUERY;
+
+        if(count($this->getAll($sql)) == 0){
+            return null;
+
+
+        }else{
+            $var = $this->getAll($sql);
+            return $var;
+
+
+        }
+
+
+    }
+
 
 }

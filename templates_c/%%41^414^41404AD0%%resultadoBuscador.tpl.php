@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-15 17:50:38
+<?php /* Smarty version 2.6.14, created on 2014-05-15 18:06:05
          compiled from practica/resultadoBuscador.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'practica/resultadoBuscador.tpl', 21, false),)), $this); ?>
@@ -25,8 +25,8 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 
 </p>
                 <p class="titol_review"><?php echo $this->_tpl_vars['w']['score']; ?>
  / 10</p>
-                <img src="<?php echo $this->_tpl_vars['w']['image']; ?>
-" class="section_last_img">
+                <img class="section_last_img" src="<?php echo $this->_tpl_vars['w']['image']; ?>
+">
             </div>
 
             <div class="section_review_body">

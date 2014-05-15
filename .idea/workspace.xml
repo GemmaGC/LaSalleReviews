@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae1ac5b0-d447-4484-8227-da17a2dc9d26" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%15^15B^15B8E7E1%%mostrarReview.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%15^15B^15B8E7E1%%mostrarReview.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%41^414^41404AD0%%resultadoBuscador.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%41^414^41404AD0%%resultadoBuscador.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/practica/resultadoBuscador.ctrl.php" afterPath="$PROJECT_DIR$/controllers/practica/resultadoBuscador.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/%%FF^FF0^FF01FFC2%%bestReview.tpl.php" afterPath="$PROJECT_DIR$/templates_c/%%FF^FF0^FF01FFC2%%bestReview.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/practica/bestReview.ctrl.php" afterPath="$PROJECT_DIR$/controllers/practica/bestReview.ctrl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/practica/bestReview.tpl" afterPath="$PROJECT_DIR$/templates/practica/bestReview.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/practica/mostrarReview.tpl" afterPath="$PROJECT_DIR$/templates/practica/mostrarReview.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/practica/resultadoBuscador.tpl" afterPath="$PROJECT_DIR$/templates/practica/resultadoBuscador.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/practica/review.model.php" afterPath="$PROJECT_DIR$/models/practica/review.model.php" />
     </list>
     <ignored path="g1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,32 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="llistatReviews.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/practica/llistatReviews.tpl">
+      <file leaf-file-name="review.model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/practica/review.model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="2" selection-end="675" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="493">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/practica/home.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.7307692" vertical-offset="71" max-vertical-offset="629">
-              <folding>
-                <marker date="1399050948162" expanded="true" signature="117:465" placeholder="..." />
-                <marker date="1399050948162" expanded="true" signature="130:454" placeholder="..." />
-                <marker date="1399050948162" expanded="true" signature="537:620" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="llistatImatges.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/practica/llistatImatges.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="266" selection-end="284" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="527">
+            <state line="200" column="20" selection-start="4465" selection-end="4474" vertical-scroll-proportion="-1.3076923" vertical-offset="3366" max-vertical-offset="4012">
               <folding />
             </state>
           </provider>
@@ -62,34 +44,61 @@
       <file leaf-file-name="resultadoBuscador.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/practica/resultadoBuscador.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="63" selection-start="588" selection-end="588" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="578">
+            <state line="9" column="4" selection-start="194" selection-end="227" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addReview.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/practica/addReview.tpl">
+      <file leaf-file-name="mostrarReview.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/practica/mostrarReview.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="25.423077" vertical-offset="661" max-vertical-offset="1190">
+            <state line="21" column="0" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-8.615385" vertical-offset="133" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configure/db.config.php">
+      <file leaf-file-name="bestReview.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/practica/bestReview.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="527">
+            <state line="12" column="62" selection-start="287" selection-end="287" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dispatcher.config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
+      <file leaf-file-name="llistatReviewsUsuari.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/practica/llistatReviewsUsuari.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="3066" selection-end="3079" vertical-scroll-proportion="-15.961538" vertical-offset="1132" max-vertical-offset="1700">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2709552" vertical-offset="652" max-vertical-offset="1547">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bestReview.ctrl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/practica/bestReview.ctrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="12" selection-start="503" selection-end="503" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/practica/shared/head.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="68" selection-start="928" selection-end="928" vertical-scroll-proportion="-4.0384617" vertical-offset="320" max-vertical-offset="1462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mostrarReview.ctrl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/practica/mostrarReview.ctrl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
@@ -104,19 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resultadoBuscador.ctrl.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="resultadoBuscador.ctrl.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/practica/resultadoBuscador.ctrl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="49" selection-start="530" selection-end="530" vertical-scroll-proportion="0.581749" vertical-offset="0" max-vertical-offset="901">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="llistatReviews.ctrl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/practica/llistatReviews.ctrl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="40" selection-start="402" selection-end="402" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408">
+            <state line="4" column="4" selection-start="130" selection-end="182" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="901">
               <folding />
             </state>
           </provider>
@@ -139,9 +139,12 @@
         <option value="$PROJECT_DIR$/controllers/practica/resultadoBuscador.php" />
         <option value="$PROJECT_DIR$/configure/dispatcher.config.php" />
         <option value="$PROJECT_DIR$/templates/practica/shared/head.tpl" />
-        <option value="$PROJECT_DIR$/models/practica/review.model.php" />
-        <option value="$PROJECT_DIR$/templates/practica/resultadoBuscador.tpl" />
         <option value="$PROJECT_DIR$/controllers/practica/resultadoBuscador.ctrl.php" />
+        <option value="$PROJECT_DIR$/templates/practica/resultadoBuscador.tpl" />
+        <option value="$PROJECT_DIR$/templates/practica/mostrarReview.tpl" />
+        <option value="$PROJECT_DIR$/models/practica/review.model.php" />
+        <option value="$PROJECT_DIR$/controllers/practica/bestReview.ctrl.php" />
+        <option value="$PROJECT_DIR$/templates/practica/bestReview.tpl" />
       </list>
     </option>
   </component>
@@ -359,7 +362,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practica" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="g1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="practica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -438,7 +481,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2296467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -454,6 +497,26 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2296467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -521,30 +584,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/practica/mostrarReview.ctrl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/practica/mostrarReview.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/practica/llistatReviewsUsuari.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/practica/shared/head.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="51" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.32703215" vertical-offset="320" max-vertical-offset="1462">
           <folding />
         </state>
       </provider>
@@ -577,16 +619,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/practica/addReview.ctrl.php">
+    <entry file="file://$PROJECT_DIR$/templates/practica/llistatReviews.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="48" selection-start="3036" selection-end="3036" vertical-scroll-proportion="0.062381852" vertical-offset="1174" max-vertical-offset="3315">
+        <state line="2" column="0" selection-start="2" selection-end="675" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/practica/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.7307692" vertical-offset="71" max-vertical-offset="629">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/practica/llistatReviews.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="402" selection-end="402" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408">
+        <state line="12" column="40" selection-start="402" selection-end="402" vertical-scroll-proportion="0.3878327" vertical-offset="0" max-vertical-offset="526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3066" selection-end="3079" vertical-scroll-proportion="0.7889734" vertical-offset="1132" max-vertical-offset="1700">
           <folding />
         </state>
       </provider>
@@ -598,9 +654,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/practica/addReview.tpl">
+    <entry file="file://$PROJECT_DIR$/templates/practica/llistatImatges.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="25.423077" vertical-offset="661" max-vertical-offset="1190">
+        <state line="12" column="11" selection-start="254" selection-end="306" vertical-scroll-proportion="0.3878327" vertical-offset="0" max-vertical-offset="527">
           <folding />
         </state>
       </provider>
@@ -612,55 +668,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configure/dispatcher.config.php">
+    <entry file="file://$PROJECT_DIR$/controllers/practica/addReview.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="3066" selection-end="3079" vertical-scroll-proportion="-15.961538" vertical-offset="1132" max-vertical-offset="1700">
+        <state line="71" column="48" selection-start="3036" selection-end="3036" vertical-scroll-proportion="0.056530215" vertical-offset="1178" max-vertical-offset="3315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shared/footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/practica/shared/footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/practica/addReview.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.15204678" vertical-offset="78" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/practica/shared/head.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="68" selection-start="928" selection-end="928" vertical-scroll-proportion="-4.0384617" vertical-offset="320" max-vertical-offset="1462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/practica/mostrarReview.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/practica/review.model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="13" selection-start="4149" selection-end="4149" vertical-scroll-proportion="-8.230769" vertical-offset="2795" max-vertical-offset="3519">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/practica/llistatReviews.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="2" selection-end="675" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/practica/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.7307692" vertical-offset="71" max-vertical-offset="629">
-          <folding>
-            <marker date="1399050948162" expanded="true" signature="117:465" placeholder="..." />
-            <marker date="1399050948162" expanded="true" signature="130:454" placeholder="..." />
-            <marker date="1399050948162" expanded="true" signature="537:620" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/practica/llistatImatges.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="266" selection-end="284" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/practica/resultadoBuscador.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="63" selection-start="588" selection-end="588" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="578">
+        <state line="200" column="20" selection-start="4465" selection-end="4474" vertical-scroll-proportion="-1.3076923" vertical-offset="3366" max-vertical-offset="4012">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/practica/resultadoBuscador.ctrl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="49" selection-start="530" selection-end="530" vertical-scroll-proportion="0.581749" vertical-offset="0" max-vertical-offset="901">
+        <state line="4" column="4" selection-start="130" selection-end="182" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/practica/bestReview.ctrl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="12" selection-start="503" selection-end="503" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/practica/resultadoBuscador.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="4" selection-start="194" selection-end="227" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/practica/mostrarReview.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-8.615385" vertical-offset="133" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/practica/bestReview.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="62" selection-start="287" selection-end="287" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/practica/llistatReviewsUsuari.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2709552" vertical-offset="652" max-vertical-offset="1547">
           <folding />
         </state>
       </provider>
