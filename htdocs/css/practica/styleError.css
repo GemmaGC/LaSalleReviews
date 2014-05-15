@@ -35,3 +35,9 @@
     height: 90px;
 }
 
+
+/* PAGINA NO RESULTATS BUSCADOR */
+
+.noResultsPage {
+    align-content: center;
+}
