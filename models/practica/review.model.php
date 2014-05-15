@@ -175,8 +175,7 @@ QUERY;
 
         $sql = <<<QUERY
         SELECT DISTINCT
-            title,
-            description
+            *
         FROM
             review
         WHERE

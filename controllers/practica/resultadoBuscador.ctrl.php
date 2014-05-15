@@ -12,16 +12,16 @@ class PracticaResultadoBuscadorController extends Controller {
 
 
         //Recuperem 10 reviews amb
-       $reviews = $this->model->getBuscador($palabra);
+       $review = $this->model->getBuscador($palabra);
 
-        if(is_null($reviews))
+        if(is_null($review))
         {
             $this->setLayout($this->view_error404);
 
         }
         else{
 
-            $this->assign('reviews', $reviews);
+            $this->assign('review', $review);
 
             $this->setLayout( $this->view );
         }
