@@ -155,5 +155,6 @@ $config['Facebook']		                = PATH_CONTROLLERS . 'practica/facebook.ctr
 $config['PracticaHolaController']		= PATH_CONTROLLERS . 'practica/hola.ctrl.php';
 
 $config['PracticaResultadoBuscadorController']		= PATH_CONTROLLERS . 'practica/resultadoBuscador.ctrl.php';
+$config['PracticaNoResultsController']              = PATH_CONTROLLERS . 'practica/noResults.ctrl.php';
 
 //----------------------------------------

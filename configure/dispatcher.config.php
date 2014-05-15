@@ -90,6 +90,8 @@ $config['myReviews']            = 'PracticaLlistatReviewsUsuariController';
 
 //pagina de resultados del buscador
 $config['searchResults']        = 'PracticaResultadoBuscadorController';
+$config['noResults']            = 'PracticaNoResultsController';
+
 
 
 //----------------------------------------
