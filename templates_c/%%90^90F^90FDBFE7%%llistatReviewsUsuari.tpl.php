@@ -1,5 +1,7 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-15 13:29:57
+<?php /* Smarty version 2.6.14, created on 2014-05-16 00:17:25
          compiled from practica/llistatReviewsUsuari.tpl */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'practica/llistatReviewsUsuari.tpl', 26, false),)), $this); ?>
 
 
 <!-- Despres només amb un section i amb bucle es fan la resta -->
@@ -12,68 +14,39 @@
 
     <h1>MY REVIEWS</h1>
 
-    <section class="section_review margin_top_extra">
+    <?php $_from = $this->_tpl_vars['reviews']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
+    foreach ($_from as $this->_tpl_vars['r']):
+?>
+        <section class="section_review margin_top_extra">
 
-        <div class="all_review">
-            <div class="">
-                <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-                <p class="titol_review  data_review ">12/06/2014</p>
-                <p class="titol_review">9.25 / 10</p>
+            <div class="all_review">
+                <div class="">
+                    <a class="link_titol_review"  style="cursor:pointer; color: orange;" onclick="submitirFormularioOculto()"><?php echo $this->_tpl_vars['r']['title']; ?>
+  </a></br>
+                    <form method="POST" action="/Review" id="review">
+                        <input type="hidden" name="id_oculta" value="<?php echo $this->_tpl_vars['r']['id']; ?>
+">
+                    </form>
+                    <p class="titol_review  data_review "><?php echo $this->_tpl_vars['r']['date']; ?>
+</p>
+                    <p class="titol_review"><?php echo $this->_tpl_vars['r']['score']; ?>
+ / 10</p>
+                </div>
+
+                <div class="section_review_body">
+                    <?php echo ((is_array($_tmp=$this->_tpl_vars['r']['description'])) ? $this->_run_mod_handler('truncate', true, $_tmp, 50) : smarty_modifier_truncate($_tmp, 50)); ?>
+
+                </div>
             </div>
 
-            <div class="section_review_body">
-                aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-            </div>
-        </div>
-
-        <div class="section_review_buttons">
-            <a href="#" class="welcome_button button_Option">EDIT</a>
-            <a href="#" class="welcome_button button_Option">DELETE</a>  <!-- D'aqui que vagi a duesOpcions i digui si vols eliminar o no -->
-        </div>
-
-    </section>
-
-    <section class="section_review margin_top_extra">
-
-        <div class="all_review">
-            <div class="">
-                <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-                <p class="titol_review  data_review ">12/06/2014</p>
-                <p class="titol_review">9.25 / 10</p>
+            <div class="section_review_buttons">
+                <a href="#" class="welcome_button button_Option">EDIT</a>
+                <a href="#" class="welcome_button button_Option">DELETE</a>  <!-- D'aqui que vagi a duesOpcions i digui si vols eliminar o no -->
             </div>
 
-            <div class="section_review_body">
-                aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-            </div>
-        </div>
+        </section>
+    <?php endforeach; endif; unset($_from); ?>
 
-        <div class="section_review_buttons">
-            <a href="#" class="welcome_button button_Option">EDIT</a>
-            <a href="#" class="welcome_button button_Option">DELETE</a>
-        </div>
-
-    </section>
-
-    <section class="section_review margin_top_extra">
-
-        <div class="all_review">
-            <div class="">
-                <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-                <p class="titol_review  data_review ">12/06/2014</p>
-                <p class="titol_review">9.25 / 10</p>
-            </div>
-
-            <div class="section_review_body">
-                aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-            </div>
-        </div>
-
-        <div class="section_review_buttons">
-            <a href="#" class="welcome_button button_Option">EDIT</a>
-            <a href="#" class="welcome_button button_Option">DELETE</a>
-        </div>
-
-    </section>
 
 
     <div class="block_paginacio">
