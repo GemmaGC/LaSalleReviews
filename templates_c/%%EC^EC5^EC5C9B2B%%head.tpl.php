@@ -1,10 +1,13 @@
+<?php /* Smarty version 2.6.14, created on 2014-05-15 12:17:05
+         compiled from practica/shared/head.tpl */ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="robots" content="all" />
         <title>LA SALLE REVIEW</title>
-        <link rel="stylesheet" href="{$url.global}/css/practica/styleBase.css">
+        <link rel="stylesheet" href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/css/practica/styleBase.css">
         <link rel="javascript" type="text/javascript" href="/js/practica/scripts.js">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
@@ -20,7 +23,8 @@
         <div class="main_header">
             <header>
 
-                <a href="{$url.global}/LaSalleReview" class="site-logo">LA SALLE REVIEW</a>
+                <a href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/LaSalleReview" class="site-logo">LA SALLE REVIEW</a>
 
                 <div id="container">
                     <form role="search" method="get" id="searchform" action="/searchResults" >
@@ -33,9 +37,10 @@
 
                 <nav class="register_login_container">
 
-                    {if $log == 0}
+                    <?php if ($this->_tpl_vars['log'] == 0): ?>
                         <!-- Si NO està loguejat l'usuari...-->
-                        <a href="{$url.global}/register" class="register">SIGN UP</a>
+                        <a href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/register" class="register">SIGN UP</a>
 
                         <!-- PROVA JQUERY LOG IN -->
                         <nav class="login_desplegable">
@@ -43,7 +48,8 @@
                                 <li id="login">
                                     <a id="login-trigger" href="#" class="login_trigger register">LOG IN <span>&darr;</span></a>
                                     <div id="login-content">
-                                        <form method="post" action="{$url.global}/LaSalleReview">
+                                        <form method="post" action="<?php echo $this->_tpl_vars['url']['global']; ?>
+/LaSalleReview">
                                             <fieldset class="fieldset_login" id="inputs">
                                                 <input id="username" class="input_form" type="email" name="Email" placeholder="Your email address" required>
                                                 <input id="password" class="input_form" type="password" name="Password" placeholder="Password" required>
@@ -58,15 +64,20 @@
                         </nav>
                         <!-- FI PROVA JQUERY LOG IN -->
 
-                    {elseif $log == 1}
+                    <?php elseif ($this->_tpl_vars['log'] == 1): ?>
 
                         <!-- Si JA està loguejat l'usuari...-->
-                        <a href="{$url.global}/addReview" class="register">ADD REVIEW</a>
-                        <a href="{$url.global}/myReviews" class="register">MY REVIEWS</a>
-                        <div class="register user_info">{$nom} - {$login}</div>
-                        <a href="{$url.global}/logOut" class="register">LOG OUT</a>
+                        <a href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/addReview" class="register">ADD REVIEW</a>
+                        <a href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/myReviews" class="register">MY REVIEWS</a>
+                        <div class="register user_info"><?php echo $this->_tpl_vars['nom']; ?>
+ - <?php echo $this->_tpl_vars['login']; ?>
+</div>
+                        <a href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/logOut" class="register">LOG OUT</a>
 
-                    {/if}
+                    <?php endif; ?>
 
 
 

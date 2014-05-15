@@ -88,7 +88,7 @@ $config['myReviews']            = 'PracticaLlistatReviewsUsuariController';
 
 
 
-//poner pagina de resultados del buscador
+//pagina de resultados del buscador
 $config['searchResults']        = 'PracticaResultadoBuscadorController';
 
 

@@ -2,23 +2,29 @@
 
 class PracticaResultadoBuscadorController extends Controller {
     protected $view = 'practica/resultadoBuscador.tpl';
+    protected $view_error404 = 'practica/error/errorP404.tpl';
 
 
     public function build( ){
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
         $palabra = Filter::getString('palabra');
-        $filter = Filter::getString('filter');
-        $url = $this->getParams();
-
-        //Recuperem totes les review
-        $reviews = $this->model->get10R();
-        $this->assign('reviews', $reviews);
 
 
+        //Recuperem 10 reviews amb
+       $reviews = $this->model->getBuscador($palabra);
 
-        $this->setLayout( $this->view );
+        if(is_null($reviews))
+        {
+            $this->setLayout($this->view_error404);
 
+        }
+        else{
+
+            $this->assign('reviews', $reviews);
+
+            $this->setLayout( $this->view );
+        }
 
     }
 

@@ -167,4 +167,37 @@ QUERY;
     }
 
 
+    /**
+     * Funció que retorna les reviews amb el contingut buscat
+     * @return mixed
+     */
+    public function getBuscador($palabra){
+
+        $sql = <<<QUERY
+        SELECT DISTINCT
+            title,
+            description
+        FROM
+            review
+        WHERE
+         title LIKE '%$palabra%' OR description LIKE '%$palabra%'
+
+
+QUERY;
+
+        if(count($this->getAll($sql)) == 0){
+            return null;
+
+
+        }else{
+            $var = $this->getAll($sql);
+            return $var;
+
+
+        }
+
+
+    }
+
+
 }
