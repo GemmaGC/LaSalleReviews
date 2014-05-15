@@ -2,7 +2,7 @@
 
 class PracticaResultadoBuscadorController extends Controller {
     protected $view = 'practica/resultadoBuscador.tpl';
-    protected $view_error404 = 'practica/error/errorP404.tpl';
+    protected $view_error405 = 'practica/noResults.tpl';
 
 
     public function build( ){
@@ -16,7 +16,7 @@ class PracticaResultadoBuscadorController extends Controller {
 
         if(is_null($review))
         {
-            $this->setLayout($this->view_error404);
+            $this->setLayout($this->view_error405);
 
         }
         else{

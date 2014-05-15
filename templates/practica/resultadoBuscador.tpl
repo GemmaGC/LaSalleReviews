@@ -14,6 +14,7 @@
                 <a href="{$w.id}" class="link_titol_review">{$w.title}</a></br>
                 <p class="titol_review  data_review ">{$w.date}</p>
                 <p class="titol_review">{$w.score} / 10</p>
+                <img src="{$w.image}" class="section_last_img">
             </div>
 
             <div class="section_review_body">
