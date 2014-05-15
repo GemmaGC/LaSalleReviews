@@ -227,5 +227,114 @@ QUERY;
 
     }
 
+    public function getUsuariReview($login,$nom){
+
+        $sql = <<<QUERY
+        SELECT DISTINCT
+            *
+        FROM
+            review
+        WHERE
+         nom LIKE '$nom' AND login LIKE '$login'
+
+
+QUERY;
+
+        if(count($this->getAll($sql)) == 0){
+            return null;
+
+
+        }else{
+            $var = $this->getAll($sql);
+            return $var;
+
+
+        }
+
+
+    }
+
+    public function getReview($id_oculta){
+
+        $sql = <<<QUERY
+        SELECT DISTINCT
+            *
+        FROM
+            review
+        WHERE
+        id LIKE '$id_oculta'
+
+
+QUERY;
+
+        if(count($this->getAll($sql)) == 0){
+            return null;
+
+
+        }else{
+            $var = $this->getAll($sql);
+            return $var;
+
+
+        }
+
+
+    }
+
+    public function getLoginReview($id_oculta){
+
+        $sql = <<<QUERY
+        SELECT DISTINCT
+            login
+        FROM
+            review
+        WHERE
+        id LIKE '$id_oculta'
+
+
+QUERY;
+
+        if(count($this->getAll($sql)) == 0){
+            return null;
+
+
+        }else{
+            $var = $this->getAll($sql);
+            return $var;
+
+
+        }
+
+
+    }
+
+
+    public function getUsuari($login){
+
+        $sql = <<<QUERY
+        SELECT DISTINCT
+            *
+        FROM
+            usuaris
+        WHERE
+        id LIKE '$login'
+
+
+QUERY;
+
+        if(count($this->getAll($sql)) == 0){
+            return null;
+
+
+        }else{
+            $var = $this->getAll($sql);
+            return $var;
+
+
+        }
+
+
+    }
+
 
 }

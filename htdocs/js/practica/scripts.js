@@ -30,6 +30,10 @@ function validarRegistre(){
     }
 }
 
+function submitirFormularioOculto(){
+    document.getElementById("review").submit();
+}
+
 /*
 function validarForm(){
     var camp_nombre = document.dadesUsuari.nombre;

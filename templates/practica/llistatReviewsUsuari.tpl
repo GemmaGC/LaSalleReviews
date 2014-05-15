@@ -9,68 +9,32 @@
 
     <h1>MY REVIEWS</h1>
 
-    <section class="section_review margin_top_extra">
+    {foreach from = $reviews item = r}
+        <section class="section_review margin_top_extra">
 
-        <div class="all_review">
-            <div class="">
-                <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-                <p class="titol_review  data_review ">12/06/2014</p>
-                <p class="titol_review">9.25 / 10</p>
+            <div class="all_review">
+                <div class="">
+                    <a class="link_titol_review"  style="cursor:pointer; color: orange;" onclick="submitirFormularioOculto()">{$r.title}  </a></br>
+                    <form method="POST" action="/Review" id="review">
+                        <input type="hidden" name="id_oculta" value="{$r.id}">
+                    </form>
+                    <p class="titol_review  data_review ">{$r.date}</p>
+                    <p class="titol_review">{$r.score} / 10</p>
+                </div>
+
+                <div class="section_review_body">
+                    {$r.description|truncate:50}
+                </div>
             </div>
 
-            <div class="section_review_body">
-                aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-            </div>
-        </div>
-
-        <div class="section_review_buttons">
-            <a href="#" class="welcome_button button_Option">EDIT</a>
-            <a href="#" class="welcome_button button_Option">DELETE</a>  <!-- D'aqui que vagi a duesOpcions i digui si vols eliminar o no -->
-        </div>
-
-    </section>
-
-    <section class="section_review margin_top_extra">
-
-        <div class="all_review">
-            <div class="">
-                <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-                <p class="titol_review  data_review ">12/06/2014</p>
-                <p class="titol_review">9.25 / 10</p>
+            <div class="section_review_buttons">
+                <a href="#" class="welcome_button button_Option">EDIT</a>
+                <a href="#" class="welcome_button button_Option">DELETE</a>  <!-- D'aqui que vagi a duesOpcions i digui si vols eliminar o no -->
             </div>
 
-            <div class="section_review_body">
-                aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-            </div>
-        </div>
+        </section>
+    {/foreach}
 
-        <div class="section_review_buttons">
-            <a href="#" class="welcome_button button_Option">EDIT</a>
-            <a href="#" class="welcome_button button_Option">DELETE</a>
-        </div>
-
-    </section>
-
-    <section class="section_review margin_top_extra">
-
-        <div class="all_review">
-            <div class="">
-                <a href="#" class="link_titol_review">TITOL TITOL REVIEW</a>
-                <p class="titol_review  data_review ">12/06/2014</p>
-                <p class="titol_review">9.25 / 10</p>
-            </div>
-
-            <div class="section_review_body">
-                aaaa aaaaaa aaaaa aaaaa sssss sssss kkkkk kkkkk  .
-            </div>
-        </div>
-
-        <div class="section_review_buttons">
-            <a href="#" class="welcome_button button_Option">EDIT</a>
-            <a href="#" class="welcome_button button_Option">DELETE</a>
-        </div>
-
-    </section>
 
 
     <div class="block_paginacio">

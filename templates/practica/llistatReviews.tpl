@@ -9,7 +9,10 @@
         <section class="section_review">
 
             <div class="section_review_title">
-                <a href="{$r.id}" class="link_titol_review">{$r.title}</a></br>
+                <a class="link_titol_review"  style="cursor:pointer; color: orange;" onclick="submitirFormularioOculto()">{$r.title}  </a></br>
+                <form method="POST" action="/Review" id="review">
+                    <input type="hidden" name="id_oculta" value="{$r.id}">
+                </form>
                 <p class="titol_review  data_review ">{$r.date}</p>
                 <p class="titol_review">{$r.score} / 10</p>
             </div>

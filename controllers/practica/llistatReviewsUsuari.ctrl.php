@@ -15,6 +15,18 @@ class PracticaLlistatReviewsUsuariController extends Controller
      */
     public function build()
     {
+        $this->model = $this->getClass( 'PracticaReviewModel' );
+
+
+        $nom = Session::getInstance()->get('nom');
+
+        $login = Session::getInstance()->get('login');
+
+
+        $reviews = $this->model->getUsuariReview($login,$nom);
+
+
+        $this->assign('reviews', $reviews);
         $this->setLayout($this->view);
     }
 

@@ -65,6 +65,9 @@ class PracticaAddReviewController extends Controller
                    /*       MODEL         */
                    /***********************/
 
+
+                   $login = Session::getInstance()->get('login');
+
                    $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], $nom, $login, $dataC);
                    unset($review);
                }else{
