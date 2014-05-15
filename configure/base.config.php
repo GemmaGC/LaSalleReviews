@@ -115,7 +115,7 @@ $config['SharedpracticaFooterController']		        = PATH_CONTROLLERS . 'practic
 //Controllers
 $config['PracticaHomeController']		                = PATH_CONTROLLERS . 'practica/home.ctrl.php';
 $config['PracticaRegistreController']		            = PATH_CONTROLLERS . 'practica/registre.ctrl.php';
-$config['PracticaMailAuxiliar']		                = PATH_CONTROLLERS . 'practica/mail.aux.php';
+$config['PracticaMailAuxiliar']		                    = PATH_CONTROLLERS . 'practica/mail.aux.php';
 $config['PracticaLoginController']		                = PATH_CONTROLLERS . 'practica/login.ctrl.php';
 $config['PracticaDosOpcionsController']		            = PATH_CONTROLLERS . 'practica/dosOpcions.ctrl.php';
 $config['PracticaLogoutController']		                = PATH_CONTROLLERS . 'practica/logOut.ctrl.php';
@@ -125,6 +125,9 @@ $config['PracticaMostrarReviewController']		        = PATH_CONTROLLERS . 'practi
 
 $config['PracticaLlistatReviewsUsuariController']		= PATH_CONTROLLERS . 'practica/llistatReviewsUsuari.ctrl.php';
 
+
+// Buscador
+$config['PracticaResultadoBuscadorController']          = PATH_CONTROLLERS . 'practica/resultadoBuscador.ctrl.php';
 
 
 
