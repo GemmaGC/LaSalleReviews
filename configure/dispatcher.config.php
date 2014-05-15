@@ -69,7 +69,7 @@ $config['galeriaZoo']	            = 'Exercici4GaleriaZooController';
 //----------- LA SALLE REVIEW -----------------
 
 $config['register']             = 'PracticaRegistreController';
-                        $config['mail']                 = 'PracticaMailController';
+$config['mail']                 = 'PracticaMailController';
 $config['benvinguda']           = 'PracticaBenvingudaController';
 
 $config['LaSalleReview']        = 'PracticaHomeController';
@@ -85,8 +85,11 @@ $config['hola']                 = 'PracticaHolaController';
 
 $config['myReviews']            = 'PracticaLlistatReviewsUsuariController';
 
-//poner pagina de resultados del buscador
 
+
+
+//poner pagina de resultados del buscador
+$config['searchResults']        = 'PracticaResultadoBuscadorController';
 
 
 //----------------------------------------

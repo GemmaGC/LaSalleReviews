@@ -1,12 +1,8 @@
 
 
-<!-- Despres només amb un section i amb bucle es fan la resta -->
-
-
-
-
 <div class="Last10reviews">
 
+    <!-- Que el h1 sigui una variable que omplim des del controller!! Així podem reutilitzar el mòdul -->
     <h1>LAST 10 REVIEWS</h1>
 
     {foreach from = $reviews item = r}
