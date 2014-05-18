@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-15 18:52:25
+<?php /* Smarty version 2.6.14, created on 2014-05-18 19:51:58
          compiled from practica/bestReview.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'practica/bestReview.tpl', 20, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'practica/bestReview.tpl', 24, false),)), $this); ?>
 
 
 
@@ -17,9 +17,13 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 
 
 
                             <div class="section_review_title">
-                                <a href="<?php echo $this->_tpl_vars['m']; ?>
-" class="link_titol_review"><?php echo $this->_tpl_vars['m']['title']; ?>
-</a></br>
+
+                                <a class="link_titol_review"  style="cursor:pointer; color: orange;" onclick="submitirFormularioOculto()"><?php echo $this->_tpl_vars['m']['title']; ?>
+  </a></br>
+                                <form method="POST" action="/Review" id="review">
+                                    <input type="hidden" name="id_oculta" value="<?php echo $this->_tpl_vars['m']['id']; ?>
+">
+                                </form>
                                 <p class="titol_review  data_review "><?php echo $this->_tpl_vars['m']['date']; ?>
 </p>
                                 <p class="titol_review"><?php echo $this->_tpl_vars['m']['score']; ?>
