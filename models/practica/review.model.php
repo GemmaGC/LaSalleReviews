@@ -198,6 +198,23 @@ QUERY;
 
     }
 
+    /**
+     * @return null
+     */
+    public function updateReview($id, $title, $description, $subject, $date, $score, $image)
+    {
+        $sql = <<<QUERY
+        UPDATE
+            review
+        SET
+            title = '$title', description = '$description', subject = '$subject', date = '$date', score = '$score', image = '$image'
+        WHERE
+            id = '$id'
+QUERY;
+        $this->execute( $sql );
+
+    }
+
     public function getMaxP(){
 
         $sql = <<<QUERY
@@ -259,33 +276,6 @@ QUERY;
         $sql = <<<QUERY
         SELECT DISTINCT
             *
-        FROM
-            review
-        WHERE
-        id LIKE '$id_oculta'
-
-
-QUERY;
-
-        if(count($this->getAll($sql)) == 0){
-            return null;
-
-
-        }else{
-            $var = $this->getAll($sql);
-            return $var;
-
-
-        }
-
-
-    }
-
-    public function getLoginReview($id_oculta){
-
-        $sql = <<<QUERY
-        SELECT DISTINCT
-            login
         FROM
             review
         WHERE

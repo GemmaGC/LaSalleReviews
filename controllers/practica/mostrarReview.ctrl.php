@@ -8,16 +8,14 @@ class PracticaMostrarReviewController extends Controller {
 
     public function build( ){
 
-        $info = $this->getParams();
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
         $id_oculta = Filter::getString('id_oculta');
         $reviews = $this->model->getReview($id_oculta);
-        $review = $this->model->getLoginReview($id_oculta);
-        $login = $review[0]['login'];
+        $login = $reviews[0]['login'];
         $usuari = $this->model->getUsuari($login);
 
-        //echo "<pre>"; var_dump($reviews); echo "</pre>";
+
         $this->assign('reviews', $reviews);
         $this->assign('usuari', $usuari);
         $this->setLayout( $this->view );

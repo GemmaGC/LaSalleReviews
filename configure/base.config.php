@@ -120,8 +120,11 @@ $config['PracticaLoginController']		                = PATH_CONTROLLERS . 'practi
 $config['PracticaDosOpcionsController']		            = PATH_CONTROLLERS . 'practica/dosOpcions.ctrl.php';
 $config['PracticaLogoutController']		                = PATH_CONTROLLERS . 'practica/logOut.ctrl.php';
 $config['PracticaBenvingudaController']		            = PATH_CONTROLLERS . 'practica/benvinguda.ctrl.php';
+
+//Reviews
 $config['PracticaAddReviewController']		            = PATH_CONTROLLERS . 'practica/addReview.ctrl.php';
 $config['PracticaMostrarReviewController']		        = PATH_CONTROLLERS . 'practica/mostrarReview.ctrl.php';
+$config['PracticaEditaReviewController']		        = PATH_CONTROLLERS . 'practica/editaReview.ctrl.php';
 
 $config['PracticaLlistatReviewsUsuariController']		= PATH_CONTROLLERS . 'practica/llistatReviewsUsuari.ctrl.php';
 

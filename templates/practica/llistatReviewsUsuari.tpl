@@ -28,8 +28,13 @@
             </div>
 
             <div class="section_review_buttons">
-                <a href="#" class="welcome_button button_Option">EDIT</a>
+                <a href="#" class="welcome_button button_Option" onclick="submitirFormularioEditar()">EDIT</a>
                 <a href="#" class="welcome_button button_Option">DELETE</a>  <!-- D'aqui que vagi a duesOpcions i digui si vols eliminar o no -->
+
+                <!-- PROBLEMA!!! SI ENS DESACTIVA EL JS AIXO NO ANIRA! -->
+                <form method="POST" action="/editReview" id="edit">
+                    <input type="hidden" name="id" value="{$r.id}">
+                </form>
             </div>
 
         </section>

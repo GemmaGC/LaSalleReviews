@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 12-05-2014 a las 16:29:44
+-- Tiempo de generación: 18-05-2014 a las 21:48:17
 -- Versión del servidor: 5.5.34
 -- Versión de PHP: 5.5.10
 
@@ -97,18 +97,15 @@ CREATE TABLE `review` (
   `login` varchar(7) NOT NULL,
   `data_creacio` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Volcado de datos para la tabla `review`
 --
 
 INSERT INTO `review` (`id`, `title`, `description`, `subject`, `date`, `score`, `image`, `nom`, `login`, `data_creacio`) VALUES
-(2, 'jkndfskjnvjk', 'jkndfkjnfbdjkn		        	', 'kdfjkndbf', '2014-05-17', 1, '', 'c', '1', '0000-00-00'),
-(3, 'jkndfskjnvjka', '		        	sa', 'kdfjkndbf', '2014-05-17', 1, '', 'c', '1', '0000-00-00'),
-(4, 'title', '<p>kjnfjkdf</p>', 'njkdfjkndf', '2014-05-22', 1, '', 'c', '1', '2014-05-07'),
-(5, 'titol', '<p>jkndsfjknsdfg</p>', 'sdfpgkmsdfg', '2014-05-28', 1, '', 'c', '1', '2014-05-07'),
-(6, 'jasdkngfñfdg', '<p>a&ntilde;kdfgnadfg</p>', 'adfg', '2014-05-01', 1, 'creu2.png', 'c', '1', '2014-05-07');
+(1, 'title', '<p>description <strong>bold</strong>&nbsp;<em>cursiva</em></p>', 'subject', '2014-05-23', 4, 'access-denied.png', 'Claudia', 'ls25714', '2014-05-18'),
+(2, 'titooool', '<p>descripciooo</p>', 'subject', '2014-05-23', 4, 'fast-forward_normal.png', 'Claudia', 'ls25714', '2014-05-18');
 
 -- --------------------------------------------------------
 
@@ -134,4 +131,4 @@ CREATE TABLE `usuaris` (
 --
 
 INSERT INTO `usuaris` (`id`, `login`, `nom`, `email`, `password`, `actiu`, `urlActivacio`) VALUES
-(00001, 'ls25714', 'claudia', 'cldauden@gmail.com', 'password', 1, '5a9b214a84e7667c115b909c081ae39d');
+(00001, 'ls25714', 'Claudia', 'cldauden@gmail.com', 'password', 1, '77a7e7f6b63464d55dd1b101e51bdb5e');

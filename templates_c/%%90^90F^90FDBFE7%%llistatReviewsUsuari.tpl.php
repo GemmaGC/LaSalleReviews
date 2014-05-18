@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-16 00:17:25
+<?php /* Smarty version 2.6.14, created on 2014-05-18 20:40:39
          compiled from practica/llistatReviewsUsuari.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'practica/llistatReviewsUsuari.tpl', 26, false),)), $this); ?>
@@ -40,8 +40,14 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 
             </div>
 
             <div class="section_review_buttons">
-                <a href="#" class="welcome_button button_Option">EDIT</a>
+                <a href="#" class="welcome_button button_Option" onclick="submitirFormularioEditar()">EDIT</a>
                 <a href="#" class="welcome_button button_Option">DELETE</a>  <!-- D'aqui que vagi a duesOpcions i digui si vols eliminar o no -->
+
+                <!-- PROBLEMA!!! SI ENS DESACTIVA EL JS AIXO NO ANIRA! -->
+                <form method="POST" action="/editReview" id="edit">
+                    <input type="hidden" name="id" value="<?php echo $this->_tpl_vars['r']['id']; ?>
+">
+                </form>
             </div>
 
         </section>
