@@ -17,7 +17,7 @@
                                     <input type="hidden" name="id_oculta" value="{$m.id}">
                                 </form>
                                 <p class="titol_review  data_review ">{$m.date}</p>
-                                <p class="titol_review">{$m.score} / 10</p>
+                                <p class="titol_review puntuacio_review">{$m.score} / 10</p>
                             </div>
 
                             <div class="section_review_body">

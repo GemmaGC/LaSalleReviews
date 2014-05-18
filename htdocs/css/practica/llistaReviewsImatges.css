@@ -67,8 +67,14 @@ p.titol_review{
 }
 
 p.data_review {
-    margin-right: 60%;
+    margin-right: 10%;
 }
+
+p.puntuacio_review {
+    margin-left: -11%;
+}
+
+
 
 
 .section_review_body {
