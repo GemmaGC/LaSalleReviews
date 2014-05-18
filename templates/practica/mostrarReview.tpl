@@ -4,9 +4,10 @@
     {foreach from = $reviews item = r }
             <section class="section_review_show">
 
-
-
-                <img class="section_review_img" src="{$r.image}">
+                {*$r.image*}
+                <img class="section_review_img" src='/imag/img_usuaris/{$r.image}'>
+                <!--<img class="section_review_img" src="/htdocs/imag/img_usuaris/{*$r.image*}">-->
+                <!--<img class="section_review_img" src="/img.jpg">-->
 
                 <div class="section_review_title section_review_title_show">
                     <h1>{$r.title}</h1>
