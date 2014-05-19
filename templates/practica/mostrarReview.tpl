@@ -24,7 +24,7 @@
                     <p class="titol_review separator_footer">|</p>
                     <p class="titol_review">LOGIN: {$r.login}</p>
                     <p class="titol_review separator_footer">|</p>
-                    <p class="titol_review">{$r.date}</p>
+                    <p class="titol_review">{$r.data_creacio}</p>
                 </div>
 
             </section>
