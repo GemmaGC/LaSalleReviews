@@ -23,6 +23,12 @@
 
         </section>
 
+        <div class="separator"></div>
+
+        {$modules.llistatBestReviewsPuntuacio}
+
+        <div class="separator"></div>
+
     {/foreach}
 </div>
 
