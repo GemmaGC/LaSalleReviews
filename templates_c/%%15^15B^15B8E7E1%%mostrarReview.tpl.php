@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-19 16:53:08
+<?php /* Smarty version 2.6.14, created on 2014-05-19 18:05:22
          compiled from practica/mostrarReview.tpl */ ?>
 
 
@@ -41,7 +41,11 @@
 </p>
                 </div>
 
+
+
                 <div class="section_review_puntuacio">
+
+
                     <h3>RATE THE REVIEW</h3>
 
                     <!-- Això si ha estat valorada algun cop-->

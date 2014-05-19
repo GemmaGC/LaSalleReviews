@@ -121,6 +121,32 @@ QUERY;
         return $result;
     }
 
+
+    public function getUsuari($login){
+
+        $sql = <<<QUERY
+        SELECT DISTINCT
+            *
+        FROM
+            usuaris
+        WHERE
+        id LIKE '$login'
+
+
+QUERY;
+
+        if(count($this->getAll($sql)) == 0){
+            return null;
+
+
+        }else{
+            $var = $this->getAll($sql);
+            return $var;
+
+
+        }
+    }
+
     /**************/
     /*   REVIEWS  */
     /**************/
@@ -327,31 +353,16 @@ QUERY;
 
     }
 
-
-    public function getUsuari($login){
-
+    public function deleteReview($id)
+    {
         $sql = <<<QUERY
-        SELECT DISTINCT
-            *
-        FROM
-            usuaris
+        DELETE FROM
+            review
         WHERE
-        id LIKE '$login'
-
-
+            id = "$id"
 QUERY;
-
-        if(count($this->getAll($sql)) == 0){
-            return null;
-
-
-        }else{
-            $var = $this->getAll($sql);
-            return $var;
-
-
-        }
-
-
+        $result = $this->execute($sql);
     }
+
+
 }

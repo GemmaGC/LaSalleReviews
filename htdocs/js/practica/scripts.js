@@ -39,6 +39,10 @@ function submitirFormularioEditar(){
     document.getElementById("edit").submit();
 }
 
+function submitirFormularioEsborrar(){
+    document.getElementById("delete").submit();
+}
+
 /*
 function validarForm(){
     var camp_nombre = document.dadesUsuari.nombre;

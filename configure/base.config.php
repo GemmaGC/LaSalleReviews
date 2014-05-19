@@ -125,6 +125,7 @@ $config['PracticaBenvingudaController']		            = PATH_CONTROLLERS . 'pract
 $config['PracticaAddReviewController']		            = PATH_CONTROLLERS . 'practica/addReview.ctrl.php';
 $config['PracticaMostrarReviewController']		        = PATH_CONTROLLERS . 'practica/mostrarReview.ctrl.php';
 $config['PracticaEditaReviewController']		        = PATH_CONTROLLERS . 'practica/editaReview.ctrl.php';
+$config['PracticaEsborraReviewController']		        = PATH_CONTROLLERS . 'practica/esborrarReview.ctrl.php';
 
 $config['PracticaLlistatReviewsUsuariController']		= PATH_CONTROLLERS . 'practica/llistatReviewsUsuari.ctrl.php';
 

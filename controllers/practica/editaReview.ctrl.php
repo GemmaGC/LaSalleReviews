@@ -6,7 +6,6 @@ class PracticaEditaReviewController extends Controller
     protected $view_error404 = 'practica/error/errorP404.tpl';
     protected $view_error403 = 'practica/error/errorP403.tpl';
     protected $model;
-    protected $id;
 
     public function build( )
     {
