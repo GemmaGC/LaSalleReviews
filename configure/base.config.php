@@ -162,5 +162,6 @@ $config['PracticaNoResultsController']              = PATH_CONTROLLERS . 'practi
 
 // Modul
 $config['PracticaLlistatMyRatedReviewsController']         = PATH_CONTROLLERS . 'practica/llistatMyRatedReviews.ctrl.php';
+$config['PracticaMyRatedReviewsController']         = PATH_CONTROLLERS . 'practica/MyRatedReviews.ctrl.php';
 
 //----------------------------------------
