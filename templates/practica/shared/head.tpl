@@ -63,7 +63,7 @@
 
                         <!-- Si JA està loguejat l'usuari...-->
                         <a href="{$url.global}/addReview" class="register">ADD REVIEW</a>
-                        <a href="{$url.global}/myReviews" class="register">MY REVIEWS</a>
+                        <a href="{$url.global}/myReviews/0" class="register">MY REVIEWS</a>
                         <a href="{$url.global}/myRatedReviews" class="register">RATED REVIEWS</a>
                         <div class="register user_info">{$nom} - {$login}</div>
                         <a href="{$url.global}/logOut" class="register">LOG OUT</a>
