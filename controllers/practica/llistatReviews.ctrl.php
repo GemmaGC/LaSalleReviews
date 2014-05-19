@@ -9,6 +9,9 @@ class PracticaLlistatReviewsController extends Controller {
         //Recuperem totes les review
         $reviews = $this->model->get10R();
         $this->assign('reviews', $reviews);
+        $titulo = "LAST 10 REVIEWS";
+
+        $this->assign('titulo', $titulo);
 
         $this->setLayout( $this->view );
 
