@@ -10,7 +10,7 @@
 
             <div class="section_review_title">
                 <a class="link_titol_review"  style="cursor:pointer; color: orange;" onclick="submitirFormularioOculto()">{$r.title}</a></br>
-                <form method="POST" action="/Review/.{$r.url_titol}" id="review">
+                <form method="POST" action="/Review/{$r.url_titol}" id="review">
                     <input type="hidden" name="id_oculta" value="{$r.id}">
                 </form>
                 <p class="titol_review  data_review">{$r.date}</p>
