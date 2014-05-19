@@ -137,11 +137,11 @@ QUERY;
      * @param $login
      * @param $data_creacio
      */
-    public function afegeixReview($title, $description, $subject, $date, $score, $image, $nom, $login, $data_creacio){
+    public function afegeixReview($title, $description, $subject, $date, $score, $image, $nom, $login, $data_creacio, $url_titol){
 
         $sql = <<<QUERY
         INSERT INTO review
-        VALUES ('','$title', '$description', '$subject', '$date', '$score', '$image', '$nom', '$login', '$data_creacio')
+        VALUES ('','$title', '$description', '$subject', '$date', '$score', '$image', '$nom', '$login', '$data_creacio', '$url_titol')
 QUERY;
         $this->execute( $sql );
 
