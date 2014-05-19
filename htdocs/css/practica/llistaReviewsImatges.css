@@ -207,14 +207,18 @@ a.link_all_reviews:hover{
     color: grey;
 }
 
-.my_reviews h1 {
+/*.my_reviews h1 {
     margin-left: 35%;
     padding-left: 5%;
     margin-right: 35%;
+
+}
+*/
+h1 {
+    text-align: center;
     margin-top: 5%;
     margin-bottom: 3%;
 }
-
 
 .all_review {
     margin-left: 22%;
