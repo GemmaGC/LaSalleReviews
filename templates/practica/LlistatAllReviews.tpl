@@ -1,13 +1,13 @@
 
 
-<!-- Despres només amb un section i amb bucle es fan la resta -->
+<!-- Despres nomï¿½s amb un section i amb bucle es fan la resta -->
 
 
 {$modules.headPractica}
 
 <div class="my_reviews">
 
-    <h1>MY REVIEWS</h1>
+    <h1>10 BEST RATED REVIEWS</h1>
 
     {foreach from = $reviews item = r}
         <section class="section_review margin_top_extra">

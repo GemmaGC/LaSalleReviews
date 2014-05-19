@@ -2,7 +2,7 @@
 
 class PracticaLlistatAllReviewsController extends Controller
 {
-    protected $view = 'practica/allReviews.tpl';
+    protected $view = 'practica/LlistatAllReviews.tpl';
 
     /**
      * Aquest m?tode sempre s'executa i caldr? implementar-lo sempre.
@@ -12,7 +12,7 @@ class PracticaLlistatAllReviewsController extends Controller
         $this->model = $this->getClass( 'PracticaReviewModel' );
 
 
-        $reviews = $this->model->getAllReview('reviews');
+        $reviews = $this->model->getAllReview('review');
 
 
         $this->assign('reviews', $reviews);
