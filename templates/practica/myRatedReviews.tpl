@@ -1,5 +1,5 @@
 {$modules.headPractica}
 
-    {$modules.myRatedReviews}
+    {$modules.llistatMyRatedReviews}
 
 {$modules.footerPractica}
