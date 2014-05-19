@@ -50,7 +50,6 @@
 					<label for="image">IMAGE <strong>*</strong></label>
 		            <input name="newImage" id="image" type="file" {if !$ok} value = "{$image}" {/if} required/>
 
-
 					<div class="footer_form">
 		            	<input type="submit" name="submit_button" value="SEND REVIEW" class="button_review" />
 		        	</div>

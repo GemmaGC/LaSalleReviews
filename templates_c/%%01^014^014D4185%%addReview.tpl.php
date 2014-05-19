@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-07 18:46:55
+<?php /* Smarty version 2.6.14, created on 2014-05-19 17:15:22
          compiled from practica/addReview.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['headPractica']; ?>
 
@@ -59,7 +59,6 @@
 					<label for="image">IMAGE <strong>*</strong></label>
 		            <input name="newImage" id="image" type="file" <?php if (! $this->_tpl_vars['ok']): ?> value = "<?php echo $this->_tpl_vars['image']; ?>
 " <?php endif; ?> required/>
-
 
 					<div class="footer_form">
 		            	<input type="submit" name="submit_button" value="SEND REVIEW" class="button_review" />

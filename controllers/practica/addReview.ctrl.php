@@ -35,7 +35,7 @@ class PracticaAddReviewController extends Controller
                 $review['score']        =   Filter::getInteger('newScore');
                 //$review['image']        =   Filter::getString('newImage');
                 //echo '<pre>'; var_dumo($review); echo'</pre>';
-                echo $_FILES['newImage']['name'];
+                //echo $_FILES['newImage']['name'];
 
                 /* $this->assign('vtitle', 0); $this->assign('description', 0);
                 $this->assign('subject', 0); $this->assign('date', 0);
@@ -69,7 +69,18 @@ class PracticaAddReviewController extends Controller
                    $login = Session::getInstance()->get('login');
 
                    $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], $nom, $login, $dataC);
+
+                   //Esborrem les variables que ja no necessitem
                    unset($review);
+
+                   //Guardem la id de la review
+                   $id = $this->model->getUltim('review');
+                   $id = $id[0]['id'];
+
+                   Session::getInstance()->set('id', $id);
+
+                   //Redirigim a la pàgina de la review
+                   header('Location: /Review',true,301);
                }else{
                    $this->assign('ok', false);
                    $this->retornaCamps($review);
