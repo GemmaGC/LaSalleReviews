@@ -36,6 +36,7 @@ class PracticaResultadoBuscadorController extends Controller {
 
         // Moduls especials
         $modules['llistatReviews']	= 'PracticaLlistatReviewsController';
+        $modules['llistatBestReviewsPuntuacio']	    = 'PracticaLlistatBestReviewsPuntuacioController';
 
         return $modules;
     }

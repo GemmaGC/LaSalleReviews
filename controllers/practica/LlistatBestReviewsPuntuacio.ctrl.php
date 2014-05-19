@@ -7,8 +7,11 @@ class PracticaLlistatBestReviewsPuntuacioController extends Controller {
     public function build( ){
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
         //Recuperem totes les review
-        $reviews = $this->model->get10R();
+        $reviews = $this->model->getMaxDeuP();
         $this->assign('reviews', $reviews);
+
+        $titulo = "10 BEST RATED REVIEWS";
+        $this->assign('titulo', $titulo);
 
         $this->setLayout( $this->view );
 
