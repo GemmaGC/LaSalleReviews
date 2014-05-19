@@ -11,6 +11,14 @@ class PracticaMostrarReviewController extends Controller {
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
         $id_oculta = Filter::getString('id_oculta');
+
+        if (!$id_oculta)
+        {
+            unset ($id_oculta);
+            $id_oculta = Session::getInstance()->get('id');
+            Session::getInstance()->delete('id');
+        }
+
         $reviews = $this->model->getReview($id_oculta);
         $login = $reviews[0]['login'];
         $usuari = $this->model->getUsuari($login);

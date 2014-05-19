@@ -17,13 +17,37 @@ class PracticaLlistatReviewsUsuariController extends Controller
     {
         $this->model = $this->getClass( 'PracticaReviewModel' );
 
-
         $nom = Session::getInstance()->get('nom');
-
         $login = Session::getInstance()->get('login');
 
-
         $reviews = $this->model->getUsuariReview($login,$nom);
+
+        /***************************************/
+        $info = $this->getParams();
+
+
+        //És la forma més cutre de calcular el màxim de pàgines, ja ho optimitzarem
+        $model = $this->getClass( 'Exercici3GestorModel' ); //Importem el model
+        $marm = count($model->getImatges('marmotas'));
+        $mon = count($model->getImatges('monos'));
+        $orn = count($model->getImatges('ornitorrincos'));
+
+        $max = max($marm, $mon, $orn);
+        $min = 0;
+
+        $this->assign('header', 'EXERCICI 3');
+        $this->assign('enrere', '/exercici3');
+
+        $this->setParams( array( 'num' => $info['url_arguments'][0] ) );
+
+        $this->assign('min', $min);
+        $this->assign('max', $max);
+        $this->assign('num', $info['url_arguments'][0]);
+
+        $this->assign('url_ant', $info['url_arguments'][0]-3);
+        $this->assign('url_seg', $info['url_arguments'][0]+3);
+
+        /***************************************/
 
 
         $this->assign('reviews', $reviews);

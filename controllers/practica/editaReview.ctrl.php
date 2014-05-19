@@ -6,7 +6,7 @@ class PracticaEditaReviewController extends Controller
     protected $view_error404 = 'practica/error/errorP404.tpl';
     protected $view_error403 = 'practica/error/errorP403.tpl';
     protected $model;
-
+    protected $id;
 
     public function build( )
     {
@@ -15,11 +15,6 @@ class PracticaEditaReviewController extends Controller
         $this->assign('val', 0);
 
         $login = Session::getInstance()->get('log');
-        $nom = Session::getInstance()->get('nom');
-
-        date_default_timezone_set(date_default_timezone_get());
-        $dataC = date('Y.m.d', time());
-
 
         if(!isset($info['url_arguments']) && $login > 0){
 
@@ -34,24 +29,17 @@ class PracticaEditaReviewController extends Controller
             $this->assign('subject', $r[0]['subject']);
             $this->assign('date', $r[0]['date']);
             $this->assign('score', $r[0]['score']);
-            //$this->assign('image', $_FILES['newImage']['tmp_name']);
-            //$this->assign('image', false);
 
 
             //Quan enviin...
             if(Filter::getString('submit_button')){
-
                 //Agafem les dades que posa l'usuari al addreview
+                $review['id']           =   Session::getInstance()->delete('id');
                 $review['title']        =   Filter::getString('newTitle');
                 $review['description']  =   Filter::getString('newDescription');
                 $review['subject']      =   Filter::getString('newSubject');
                 $review['date']         =   Filter::getString('newDate');
                 $review['score']        =   Filter::getInteger('newScore');
-                //$review['image']        =   Filter::getString('newImage');
-                //echo '<pre>'; var_dumo($review); echo'</pre>';
-                echo $_FILES['newImage']['name'];
-
-
 
                 //Si tots els camps del formulari són correctes...
                 if ($this->comprovaCamps($review)){
@@ -75,14 +63,22 @@ class PracticaEditaReviewController extends Controller
                     /***********************/
                     /*       MODEL         */
                     /***********************/
+                    $this->model->updateReview($review['id'], $review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image']);
 
-                    $this->model->updateReview($id, $review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image']);
+                    //Eliminem les variables que ja no usarem
                     unset($review);
+                    unset($r);
+                    Session::getInstance()->delete('id');
+
+                    //Redirigim al llistat de reviews
+                    header('Location: /myReviews',true,301);
                 }else{
                     $this->assign('ok', false);
                     $this->retornaCamps($review);
                 }
 
+            }else{
+                Session::getInstance()->set('id', $id);
             }
 
             $this->setLayout( $this->view );
@@ -153,7 +149,7 @@ class PracticaEditaReviewController extends Controller
         foreach($reviews as $r)
         {
             //Comprovem que el titol no estigui repetit i tingui menys de 100 caràcters
-            if(!strcmp($r['title'], $review['title']) || strlen($review['title']) > 100)
+            if(!strcmp($r['id'], Session::getInstance()->delete('id')) && (!strcmp($r['title'], $review['title']) || strlen($review['title']) > 100))
             {
                 echo "El títol no és correcte: o està repetit o és més llarg de 100 caràcters";
                 return false;
