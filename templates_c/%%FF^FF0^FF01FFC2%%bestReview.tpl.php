@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-19 18:04:42
+<?php /* Smarty version 2.6.14, created on 2014-05-19 20:35:20
          compiled from practica/bestReview.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'practica/bestReview.tpl', 24, false),)), $this); ?>
@@ -20,7 +20,8 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 
 
                                 <a class="link_titol_review"  style="cursor:pointer; color: orange;" onclick="submitirFormularioOculto()"><?php echo $this->_tpl_vars['m']['title']; ?>
   </a></br>
-                                <form method="POST" action="/Review" id="review">
+                                <form method="POST" action="/r/<?php echo $this->_tpl_vars['m']['url_titol']; ?>
+" id="review">
                                     <input type="hidden" name="id_oculta" value="<?php echo $this->_tpl_vars['m']['id']; ?>
 ">
                                 </form>
@@ -40,7 +41,9 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 
             </div>
 
             <section class="link_all_reviews_section">
-                <a href="#" class="link_all_reviews">SHOW ALL THE REVIEWS >> </a>
+                <a href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/allReviews/0" class="link_all_reviews">SHOW ALL THE REVIEWS >> </a>
+
             </section>
 
             <div class="separator"></div>

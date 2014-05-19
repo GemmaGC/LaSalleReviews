@@ -43,122 +43,41 @@ function submitirFormularioEsborrar(){
     document.getElementById("delete").submit();
 }
 
-/*
-function validarForm(){
-    var camp_nombre = document.dadesUsuari.nombre;
-    var valor_nombre = camp_nombre.value;
+/**
+ *  Funció per precarregar la imatge
+ */
+window.onload = function() {
+    var fileInput = document.getElementById('fileInput');
+    var fileDisplayArea = document.getElementById('fileDisplayArea');
 
-    var camp_apellido1 = document.dadesUsuari.apellido1;
-    var valor_apellido1 = camp_apellido1.value;
+    fileInput.addEventListener('change', function(e) {
+        var file = fileInput.files[0];
+        var imageType = /image.*/;
 
-    var camp_apellido2 = document.dadesUsuari.apellido2;
-    var valor_apellido2 = camp_apellido2.value;
+        if (file.type.match(imageType)) {
+            var reader = new FileReader();
 
-    var camp_dni = document.dadesUsuari.dni;
-    var valor_dni = camp_dni.value;
+            reader.onload = function(e) {
+                fileDisplayArea.innerHTML = "";
 
-    var camp_diaNacimiento = document.dadesUsuari.diaNacimiento;
-    var valor_diaNacimiento = camp_diaNacimiento.value;
-    var camp_mesNacimiento = document.dadesUsuari.mesNacimiento;
-    var valor_mesNacimiento = camp_mesNacimiento.value;
-    var camp_añoNacimiento = document.dadesUsuari.añoNacimiento;
-    var valor_añoNacimiento = camp_añoNacimiento.value;
+                // Create a new image.
+                var img = new Image();
+                // Set the img src property using the data URL.
+                img.src = reader.result;
+                img.className += " " + "section_review_img";
+                img.style.float = "left";
 
-    var camp_direccion = document.dadesUsuari.direccion;
-    var valor_direccion = camp_direccion.value;
-
-    var camp_portera = document.dadesUsuari.portera;
-    var valor_portera = camp_portera.value;
-    var camp_centrocampista = document.dadesUsuari.centrocampista;
-    var valor_centrocampista = camp_centrocampista.value;
-    var camp_defensa = document.dadesUsuari.defensa;
-    var valor_defensa = camp_defensa.value;
-    var camp_wing = document.dadesUsuari.wing;
-    var valor_wing = camp_wing.value;
-
-    var camp_veterana = document.dadesUsuari.veterana;
-    var valor_veterana = camp_veterana.value;
-
-    var camp_nombreUsuario = document.dadesUsuari.nombreUsuario;
-    var valor_nombreUsuario = camp_nombreUsuario.value;
-
-    var camp_contraseña = document.dadesUsuari.contraseña;
-    var valor_contraseña = camp_contraseña.value;
-
-
-
-    if(valor_nombre == ""){
-        alert("El nombre es obligatorio.");
-    }else{
-        if(valor_apellido1 == "" || valor_apellido2 == ""){
-            alert("Los apellidos son obligatorios.");
-        } else{
-            if (valor_dni == ""){
-                alert("El DNI es obligatorio.");
-            } else {
-                if (valor_dni.length!=9){
-                    alert("El DNI no es correcto.");
-                } else{
-                    if (valor_direccion == ""){
-                        alert("El mail es obligatorio.");
-                    } else{
-                        var pos_arroba = valor_direccion.indexOf('@');
-                        if (pos_arroba<1){
-                            alert("El mail es incorrecto");
-                        }else{
-                            var pos_punt = valor_direccion.indexOf('.');
-                            if(pos_punt<1){
-                                alert("El mail es incorrecto");
-                            }else{
-                                //SEGUEIX AQUI
-                                if(!document.getElementById('portera').checked && !document.getElementById('centrocampista').checked && !document.getElementById('defensa').checked &&
-                                    !document.getElementById('wing').checked){
-                                    alert('Tienes que seleccionar alguna checkbox.');
-                                } else{
-                                    var ok=0;
-                                    for(i=0;i<document.dadesUsuari.veterana.length;i++){
-                                        if(document.dadesUsuari.veterana[i].checked) {
-                                            ok=1;
-                                        }
-                                    }
-                                    if (ok==0){
-                                        alert("Tienes que decir si has jugado antes.");
-                                    } else{
-
-                                        if(valor_nombreUsuario == ""){
-                                            alert("El nombre de usuario es obligatorio.");
-                                        }else{
-                                            if(valor_contraseña == ""){
-                                                alert("La contraseña es obligatoria.");
-                                            } else{
-                                                alert("El formulari s'ha enviat correctament.");
-                                                document.dadesUsuari.submit();
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                // Add the image to the page.
+                fileDisplayArea.appendChild(img);
             }
+
+            reader.readAsDataURL(file);
+        } else {
+            fileDisplayArea.innerHTML = "File not supported!";
         }
-    }
+    });
 }
 
-function Borrar()
-{
-    if(document.getElementById("buscador").value=="Buscar...")
-    {
-        document.getElementById("buscador").value="";
-    }
-}
 
-function Escribir()
-{
-    if(document.getElementById("buscador").value=="")
-    {
-        document.getElementById("buscador").value="Buscar...";
-    }
-}
-*/
+
+

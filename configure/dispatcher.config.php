@@ -78,7 +78,7 @@ $config['logOut']               = 'PracticaLogoutController';
 $config['benvinguda']           = 'PracticaBenvingudaController';
 $config['addReview']            = 'PracticaAddReviewController';
 
-$config['Review']               = 'PracticaMostrarReviewController';
+$config['r']                    = 'PracticaMostrarReviewController';
 $config['editReview']           = 'PracticaEditaReviewController';
 $config['deleteReview']         = 'PracticaEsborraReviewController';
 

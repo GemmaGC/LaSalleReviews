@@ -13,7 +13,7 @@ class PracticaEsborraReviewController extends PracticaDosOpcionsController
 
         $nom = Session::getInstance()->get('nom');
         $this->title = "Hi ".$nom."!";
-        $this->subtitle = "Are you sure you want to dele this review?";
+        $this->subtitle = "Are you sure you want to delete this review?";
 
         if (!Filter::getString('id'))
         {

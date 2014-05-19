@@ -93,7 +93,7 @@ class PracticaAddReviewController extends Controller
 
 
                    //Redirigim a la pàgina de la review
-                   header('Location: /Review/'.$url);
+                   header('Location: /r/'.$url);
                }else{
                    $this->assign('ok', false);
                    $this->retornaCamps($review);
