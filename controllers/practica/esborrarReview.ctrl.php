@@ -3,11 +3,6 @@ include_once( PATH_CONTROLLERS . 'practica/dosOpcions.ctrl.php' );
 
 class PracticaEsborraReviewController extends PracticaDosOpcionsController
 {
-    /*protected $view = 'practica/duesOpcions.tpl';
-    protected $view_error404 = 'practica/error/errorP404.tpl';
-    protected $view_error403 = 'practica/error/errorP403.tpl';
-    protected $model;*/
-
     protected $title;
     protected $subtitle;
 
@@ -35,14 +30,6 @@ class PracticaEsborraReviewController extends PracticaDosOpcionsController
             Session::getInstance()->set('id', $id);
 
         }
-
-        /*
-        if (!strcmp('yes', Filter::getString('delete')))
-        {
-
-            $this->model->deleteReview($id);
-            header('Location: /myReviews',true,301);
-        }*/
     }
 
 }

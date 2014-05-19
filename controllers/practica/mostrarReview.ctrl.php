@@ -24,6 +24,7 @@ class PracticaMostrarReviewController extends Controller {
         $usuari = $this->model->getUsuari($login);
 
 
+
         $this->assign('reviews', $reviews);
         $this->assign('usuari', $usuari);
         $this->setLayout( $this->view );

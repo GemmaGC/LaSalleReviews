@@ -13,7 +13,7 @@
                             <div class="section_review_title">
 
                                 <a class="link_titol_review"  style="cursor:pointer; color: orange;" onclick="submitirFormularioOculto()">{$m.title}  </a></br>
-                                <form method="POST" action="/Review" id="review">
+                                <form method="POST" action="/Review/{$m.url_titol}" id="review">
                                     <input type="hidden" name="id_oculta" value="{$m.id}">
                                 </form>
                                 <p class="titol_review  data_review ">{$m.date}</p>
@@ -29,7 +29,8 @@
             </div>
 
             <section class="link_all_reviews_section">
-                <a href="#" class="link_all_reviews">SHOW ALL THE REVIEWS >> </a>
+                <a href="{$url.global}/allReviews/0" class="link_all_reviews">SHOW ALL THE REVIEWS >> </a>
+
             </section>
 
             <div class="separator"></div>

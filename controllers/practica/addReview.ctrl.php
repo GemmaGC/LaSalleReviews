@@ -62,13 +62,21 @@ class PracticaAddReviewController extends Controller
                    //$img704 = $this->canviaTamanyImatge($attachtmp, 704, 528);
 
                    /***********************/
+                   /*       NOVA URL      */
+                   /***********************/
+                   $url = $review['title'];
+                   //echo $url;
+                   $url = str_replace(' ', '-', $url);
+                   //echo $url;
+
+                   /***********************/
                    /*       MODEL         */
                    /***********************/
 
 
                    $login = Session::getInstance()->get('login');
 
-                   $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], $nom, $login, $dataC);
+                   $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], $nom, $login, $dataC, $url);
 
                    //Esborrem les variables que ja no necessitem
                    unset($review);
@@ -79,8 +87,13 @@ class PracticaAddReviewController extends Controller
 
                    Session::getInstance()->set('id', $id);
 
+
+
+                   // AQUI HAUREM DE CANVIAR LA URL PER LA DE LA BBDD /Review/url_titol!!
+
+
                    //Redirigim a la pàgina de la review
-                   header('Location: /Review',true,301);
+                   header('Location: /Review/'.$url);
                }else{
                    $this->assign('ok', false);
                    $this->retornaCamps($review);

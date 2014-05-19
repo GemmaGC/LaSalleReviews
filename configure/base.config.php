@@ -142,7 +142,7 @@ $config['PracticaLlistatImatgesController']		        = PATH_CONTROLLERS . 'pract
 $config['PracticaBestReviewController']		            = PATH_CONTROLLERS . 'practica/bestReview.ctrl.php';
 $config['PracticaTwitterController']		            = PATH_CONTROLLERS . 'practica/twitter.ctrl.php';
 $config['PracticaLlistatBestReviewsPuntuacioController']		        = PATH_CONTROLLERS . 'practica/LlistatBestReviewsPuntuacio.ctrl.php';
-$config['PracticaLlistatAllReviewsController']		        = PATH_CONTROLLERS . 'practica/llistatAllReviews.ctrl.php';
+$config['PracticaLlistatAllReviewsController']		        = PATH_CONTROLLERS . 'practica/LlistatAllReviews.ctrl.php';
 
 
 
@@ -163,5 +163,6 @@ $config['PracticaNoResultsController']              = PATH_CONTROLLERS . 'practi
 
 // Modul
 $config['PracticaLlistatMyRatedReviewsController']         = PATH_CONTROLLERS . 'practica/llistatMyRatedReviews.ctrl.php';
+$config['PracticaMyRatedReviewsController']         = PATH_CONTROLLERS . 'practica/MyRatedReviews.ctrl.php';
 
 //----------------------------------------
