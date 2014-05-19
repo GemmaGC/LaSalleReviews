@@ -43,7 +43,6 @@ p.data_review {
 
 .section_review_footer {
     margin-top: 2%;
-
 }
 
 p.separator_footer {
@@ -58,6 +57,12 @@ p.separator_footer {
     border-bottom: 1px solid #98C9ED;
 }
 
+
+.section_review_puntuacio {
+    margin-top: 2%;
+    border-top: 1px solid #98C9ED;
+    padding-top: 10%;
+}
 
 
 
