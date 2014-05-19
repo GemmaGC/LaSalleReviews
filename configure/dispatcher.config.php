@@ -94,6 +94,11 @@ $config['allReviews']            = 'PracticaLlistatAllReviewsController';
 $config['searchResults']        = 'PracticaResultadoBuscadorController';
 $config['noResults']            = 'PracticaNoResultsController';
 
+$config['myRatedReviews']       = 'PracticaMyRatedReviewsController';
+
+
+
+
 
 
 //----------------------------------------
