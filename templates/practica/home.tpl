@@ -2,8 +2,6 @@
 
 {$modules.headPractica}
 
-
-<!-- Falta per posar bé els noms dels mòduls -->
     <nav class="menu_lateral_fixe_home">
         <ul>
             <li>HOME SECTIONS >> &nbsp;&nbsp;&nbsp;</li>
@@ -24,8 +22,10 @@
 
     <div class="separator"></div>
 
+        {$modules.llistatBestReviewsPuntuacio}
+
+    <div class="separator"></div>
+
     {$modules.twitter}
-
-
 
 {$modules.footerPractica}

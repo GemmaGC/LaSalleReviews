@@ -140,7 +140,7 @@ $config['PracticaLlistatReviewsController']		        = PATH_CONTROLLERS . 'pract
 $config['PracticaLlistatImatgesController']		        = PATH_CONTROLLERS . 'practica/llistatImatges.ctrl.php';
 $config['PracticaBestReviewController']		            = PATH_CONTROLLERS . 'practica/bestReview.ctrl.php';
 $config['PracticaTwitterController']		            = PATH_CONTROLLERS . 'practica/twitter.ctrl.php';
-
+$config['PracticaLlistatBestReviewsPuntuacioController']		        = PATH_CONTROLLERS . 'practica/LlistatBestReviewsPuntuacio.ctrl.php';
 
 
 
