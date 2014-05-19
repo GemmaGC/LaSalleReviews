@@ -87,6 +87,7 @@ $config['hola']                 = 'PracticaHolaController';
 $config['myReviews']            = 'PracticaLlistatReviewsUsuariController';
 
 
+$config['allReviews']            = 'PracticaLlistatAllReviewsController';
 
 
 //pagina de resultados del buscador
