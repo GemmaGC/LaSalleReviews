@@ -27,7 +27,11 @@
                     <p class="titol_review">{$r.data_creacio}</p>
                 </div>
 
+
+
                 <div class="section_review_puntuacio">
+
+
                     <h3>RATE THE REVIEW</h3>
 
                     <!-- Això si ha estat valorada algun cop-->

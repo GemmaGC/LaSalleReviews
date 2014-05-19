@@ -3,7 +3,7 @@
 <div class="Last10reviews">
 
     <!-- Que el h1 sigui una variable que omplim des del controller!! Així podem reutilitzar el mòdul -->
-    <h1>LAST 10 REVIEWS</h1>
+    <h1 class="titol_section">LAST 10 REVIEWS</h1>
 
     {foreach from = $reviews item = r}
         <section class="section_review">
