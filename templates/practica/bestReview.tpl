@@ -29,7 +29,8 @@
             </div>
 
             <section class="link_all_reviews_section">
-                <a href="#" class="link_all_reviews">SHOW ALL THE REVIEWS >> </a>
+                <a href="{$url.global}/allReviews" class="link_all_reviews">SHOW ALL THE REVIEWS >> </a>
+
             </section>
 
             <div class="separator"></div>

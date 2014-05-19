@@ -12,7 +12,7 @@ class PracticaLlistatAllReviewsController extends Controller
         $this->model = $this->getClass( 'PracticaReviewModel' );
 
 
-        $reviews = $this->model->getAllReview('review');
+        $reviews = $this->model->getTot('review');
 
 
         $this->assign('reviews', $reviews);
