@@ -10,7 +10,6 @@ class PracticaEditaReviewController extends Controller
 
     public function build( )
     {
-        // Inicialitzem a false que haguem de canviar el titol al principi de tot..
         $canviar_titol = false;
 
 
@@ -40,7 +39,6 @@ class PracticaEditaReviewController extends Controller
             if(Filter::getString('submit_button')){
                 //Agafem les dades que posa l'usuari al addreview
                 $review['title']        =   Filter::getString('newTitle');
-                $nou_titol              =   Filter::getString('newTitle');
                 $review['description']  =   Filter::getString('newDescription');
                 $review['subject']      =   Filter::getString('newSubject');
                 $review['date']         =   Filter::getString('newDate');
@@ -51,50 +49,47 @@ class PracticaEditaReviewController extends Controller
                 if (!strcmp($attachtmp, 0))
                 {
                     $review['image'] = Session::getInstance()->get('img');
-                    var_dump($review['image']);
                     Session::getInstance()->delete('img');
                 }else{
                     $review['image'] = $_FILES['newImage']['name'];
                 }
 
-                // ---------------------------------------------------------------------
-
                 // Si el titol ha canviat i no es el mateix...
-                if ( strcmp( $review['description'], $nou_titol ) != 0 ) {
+                if ( strcmp( $review['title'], $review['title'] ) != 0 ) {
                     $canviar_titol = true;
                 }
 
-                // ---------------------------------------------------------------------
-
-                var_dump($review['image']);
                 //Si tots els camps del formulari són correctes...
                 if ($this->comprovaCamps($review)){
                     /***********************/
                     /*       IMATGE        */
                     /***********************/
 
-                    if ($attachtmp)
-                    {
-                        //Guardem la imatge a la carpeta d'htdocs si tots els camps del formulari són correctes
-                        $dir = "imag/img_usuaris/";
-                        $attachtmp  = $_FILES['newImage']['tmp_name'];
+                    //Guardem la imatge a la carpeta d'htdocs si tots els camps del formulari són correctes
+                    $dir = "imag/img_usuaris/";
+                    $attachtmp  = $_FILES['newImage']['tmp_name'];
+                    $review['image'] = $_FILES['newImage']['name'];
 
-                        $directori = $dir . $review['image'];
-                        move_uploaded_file($attachtmp, $directori);
-                    }
+                    //Creem un nom únic per la imatge i la guardem al directori
+                    //Guardem el nom gèneric de la imatge, segons si té un 100_ o un 704_ davant del nom serà d'un o de l'altre tamany
+                    $nomImg = str_replace(' ', '-', $review['image']);
+                    $nomImg = ($r[0]['id']) . "_" . $nomImg;
+
 
                     //Guardem la imatge en altres tamanys
-                    //$img100 = $this->canviaTamanyImatge($attachtmp, 100, 100);
-                    //$img704 = $this->canviaTamanyImatge($attachtmp, 704, 528);
+                    //IMATGE 100x100
+                    $this->canviaTamanyImatge($attachtmp, 100, 100, $dir, $nomImg);
+                    //IMATGE 704x528
+                    $this->canviaTamanyImatge($attachtmp, 704, 528, $dir, $nomImg);
 
                     /***********************/
                     /*       MODEL         */
                     /***********************/
 
                     if ($canviar_titol == false ) {
-                        $this->model->updateReview($this->id_review, $review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], null);
+                        $this->model->updateReview($this->id_review, $r[0]['title'], null, $review['description'],$review['subject'], $review['date'], $review['score'], $nomImg);
                     }else{
-                        $this->model->updateReview($this->id_review, $r[0]['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], $nou_titol);
+                        $this->model->updateReview($this->id_review, $review['title'], $r[0]['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $nomImg);
                     }
 
 
@@ -126,52 +121,36 @@ class PracticaEditaReviewController extends Controller
         {
             $this->setLayout($this->view_error403);
         }
+
     }
 
-    protected function canviaTamanyImatge($img_original, $Nwidth, $Nheight)
+    protected function canviaTamanyImatge($img_original, $maxWidth, $maxHeight, $dir, $nomImg)
     {
-        //Ancho y alto de la imagen original
-        list($width, $height)=getimagesize($img_original);
+        $info_imagen = getimagesize($img_original);
+        $imagen_ancho = $info_imagen[0];
+        $imagen_alto = $info_imagen[1];
+        $imagen_tipo = $info_imagen['mime'];
 
-        //Se calcula ancho y alto de la imagen final
-        /*$x_ratio = $max_ancho / $ancho;
-        $y_ratio = $max_alto / $alto;
-
-
-        //Si el ancho y el alto de la imagen no superan los maximos,
-        //ancho final y alto final son los que tiene actualmente
-        if( ($ancho <= $max_ancho) && ($alto <= $max_alto) ){//Si ancho
-            $ancho_final = $ancho;
-            $alto_final = $alto;
+        //Creem una imatge del nou tamany
+        $lienzo = imagecreatetruecolor( $maxWidth, $maxHeight );
+        switch ( $imagen_tipo ){
+            case "image/jpg":
+            case "image/jpeg":
+                $imagen = imagecreatefromjpeg( $img_original );
+                break;
+            case "image/png":
+                $imagen = imagecreatefrompng( $img_original );
+                break;
+            case "image/gif":
+                $imagen = imagecreatefromgif( $img_original );
+                break;
         }
-        /*
-        * si proporcion horizontal*alto mayor que el alto maximo,
-        * alto final es alto por la proporcion horizontal
-        * es decir, le quitamos al ancho, la misma proporcion que
-        * le quitamos al alto
-        *
-        */
-        /*elseif (($x_ratio * $alto) < $max_alto){
-            $alto_final = ceil($x_ratio * $alto);
-            $ancho_final = $max_ancho;
-        }
-        /*
-        * Igual que antes pero a la inversa
-        */
-        /*else{
-            $ancho_final = ceil($y_ratio * $ancho);
-            $alto_final = $max_alto;
-        }*/
 
-        $dir = "imag/img_usuaris/";
-        $directori = $dir . $Nwidth . '_imatge';
-        $tmp = imagecreatetruecolor($Nwidth, $Nheight); //Creem una nova imatge blanca amb el nou tamany
-        imagecopyresampled($tmp, $img_original, 0, 0, 0, 0, $Nwidth, $Nheight, $width, $height); //Copiem la imatge original sobre la blanca
+        //Canviem el tamany de la imatge
+        imagecopyresampled($lienzo, $imagen, 0, 0, 0, 0, $maxWidth, $maxHeight, $imagen_ancho, $imagen_alto);
 
-        move_uploaded_file($tmp, $directori);
-        imagedestroy($_FILES['newImage']); //Destruim l'arxiu temporal per alliberar memòria
-
-        return $tmp;
+        //Guardem la nova imatge
+        imagejpeg( $lienzo, $dir . $maxWidth . "_" . $nomImg, 90 );
 
     }
 

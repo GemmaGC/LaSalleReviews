@@ -201,7 +201,7 @@ QUERY;
 
         $sql = <<<QUERY
         INSERT INTO review
-        VALUES ('','$title', '$description', '$subject', '$date', '$score', '$image', '$nom', '$login', '$data_creacio', '$url_titol')
+        VALUES ('','$title', '', '$description', '$subject', '$date', '$score', '$image', '$nom', '$login', '$data_creacio', '$url_titol')
 QUERY;
         $this->execute( $sql );
 
@@ -279,13 +279,13 @@ QUERY;
     /**
      * @return null
      */
-    public function updateReview($id, $title, $description, $subject, $date, $score, $image, $new_title)
+    public function updateReview($id, $title, $oldTitle, $description, $subject, $date, $score, $image)
     {
         $sql = <<<QUERY
         UPDATE
             review
         SET
-            title = '$title', description = '$description', subject = '$subject', date = '$date', score = '$score', image = '$image', new_title = '$new_title'
+            title = '$title', old_title = "$oldTitle", description = '$description', subject = '$subject', date = '$date', score = '$score', image = '$image'
         WHERE
             id = '$id'
 QUERY;
