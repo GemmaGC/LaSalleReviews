@@ -106,7 +106,7 @@ class PracticaAddReviewController extends Controller
         else if(isset($info['url_arguments']))
         {
             $this->setLayout($this->view_error404);
-        }
+        }  
         else if($login == 0)
         {
             $this->setLayout($this->view_error403);
