@@ -14,10 +14,10 @@
 
             <div class="all_review">
                 <div class="">
-                    <a class="link_titol_review"  style="cursor:pointer; color: orange;" onclick="submitirFormularioOculto()">{$r.title}  </a></br>
-                    <form method="POST" action="/r/{$r.url_titol}" id="review">
-                        <input type="hidden" name="id_oculta" value="{$r.id}">
-                    </form>
+                    <a href="/r/{$r.url_titol}" class="link_titol_review"  style="cursor:pointer; color: orange;">{$r.title}  </a></br>
+                    <!--<form method="POST" action="/r/{*$r.url_titol*}" id="review">
+                        <input type="hidden" name="id_oculta" value="{*$r.id*}">
+                    </form>-->
                     <p class="titol_review  data_review ">{$r.date}</p>
                     <p class="titol_review">{$r.score} / 10</p>
                 </div>
@@ -28,17 +28,8 @@
             </div>
 
             <div class="section_review_buttons">
-                <a href="#" class="welcome_button button_Option" onclick="submitirFormularioEditar()">EDIT</a>
-                <a href="#" class="welcome_button button_Option" onclick="submitirFormularioEsborrar()">DELETE</a>  <!-- D'aqui que vagi a duesOpcions i digui si vols eliminar o no -->
-
-                <!-- PROBLEMA!!! SI ENS DESACTIVA EL JS AIXO NO ANIRA! -->
-                <form method="POST" action="/editReview" id="edit">
-                    <input type="hidden" name="id_edit" value="{$r.id}">
-                </form>
-
-                <form method="POST" action="/deleteReview" id="delete">
-                    <input type="hidden" name="id" value="{$r.id}">
-                </form>
+                <a href="/editReview/{$r.id}" class="welcome_button button_Option">EDIT</a>
+                <a href="/deleteReview/{$r.id}" class="welcome_button button_Option">DELETE</a>  <!-- D'aqui que vagi a duesOpcions i digui si vols eliminar o no -->
             </div>
 
         </section>

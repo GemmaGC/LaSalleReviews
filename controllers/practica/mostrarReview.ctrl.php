@@ -10,12 +10,16 @@ class PracticaMostrarReviewController extends Controller {
 
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
+        //Busquem la Review
+        $info = $this->getParams();
+        $reviews = $this->model->buscaReviewTitle($info['url_arguments'][0]);
+        /*
+
         $nom = Session::getInstance()->get('nom');
         $login = Session::getInstance()->get('login');
 
         $id_oculta = Filter::getString('id_oculta');
 
-        //echo $id_oculta;
 
         if (!$id_oculta)
         {
@@ -24,7 +28,9 @@ class PracticaMostrarReviewController extends Controller {
             Session::getInstance()->delete('id');
         }
 
-        $reviews = $this->model->getReview($id_oculta);
+        $reviews = $this->model->getReview($id_oculta);*/
+
+        //Busquem l'usuari que ha escrit la review
         $login = $reviews[0]['login'];
         $usuari = $this->model->getUsuari($login);
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-20 12:03:56
+<?php /* Smarty version 2.6.14, created on 2014-05-20 12:15:48
          compiled from practica/mostrarReview.tpl */ ?>
 
 
@@ -15,7 +15,7 @@
                 <div class="section_review_title section_review_title_show">
                     <h1><?php echo $this->_tpl_vars['r']['title']; ?>
 </h1>
-                    <p class="titol_review  data_review"><?php echo $this->_tpl_vars['r']['date']; ?>
+                    <p class="titol_review  data_review"><?php echo $this->_tpl_vars['date_esp']; ?>
 </p>
                     <p class="titol_review"><?php echo $this->_tpl_vars['r']['score']; ?>
  / 10</p></br>
@@ -37,7 +37,7 @@
                     <p class="titol_review">LOGIN: <?php echo $this->_tpl_vars['r']['login']; ?>
 </p>
                     <p class="titol_review separator_footer">|</p>
-                    <p class="titol_review"><?php echo $this->_tpl_vars['r']['data_creacio']; ?>
+                    <p class="titol_review"><?php echo $this->_tpl_vars['date_creacio_esp']; ?>
 </p>
                 </div>
 

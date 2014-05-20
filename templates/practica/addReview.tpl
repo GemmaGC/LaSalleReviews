@@ -7,7 +7,6 @@
 				<p>All the fields marked with a <strong>*</strong> are required.</p>
 			</div>
 
-            <!--action="addReview/OK"-->
 			<form name="review-form" class="review_form" method="post" enctype="multipart/form-data" >
 
 		       
@@ -50,7 +49,7 @@
 
                     {if !$ok}
                         <input type="file" id="fileInput" name="newImage">
-                        <img style="float:left" class="section_review_img" src="imag/img_usuaris/{$img}">
+                        <img style="float:left" class="section_review_img" src="/imag/img_usuaris/{$img}">
                     {else}
                         <label for="image">IMAGE <strong>*</strong></label>
                         <input type="file" id="fileInput" name="newImage" required/>
