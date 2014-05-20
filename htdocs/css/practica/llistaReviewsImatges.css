@@ -136,12 +136,15 @@ a.link_titol_review:hover{
     display: inline-block;
     margin-right: 5%;
     margin-left: 7%;
+    margin-top: 1.5%;
 
 }
 
 .Last10Images h1 {
-    margin-left: 16%;
-    margin-right: 16%;
+    margin-left: 10%;
+    margin-right: 18%;
+    margin-bottom: 15%;
+
 
 }
 
