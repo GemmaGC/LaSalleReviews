@@ -23,7 +23,10 @@ class PracticaMostrarReviewController extends Controller {
         $login = $reviews[0]['login'];
         $usuari = $this->model->getUsuari($login);
 
-
+        $source = $reviews[0]['date'];
+        $date = new DateTime($source);
+        $date->format('d.m.Y');
+        $this->assign('date_esp', $date->format('d.m.Y'));
 
         $this->assign('reviews', $reviews);
         $this->assign('usuari', $usuari);
