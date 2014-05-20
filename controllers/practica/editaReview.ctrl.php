@@ -10,6 +10,10 @@ class PracticaEditaReviewController extends Controller
 
     public function build( )
     {
+        // Inicialitzem a false que haguem de canviar el titol al principi de tot..
+        $canviar_titol = false;
+
+
         $info = $this->getParams();
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
         $this->assign('val', 0);
@@ -36,6 +40,7 @@ class PracticaEditaReviewController extends Controller
             if(Filter::getString('submit_button')){
                 //Agafem les dades que posa l'usuari al addreview
                 $review['title']        =   Filter::getString('newTitle');
+                $nou_titol              =   Filter::getString('newTitle');
                 $review['description']  =   Filter::getString('newDescription');
                 $review['subject']      =   Filter::getString('newSubject');
                 $review['date']         =   Filter::getString('newDate');
@@ -51,6 +56,15 @@ class PracticaEditaReviewController extends Controller
                 }else{
                     $review['image'] = $_FILES['newImage']['name'];
                 }
+
+                // ---------------------------------------------------------------------
+
+                // Si el titol ha canviat i no es el mateix...
+                if ( strcmp( $review['description'], $nou_titol ) != 0 ) {
+                    $canviar_titol = true;
+                }
+
+                // ---------------------------------------------------------------------
 
                 var_dump($review['image']);
                 //Si tots els camps del formulari són correctes...
@@ -76,7 +90,13 @@ class PracticaEditaReviewController extends Controller
                     /***********************/
                     /*       MODEL         */
                     /***********************/
-                    $this->model->updateReview($this->id_review, $review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image']);
+
+                    if ($canviar_titol == false ) {
+                        $this->model->updateReview($this->id_review, $review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], null);
+                    }else{
+                        $this->model->updateReview($this->id_review, $r[0]['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], $nou_titol);
+                    }
+
 
                     //Eliminem les variables que ja no usarem
                     unset($review);

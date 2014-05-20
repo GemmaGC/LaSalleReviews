@@ -73,7 +73,8 @@ class PracticaAddReviewController extends Controller
 
                    $login = Session::getInstance()->get('login');
 
-                   $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $nomImg, $nom, $login, $dataC, $url);
+
+                   $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $nomImg, $nom, $login, $dataC, $url, null);
 
                    //Esborrem les variables que ja no necessitem
                    unset($review);
