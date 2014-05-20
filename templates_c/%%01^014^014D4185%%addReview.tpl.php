@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-20 12:54:44
+<?php /* Smarty version 2.6.14, created on 2014-05-20 13:41:46
          compiled from practica/addReview.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['headPractica']; ?>
 
@@ -58,7 +58,7 @@
 
                     <?php if (! $this->_tpl_vars['ok']): ?>
                         <input type="file" id="fileInput" name="newImage">
-                        <img style="float:left" class="section_review_img" src="/imag/img_usuaris/<?php echo $this->_tpl_vars['img']; ?>
+                        <img style="float:left" class="section_review_img" src="/imag/img_usuaris/704_<?php echo $this->_tpl_vars['img']; ?>
 ">
                     <?php else: ?>
                         <label for="image">IMAGE <strong>*</strong></label>

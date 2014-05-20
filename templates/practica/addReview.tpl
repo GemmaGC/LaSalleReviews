@@ -49,7 +49,7 @@
 
                     {if !$ok}
                         <input type="file" id="fileInput" name="newImage">
-                        <img style="float:left" class="section_review_img" src="/imag/img_usuaris/{$img}">
+                        <img style="float:left" class="section_review_img" src="/imag/img_usuaris/704_{$img}">
                     {else}
                         <label for="image">IMAGE <strong>*</strong></label>
                         <input type="file" id="fileInput" name="newImage" required/>

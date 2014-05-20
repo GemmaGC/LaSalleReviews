@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-20 12:15:48
+<?php /* Smarty version 2.6.14, created on 2014-05-20 13:39:15
          compiled from practica/mostrarReview.tpl */ ?>
 
 
@@ -9,7 +9,7 @@
 ?>
             <section class="section_review_show">
 
-                <img class="section_review_img" src='/imag/img_usuaris/<?php echo $this->_tpl_vars['r']['image']; ?>
+                <img class="section_review_img" src='/imag/img_usuaris/704_<?php echo $this->_tpl_vars['r']['image']; ?>
 '>
 
                 <div class="section_review_title section_review_title_show">

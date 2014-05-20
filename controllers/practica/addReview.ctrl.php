@@ -33,13 +33,6 @@ class PracticaAddReviewController extends Controller
                 $review['subject']      =   Filter::getString('newSubject');
                 $review['date']         =   Filter::getString('newDate');
                 $review['score']        =   Filter::getInteger('newScore');
-                //$review['image']        =   Filter::getString('newImage');
-                //echo '<pre>'; var_dumo($review); echo'</pre>';
-                //echo $_FILES['newImage']['name'];
-
-                /* $this->assign('vtitle', 0); $this->assign('description', 0);
-                $this->assign('subject', 0); $this->assign('date', 0);
-                $this->assign('score', 0); $this->assign('vimage', 0); */
 
 
                 //Si tots els camps del formulari són correctes...
@@ -54,20 +47,24 @@ class PracticaAddReviewController extends Controller
                    $attachtmp  = $_FILES['newImage']['tmp_name'];
                    $review['image'] = $_FILES['newImage']['name'];
 
-                   $directori = $dir . $review['image'];
-                   move_uploaded_file($attachtmp, $directori);
+                   //Creem un nom únic per la imatge i la guardem al directori
+                        //Guardem el nom gèneric de la imatge, segons si té un 100_ o un 704_ davant del nom serà d'un o de l'altre tamany
+                       $aux = $this->model->getUltim('review');
+                       $nomImg = str_replace(' ', '-', $review['image']);
+                       $nomImg = ($aux[0]['id']+1) . "_" . $nomImg;
 
-                   //Guardem la imatge en altres tamanys
-                   //$img100 = $this->canviaTamanyImatge($attachtmp, 100, 100);
-                   //$img704 = $this->canviaTamanyImatge($attachtmp, 704, 528);
+                       //IMATGE 100x100
+                       $this->canviaTamanyImatge($attachtmp, 100, 100, $dir, $nomImg);
+
+                       //IMATGE 704x528
+                       $this->canviaTamanyImatge($attachtmp, 704, 528, $dir, $nomImg);
+
 
                    /***********************/
                    /*       NOVA URL      */
                    /***********************/
                    $url = $review['title'];
-                   //echo $url;
                    $url = str_replace(' ', '-', $url);
-                   //echo $url;
 
                    /***********************/
                    /*       MODEL         */
@@ -76,7 +73,7 @@ class PracticaAddReviewController extends Controller
 
                    $login = Session::getInstance()->get('login');
 
-                   $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image'], $nom, $login, $dataC, $url);
+                   $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $nomImg, $nom, $login, $dataC, $url);
 
                    //Esborrem les variables que ja no necessitem
                    unset($review);
@@ -86,11 +83,6 @@ class PracticaAddReviewController extends Controller
                    $id = $id[0]['id'];
 
                    Session::getInstance()->set('id', $id);
-
-
-
-                   // AQUI HAUREM DE CANVIAR LA URL PER LA DE LA BBDD /Review/url_titol!!
-
 
                    //Redirigim a la pàgina de la review
                    header('Location: /r/'.$url);
@@ -113,51 +105,33 @@ class PracticaAddReviewController extends Controller
         }
     }
 
-    protected function canviaTamanyImatge($img_original, $Nwidth, $Nheight)
+    protected function canviaTamanyImatge($img_original, $maxWidth, $maxHeight, $dir, $nomImg)
     {
-        //Ancho y alto de la imagen original
-        list($width, $height)=getimagesize($img_original);
+        $info_imagen = getimagesize($img_original);
+        $imagen_ancho = $info_imagen[0];
+        $imagen_alto = $info_imagen[1];
+        $imagen_tipo = $info_imagen['mime'];
 
-        //Se calcula ancho y alto de la imagen final
-        /*$x_ratio = $max_ancho / $ancho;
-        $y_ratio = $max_alto / $alto;
-
-
-        //Si el ancho y el alto de la imagen no superan los maximos,
-        //ancho final y alto final son los que tiene actualmente
-        if( ($ancho <= $max_ancho) && ($alto <= $max_alto) ){//Si ancho
-            $ancho_final = $ancho;
-            $alto_final = $alto;
+        //Creem una imatge en blanc del nou tamany per no deformar la imatge original
+        $lienzo = imagecreatetruecolor( $maxWidth, $maxHeight );
+        switch ( $imagen_tipo ){
+            case "image/jpg":
+            case "image/jpeg":
+                $imagen = imagecreatefromjpeg( $img_original );
+                break;
+            case "image/png":
+                $imagen = imagecreatefrompng( $img_original );
+                break;
+            case "image/gif":
+                $imagen = imagecreatefromgif( $img_original );
+                break;
         }
-        /*
-        * si proporcion horizontal*alto mayor que el alto maximo,
-        * alto final es alto por la proporcion horizontal
-        * es decir, le quitamos al ancho, la misma proporcion que
-        * le quitamos al alto
-        *
-        */
-        /*elseif (($x_ratio * $alto) < $max_alto){
-            $alto_final = ceil($x_ratio * $alto);
-            $ancho_final = $max_ancho;
-        }
-        /*
-        * Igual que antes pero a la inversa
-        */
-        /*else{
-            $ancho_final = ceil($y_ratio * $ancho);
-            $alto_final = $max_alto;
-        }*/
 
-        $dir = "imag/img_usuaris/";
-        $directori = $dir . $Nwidth . '_imatge';
-        $tmp = imagecreatetruecolor($Nwidth, $Nheight); //Creem una nova imatge blanca amb el nou tamany
-        imagecopyresampled($tmp, $img_original, 0, 0, 0, 0, $Nwidth, $Nheight, $width, $height); //Copiem la imatge original sobre la blanca
-var_dump($tmp);
-        move_uploaded_file($tmp, $directori);
-        imagedestroy($_FILES['newImage']); //Destruim l'arxiu temporal per alliberar memòria
+        //Canviem el tamany de la imatge
+        imagecopyresampled($lienzo, $imagen, 0, 0, 0, 0, $maxWidth, $maxHeight, $imagen_ancho, $imagen_alto);
 
-        return $tmp;
-
+        //Guardem la nova imatge
+        imagejpeg( $lienzo, $dir . $maxWidth . "_" . $nomImg, 90 );
     }
 
     protected function comprovaCamps($review)

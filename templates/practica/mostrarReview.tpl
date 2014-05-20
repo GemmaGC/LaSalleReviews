@@ -4,7 +4,7 @@
     {foreach from = $reviews item = r }
             <section class="section_review_show">
 
-                <img class="section_review_img" src='/imag/img_usuaris/{$r.image}'>
+                <img class="section_review_img" src='/imag/img_usuaris/704_{$r.image}'>
 
                 <div class="section_review_title section_review_title_show">
                     <h1>{$r.title}</h1>
