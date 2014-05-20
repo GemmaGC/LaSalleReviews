@@ -476,4 +476,29 @@ QUERY;
         $result = $this->getAll($sql);
         return $result;
     }
+
+    public function editRate($login, $idReview, $punts)
+    {
+        $sql = <<<QUERY
+        UPDATE
+            puntuacions
+        SET
+            puntuacio = '$punts'
+        WHERE
+            login_user = '$login' AND id_review = '$idReview'
+QUERY;
+
+        $this->execute( $sql );
+    }
+
+    public function deleteRate($id)
+    {
+        $sql = <<<QUERY
+        DELETE FROM
+            puntuacions
+        WHERE
+            id = "$id"
+QUERY;
+        $this->execute($sql);
+    }
 }

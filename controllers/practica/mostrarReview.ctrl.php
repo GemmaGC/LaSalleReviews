@@ -30,24 +30,49 @@ class PracticaMostrarReviewController extends Controller {
         $this->assign('date_creacio_esp', $dateC->format('d.m.Y'));
 
 
-        //Rate the review
-        if(Filter::getString('submit_button')){
-            $punts = Filter::getString('newScore'); //Puntuacio de l'usuari
-            $id_review = $reviews[0]['id']; //id de la review
-            $u = $this->model->searchUser($login, $id_review);
+        //APARTAT Rate the review
+        $id_review = $reviews[0]['id']; //id de la review
+        $u = $this->model->searchUser($login, $id_review);
 
-            //Si aquest usuari encara no ha puntuat aquesta review...
-            if(sizeof($u) == 0)
+        if(sizeof($u) > 0){
+            //Si ja ha valorat aquesta review...
+            $this->assign("fet", 1);
+            $this->assign("score", $u[0]['puntuacio']);
+
+            //Si vol editar la valoracio...
+            if(Filter::getString('submit_edit')){
+                $this->assign("edita", 1);
+            }
+
+            if(Filter::getString('submit_save'))
             {
+                $punts = Filter::getString('score'); //Puntuacio de l'usuari
+                $this->model->editRate($login, $id_review, $punts);
+                $this->assign("edita", 0);
+                $this->assign("score", $punts);
+            }
+
+            //Si vol esborrar la valoracio...
+            if(Filter::getString('submit_delete')){
+                $this->assign("fet", 0);
+                $this->model->deleteRate($u[0]['id']);
+            }
+
+        }else{
+
+            //Si encara no ha valorat la review i fa click al submit...
+            if(Filter::getString('submit_button')){
+
+                $punts = Filter::getString('newScore'); //Puntuacio de l'usuari
                 //Afegim la puntuació a la base de dades
                 $this->model->addRate($login, $id_review, $punts);
-            }else{
                 $this->assign("fet", 1);
-                $this->assign("score", $u[0]['puntuacio']);
-                echo "Ep! Només pots puntuar una vegada cada review";
+
             }
+
+            $rate = $this->model->mitjana($reviews[0]['id']); //Informació dels punts de la review
         }
-        $rate = $this->model->mitjana($reviews[0]['id']); //Informació dels punts de la review
+
 
         //Assignem les variables a smarty i carreguem el template
 

@@ -49,26 +49,35 @@
                     <!-- Si estem loggejats-->
                     {if $log}
                         <form method="post">
-                            {if $fet}
-                                <label for="score">MY RATE</label>
-                                <select name="newScore" id="score" required>
-                                    <option value="{$score}" selected>{$score}</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
+                            {if $fet == 1}
+                                {if $edita == 1}
+                                    <label for="score">NEW SCORE</label>
+                                    <select name="score" id="score"  required>
 
-                                </select>
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
 
-                                <div class="footer_form">
-                                    <input type="submit" name="submit_button" value="RATE" class="button_review" />
-                                </div>
+                                    </select>
+
+                                    <div class="footer_form">
+                                        <input type="submit" name="submit_save" value="SAVE RATE" class="button_review" />
+                                    </div>
+                                {else}
+                                    <p class="titol_review">My rate: {$score}</p></br>
+
+                                    <div class="footer_form">
+                                        <input type="submit" name="submit_edit" value="EDIT RATE" class="button_review" />
+                                        <input type="submit" name="submit_delete" value="DELETE RATE" class="button_review" />
+                                    </div>
+                                {/if}
                             {else}
                                 <label for="score">SCORE</label>
                                 <select name="newScore" id="score"  required>
