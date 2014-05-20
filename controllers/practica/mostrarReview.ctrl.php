@@ -10,7 +10,12 @@ class PracticaMostrarReviewController extends Controller {
 
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
+        $nom = Session::getInstance()->get('nom');
+        $login = Session::getInstance()->get('login');
+
         $id_oculta = Filter::getString('id_oculta');
+
+        //echo $id_oculta;
 
         if (!$id_oculta)
         {
@@ -45,11 +50,6 @@ class PracticaMostrarReviewController extends Controller {
 
         $modules['headPractica']	= 'SharedpracticaHeadController';
         $modules['footerPractica']	= 'SharedpracticaFooterController';
-
-        // Moduls de la home especials
-        $modules['twitter']	        = 'PracticaTwitterController';
-        $modules['bestReview']	    = 'PracticaBestReviewController';
-        $modules['llistatReviews']	= 'PracticaLlistatReviewsController';
 
         return $modules;
     }
