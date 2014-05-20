@@ -15,20 +15,22 @@
         </ul>
     </nav>
 
-    {$modules.bestReview}
+    <section id="Best_Review">
+        {$modules.bestReview}
+    </section>
 
-    <section class="llistats" id="llistes">
+    <section class="llistats" id="Reviews_Lists">
         {$modules.llistatReviews}
         {$modules.llistatImatges}
     </section>
 
-    <div class="separator"></div>
+    <div class="separator" id="10_Best_Reviews"></div>
 
-    <section id="10_Best_Reviews">
+    <section>
         {$modules.llistatBestReviewsPuntuacio}
     </section>
 
-    <div class="separator"></div>
+    <div class="separator" id="Block_Twitter"></div>
 
     {$modules.twitter}
 
