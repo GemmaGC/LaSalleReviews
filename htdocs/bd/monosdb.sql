@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 20-05-2014 a las 12:12:40
+-- Tiempo de generación: 20-05-2014 a las 17:37:06
 -- Versión del servidor: 5.5.34
 -- Versión de PHP: 5.5.10
 
@@ -82,6 +82,27 @@ INSERT INTO `ornitorrincos` (`id`, `nom_img`, `url_img`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `puntuacions`
+--
+
+CREATE TABLE `puntuacions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `login_user` varchar(10) NOT NULL,
+  `id_review` int(11) NOT NULL,
+  `puntuacio` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Volcado de datos para la tabla `puntuacions`
+--
+
+INSERT INTO `puntuacions` (`id`, `login_user`, `id_review`, `puntuacio`) VALUES
+(2, 'ls25714', 1, 6);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `review`
 --
 
@@ -98,16 +119,15 @@ CREATE TABLE `review` (
   `data_creacio` date NOT NULL,
   `url_titol` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Volcado de datos para la tabla `review`
 --
 
 INSERT INTO `review` (`id`, `title`, `description`, `subject`, `date`, `score`, `image`, `nom`, `login`, `data_creacio`, `url_titol`) VALUES
-(1, '1 1 1 1', '', 'asdf', '2014-05-15', 1, '2014-05-17 03.52.23.jpg', 'Claudia', 'ls25714', '2014-05-19', '1-1-1-1'),
-(2, '2 2 2 2', '<p>asdfasdfasdf</p>', 'asdfsadf', '2014-05-16', 1, '2014-05-17 01.14.56.jpg', 'Claudia', 'ls25714', '2014-05-19', '2-2-2-2'),
-(3, '3 3 3 3', '<p>asdfasdfasdf</p>', 'asdasdfa', '2014-05-06', 1, '2014-05-17 02.05.37.jpg', 'Claudia', 'ls25714', '2014-05-19', '3-3-3-3');
+(1, 'review 1', '<p>sfgdsfg</p>', 'sdfgsdfg', '2014-05-21', 1, '1_DSC_0611.jpg', 'Claudia', 'ls25714', '2014-05-20', 'review-1'),
+(2, 'proporcions', '<p>adfg</p>', 'zxcv', '2014-05-16', 1, '2_DSC_0611.jpg', 'Claudia', 'ls25714', '2014-05-20', 'proporcions');
 
 -- --------------------------------------------------------
 

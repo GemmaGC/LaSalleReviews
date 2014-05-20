@@ -279,13 +279,13 @@ QUERY;
     /**
      * @return null
      */
-    public function updateReview($id, $title, $description, $subject, $date, $score, $image)
+    public function updateReview($id, $title, $description, $subject, $date, $score, $image, $new_title)
     {
         $sql = <<<QUERY
         UPDATE
             review
         SET
-            title = '$title', description = '$description', subject = '$subject', date = '$date', score = '$score', image = '$image'
+            title = '$title', description = '$description', subject = '$subject', date = '$date', score = '$score', image = '$image', new_title = '$new_title'
         WHERE
             id = '$id'
 QUERY;
