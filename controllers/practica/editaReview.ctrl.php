@@ -55,7 +55,7 @@ class PracticaEditaReviewController extends Controller
                 }
 
                 // Si el titol ha canviat i no es el mateix...
-                if ( strcmp( $review['title'], $review['title'] ) != 0 ) {
+                if ( strcmp( $r[0]['title'], $review['title'] ) != 0 ) {
                     $canviar_titol = true;
                 }
 
