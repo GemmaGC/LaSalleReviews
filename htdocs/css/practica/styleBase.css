@@ -501,6 +501,12 @@ input.notValid{
 
 
 
+/*  BOTO FACEBOOK! */
 
-
+img.boto_fb {
+    width: 280px !important;
+    height: 50px !important;
+    margin-left: 39%;
+    padding-top: 2%;
+}
 

@@ -40,7 +40,7 @@
 
     </form>
 
-    <a href="{$loginFacebookURL}" class="btn btn-primary btn-block" type="button"><img src="imag/LoginFacebook.png"></a>
+    <a href="{$loginFacebookURL}" class="btn btn-primary btn-block" type="button"><img  class="boto_fb" src="imag/LoginFacebook.png"></a>
 
 
 
