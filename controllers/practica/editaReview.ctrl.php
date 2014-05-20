@@ -19,7 +19,8 @@ class PracticaEditaReviewController extends Controller
 
             //Inicialitzem els camps...
             $this->assign('ok', false);
-            $id = Filter::getString('id');
+            $id = Filter::getString('id_edit');
+            //echo $id;
 
             $r = $this->model->getReview($id);
 
@@ -29,6 +30,7 @@ class PracticaEditaReviewController extends Controller
             $this->assign('date', $r[0]['date']);
             $this->assign('score', $r[0]['score']);
 
+            Session::getInstance()->set('img', $r[0]['image']);
 
             //Quan enviin...
             if(Filter::getString('submit_button')){
@@ -40,20 +42,31 @@ class PracticaEditaReviewController extends Controller
                 $review['date']         =   Filter::getString('newDate');
                 $review['score']        =   Filter::getInteger('newScore');
 
+                $attachtmp = $_FILES['newImage']['tmp_name'];
+
+                if (!strcmp($attachtmp, 0))
+                {
+                    $review['image'] = Session::getInstance()->get('img');
+                    Session::getInstance()->delete('img');
+                }else{
+                    $review['image'] = $_FILES['newImage']['name'];
+                }
+
                 //Si tots els camps del formulari són correctes...
                 if ($this->comprovaCamps($review)){
-
                     /***********************/
                     /*       IMATGE        */
                     /***********************/
 
-                    //Guardem la imatge a la carpeta d'htdocs si tots els camps del formulari són correctes
-                    $dir = "imag/img_usuaris/";
-                    $attachtmp  = $_FILES['newImage']['tmp_name'];
-                    $review['image'] = $_FILES['newImage']['name'];
+                    if ($attachtmp)
+                    {
+                        //Guardem la imatge a la carpeta d'htdocs si tots els camps del formulari són correctes
+                        $dir = "imag/img_usuaris/";
+                        $attachtmp  = $_FILES['newImage']['tmp_name'];
 
-                    $directori = $dir . $review['image'];
-                    move_uploaded_file($attachtmp, $directori);
+                        $directori = $dir . $review['image'];
+                        move_uploaded_file($attachtmp, $directori);
+                    }
 
                     //Guardem la imatge en altres tamanys
                     //$img100 = $this->canviaTamanyImatge($attachtmp, 100, 100);
@@ -62,6 +75,7 @@ class PracticaEditaReviewController extends Controller
                     /***********************/
                     /*       MODEL         */
                     /***********************/
+                    //echo '<pre>'; var_dump($review); echo '</pre>';
                     $this->model->updateReview($review['id'], $review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $review['image']);
 
                     //Eliminem les variables que ja no usarem
@@ -78,6 +92,7 @@ class PracticaEditaReviewController extends Controller
 
             }else{
                 Session::getInstance()->set('id', $id);
+                $this->assign('img', $r[0]['image']);
             }
 
             $this->setLayout( $this->view );
@@ -131,7 +146,7 @@ class PracticaEditaReviewController extends Controller
         $directori = $dir . $Nwidth . '_imatge';
         $tmp = imagecreatetruecolor($Nwidth, $Nheight); //Creem una nova imatge blanca amb el nou tamany
         imagecopyresampled($tmp, $img_original, 0, 0, 0, 0, $Nwidth, $Nheight, $width, $height); //Copiem la imatge original sobre la blanca
-        var_dump($tmp);
+
         move_uploaded_file($tmp, $directori);
         imagedestroy($_FILES['newImage']); //Destruim l'arxiu temporal per alliberar memòria
 
@@ -159,16 +174,19 @@ class PracticaEditaReviewController extends Controller
         //Comprovem la imatge
         $ext = array('image/jpg', 'image/jpeg', 'image/gif', 'image/png'); //Forcem que l'extensió només pugui ser jpg, gif o png
         $attachtmp  = $_FILES['newImage']['tmp_name']; //Arxiu temporal
-        $attachtype = $_FILES['newImage']['type'];
 
-        $tamany = filesize($attachtmp); //Tamany de la imatge (en bytes)
-        $tMax = 2 * pow(10,6); //El tamany màxim de la imatge és de 2MB
-        if(!file_exists($attachtmp) || !is_uploaded_file($attachtmp) || !in_array($attachtype, $ext) || $tamany > $tMax)
+        if (strcmp($attachtmp, 0))
         {
-            echo "Error al carregar la imatge";
-            return false;
-        }
+            $attachtype = $_FILES['newImage']['type'];
 
+            $tamany = filesize($attachtmp); //Tamany de la imatge (en bytes)
+            $tMax = 2 * pow(10,6); //El tamany màxim de la imatge és de 2MB
+            if(!file_exists($attachtmp) || !is_uploaded_file($attachtmp) || !in_array($attachtype, $ext) || $tamany > $tMax)
+            {
+                echo "Error al carregar la imatge";
+                return false;
+            }
+        }
 
         return true;
     }
@@ -180,7 +198,8 @@ class PracticaEditaReviewController extends Controller
         $this->assign('subject', $review['subject']);
         $this->assign('date', $review['date']);
         $this->assign('score', $review['score']);
-        $this->assign('image', $_FILES['newImage']['tmp_name']);
+        $this->assign('img', $_FILES['newImage']['tmp_name']);
+
     }
 
 

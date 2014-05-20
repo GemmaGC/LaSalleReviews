@@ -1,29 +1,23 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.5
+-- version 4.1.8
 -- http://www.phpmyadmin.net
 --
--- Servidor: localhost
--- Temps de generació: 19-05-2014 a les 21:03:31
--- Versió del servidor: 5.5.29
--- Versió de PHP: 5.4.10
+-- Servidor: localhost:8889
+-- Tiempo de generación: 20-05-2014 a las 12:12:40
+-- Versión del servidor: 5.5.34
+-- Versión de PHP: 5.5.10
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
 --
--- Base de dades: `monosdb`
+-- Base de datos: `monosdb`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de la taula `marmotas`
+-- Estructura de tabla para la tabla `marmotas`
 --
 
 CREATE TABLE `marmotas` (
@@ -34,7 +28,7 @@ CREATE TABLE `marmotas` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Bolcant dades de la taula `marmotas`
+-- Volcado de datos para la tabla `marmotas`
 --
 
 INSERT INTO `marmotas` (`id`, `nom_img`, `url_img`) VALUES
@@ -43,7 +37,7 @@ INSERT INTO `marmotas` (`id`, `nom_img`, `url_img`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de la taula `monos`
+-- Estructura de tabla para la tabla `monos`
 --
 
 CREATE TABLE `monos` (
@@ -54,7 +48,7 @@ CREATE TABLE `monos` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
--- Bolcant dades de la taula `monos`
+-- Volcado de datos para la tabla `monos`
 --
 
 INSERT INTO `monos` (`id`, `nom_img`, `url_img`) VALUES
@@ -66,7 +60,7 @@ INSERT INTO `monos` (`id`, `nom_img`, `url_img`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de la taula `ornitorrincos`
+-- Estructura de tabla para la tabla `ornitorrincos`
 --
 
 CREATE TABLE `ornitorrincos` (
@@ -77,7 +71,7 @@ CREATE TABLE `ornitorrincos` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
--- Bolcant dades de la taula `ornitorrincos`
+-- Volcado de datos para la tabla `ornitorrincos`
 --
 
 INSERT INTO `ornitorrincos` (`id`, `nom_img`, `url_img`) VALUES
@@ -88,7 +82,7 @@ INSERT INTO `ornitorrincos` (`id`, `nom_img`, `url_img`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de la taula `review`
+-- Estructura de tabla para la tabla `review`
 --
 
 CREATE TABLE `review` (
@@ -104,22 +98,21 @@ CREATE TABLE `review` (
   `data_creacio` date NOT NULL,
   `url_titol` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
--- Bolcant dades de la taula `review`
+-- Volcado de datos para la tabla `review`
 --
 
 INSERT INTO `review` (`id`, `title`, `description`, `subject`, `date`, `score`, `image`, `nom`, `login`, `data_creacio`, `url_titol`) VALUES
-(9, 'dsj b af jHDJS BCmdsc', '<p>dsjbkBFDJKVCJHBD</p>', 'XDS AVJKBFHJREA', '2014-05-23', 4, 'creu2.png', 'Gemma', 'ls24057', '2014-05-19', 'dsj-b-af-jHDJS-BCmdsc'),
-(10, 'sbc jhd vs cj hxisuagc aus xsachs', '<p>bbhjsbckjd xcagufgewukdXIA SDCUDGVYG CDISAXDBSFI</p>', 'bsafcjvsnvcds', '2014-05-08', 7, 'rewind_normal.png', 'Gemma', 'ls24057', '2014-05-19', 'sbc-jhd-vs-cj-hxisuagc-aus-xsachs'),
-(11, 'sbd gsauydkg A', '<p>SADhbcmdsC</p>', 'XSABHJCks jc<', '2014-05-24', 6, 'creu2.png', 'Gemma', 'ls24057', '2014-05-19', 'sbd-gsauydkg-A'),
-(12, 'dj< vjlzvc db bsvj al j disuagf u', '<p>sbajlF GAUDSIFG</p>', 'CDBJAGVL', '2014-05-22', 3, 'rewind_hover.png', 'Gemma', 'ls24057', '2014-05-19', 'dj<-vjlzvc-db-bsvj-al-j-disuagf-u');
+(1, '1 1 1 1', '', 'asdf', '2014-05-15', 1, '2014-05-17 03.52.23.jpg', 'Claudia', 'ls25714', '2014-05-19', '1-1-1-1'),
+(2, '2 2 2 2', '<p>asdfasdfasdf</p>', 'asdfsadf', '2014-05-16', 1, '2014-05-17 01.14.56.jpg', 'Claudia', 'ls25714', '2014-05-19', '2-2-2-2'),
+(3, '3 3 3 3', '<p>asdfasdfasdf</p>', 'asdasdfa', '2014-05-06', 1, '2014-05-17 02.05.37.jpg', 'Claudia', 'ls25714', '2014-05-19', '3-3-3-3');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de la taula `usuaris`
+-- Estructura de tabla para la tabla `usuaris`
 --
 
 CREATE TABLE `usuaris` (
@@ -136,13 +129,9 @@ CREATE TABLE `usuaris` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Usuaris/es de la pàgina web La Salle Review' AUTO_INCREMENT=10 ;
 
 --
--- Bolcant dades de la taula `usuaris`
+-- Volcado de datos para la tabla `usuaris`
 --
 
 INSERT INTO `usuaris` (`id`, `login`, `nom`, `email`, `password`, `actiu`, `urlActivacio`) VALUES
 (00001, 'ls25714', 'Claudia', 'cldauden@gmail.com', 'password', 1, '77a7e7f6b63464d55dd1b101e51bdb5e'),
 (00009, 'ls24057', 'Gemma', 'geemmaa.05@gmail.com', 'holaquetal', 0, '212785fe3512897edca5e5cf2c918985');
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

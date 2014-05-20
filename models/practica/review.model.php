@@ -237,6 +237,7 @@ QUERY;
         WHERE
             id = '$id'
 QUERY;
+
         $this->execute( $sql );
 
     }

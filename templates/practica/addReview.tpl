@@ -48,9 +48,15 @@
                     </br>
                     </br>
 
-                    <label for="image">IMAGE <strong>*</strong></label>
-                    <input type="file" id="fileInput" name="newImage" required/>
-                    <div id="fileDisplayArea"></div>
+                    {if !$ok}
+                        <input type="file" id="fileInput" name="newImage">
+                        <img style="float:left" class="section_review_img" src="imag/img_usuaris/{$img}">
+                    {else}
+                        <label for="image">IMAGE <strong>*</strong></label>
+                        <input type="file" id="fileInput" name="newImage" required/>
+                        <div id="fileDisplayArea"></div>
+
+                    {/if}
 
 					<div class="footer_form">
 		            	<input type="submit" name="submit_button" value="SEND REVIEW" class="button_review" />

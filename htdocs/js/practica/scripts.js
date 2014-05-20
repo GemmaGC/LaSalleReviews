@@ -32,6 +32,7 @@ function validarRegistre(){
 
 function submitirFormularioOculto(){
     document.getElementById("review").submit();
+
 }
 
 

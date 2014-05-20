@@ -33,7 +33,7 @@
 
                 <!-- PROBLEMA!!! SI ENS DESACTIVA EL JS AIXO NO ANIRA! -->
                 <form method="POST" action="/editReview" id="edit">
-                    <input type="hidden" name="id" value="{$r.id}">
+                    <input type="hidden" name="id_edit" value="{$r.id}">
                 </form>
 
                 <form method="POST" action="/deleteReview" id="delete">
