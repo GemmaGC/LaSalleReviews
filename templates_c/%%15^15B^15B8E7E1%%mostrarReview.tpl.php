@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-20 17:34:20
+<?php /* Smarty version 2.6.14, created on 2014-05-20 17:41:01
          compiled from practica/mostrarReview.tpl */ ?>
 
 
@@ -119,6 +119,9 @@
                             <?php endif; ?>
 
                         </form>
+                    <?php else: ?>
+                        <br>
+                        <p class="titol_review">You have to log in to rate reviews.</p>
                     <?php endif; ?>
                     <!-- Si no estem loggejats al fer RATE (botó) ens porta a la pag 2 opcions i posem valor als botons Register i Log in-->
 

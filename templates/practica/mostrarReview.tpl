@@ -102,6 +102,9 @@
                             {/if}
 
                         </form>
+                    {else}
+                        <br>
+                        <p class="titol_review">You have to log in to rate reviews.</p>
                     {/if}
                     <!-- Si no estem loggejats al fer RATE (botó) ens porta a la pag 2 opcions i posem valor als botons Register i Log in-->
 
