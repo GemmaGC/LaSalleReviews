@@ -109,7 +109,7 @@ class PracticaRegistreController extends Controller
                 $var = false;
             }
 
-            if(!strcmp($u['login'], $usuari['login']) || PracticaRegistrecontroller::comprovaLogin($u['login'])) //Comprovem que el login sigui unic, tingui una llargada de 7, 2 lletres i 2 num
+            if(!strcmp($u['login'], $usuari['login']) || $this->comprovaLogin($usuari['login'])) //Comprovem que el login sigui unic, tingui una llargada de 7, 2 lletres i 2 num
             {
 
                 $this->assign('vLogin', 1);
@@ -154,19 +154,24 @@ class PracticaRegistreController extends Controller
     protected function comprovaLogin($var)
     {
         $ok = 0;
-        for ($i = 2; $i<sizeof($var); $i++)
-        {
-            for ($j = 0; $j<10; $j++)
+        if (strlen($var) == 7){
+            for ($i = 2; $i<strlen($var); $i++)
             {
-                if($var[$i] === $j)
+                for ($j = 0; $j<10; $j++)
                 {
-                    $ok++;
+                    if($var[$i] === $j)
+                    {
+                        $ok++;
+                    }
                 }
             }
-        }
-        if ($ok === 5 && $var[0] === 'l' && $var[1] === 's')
-        {
-            return true;
+            echo $ok;
+            if ($ok === 5 && $var[0] === 'l' && $var[1] === 's')
+            {
+                return true;
+            }else{
+                return false;
+            }
         }else{
             return false;
         }

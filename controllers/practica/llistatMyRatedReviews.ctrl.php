@@ -18,7 +18,7 @@ class PracticaLlistatMyRatedReviewsController extends Controller {
             if(!strcmp($p['login_user'], $login))
             {
                 $r = $this->model->getReview($p['id_review']);
-                
+
                 array_push($reviews, $r[0]);
             }
         }
