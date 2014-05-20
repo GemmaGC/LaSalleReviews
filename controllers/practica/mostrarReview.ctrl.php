@@ -13,8 +13,24 @@ class PracticaMostrarReviewController extends Controller {
         //Busquem la Review
         $info = $this->getParams();
         $reviews = $this->model->buscaReviewTitle($info['url_arguments'][0]);
+        $log_usuari_loggejat = Session::getInstance()->get('log');
+
+        $id_oculta = Filter::getString('id_oculta');
+        //echo $id_oculta;
+
+        if (!$id_oculta)
+        {
+            unset ($id_oculta);
+            $id_oculta = Session::getInstance()->get('id');
+            Session::getInstance()->delete('id');
+        }
+
+
+
+        $reviews = $this->model->getReview($id_oculta);
 
         //Busquem l'usuari que ha escrit la review
+
         $login = $reviews[0]['login'];
         $usuari = $this->model->getUsuari($login);
 
@@ -28,10 +44,24 @@ class PracticaMostrarReviewController extends Controller {
         $dateC->format('d.m.Y');
         $this->assign('date_creacio_esp', $dateC->format('d.m.Y'));
 
+
+        if ( $log_usuari_loggejat != null){
+            // Redirigir a la pagina de dos opcions i omplir les dades amb la dels botons:
+            // Text: You have to be logged in to rate a review. Please select what do you want to do:
+            // SIGN IN - LOG IN
+
+        }else{
+            // Enviem dades a la bbdd
+            // A enviar (noms de la bbdd): login_user, id_review, puntuacio
+            // Suposo que login_user = login, id_review = id_oculta, i puntuacio = lo del form
+
+            // $puntuacio = Filter::getString('newScore');
+        }
+
+
         $this->assign('reviews', $reviews);
         $this->assign('usuari', $usuari);
         $this->setLayout( $this->view );
-
 
     }
 
