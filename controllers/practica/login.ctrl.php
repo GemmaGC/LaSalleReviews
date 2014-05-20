@@ -21,7 +21,7 @@ class PracticaLoginController extends Controller
 
                 $this->assign("ok", 0);
                 $this->assign("mail", Session::getInstance()->get('mail'));
-                $this->assign('error', "Aquest usuari no existeix! Comprova els camps o dona't d'alta ;)");
+                //$this->assign('error', "Aquest usuari no existeix! Comprova els camps o dona't d'alta ;)");
 
                 $this->setLayout( $this->view );
 
