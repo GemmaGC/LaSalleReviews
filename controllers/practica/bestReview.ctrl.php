@@ -17,15 +17,12 @@ class PracticaBestReviewController extends Controller {
 
             $this->assign('mostrarReview', $review);
 
-            /*
-
             $source = $review[0]['date'];
             $date = new DateTime($source);
             $date->format('d.m.Y');
 
             $this->assign('date_esp', $date->format('d.m.Y'));
 
-            */
 
             $this->setLayout( $this->view );
         }
