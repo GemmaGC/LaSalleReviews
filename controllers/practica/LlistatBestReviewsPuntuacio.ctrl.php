@@ -10,7 +10,7 @@ class PracticaLlistatBestReviewsPuntuacioController extends Controller {
         $reviews = $this->model->getMaxDeuP();
         $this->assign('reviews', $reviews);
 
-        $titulo = "10 BEST RATED REVIEWS";
+        $titulo = "10 BESTTER RATED REVIEWS";
         $this->assign('titulo', $titulo);
 
         $this->setLayout( $this->view );
