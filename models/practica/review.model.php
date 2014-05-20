@@ -379,7 +379,7 @@ QUERY;
 
     }
 
-    public function getReview($id_oculta){
+    public function getReview($id){
 
         $sql = <<<QUERY
         SELECT DISTINCT
@@ -387,7 +387,7 @@ QUERY;
         FROM
             review
         WHERE
-        id LIKE '$id_oculta'
+        id LIKE '$id'
 
 
 QUERY;

@@ -6,8 +6,23 @@ class PracticaLlistatMyRatedReviewsController extends Controller {
 
     public function build( ){
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
+
         //Recuperem totes les review
-        $reviews = $this->model->get10R();
+        $puntuacions = $this->model->getTot('puntuacions');
+
+        $login = Session::getInstance()->get('login');
+
+        $reviews = array();
+        foreach ($puntuacions as $p)
+        {
+            if(!strcmp($p['login_user'], $login))
+            {
+                $r = $this->model->getReview($p['id_review']);
+                
+                array_push($reviews, $r[0]);
+            }
+        }
+
         $this->assign('reviews', $reviews);
         $titulo = "MY RATED REVIEWS";
 

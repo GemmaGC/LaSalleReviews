@@ -41,6 +41,8 @@ class PracticaFacebookController extends Controller
             }
         }
 
+        var_dump($user_profile);
+
         //LOG IN AMB FACEBOOK
         if(!strcmp($info['url_arguments'][0],"logIn"))
         {
