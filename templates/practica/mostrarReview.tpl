@@ -34,12 +34,17 @@
 
                     <h3>RATE THE REVIEW</h3>
 
-                    <!-- Això si ha estat valorada algun cop-->
-                    <p class="titol_review">Average rate: </p></br>
-                    <p class="titol_review">Nº rates: </p></br>
+                    {if $valorada == 1}
+                        <!-- Això si ha estat valorada algun cop-->
+                        <p class="titol_review">Average rate: </p></br>
+                        <p class="titol_review">Nº rates: </p></br>
 
-                    <!-- Si no s'ha valorat mai-->
-                    <p class="titol_review">Sorry, but this review hasn't been rated yet.</p>
+
+                    {elseif $valorada == 0}
+                        <!-- Si no s'ha valorat mai-->
+                        <p class="titol_review">Sorry, but this review hasn't been rated yet.</p>
+                    {/if}
+
 
                     <!-- Si estem loggejats-->
                     <form>
@@ -64,7 +69,6 @@
                         </div>
 
                     </form>
-
 
                     <!-- Si no estem loggejats al fer RATE (botó) ens porta a la pag 2 opcions i posem valor als botons Register i Log in-->
 

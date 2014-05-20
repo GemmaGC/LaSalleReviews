@@ -14,7 +14,6 @@ class PracticaMostrarReviewController extends Controller {
         $login = Session::getInstance()->get('login');
 
         $id_oculta = Filter::getString('id_oculta');
-
         //echo $id_oculta;
 
         if (!$id_oculta)
@@ -23,6 +22,20 @@ class PracticaMostrarReviewController extends Controller {
             $id_oculta = Session::getInstance()->get('id');
             Session::getInstance()->delete('id');
         }
+
+        if ($login != null){
+            // Redirigir a la pagina de dos opcions i omplir les dades amb la dels botons:
+            // Text: You have to be logged in to rate a review. Please select what do you want to do:
+            // SIGN IN - LOG IN
+
+        }else{
+            // Enviem dades a la bbdd
+            // A enviar (noms de la bbdd): login_user, id_review, puntuacio
+            // Suposo que login_user = login, id_review = id_oculta, i puntuacio = lo del form
+
+            // $puntuacio = Filter::getString('newScore');
+        }
+
 
         $reviews = $this->model->getReview($id_oculta);
         $login = $reviews[0]['login'];
@@ -41,7 +54,6 @@ class PracticaMostrarReviewController extends Controller {
         $this->assign('reviews', $reviews);
         $this->assign('usuari', $usuari);
         $this->setLayout( $this->view );
-
 
     }
 
