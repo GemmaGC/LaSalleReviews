@@ -82,8 +82,7 @@ $config['r']                    = 'PracticaMostrarReviewController';
 $config['editReview']           = 'PracticaEditaReviewController';
 $config['deleteReview']         = 'PracticaEsborraReviewController';
 
-$config['facebook']             = 'Facebook';
-$config['hola']                 = 'PracticaHolaController';
+$config['facebook']             = 'PracticaFacebookController';
 
 $config['myReviews']            = 'PracticaLlistatReviewsUsuariController';
 

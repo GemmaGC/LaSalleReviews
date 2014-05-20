@@ -1,5 +1,7 @@
 <?php
 
+include 'src/facebook/facebook.php';
+
 class PracticaLoginController extends Controller
 {
     protected $view = 'practica/formulariLogin.tpl';
@@ -13,7 +15,7 @@ class PracticaLoginController extends Controller
         $info = $this->getParams();
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
-        if(!isset($info['url_arguments'])){
+       // if(sizeof($info['url_arguments']) > 2){
 
             if(Session::getInstance()->get('header') == 1)
             {
@@ -69,9 +71,22 @@ class PracticaLoginController extends Controller
                 $this->setLayout( $this->view );
             }
 
-        }else{
+            //Facebook
+            $facebook = new Facebook(array(
+                'appId'  => '292309604263355',
+                'secret' => '06d50faaafd96c3986a6a8e9d749cf3d',
+                'cookie' => true
+            ));
+            $this->assign(
+                'loginFacebookURL',
+                $loginUrl = $facebook->getLoginUrl(array(
+                    'scope'	=> 'email', // Permissions to request from the user
+                    'redirect_uri' => 'http://g1.local/facebook/logIn'
+                )));
+
+        /*}else{
             $this->setLayout( $this->view_error );
-        }
+        }*/
 
 
 

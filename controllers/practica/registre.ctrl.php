@@ -2,6 +2,7 @@
 
 require_once './src/mailchimp-mandrill-api-php/src/Mandrill.php'; //Not required with Composer
 include_once( PATH_CONTROLLERS . 'practica/classesAuxiliars/mail.aux.php' );
+include 'src/facebook/facebook.php';
 
 class PracticaRegistreController extends Controller
 {
@@ -43,14 +44,6 @@ class PracticaRegistreController extends Controller
                     $this->usuari['url'] = $this::generaUrlActivacio($this->usuari);
                     $this->model->afegeixUsuari($this->usuari['login'], $this->usuari['nom'],$this->usuari['email'], $this->usuari['password'], $this->usuari['url']);
 
-
-                //CREC QE NO CAL GUARDAR TANTES INSTANCIES, NOMES CALEN NOM I LOGIN
-                    /*Session::getInstance()->set('nom', $this->usuari['nom']);
-                    Session::getInstance()->set('login', $this->usuari['login']);
-                    Session::getInstance()->set('email', $this->usuari['email']);
-                    Session::getInstance()->set('password', $this->usuari['password']);*/
-                //////////////
-
                     //Enviem el correu amb el codi d'activació del compte
                     $mail = new PracticaMailAuxiliar();
                     $mail->build($this->usuari);
@@ -78,6 +71,20 @@ class PracticaRegistreController extends Controller
         }else{
             $this->setLayout($this->view_error404);
         }
+
+        //Facebook
+        $facebook = new Facebook(array(
+            'appId'  => '292309604263355',
+            'secret' => '06d50faaafd96c3986a6a8e9d749cf3d',
+            'cookie' => true
+        ));
+
+        $this->assign(
+            'loginFacebookURL',
+            $loginUrl = $facebook->getLoginUrl(array(
+                'scope'	=> 'email', // Permissions to request from the user
+                'redirect_uri' => 'http://g1.local/facebook/register'
+            )));
     }
 
     /**

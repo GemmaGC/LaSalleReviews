@@ -121,6 +121,9 @@ $config['PracticaDosOpcionsController']		            = PATH_CONTROLLERS . 'pract
 $config['PracticaLogoutController']		                = PATH_CONTROLLERS . 'practica/logOut.ctrl.php';
 $config['PracticaBenvingudaController']		            = PATH_CONTROLLERS . 'practica/benvinguda.ctrl.php';
 
+//Registre amb facebok
+$config['PracticaFacebookController']		                = PATH_CONTROLLERS . 'practica/facebook.ctrl.php';
+
 //Reviews
 $config['PracticaAddReviewController']		            = PATH_CONTROLLERS . 'practica/addReview.ctrl.php';
 $config['PracticaMostrarReviewController']		        = PATH_CONTROLLERS . 'practica/mostrarReview.ctrl.php';
@@ -155,8 +158,6 @@ $config['PracticaReviewModel']          = PATH_MODELS .'practica/review.model.ph
 $config['ErrorErrorP404Controller']		= PATH_CONTROLLERS . 'error/errorP404.ctrl.php';
 $config['ErrorErrorP403Controller']		= PATH_CONTROLLERS . 'error/errorP403.ctrl.php';
 
-$config['Facebook']		                = PATH_CONTROLLERS . 'practica/facebook.ctrl.php';
-$config['PracticaHolaController']		= PATH_CONTROLLERS . 'practica/hola.ctrl.php';
 
 $config['PracticaResultadoBuscadorController']		= PATH_CONTROLLERS . 'practica/resultadoBuscador.ctrl.php';
 $config['PracticaNoResultsController']              = PATH_CONTROLLERS . 'practica/noResults.ctrl.php';

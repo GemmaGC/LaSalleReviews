@@ -40,6 +40,8 @@
 
     </form>
 
+    <a href="{$loginFacebookURL}" class="btn btn-primary btn-block" type="button"><img src="imag/LoginFacebook.png"></a>
+
 
 
 

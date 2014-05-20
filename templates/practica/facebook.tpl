@@ -1,110 +1,25 @@
-<!doctype html>
-<html xmlns:fb="http://www.facebook.com/2008/fbml">
-    <head>
-        <title>php-sdk</title>
-        <style>
-            body {
-                font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
-            }
-            h1 a {
-                text-decoration: none;
-                color: #3b5998;
-            }
-            h1 a:hover {
-                text-decoration: underline;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>php-sdk</h1>
+{$modules.headPractica}
+    <div class="header_form">
+        <h1>FINISH TO SIGN UP</h1>
+        <p>Please complete the next fields to finish the sign up.</p>
+    </div>
 
-        {if $user}
-            <a href="{$logoutUrl}">Logout</a>
-        {else}
-            <div>
-                Login using OAuth 2.0 handled by the PHP SDK:
-                <a href="{$loginUrl}">Login with Facebook</a>
+    <form name="signup-form" class="form" method="post">
+
+        <section>
+            <label for="login">LOGIN <strong>*</strong>
+            {if $vLogin}<div class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;This login is already used!</p></div>{/if}</label>
+            <input name="login" id="login" type="text" class="input_form" {if !$vLogin && !$vPas} placeholder="LOGIN" {else} value = "{$login}" {/if} required/>
+
+            <label for="Password">PASSWORD (6-20 characters) <strong>*</strong>
+                {if $vPas}<div align="top" class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;Password must be between 6 and 20 characters long!</p></div>{/if}</label>
+            <input name="password" id="Password" type="password" class="input_form" {if !$vLogin && !$vPas} placeholder="PASSWORD" {else} value = "{$password}" {/if} required/>
+
+            <div class="footer_form">
+                <input type="submit" name="submit_button" value="SIGN UP" class="button_form" />
             </div>
-        {/if}
 
-        <h3>PHP Session</h3>
-        <pre>{session_name()}</pre>
+        </section>
 
-        {if $user}
-            <h3>You</h3>
-            <img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
-
-            <h3>Your User Object (/me)</h3>
-            <pre><?php print_r($user_profile); ?></pre>
-        {else}
-            <strong><em>You are not Connected.</em></strong>
-        {/if}
-
-        <h3>Public profile of Naitik</h3>
-        <img src="https://graph.facebook.com/naitik/picture">
-        <?php echo $naitik['name']; ?>
-    </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-<!--
-<!doctype html>
-<html xmlns:fb="http://www.facebook.com/2008/fbml">
-    <head>
-        <title>php-sdk</title>
-        <style>
-            body {
-                font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
-            }
-            h1 a {
-                text-decoration: none;
-                color: #3b5998;
-            }
-            h1 a:hover {
-                text-decoration: underline;
-            }
-        </style>
-    </head>
-
-    <body>
-        <h1>php-sdk</h1>
-
-        <!--OK--><!-- {*if ($user)*}
-        <a href="{*$logoutUrl}">Logout</a>
-        {else}
-            <div>
-                Check the login status using OAuth 2.0 handled by the PHP SDK:
-                <a href="{$statusUrl}">Check the login status</a>
-            </div>
-            <div>
-                Login using OAuth 2.0 handled by the PHP SDK:
-                <a href="{$loginUrl}>">Login with Facebook</a>
-            </div>
-        {/if}
-
-        <h3>PHP Session</h3>
-        <pre>{print_r($_SESSION)}</pre>
-
-        <!--OK-->{if ($user)}
-            <h3>You</h3>
-        <!--OK--><img src="https://graph.facebook.com/{$user}/picture">
-
-            <h3>Your User Object (/me)</h3>
-            <pre>{print_r($user_profile)}</pre>
-        {else}
-            <strong><em>You are not Connected.</em></strong>
-        {/if *}
-
-        <h3>Public profile of Naitik</h3>
-        <img src="https://graph.facebook.com/naitik/picture">
-        {*$naitik['name']*}
-    </body>
-</html>
+    </form>
+{$modules.footerPractica}
