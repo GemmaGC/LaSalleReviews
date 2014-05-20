@@ -174,6 +174,24 @@ QUERY;
     }
 
     /**
+     * Funció que busca una review pel seu titol
+     * @param $urlTitle
+     */
+    public function buscaReviewTitle ($urlTitle)
+    {
+        $sql = <<<QUERY
+        SELECT
+            *
+        FROM
+            review
+        WHERE
+            url_titol = "$urlTitle"
+QUERY;
+        $result = $this->getAll($sql);
+        return $result;
+    }
+
+    /**
      * Funció que retorna les últimes 10 reviews
      * @return mixed
      */

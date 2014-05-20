@@ -9,6 +9,7 @@
 class PracticaLlistatReviewsUsuariController extends Controller
 {
     protected $view = 'practica/llistatReviewsUsuari.tpl';
+    protected $model;
 
     /**
      * Aquest m�tode sempre s'executa i caldr� implementar-lo sempre.
@@ -28,8 +29,6 @@ class PracticaLlistatReviewsUsuariController extends Controller
 
         //Creem un array que mostri cada 10
         $r = array_slice ( $reviews , $info['url_arguments'][0] * 10, 10);
-
-        //$this->setParams( array( 'num' => $info['url_arguments'][0] ) );
 
         $this->assign('min', $min);
         $this->assign('max', $max);

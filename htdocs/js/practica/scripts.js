@@ -35,15 +35,6 @@ function submitirFormularioOculto(){
 
 }
 
-
-function submitirFormularioEditar(){
-    document.getElementById("edit").submit();
-}
-
-function submitirFormularioEsborrar(){
-    document.getElementById("delete").submit();
-}
-
 /**
  *  Funció per precarregar la imatge
  */
