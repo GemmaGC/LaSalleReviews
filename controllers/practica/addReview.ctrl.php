@@ -19,7 +19,7 @@ class PracticaAddReviewController extends Controller
         $nom = Session::getInstance()->get('nom');
 
         date_default_timezone_set(date_default_timezone_get());
-        $dataC = date('d.m.Y', time());
+        $dataC = date('Y.m.d', time());
 
 
         if(!isset($info['url_arguments']) && $login > 0){
@@ -69,18 +69,6 @@ class PracticaAddReviewController extends Controller
                    $url = str_replace(' ', '-', $url);
                    //echo $url;
 
-                   /***********************************/
-                   /*       DATES AMB FORMAT OK       */
-                   /***********************************/
-
-
-                   $oldDate = $review['date'];
-                   $arr = explode('-', $oldDate);
-                   $review['date'] = $arr[2].'.'.$arr[1].'.'.$arr[0];
-
-                   var_dump($dataC);
-
-
                    /***********************/
                    /*       MODEL         */
                    /***********************/
@@ -118,7 +106,7 @@ class PracticaAddReviewController extends Controller
         else if(isset($info['url_arguments']))
         {
             $this->setLayout($this->view_error404);
-        }
+        }  
         else if($login == 0)
         {
             $this->setLayout($this->view_error403);

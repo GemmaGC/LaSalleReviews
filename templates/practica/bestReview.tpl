@@ -16,7 +16,7 @@
                                 <form method="POST" action="/r/{$m.url_titol}" id="review">
                                     <input type="hidden" name="id_oculta" value="{$m.id}">
                                 </form>
-                                <p class="titol_review  data_review ">{$m.date}</p>
+                                <p class="titol_review  data_review ">{$date_esp}</p>
                                 <p class="titol_review puntuacio_review">{$m.score} / 10</p>
                             </div>
 

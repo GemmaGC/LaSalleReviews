@@ -8,7 +8,7 @@
 
                 <div class="section_review_title section_review_title_show">
                     <h1>{$r.title}</h1>
-                    <p class="titol_review  data_review">{$r.date}</p>
+                    <p class="titol_review  data_review">{$date_esp}</p>
                     <p class="titol_review">{$r.score} / 10</p></br>
                     <p class="titol_review">{$r.subject} </p>
                 </div>
@@ -24,7 +24,7 @@
                     <p class="titol_review separator_footer">|</p>
                     <p class="titol_review">LOGIN: {$r.login}</p>
                     <p class="titol_review separator_footer">|</p>
-                    <p class="titol_review">{$r.data_creacio}</p>
+                    <p class="titol_review">{$date_creacio_esp}</p>
                 </div>
 
 
