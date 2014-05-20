@@ -24,7 +24,7 @@
                 <a href="{$url.global}/LaSalleReview" class="site-logo">LA SALLE REVIEW</a>
 
                 <div id="container">
-                    <form role="search" method="get" id="searchform" action="/searchResults" >
+                    <form role="search" method="get" id="searchform" action="/searchResults/0" >
                         <label for="s" class="icon_search">
                             <i class="fa fa-search"></i>
                         </label>

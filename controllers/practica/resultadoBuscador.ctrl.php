@@ -6,6 +6,7 @@ class PracticaResultadoBuscadorController extends Controller {
 
 
     public function build( ){
+        $info = $this->getParams();
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
         $palabra = Filter::getString('palabra');
@@ -21,10 +22,29 @@ class PracticaResultadoBuscadorController extends Controller {
         }
         else{
 
-            $this->assign('review', $review);
+            $max = round(count($review) / 10);
+            $min = 0;
 
-            $this->setLayout( $this->view );
+            //Creem un array que mostri cada 10
+            $r = array_slice ( $review , $info['url_arguments'][0] * 10, 10);
+
+            //$this->setParams( array( 'num' => $info['url_arguments'][0] ) );
+
+            $this->assign('min', $min);
+            $this->assign('max', $max);
+            $this->assign('num', $info['url_arguments'][0]);
+
+            $this->assign('url_ant', $info['url_arguments'][0]-1);
+            $this->assign('url_seg', $info['url_arguments'][0]+1);
+
+            $this->assign('review', $r);
+            $this->setLayout($this->view);
         }
+
+
+
+
+
 
     }
 
