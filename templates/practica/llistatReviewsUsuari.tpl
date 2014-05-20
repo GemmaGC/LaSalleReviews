@@ -12,8 +12,8 @@
     {foreach from = $reviews item = r}
         <section class="section_review margin_top_extra">
 
-            <div class="all_review">
-                <div class="">
+            <div class="">
+                <div class="section_review_title">
                     <a href="/r/{$r.url_titol}" class="link_titol_review"  style="cursor:pointer; color: orange;">{$r.title}  </a></br>
                     <!--<form method="POST" action="/r/{*$r.url_titol*}" id="review">
                         <input type="hidden" name="id_oculta" value="{*$r.id*}">
