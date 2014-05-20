@@ -44,9 +44,10 @@ class PracticaFacebookController extends Controller
         //LOG IN AMB FACEBOOK
         if(!strcmp($info['url_arguments'][0],"logIn"))
         {
-            //$this->model->afegeixUsuari('ls6789', $user_profile['first_name'],$user_profile['email'], "password", "urlActivacio");
-
-            $this->setLayout($this->view);
+            Session::getInstance()->set('nom', $user_profile['first_name']);
+            Session::getInstance()->set('login', '');
+            Session::getInstance()->set('log', 1);
+            header('Location: /LaSalleReview',true,301);
         }
 
         //REGISTRAR-SE AMB FACEBOOK

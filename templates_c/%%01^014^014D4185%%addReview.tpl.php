@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-20 13:41:46
+<?php /* Smarty version 2.6.14, created on 2014-05-20 22:13:53
          compiled from practica/addReview.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['headPractica']; ?>
 
@@ -39,6 +39,16 @@
                               <option value="<?php echo $this->_tpl_vars['score']; ?>
 " selected><?php echo $this->_tpl_vars['score']; ?>
 </option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
                           <?php else: ?>
                               <option value="1" selected>1</option>
                               <option value="2">2</option>
