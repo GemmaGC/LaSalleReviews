@@ -2,9 +2,18 @@
 
 class PracticaReviewModel extends Model{
 
+
+
+
+
     /**************/
     /*  GENERALS  */
     /**************/
+
+
+
+
+
 
     /**
      * Funció que torna tota la taula
@@ -43,9 +52,21 @@ QUERY;
     }
 
 
+
+
+
+
+
     /**************/
     /*   USUARIS  */
     /**************/
+
+
+
+
+
+
+
 
     /**
      * Afegeix un nou usuari a la base de dades, a la taula 'usuaris'
@@ -147,9 +168,22 @@ QUERY;
         }
     }
 
+
+
+
+
+
+
+
     /**************/
     /*   REVIEWS  */
     /**************/
+
+
+
+
+
+
 
     /**
      * Funció que afegeix una nova review a la base de dades
@@ -384,4 +418,62 @@ QUERY;
     }
 
 
+
+
+
+    /******************/
+    /*  PUNTUACIONS   */
+    /******************/
+
+
+    /**
+     * Funció que permet afegir una puntuació a una review
+     * @param $login
+     * @param $id_review
+     * @param $punts
+     */
+    public function addRate($login, $id_review, $punts){
+
+        $sql = <<<QUERY
+        INSERT INTO puntuacions
+        VALUES ('', '$login', '$id_review', '$punts')
+QUERY;
+        $this->execute( $sql );
+
+    }
+
+    /**
+     * Funció que busca si un usuari concret ja ha puntuat una review concreta
+     */
+    public function searchUser($login, $id)
+    {
+        $sql = <<<QUERY
+        SELECT
+            *
+        FROM
+            puntuacions
+        WHERE
+            login_user = "$login" AND id_review = "$id"
+QUERY;
+        $result = $this->getAll($sql);
+        return $result;
+    }
+
+    /**
+     * Funció que retorna la mitja de la puntuació de tots els usuaris d'una review en concret
+     * @param $id  -> id de la review
+     */
+    public function mitjana($id)
+    {
+        $sql = <<<QUERY
+        SELECT
+            SUM(puntuacio) AS "sumPunts", COUNT(id) AS "numVal"
+        FROM
+            puntuacions
+        WHERE
+            id_review = "$id"
+QUERY;
+        $result = $this->getAll($sql);
+        return $result;
+    }
 }

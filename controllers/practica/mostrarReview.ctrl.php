@@ -13,24 +13,9 @@ class PracticaMostrarReviewController extends Controller {
         //Busquem la Review
         $info = $this->getParams();
         $reviews = $this->model->buscaReviewTitle($info['url_arguments'][0]);
-        $log_usuari_loggejat = Session::getInstance()->get('log');
-
-        $id_oculta = Filter::getString('id_oculta');
-        //echo $id_oculta;
-
-        if (!$id_oculta)
-        {
-            unset ($id_oculta);
-            $id_oculta = Session::getInstance()->get('id');
-            Session::getInstance()->delete('id');
-        }
-
-
-
-        $reviews = $this->model->getReview($id_oculta);
+        $log = Session::getInstance()->get('log');
 
         //Busquem l'usuari que ha escrit la review
-
         $login = $reviews[0]['login'];
         $usuari = $this->model->getUsuari($login);
 
@@ -45,22 +30,34 @@ class PracticaMostrarReviewController extends Controller {
         $this->assign('date_creacio_esp', $dateC->format('d.m.Y'));
 
 
-        if ( $log_usuari_loggejat != null){
-            // Redirigir a la pagina de dos opcions i omplir les dades amb la dels botons:
-            // Text: You have to be logged in to rate a review. Please select what do you want to do:
-            // SIGN IN - LOG IN
+        //Rate the review
+        if(Filter::getString('submit_button')){
+            $punts = Filter::getString('newScore'); //Puntuacio de l'usuari
+            $id_review = $reviews[0]['id']; //id de la review
+            $u = $this->model->searchUser($login, $id_review);
 
-        }else{
-            // Enviem dades a la bbdd
-            // A enviar (noms de la bbdd): login_user, id_review, puntuacio
-            // Suposo que login_user = login, id_review = id_oculta, i puntuacio = lo del form
-
-            // $puntuacio = Filter::getString('newScore');
+            //Si aquest usuari encara no ha puntuat aquesta review...
+            if(sizeof($u) == 0)
+            {
+                //Afegim la puntuació a la base de dades
+                $this->model->addRate($login, $id_review, $punts);
+            }else{
+                $this->assign("fet", 1);
+                $this->assign("score", $u[0]['puntuacio']);
+                echo "Ep! Només pots puntuar una vegada cada review";
+            }
         }
+        $rate = $this->model->mitjana($reviews[0]['id']); //Informació dels punts de la review
 
+        //Assignem les variables a smarty i carreguem el template
 
-        $this->assign('reviews', $reviews);
-        $this->assign('usuari', $usuari);
+        if ($rate[0]["numVal"] > 0) $this->assign('valorada', 1);       //Mirem si està valorada o no
+        $this->assign('avg', $rate[0]["sumPunts"]/$rate[0]["numVal"]);  //Mitja de punts
+        $this->assign('num', $rate[0]["numVal"]);                       //Num de valoracions
+        $this->assign('log', $log);                                     //Si l'usuari està logejat valdrà 1
+        $this->assign('reviews', $reviews);                             //Totes les dades de la review
+        $this->assign('usuari', $usuari);                               //Informació de l'usuari
+
         $this->setLayout( $this->view );
 
     }

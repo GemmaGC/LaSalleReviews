@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-20 13:39:15
+<?php /* Smarty version 2.6.14, created on 2014-05-20 17:19:51
          compiled from practica/mostrarReview.tpl */ ?>
 
 
@@ -48,38 +48,70 @@
 
                     <h3>RATE THE REVIEW</h3>
 
-                    <!-- Això si ha estat valorada algun cop-->
-                    <p class="titol_review">Average rate: </p></br>
-                    <p class="titol_review">Nº rates: </p></br>
+                    <?php if ($this->_tpl_vars['valorada'] == 1): ?>
+                        <!-- Això si ha estat valorada algun cop-->
+                        <p class="titol_review">Average rate: <?php echo $this->_tpl_vars['avg']; ?>
+</p></br>
+                        <p class="titol_review">Nº rates: <?php echo $this->_tpl_vars['num']; ?>
+</p></br>
 
-                    <!-- Si no s'ha valorat mai-->
-                    <p class="titol_review">Sorry, but this review hasn't been rated yet.</p>
+
+                    <?php elseif ($this->_tpl_vars['valorada'] == 0): ?>
+                        <!-- Si no s'ha valorat mai-->
+                        <p class="titol_review">Sorry, but this review hasn't been rated yet.</p>
+                    <?php endif; ?>
+
 
                     <!-- Si estem loggejats-->
-                    <form>
-                        <label for="score">SCORE</label>
-                        <select name="newScore" id="score"  required>
+                    <?php if ($this->_tpl_vars['log']): ?>
+                        <form method="post">
+                            <?php if ($this->_tpl_vars['fet']): ?>
+                                <label for="score">MY RATE</label>
+                                <select name="newScore" id="score" required>
+                                    <option value="<?php echo $this->_tpl_vars['score']; ?>
+" selected><?php echo $this->_tpl_vars['score']; ?>
+</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
 
-                                <option value="1" selected>1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
+                                </select>
 
-                        </select>
+                                <div class="footer_form">
+                                    <input type="submit" name="submit_button" value="RATE" class="button_review" />
+                                </div>
+                            <?php else: ?>
+                                <label for="score">SCORE</label>
+                                <select name="newScore" id="score"  required>
 
-                        <div class="footer_form">
-                            <input type="submit" name="submit_button" value="RATE" class="button_review" />
-                        </div>
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
 
-                    </form>
+                                </select>
 
+                                <div class="footer_form">
+                                    <input type="submit" name="submit_button" value="RATE" class="button_review" />
+                                </div>
 
+                            <?php endif; ?>
+
+                        </form>
+                    <?php endif; ?>
                     <!-- Si no estem loggejats al fer RATE (botó) ens porta a la pag 2 opcions i posem valor als botons Register i Log in-->
 
                 </div>

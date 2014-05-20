@@ -112,7 +112,7 @@ class PracticaAddReviewController extends Controller
         $imagen_alto = $info_imagen[1];
         $imagen_tipo = $info_imagen['mime'];
 
-        //Creem una imatge en blanc del nou tamany per no deformar la imatge original
+        //Creem una imatge del nou tamany
         $lienzo = imagecreatetruecolor( $maxWidth, $maxHeight );
         switch ( $imagen_tipo ){
             case "image/jpg":

@@ -36,8 +36,8 @@
 
                     {if $valorada == 1}
                         <!-- Això si ha estat valorada algun cop-->
-                        <p class="titol_review">Average rate: </p></br>
-                        <p class="titol_review">Nº rates: </p></br>
+                        <p class="titol_review">Average rate: {$avg}</p></br>
+                        <p class="titol_review">Nº rates: {$num}</p></br>
 
 
                     {elseif $valorada == 0}
@@ -47,29 +47,53 @@
 
 
                     <!-- Si estem loggejats-->
-                    <form>
-                        <label for="score">SCORE</label>
-                        <select name="newScore" id="score"  required>
+                    {if $log}
+                        <form method="post">
+                            {if $fet}
+                                <label for="score">MY RATE</label>
+                                <select name="newScore" id="score" required>
+                                    <option value="{$score}" selected>{$score}</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
 
-                                <option value="1" selected>1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
+                                </select>
 
-                        </select>
+                                <div class="footer_form">
+                                    <input type="submit" name="submit_button" value="RATE" class="button_review" />
+                                </div>
+                            {else}
+                                <label for="score">SCORE</label>
+                                <select name="newScore" id="score"  required>
 
-                        <div class="footer_form">
-                            <input type="submit" name="submit_button" value="RATE" class="button_review" />
-                        </div>
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
 
-                    </form>
+                                </select>
 
+                                <div class="footer_form">
+                                    <input type="submit" name="submit_button" value="RATE" class="button_review" />
+                                </div>
+
+                            {/if}
+
+                        </form>
+                    {/if}
                     <!-- Si no estem loggejats al fer RATE (botó) ens porta a la pag 2 opcions i posem valor als botons Register i Log in-->
 
                 </div>
