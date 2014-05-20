@@ -13,22 +13,6 @@ class PracticaMostrarReviewController extends Controller {
         //Busquem la Review
         $info = $this->getParams();
         $reviews = $this->model->buscaReviewTitle($info['url_arguments'][0]);
-        /*
-
-        $nom = Session::getInstance()->get('nom');
-        $login = Session::getInstance()->get('login');
-
-        $id_oculta = Filter::getString('id_oculta');
-
-
-        if (!$id_oculta)
-        {
-            unset ($id_oculta);
-            $id_oculta = Session::getInstance()->get('id');
-            Session::getInstance()->delete('id');
-        }
-
-        $reviews = $this->model->getReview($id_oculta);*/
 
         //Busquem l'usuari que ha escrit la review
         $login = $reviews[0]['login'];

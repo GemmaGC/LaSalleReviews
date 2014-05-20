@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-20 12:03:45
+<?php /* Smarty version 2.6.14, created on 2014-05-20 12:56:00
          compiled from practica/bestReview.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'practica/bestReview.tpl', 24, false),)), $this); ?>
@@ -25,7 +25,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 
                                     <input type="hidden" name="id_oculta" value="<?php echo $this->_tpl_vars['m']['id']; ?>
 ">
                                 </form>
-                                <p class="titol_review  data_review "><?php echo $this->_tpl_vars['m']['date']; ?>
+                                <p class="titol_review  data_review "><?php echo $this->_tpl_vars['date_esp']; ?>
 </p>
                                 <p class="titol_review puntuacio_review"><?php echo $this->_tpl_vars['m']['score']; ?>
  / 10</p>
