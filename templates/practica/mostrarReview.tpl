@@ -104,8 +104,11 @@
                     {else}
                         <br>
                         <p class="titol_review">You have to log in to rate reviews.</p>
+                        <div class="welcome_buttons_container">
+                            <a href="{$url.global}/logIn" class="welcome_button">LOG IN</a>
+                            <a href="{$url.global}/register" class="welcome_button">SIGN UP</a>
+                        </div>
                     {/if}
-                    <!-- Si no estem loggejats al fer RATE (botó) ens porta a la pag 2 opcions i posem valor als botons Register i Log in-->
 
                 </div>
 
