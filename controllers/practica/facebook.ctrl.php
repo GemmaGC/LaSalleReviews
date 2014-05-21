@@ -15,6 +15,8 @@ class PracticaFacebookController extends Controller
         $info = $this->getParams();
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
+        $this->assign('url_creu', '../imag/creu2.png');
+
         $facebook = new Facebook(array(
             'appId'  => '292309604263355',
             'secret' => '06d50faaafd96c3986a6a8e9d749cf3d',
@@ -61,29 +63,16 @@ class PracticaFacebookController extends Controller
                 $this->usuari['password'] = Filter::getString('password');
                 $this->usuari['url'] = $this->generaUrlActivacio($this->usuari);
 
-                if (strlen($this->usuari['password']) >= 6 && strlen($this->usuari['password']) <= 20 ){
+                if($this->comprovaCamps($this->usuari))
+                {
+                    $this->model->afegeixUsuari($this->usuari['login'], $this->usuari['nom'], $this->usuari['email'], $this->usuari['password'], $this->usuari['url']);
+                    $this->model->activaUsuari($this->usuari['login']);
 
-                    if($this->comprovaLogin($this->usuari['login'])) {
-
-                        $this->model->afegeixUsuari($this->usuari['login'], $this->usuari['nom'], $this->usuari['email'], $this->usuari['password'], $this->usuari['url']);
-                        $this->model->activaUsuari($this->usuari['login']);
-
-                        //Fem el login (guardem les variables de sessió corresponents)
-                        Session::getInstance()->set('nom', $this->usuari['nom']);
-                        Session::getInstance()->set('login', $this->usuari['login']);
-                        Session::getInstance()->set('log', 1);
-                        header('Location: /LaSalleReview',true,301);
-
-                    }else{
-
-                        $this->assign('login', $this->usuari['login']);
-                        $this->assign('password', $this->usuari['password']);
-                        $this->assign('vLogin', 1);
-                    }
-                }else{
-                    $this->assign('login', $this->usuari['login']);
-                    $this->assign('password', $this->usuari['password']);
-                    $this->assign('vPassword', 1);
+                    //Fem el login (guardem les variables de sessió corresponents)
+                    Session::getInstance()->set('nom', $this->usuari['nom']);
+                    Session::getInstance()->set('login', $this->usuari['login']);
+                    Session::getInstance()->set('log', 1);
+                    header('Location: /LaSalleReview',true,301);
                 }
             }
 
@@ -93,6 +82,47 @@ class PracticaFacebookController extends Controller
         }
     }
 
+    protected function comprovaCamps($usuari)
+    {
+        $usuaris = $this->model->getTot('usuaris');
+        $var = true;
+
+        //Iniciem les variables d'smarty a 0
+        $this->assign('vLogin', 0);
+        $this->assign('vUsed', 0);
+        $this->assign('vPas', 0);
+
+        foreach($usuaris as $u)
+        {
+            if(!strcmp($u['login'], $usuari['login']) ) //Comprovem que el login sigui unic, tingui una llargada de 7, 2 lletres i 2 num
+            {
+                $this->assign('vUsed', 1);
+
+                $this->assign('login', $usuari['login']);
+                $this->assign('password', $usuari['password']);
+                $var = false;
+            }
+        }
+
+        if(strlen($usuari['password']) < 6 || strlen($usuari['password']) > 20 ) //Comprovem que la contrassenya tingui entre 6 i 20 caràcters
+        {
+            $this->assign('vPas', 1);
+
+            $this->assign('login', $usuari['login']);
+            $this->assign('password', $usuari['password']);
+            $var = false;
+        }
+
+        if (!$this->comprovaLogin($usuari['login'])){
+
+            $this->assign('vLogin', 1);
+
+            $this->assign('login', $usuari['login']);
+            $this->assign('password', $usuari['password']);
+            $var = false;
+        }
+        return $var;
+    }
 
     /**
      * Funció que s'encarrega de controlar que el login és correcte
@@ -101,23 +131,27 @@ class PracticaFacebookController extends Controller
      */
     protected function comprovaLogin($var)
     {
-        $num = 0;
-        for ($i = 2; $i<strlen($var); $i++)
-        {
-            for ($j = 0; $j<10; $j++)
+        $ok = 0;
+
+        if (strlen($var) == 7){
+            for ($i = 2; $i < strlen($var); $i++)
             {
-                if(!strcmp($var[$i], $j))
+                for ($j = 0; $j < 10; $j++)
                 {
-                    $num++;
+                    if($var[$i] == $j)
+                    {
+                        $ok++;
+                    }
                 }
             }
-        }
-        if ($num === 5 && $var[0] === 'l' && $var[1] === 's')
-        {
-            return true;
-        }else{
-            return false;
-        }
+
+            if ($ok === 5 && $var[0] === 'l' && $var[1] === 's')
+            {
+                return true;
+
+            }else return false;
+
+        }else return false;
     }
 
     /**

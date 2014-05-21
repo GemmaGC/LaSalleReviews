@@ -16,8 +16,8 @@
 
 
             <label for="login">LOGIN <strong>*</strong>
-                {if $vLogin}<div class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;This login is already used!</p></div>{/if}</label>
-            {if $vNom}<div class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;This login is already used or is incorrect (2 letters + 2 numbers)!</p></div>{/if}</label>
+                {if $vUsed}<div class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;This login is already used!</p></div>{/if}</label>
+            {if $vLogin}<div class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;This login is incorrect (2 letters + 2 numbers)!</p></div>{/if}</label>
             <input name="newLogin" id="login" type="text" class="input_form" {if !$vNom && !$vLogin && !$vMail && !$vPas} placeholder="LOGIN" {else} value = "{$login}" {/if} required/>
 
 
@@ -40,7 +40,7 @@
 
     </form>
 
-    <a href="{$loginFacebookURL}" class="btn btn-primary btn-block" type="button"><img  class="boto_fb" src="imag/LoginFacebook.png"></a>
+    <a href="{$loginFacebookURL}" class="btn btn-primary btn-block" type="button"><img  class="boto_fb" src="imag/signupFacebook.png"></a>
 
 
 
