@@ -27,7 +27,13 @@ class PracticaEditaReviewController extends Controller
 
             $r = $this->model->getReview($this->id_review);
 
-            $this->assign('title', $r[0]['title']);
+            if($r[0]['old_title'] == null)
+            {
+                $this->assign('title', $r[0]['title']);
+            }else{
+                $this->assign('title', $r[0]['old_title']);
+            }
+            
             $this->assign('description', $r[0]['description']);
             $this->assign('subject', $r[0]['subject']);
             $this->assign('date', $r[0]['date']);
