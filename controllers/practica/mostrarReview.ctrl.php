@@ -38,13 +38,14 @@ class PracticaMostrarReviewController extends Controller {
             $this->assign('date_creacio_esp', $dateC->format('d.m.Y'));
 
 
-            //APARTAT Rate the review
+            //************/
+            /*  RATE RW  */
+            //************/
             $id_review = $reviews[0]['id']; //id de la review
-            $u = $this->model->searchUser($login, $id_review);
+            $u = $this->model->searchUser($l, $id_review);
 
             //previamente ya ha sido puntuada
-            if(sizeof($u) > 0  ){
-
+            if(sizeof($u) > 0){
                 //Si ja ha valorat aquesta review...
                 $this->assign("fet", 1);
                 $this->assign("score", $u[0]['puntuacio']);
@@ -73,17 +74,12 @@ class PracticaMostrarReviewController extends Controller {
                 //Si encara no ha valorat la review i fa click al submit...
                 if(Filter::getString('submit_button')){
 
-                    if(strcmp($u[0]['login_user'],$l)== 0){
                         $punts = Filter::getString('newScore'); //Puntuacio de l'usuari
                         //Afegim la puntuació a la base de dades
                         $this->model->addRate($l, $id_review, $punts);
                         $this->assign("fet", 1);
-
-
-                    }
                 }
 
-                //$rate = $this->model->mitjana($reviews[0]['id']); //Informació dels punts de la review
             }
             $rate = $this->model->mitjana($reviews[0]['id']); //Informació dels punts de la review
 

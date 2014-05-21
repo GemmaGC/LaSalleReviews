@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-21 12:58:26
+<?php /* Smarty version 2.6.14, created on 2014-05-21 13:17:28
          compiled from practica/LlistatBestReviews.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'practica/LlistatBestReviews.tpl', 29, false),)), $this); ?>
@@ -172,11 +172,10 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 
                 <?php endforeach; endif; unset($_from); ?>
             <?php endif; ?>
             <?php if (( $this->_tpl_vars['numreviews'] > 6 )): ?>
-
                 <?php $_from = $this->_tpl_vars['reviews6']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['r']):
 ?>
-                    <section class=4"section_review">
+                    <section class="section_review">
 
                         <div class="section_review_title">
                             <a href="/r/<?php echo $this->_tpl_vars['r']['url_titol']; ?>
