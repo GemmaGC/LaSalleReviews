@@ -19,7 +19,7 @@
 
                 <p class="titol_review  data_review ">{$w.date}</p>
                 <p class="titol_review">{$w.score} / 10</p>
-                <img class="section_last_img" src="{$w.image}">
+                <img class="section_last_img" src="/imag/img_usuaris/100_{$w.image}">
             </div>
 
             <div class="section_review_body">

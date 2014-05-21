@@ -2,7 +2,8 @@
 
 class PracticaLlistatMyRatedReviewsController extends Controller {
     protected $view = 'practica/llistatReviews.tpl';
-
+    protected $view_error405 = 'practica/noResults.tpl';
+    protected $model;
 
     public function build( ){
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
@@ -11,7 +12,6 @@ class PracticaLlistatMyRatedReviewsController extends Controller {
         $puntuacions = $this->model->getTot('puntuacions');
 
         $login = Session::getInstance()->get('login');
-
         $reviews = array();
         foreach ($puntuacions as $p)
         {
@@ -23,13 +23,21 @@ class PracticaLlistatMyRatedReviewsController extends Controller {
             }
         }
 
-        $this->assign('reviews', $reviews);
-        $titulo = "MY RATED REVIEWS";
+        //Comprovem si l'usuari ha puntuat alguna review...
+        if(!sizeof($reviews))
+        {
+            $this->assign("missatge", "You haven't rated any review yet.");
+            $this->setLayout($this->view_error405);
 
-        $this->assign('titulo', $titulo);
+        }else{
 
-        $this->setLayout( $this->view );
+            $this->assign('reviews', $reviews);
+            $titulo = "MY RATED REVIEWS";
 
+            $this->assign('titulo', $titulo);
+
+            $this->setLayout( $this->view );
+        }
 
     }
 }
