@@ -3,7 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="robots" content="all" />
+        <meta http-equiv="content-language" content="en" />
+
+        <meta property=”og:title” content=”La Salle Reviews” />
+        <meta property=”og:url” content=”http://g1.local/LaSalleReview” />
+        <meta name=”description” content=”La Salle Reviews is a website where you can write class's reviews and rate the other's.”>
+
         <title>LA SALLE REVIEWS</title>
+
         <link rel="stylesheet" href="{$url.global}/css/practica/styleBase.css">
         <link rel="javascript" type="text/javascript" href="/js/practica/scripts.js">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
