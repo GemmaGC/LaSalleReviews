@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-20 23:22:02
+<?php /* Smarty version 2.6.14, created on 2014-05-21 12:57:15
          compiled from practica/LlistatAllReviews.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'practica/LlistatAllReviews.tpl', 23, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'practica/LlistatAllReviews.tpl', 30, false),)), $this); ?>
 
 
 <!-- Despres nom�s amb un section i amb bucle es fan la resta -->
@@ -22,8 +22,16 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 
             <div class="all_review">
                 <div class="section_review_title">
                     <a href="/r/<?php echo $this->_tpl_vars['r']['url_titol']; ?>
-" class="link_titol_review"  style="cursor:pointer; color: orange;" onclick="submitirFormularioOculto()"><?php echo $this->_tpl_vars['r']['title']; ?>
-  </a></br>
+" class="link_titol_review"  style="cursor:pointer; color: orange;" onclick="submitirFormularioOculto()">
+                        <?php if ($this->_tpl_vars['r']['old_title'] == null): ?>
+                            <?php echo $this->_tpl_vars['r']['title']; ?>
+
+                        <?php else: ?>
+                            <?php echo $this->_tpl_vars['r']['old_title']; ?>
+
+                        <?php endif; ?>
+
+                    </a></br>
                     <p class="titol_review  data_review "><?php echo $this->_tpl_vars['r']['date']; ?>
 </p>
                     <p class="titol_review"><?php echo $this->_tpl_vars['r']['score']; ?>

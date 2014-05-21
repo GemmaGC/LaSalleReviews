@@ -6,7 +6,15 @@
                 <img class="section_review_img" src='/imag/img_usuaris/704_{$r.image}'>
 
                 <div class="section_review_title section_review_title_show">
-                    {if $nova}<h1>{$r.new_title}</h1>{else}<h1>{$r.title}</h1>{/if}
+                    <h1>
+
+                        {if $r.old_title == null}
+                            {$r.title}
+                        {else}
+                            {$r.old_title}
+                        {/if}
+
+                    </h1>
                     <p class="titol_review  data_review">{$date_esp}</p>
                     <p class="titol_review">{$r.score} / 10</p></br>
                     <p class="titol_review">{$r.subject} </p>

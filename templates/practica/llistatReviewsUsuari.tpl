@@ -14,10 +14,15 @@
 
             <div class="">
                 <div class="section_review_title">
-                    <a href="/r/{$r.url_titol}" class="link_titol_review"  style="cursor:pointer; color: orange;">{$r.title}  </a></br>
-                    <!--<form method="POST" action="/r/{*$r.url_titol*}" id="review">
-                        <input type="hidden" name="id_oculta" value="{*$r.id*}">
-                    </form>-->
+                    <a href="/r/{$r.url_titol}" class="link_titol_review"  style="cursor:pointer; color: orange;">
+
+                        {if $r.old_title == null}
+                            {$r.title}
+                        {else}
+                            {$r.old_title}
+                        {/if}
+
+                    </a></br>
                     <p class="titol_review  data_review ">{$r.date}</p>
                     <p class="titol_review">{$r.score} / 10</p>
                 </div>

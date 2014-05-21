@@ -12,7 +12,15 @@
                     <section class="section_review">
 
                         <div class="section_review_title">
-                            <a href="/r/{$r.url_titol}" class="link_titol_review"  style="cursor:pointer; color: orange;">{$r.title}</a></br>
+                            <a href="/r/{$r.url_titol}" class="link_titol_review"  style="cursor:pointer; color: orange;">
+
+                                {if $r.old_title == null}
+                                    {$r.title}
+                                {else}
+                                    {$r.old_title}
+                                {/if}
+
+                            </a></br>
                             <p class="titol_review  data_review">{$r.date}</p>
                             <p class="titol_review puntuacio_review">{$r.score} / 10</p>
                         </div>

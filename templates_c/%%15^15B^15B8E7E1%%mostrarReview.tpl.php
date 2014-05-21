@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-21 10:45:06
+<?php /* Smarty version 2.6.14, created on 2014-05-21 12:58:15
          compiled from practica/mostrarReview.tpl */ ?>
 
 
@@ -10,9 +10,17 @@
 '>
 
                 <div class="section_review_title section_review_title_show">
-                    <?php if ($this->_tpl_vars['nova']): ?><h1><?php echo $this->_tpl_vars['r']['new_title']; ?>
-</h1><?php else: ?><h1><?php echo $this->_tpl_vars['r']['title']; ?>
-</h1><?php endif; ?>
+                    <h1>
+
+                        <?php if ($this->_tpl_vars['r']['old_title'] == null): ?>
+                            <?php echo $this->_tpl_vars['r']['title']; ?>
+
+                        <?php else: ?>
+                            <?php echo $this->_tpl_vars['r']['old_title']; ?>
+
+                        <?php endif; ?>
+
+                    </h1>
                     <p class="titol_review  data_review"><?php echo $this->_tpl_vars['date_esp']; ?>
 </p>
                     <p class="titol_review"><?php echo $this->_tpl_vars['r']['score']; ?>
@@ -127,7 +135,6 @@
 /register" class="welcome_button">SIGN UP</a>
                         </div>
                     <?php endif; ?>
-                    <!-- Si no estem loggejats al fer RATE (botó) ens porta a la pag 2 opcions i posem valor als botons Register i Log in-->
 
                 </div>
 

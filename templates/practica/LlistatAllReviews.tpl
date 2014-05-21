@@ -14,7 +14,14 @@
 
             <div class="all_review">
                 <div class="section_review_title">
-                    <a href="/r/{$r.url_titol}" class="link_titol_review"  style="cursor:pointer; color: orange;" onclick="submitirFormularioOculto()">{$r.title}  </a></br>
+                    <a href="/r/{$r.url_titol}" class="link_titol_review"  style="cursor:pointer; color: orange;" onclick="submitirFormularioOculto()">
+                        {if $r.old_title == null}
+                            {$r.title}
+                        {else}
+                            {$r.old_title}
+                        {/if}
+
+                    </a></br>
                     <p class="titol_review  data_review ">{$r.date}</p>
                     <p class="titol_review">{$r.score} / 10</p>
                 </div>
