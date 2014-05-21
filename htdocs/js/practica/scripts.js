@@ -1,4 +1,7 @@
-
+/**
+ *
+ * Funció que s'encarrega de comprovar el formulari de registre
+ */
 
 var timer_signup = setInterval(function(){validarRegistre()}, 1000);
 
@@ -40,6 +43,11 @@ function validarRegistre(){
 
 
 
+/**
+ *
+ * Funció que s'encarrega de comprovar el formulari de log in sense Facebook
+ */
+
 var timer_signup2 = setInterval(function(){validarLogIn()}, 1000);
 
 function validarLogIn(){
@@ -64,6 +72,38 @@ function validarLogIn(){
 }
 
 
+/**
+ *
+ * Funció que s'encarrega de comprovar el formulari de registre amb Facebook
+ */
+
+var timer_signup3 = setInterval(function(){validarLogInFB()}, 1000);
+
+function validarLogInFB(){
+
+    var value_login = document.signup_form.login.value;
+    var value_password = document.signup_form.password.value;
+
+    if(value_login == "" || value_login.length < 7 || value_login.replace(/[^0-9]/g,"").length != 5)
+    {
+        document.getElementById("login").style.borderColor = "red";
+    }else{
+        document.getElementById("login").style.borderColor = "#fff";
+    }
+
+    if(value_password == "" || value_password.length < 6 || value_password.length > 20)
+    {
+        document.getElementById("Password").style.borderColor = "red";
+    }else{
+        document.getElementById("Password").style.borderColor = "#fff";
+    }
+
+}
+
+/**
+ *
+ * Funció que s'encarrega de fer submit del formulari ocult
+ */
 function submitirFormularioOculto(){
     document.getElementById("review").submit();
 
@@ -74,7 +114,6 @@ function submitirFormularioOculto(){
 /**
  *  Funció per precarregar la imatge
  */
-
 
 window.onload = function() {
     var fileInput = document.getElementById('fileInput');
@@ -110,7 +149,10 @@ window.onload = function() {
 
 
 
-
+/**
+ *
+ * Funció que s'encarrega de linkar amb Facebook
+ */
 //FACEBOOK
 (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
