@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-21 10:45:06
+<?php /* Smarty version 2.6.14, created on 2014-05-21 10:40:31
          compiled from practica/mostrarReview.tpl */ ?>
 
 
@@ -120,12 +120,6 @@
                     <?php else: ?>
                         <br>
                         <p class="titol_review">You have to log in to rate reviews.</p>
-                        <div class="welcome_buttons_container">
-                            <a href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/logIn" class="welcome_button">LOG IN</a>
-                            <a href="<?php echo $this->_tpl_vars['url']['global']; ?>
-/register" class="welcome_button">SIGN UP</a>
-                        </div>
                     <?php endif; ?>
                     <!-- Si no estem loggejats al fer RATE (botó) ens porta a la pag 2 opcions i posem valor als botons Register i Log in-->
 
