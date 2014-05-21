@@ -40,7 +40,8 @@ class PracticaRegistreController extends Controller
                 $this->assign('vNom', 0); $this->assign('vLogin', 0); $this->assign('vMail', 0); $this->assign('vPas', 0);
 
                 //Si tots són correctes afegim l'usuari a la base de dades i redirigim per activar el compte d'usuari
-                if (PracticaRegistreController::comprovaCamps($this->usuari)){
+                if (PracticaRegistreController::comprovaCamps($this->usuari))
+                {
                     $this->usuari['url'] = $this::generaUrlActivacio($this->usuari);
                     $this->model->afegeixUsuari($this->usuari['login'], $this->usuari['nom'],$this->usuari['email'], $this->usuari['password'], $this->usuari['url']);
 
@@ -58,6 +59,7 @@ class PracticaRegistreController extends Controller
                     $this->setLayout($this->view);
                 }
 
+                unset($this->usuari);
             }else{
                 $this->setLayout($this->view);
             }
@@ -96,6 +98,13 @@ class PracticaRegistreController extends Controller
         $usuaris = $this->model->getTot('usuaris');
         $var = true;
 
+        //Iniciem les variables d'smarty a 0
+        $this->assign('vNom', 0);
+        $this->assign('vLogin', 0);
+        $this->assign('vUsed', 0);
+        $this->assign('vMail', 0);
+        $this->assign('vPas', 0);
+
         foreach($usuaris as $u)
         {
             if(!strcmp($u['nom'], $usuari['nom'])) //Comprovem que el nom d'usuari sigui únic
@@ -109,10 +118,9 @@ class PracticaRegistreController extends Controller
                 $var = false;
             }
 
-            if(!strcmp($u['login'], $usuari['login']) || $this->comprovaLogin($usuari['login'])) //Comprovem que el login sigui unic, tingui una llargada de 7, 2 lletres i 2 num
+            if(!strcmp($u['login'], $usuari['login']) ) //Comprovem que el login sigui unic, tingui una llargada de 7, 2 lletres i 2 num
             {
-
-                $this->assign('vLogin', 1);
+                $this->assign('vUsed', 1);
 
                 $this->assign('nom', $usuari['nom']);
                 $this->assign('login', $usuari['login']);
@@ -143,6 +151,17 @@ class PracticaRegistreController extends Controller
             $this->assign('password', $usuari['password']);
             $var = false;
         }
+
+        if (!$this->comprovaLogin($usuari['login'])){
+
+            $this->assign('vLogin', 1);
+
+            $this->assign('nom', $usuari['nom']);
+            $this->assign('login', $usuari['login']);
+            $this->assign('email', $usuari['email']);
+            $this->assign('password', $usuari['password']);
+            $var = false;
+        }
         return $var;
     }
 
@@ -154,27 +173,26 @@ class PracticaRegistreController extends Controller
     protected function comprovaLogin($var)
     {
         $ok = 0;
+
         if (strlen($var) == 7){
-            for ($i = 2; $i<strlen($var); $i++)
+            for ($i = 2; $i < strlen($var); $i++)
             {
-                for ($j = 0; $j<10; $j++)
+                for ($j = 0; $j < 10; $j++)
                 {
-                    if($var[$i] === $j)
+                    if($var[$i] == $j)
                     {
                         $ok++;
                     }
                 }
             }
-            echo $ok;
+
             if ($ok === 5 && $var[0] === 'l' && $var[1] === 's')
             {
                 return true;
-            }else{
-                return false;
-            }
-        }else{
-            return false;
-        }
+
+            }else return false;
+
+        }else return false;
     }
 
     /**

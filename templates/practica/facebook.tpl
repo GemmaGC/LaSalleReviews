@@ -8,7 +8,8 @@
 
         <section>
             <label for="login">LOGIN <strong>*</strong>
-            {if $vLogin}<div class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;This login is already used!</p></div>{/if}</label>
+                {if $vUsed}<div class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;This login is already used!</p></div>{/if}</label>
+            {if $vLogin}<div class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;This login is incorrect (2 letters + 2 numbers)!</p></div>{/if}</label>
             <input name="login" id="login" type="text" class="input_form" {if !$vLogin && !$vPas} placeholder="LOGIN" {else} value = "{$login}" {/if} required/>
 
             <label for="Password">PASSWORD (6-20 characters) <strong>*</strong>
