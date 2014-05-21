@@ -1,43 +1,81 @@
 
+
 var timer_signup = setInterval(function(){validarRegistre()}, 1000);
 
 function validarRegistre(){
 
-    var value_name = document.signup-form.newUser.value;
-    var value_login = document.signup-form.newLogin.value;
-    var value_email = document.signup-form.newEmail.value;
-    var value_password = document.signup-form.newPassword.value;
+    var value_name = document.signup_form.newUser.value;
+    var value_login = document.signup_form.newLogin.value;
+    var value_email = document.signup_form.newEmail.value;
+    var value_password = document.signup_form.newPassword.value;
 
-    if(value_name == "" && (value_login != "" || value_email != "" || value_password != ""))
+    if(value_name == "" )
     {
-        alert("Nom incorrecte");
+        document.getElementById("name").style.borderColor = "red";
+    }else{
+        document.getElementById("name").style.borderColor = "#fff";
     }
 
-    if((value_login == "" && (value_name != "" || value_email != "" || value_password != ""))
-        || value_login.length != 7 || value_login.replace(/[^0-9]/g,"").length != 5)
+    if(value_login == "" || value_login.length < 7 || value_login.replace(/[^0-9]/g,"").length != 5)
     {
-        alert(value_login.replace(/[^0-9]/g,"").length);
+        document.getElementById("login").style.borderColor = "red";
+    }else{
+        document.getElementById("login").style.borderColor = "#fff";
     }
 
-    if(value_email == "" && (value_name != "" || value_login != "" || value_password != ""))
+    if(value_email == "" )
     {
-        alert("Error al mail");
+        document.getElementById("email").style.borderColor = "red";
+    }else{
+        document.getElementById("email").style.borderColor = "#fff";
     }
 
-    if(value_password.length < 6 || value_password.length > 20)
+    if(value_password == "" || value_password.length < 6 || value_password.length > 20)
     {
-        alert("Error password");
+        document.getElementById("Password").style.borderColor = "red";
+    }else{
+        document.getElementById("Password").style.borderColor = "#fff";
     }
 }
+
+
+
+var timer_signup2 = setInterval(function(){validarLogIn()}, 1000);
+
+function validarLogIn(){
+
+    var value_email = document.signup_form.email.value;
+    var value_password = document.signup_form.password.value;
+
+    if(value_email == "" )
+    {
+        document.getElementById("email").style.borderColor = "red";
+    }else{
+        document.getElementById("email").style.borderColor = "#fff";
+    }
+
+    if(value_password == "" || value_password.length < 6 || value_password.length > 20)
+    {
+        document.getElementById("Password").style.borderColor = "red";
+    }else{
+        document.getElementById("Password").style.borderColor = "#fff";
+    }
+
+}
+
 
 function submitirFormularioOculto(){
     document.getElementById("review").submit();
 
 }
 
+
+
 /**
  *  Funció per precarregar la imatge
  */
+
+
 window.onload = function() {
     var fileInput = document.getElementById('fileInput');
     var fileDisplayArea = document.getElementById('fileDisplayArea');
@@ -69,6 +107,8 @@ window.onload = function() {
         }
     });
 }
+
+
 
 
 //FACEBOOK

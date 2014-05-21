@@ -6,7 +6,7 @@
         <p>All the fields marked with a <strong>*</strong> are required.</p>
     </div>
 
-    <form name="signup-form" class="form" method="post">
+    <form name="signup_form" class="form" method="post" onsubmit="return validarRegistre();">
 
         <section>
 
@@ -41,7 +41,6 @@
     </form>
 
     <a href="{$loginFacebookURL}" class="btn btn-primary btn-block" type="button"><img  class="boto_fb" src="imag/signupFacebook.png"></a>
-
 
 
 
