@@ -89,7 +89,7 @@ class PracticaEditaReviewController extends Controller
                     if ($canviar_titol == false ) {
                         $this->model->updateReview($this->id_review, $r[0]['title'], null, $review['description'],$review['subject'], $review['date'], $review['score'], $nomImg);
                     }else{
-                        $this->model->updateReview($this->id_review, $review['title'], $r[0]['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $nomImg);
+                        $this->model->updateReview($this->id_review, $review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $nomImg);
                     }
 
 
@@ -106,7 +106,6 @@ class PracticaEditaReviewController extends Controller
                 }
 
             }else{
-                var_dump($r[0]['image']);
                 $this->assign('img', $r[0]['image']);
                 Session::getInstance()->set('img', $r[0]['image']);
             }
