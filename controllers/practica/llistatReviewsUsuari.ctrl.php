@@ -22,7 +22,7 @@ class PracticaLlistatReviewsUsuariController extends Controller
         $nom = Session::getInstance()->get('nom');
         $login = Session::getInstance()->get('login');
 
-        $reviews = $this->model->getUsuariReview($login,$nom);
+        $reviews = $this->model->getUsuariReview($login);
 
         $max = round(count($reviews) / 10);
         $min = 0;

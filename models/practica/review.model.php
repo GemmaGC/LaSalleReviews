@@ -326,12 +326,12 @@ QUERY;
     public function getMaxDeuP(){
 
         $sql = <<<QUERY
-        SELECT DISTINCT
-            *
+        SELECT
+            *, COUNT( * ) AS num
         FROM
-            review
-           ORDER BY
-            score DESC
+            puntuacions
+           GROUP BY id_review
+            ORDER BY num DESC
         LIMIT
             10
 
@@ -352,7 +352,7 @@ QUERY;
 
     }
 
-    public function getUsuariReview($login,$nom){
+    public function getUsuariReview($login){
 
         $sql = <<<QUERY
         SELECT DISTINCT
@@ -360,7 +360,7 @@ QUERY;
         FROM
             review
         WHERE
-         nom LIKE '$nom' AND login LIKE '$login'
+         login LIKE '$login'
 
 
 QUERY;
@@ -453,11 +453,19 @@ QUERY;
         FROM
             puntuacions
         WHERE
-            login_user = "$login" AND id_review = "$id"
+            login_user LIKE "$login" AND id_review LIKE "$id"
 QUERY;
-        $result = $this->getAll($sql);
-        return $result;
-    }
+        if(count($this->getAll($sql)) == 0){
+            return null;
+
+
+        }else{
+            $var = $this->getAll($sql);
+            return $var;
+
+
+        }
+}
 
     /**
      * Funció que retorna la mitja de la puntuació de tots els usuaris d'una review en concret
