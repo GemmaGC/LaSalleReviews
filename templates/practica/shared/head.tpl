@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="robots" content="all" />
-        <title>LA SALLE REVIEW</title>
+        <title>LA SALLE REVIEWS</title>
         <link rel="stylesheet" href="{$url.global}/css/practica/styleBase.css">
         <link rel="javascript" type="text/javascript" href="/js/practica/scripts.js">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -21,7 +21,7 @@
         <div class="main_header">
             <header>
 
-                <a href="{$url.global}/LaSalleReview" class="site-logo">LA SALLE REVIEW</a>
+                <a href="{$url.global}/LaSalleReview" class="site-logo">LA SALLE REVIEWS</a>
 
                 <div id="container">
                     <form role="search" method="get" id="searchform" action="/searchResults/0" >

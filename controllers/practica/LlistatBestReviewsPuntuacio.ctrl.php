@@ -19,7 +19,7 @@ class PracticaLlistatBestReviewsPuntuacioController extends Controller {
 
 
 
-        $titulo = "10 BESTTER RATED REVIEWS";
+        $titulo = "10 BEST RATED REVIEWS";
         $this->assign('titulo', $titulo);
 
         $this->setLayout( $this->view );
