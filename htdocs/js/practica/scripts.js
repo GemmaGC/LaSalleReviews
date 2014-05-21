@@ -1,4 +1,7 @@
-
+/**
+ *
+ * Funció que s'encarrega de comprovar el formulari de registre
+ */
 
 var timer_signup = setInterval(function(){validarRegistre()}, 1000);
 
@@ -40,6 +43,11 @@ function validarRegistre(){
 
 
 
+/**
+ *
+ * Funció que s'encarrega de comprovar el formulari de log in sense Facebook
+ */
+
 var timer_signup2 = setInterval(function(){validarLogIn()}, 1000);
 
 function validarLogIn(){
@@ -62,6 +70,12 @@ function validarLogIn(){
     }
 
 }
+
+
+/**
+ *
+ * Funció que s'encarrega de comprovar el formulari de registre amb Facebook
+ */
 
 var timer_signup3 = setInterval(function(){validarLogInFB()}, 1000);
 
@@ -86,7 +100,10 @@ function validarLogInFB(){
 
 }
 
-
+/**
+ *
+ * Funció que s'encarrega de fer submit del formulari ocult
+ */
 function submitirFormularioOculto(){
     document.getElementById("review").submit();
 
@@ -97,7 +114,6 @@ function submitirFormularioOculto(){
 /**
  *  Funció per precarregar la imatge
  */
-
 
 window.onload = function() {
     var fileInput = document.getElementById('fileInput');
@@ -133,7 +149,10 @@ window.onload = function() {
 
 
 
-
+/**
+ *
+ * Funció que s'encarrega de linkar amb Facebook
+ */
 //FACEBOOK
 (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
