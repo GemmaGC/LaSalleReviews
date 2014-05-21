@@ -35,7 +35,10 @@
     height: 90px;
 }
 
-
+p.error_login {
+    color: red;
+    text-align: center;
+}
 
 /* PAGINA NO RESULTATS BUSCADOR */
 
@@ -49,3 +52,5 @@
     line-height: 250%;
     text-align: center;
 }
+
+
