@@ -21,7 +21,7 @@ class PracticaMostrarReviewController extends Controller {
             $nova = true;
             $this->assign('nova', $nova);
         }
-        if(is_null($reviews[0]['old_title']) || $nova){
+        if($reviews[0]['old_title'] == null || $nova){
             //Si no hi ha nou titol i el titol que hi ha a la url és el nou titol...
             //Busquem l'usuari que ha escrit la review
             $login = $reviews[0]['login'];
@@ -94,14 +94,12 @@ class PracticaMostrarReviewController extends Controller {
 
             $this->setLayout( $this->view );
 
-        }else{
+        }else if($reviews[0]['old_title'] != null){
             //Sino... redirigim al nou titol
             $url = $reviews[0]['old_title'];
             $url = str_replace(' ', '-', $url);
             header('Location: /r/'.$url,true,301);
         }
-
-
 
     }
 
