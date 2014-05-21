@@ -124,9 +124,8 @@
                 {/foreach}
             {/if}
             {if ($numreviews>6)}
-
                 {foreach from = $reviews6 item = r}
-                    <section class=4"section_review">
+                    <section class="section_review">
 
                         <div class="section_review_title">
                             <a href="/r/{$r.url_titol}" class="link_titol_review"  style="cursor:pointer; color: orange;">{$r.title}</a></br>
