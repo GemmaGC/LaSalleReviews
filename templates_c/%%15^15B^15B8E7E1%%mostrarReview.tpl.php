@@ -1,20 +1,18 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-20 17:41:01
+<?php /* Smarty version 2.6.14, created on 2014-05-21 10:45:06
          compiled from practica/mostrarReview.tpl */ ?>
 
 
 <?php echo $this->_tpl_vars['modules']['headPractica']; ?>
 
-    <?php $_from = $this->_tpl_vars['reviews']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
-    foreach ($_from as $this->_tpl_vars['r']):
-?>
             <section class="section_review_show">
 
                 <img class="section_review_img" src='/imag/img_usuaris/704_<?php echo $this->_tpl_vars['r']['image']; ?>
 '>
 
                 <div class="section_review_title section_review_title_show">
-                    <h1><?php echo $this->_tpl_vars['r']['title']; ?>
-</h1>
+                    <?php if ($this->_tpl_vars['nova']): ?><h1><?php echo $this->_tpl_vars['r']['new_title']; ?>
+</h1><?php else: ?><h1><?php echo $this->_tpl_vars['r']['title']; ?>
+</h1><?php endif; ?>
                     <p class="titol_review  data_review"><?php echo $this->_tpl_vars['date_esp']; ?>
 </p>
                     <p class="titol_review"><?php echo $this->_tpl_vars['r']['score']; ?>
@@ -122,12 +120,17 @@
                     <?php else: ?>
                         <br>
                         <p class="titol_review">You have to log in to rate reviews.</p>
+                        <div class="welcome_buttons_container">
+                            <a href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/logIn" class="welcome_button">LOG IN</a>
+                            <a href="<?php echo $this->_tpl_vars['url']['global']; ?>
+/register" class="welcome_button">SIGN UP</a>
+                        </div>
                     <?php endif; ?>
                     <!-- Si no estem loggejats al fer RATE (botó) ens porta a la pag 2 opcions i posem valor als botons Register i Log in-->
 
                 </div>
 
             </section>
-    <?php endforeach; endif; unset($_from); ?>
 
 <?php echo $this->_tpl_vars['modules']['footerPractica']; ?>

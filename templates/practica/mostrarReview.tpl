@@ -1,13 +1,12 @@
 
 
 {$modules.headPractica}
-    {foreach from = $reviews item = r }
             <section class="section_review_show">
 
                 <img class="section_review_img" src='/imag/img_usuaris/704_{$r.image}'>
 
                 <div class="section_review_title section_review_title_show">
-                    <h1>{$r.title}</h1>
+                    {if $nova}<h1>{$r.new_title}</h1>{else}<h1>{$r.title}</h1>{/if}
                     <p class="titol_review  data_review">{$date_esp}</p>
                     <p class="titol_review">{$r.score} / 10</p></br>
                     <p class="titol_review">{$r.subject} </p>
@@ -105,12 +104,14 @@
                     {else}
                         <br>
                         <p class="titol_review">You have to log in to rate reviews.</p>
+                        <div class="welcome_buttons_container">
+                            <a href="{$url.global}/logIn" class="welcome_button">LOG IN</a>
+                            <a href="{$url.global}/register" class="welcome_button">SIGN UP</a>
+                        </div>
                     {/if}
-                    <!-- Si no estem loggejats al fer RATE (botó) ens porta a la pag 2 opcions i posem valor als botons Register i Log in-->
 
                 </div>
 
             </section>
-    {/foreach}
 
 {$modules.footerPractica}
