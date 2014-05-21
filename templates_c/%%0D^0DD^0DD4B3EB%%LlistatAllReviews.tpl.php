@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-21 12:57:15
+<?php /* Smarty version 2.6.14, created on 2014-05-21 20:45:22
          compiled from practica/LlistatAllReviews.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'practica/LlistatAllReviews.tpl', 30, false),)), $this); ?>
@@ -53,7 +53,7 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 
 
         <a class="boto_link separacio_links" href="<?php echo $this->_tpl_vars['url_ant']; ?>
 "> <?php if ($this->_tpl_vars['num'] >= 1): ?><<<?php endif; ?> </a>
-        <?php if ($this->_tpl_vars['num'] < $this->_tpl_vars['max']-1): ?> <a class="boto_link" href="<?php echo $this->_tpl_vars['url_seg']; ?>
+        <?php if ($this->_tpl_vars['num'] < $this->_tpl_vars['max']): ?> <a class="boto_link" href="<?php echo $this->_tpl_vars['url_seg']; ?>
 "> >> </a> <?php endif; ?>
     </div>
 

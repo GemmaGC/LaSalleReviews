@@ -76,6 +76,8 @@ class PracticaEditaReviewController extends Controller
                     $attachtmp  = $_FILES['newImage']['tmp_name'];
                     $review['image'] = $_FILES['newImage']['name'];
 
+                    if ($attachtmp) $attachtmp  = $_FILES['newImage']['tmp_name'];
+
                     //Creem un nom únic per la imatge i la guardem al directori
                     //Guardem el nom gèneric de la imatge, segons si té un 100_ o un 704_ davant del nom serà d'un o de l'altre tamany
                     $nomImg = str_replace(' ', '-', $review['image']);
@@ -213,6 +215,7 @@ class PracticaEditaReviewController extends Controller
         $this->assign('date', $review['date']);
         $this->assign('score', $review['score']);
         $this->assign('img', $_FILES['newImage']['tmp_name']);
+        Session::getInstance()->set('img', $_FILES['newImage']['tmp_name']);
 
     }
 

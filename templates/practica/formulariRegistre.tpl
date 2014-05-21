@@ -23,7 +23,7 @@
 
 
             <label for="email">EMAIL <strong>*</strong>
-                {if $vMail}<div class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;This email is already used!</p></div>{/if}</label>
+                {if $vMail}<div class="notValid">&nbsp;&nbsp;&nbsp;<img class="img_notValid" src="{$url_creu}"><p class="notValid">&nbsp;This email is not valid!</p></div>{/if}</label>
             <input name="newEmail" id="email" type="email" class="input_form" {if !$vNom && !$vLogin && !$vMail && !$vPas} placeholder="example@dom.com" {else} value = "{$email}" {/if} required/>
 
 

@@ -123,6 +123,20 @@ QUERY;
         return $result;
     }
 
+    public function buscaUsuariMail($mail)
+    {
+        $sql = <<<QUERY
+        SELECT
+            *
+        FROM
+            usuaris
+        WHERE
+            email = "$mail"
+QUERY;
+        $result = $this->getAll($sql);
+        return $result;
+    }
+
     /**
      * Funció que busca a un usuari amb una url d'activació concreta
      * @param $url
@@ -286,7 +300,7 @@ QUERY;
         UPDATE
             review
         SET
-            old_title = "$title", description = '$description', subject = '$subject', date = '$date', score = '$score', image = '$image'
+            old_title = '$title', description = '$description', subject = '$subject', date = '$date', score = '$score', image = '$image'
         WHERE
             id = '$id'
 QUERY;

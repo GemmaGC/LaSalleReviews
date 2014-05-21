@@ -78,6 +78,7 @@ class PracticaMostrarReviewController extends Controller {
                         //Afegim la puntuació a la base de dades
                         $this->model->addRate($l, $id_review, $punts);
                         $this->assign("fet", 1);
+                        header('Location: /r/'.$info['url_arguments'][0],true,301);
                 }
 
             }

@@ -8,7 +8,8 @@
         <div class="welcome_buttons_container">
             {if $esborrar}
 
-                <a href="/deleteReview" class="welcome_button">YES</a>
+                <!--<a href="/deleteReview" class="welcome_button">YES</a>-->
+                <form method='post' action='/deleteReview'><input type="submit" name="YES" class="welcome_button" value="YES" /></form>
                 <a href="{$url.global}/myReviews" class="welcome_button">NO</a>
             {else}
                 <a href="{$url.global}/LaSalleReview" class="welcome_button">HOME</a>

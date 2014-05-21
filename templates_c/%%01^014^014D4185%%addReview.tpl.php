@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.14, created on 2014-05-21 14:52:21
+<?php /* Smarty version 2.6.14, created on 2014-05-21 20:42:55
          compiled from practica/addReview.tpl */ ?>
 <?php echo $this->_tpl_vars['modules']['headPractica']; ?>
 

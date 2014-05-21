@@ -16,9 +16,9 @@ class PracticaLoginController extends Controller
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
         if(sizeof($info['url_arguments']) == 0){
-
             if(Session::getInstance()->get('header') == 1)
             {
+
                 Session::getInstance()->set('header', 0);
 
                 $this->assign("ok", 0);
@@ -27,6 +27,14 @@ class PracticaLoginController extends Controller
 
                 $this->setLayout( $this->view );
 
+
+            }else if(Session::getInstance()->get('actiu') == 0){
+                $this->assign('title', 'Hey! You have'."'".'nt activated your account yet!');
+                $this->assign('subtitle', 'You can either go to the homepage or resend the activation code');
+                //CAL FER EL RESEND BÉ AL TEMPLATE
+                $this->assign('log', 0); $this->assign('send', 1);
+
+                $this->setLayout($this->view_errorLog);
             }
             else if(Filter::getString('submit_button'))
             {

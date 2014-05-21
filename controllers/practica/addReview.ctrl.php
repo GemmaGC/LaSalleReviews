@@ -6,6 +6,7 @@ class PracticaAddReviewController extends Controller
     protected $view_error404 = 'practica/error/errorP404.tpl';
     protected $view_error403 = 'practica/error/errorP403.tpl';
     protected $model;
+    protected $nomImg;
 
 
     public function build( )
@@ -45,19 +46,21 @@ class PracticaAddReviewController extends Controller
                    //Guardem la imatge a la carpeta d'htdocs si tots els camps del formulari són correctes
                    $dir = "imag/img_usuaris/";
                    $attachtmp  = $_FILES['newImage']['tmp_name'];
-                   $review['image'] = $_FILES['newImage']['name'];
+                   //$review['image'] = $_FILES['newImage']['name'];
+                   $review['image'] = $this->nomImg;
+
 
                    //Creem un nom únic per la imatge i la guardem al directori
                         //Guardem el nom gèneric de la imatge, segons si té un 100_ o un 704_ davant del nom serà d'un o de l'altre tamany
                        $aux = $this->model->getUltim('review');
-                       $nomImg = str_replace(' ', '-', $review['image']);
-                       $nomImg = ($aux[0]['id']+1) . "_" . $nomImg;
+                       $this->nomImg = str_replace(' ', '-', $review['image']);
+                       $this->nomImg = ($aux[0]['id']+1) . "_" . $this->nomImg;
 
                        //IMATGE 100x100
-                       $this->canviaTamanyImatge($attachtmp, 100, 100, $dir, $nomImg);
+                       $this->canviaTamanyImatge($attachtmp, 100, 100, $dir, $this->nomImg);
 
                        //IMATGE 704x528
-                       $this->canviaTamanyImatge($attachtmp, 704, 528, $dir, $nomImg);
+                       $this->canviaTamanyImatge($attachtmp, 704, 528, $dir, $this->nomImg);
 
 
                    /***********************/
@@ -74,7 +77,7 @@ class PracticaAddReviewController extends Controller
                    $login = Session::getInstance()->get('login');
 
 
-                   $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $nomImg, $nom, $login, $dataC, $url, null);
+                   $this->model->afegeixReview($review['title'], $review['description'],$review['subject'], $review['date'], $review['score'], $this->nomImg, $nom, $login, $dataC, $url, null);
 
                    //Esborrem les variables que ja no necessitem
                    unset($review);
@@ -176,7 +179,7 @@ class PracticaAddReviewController extends Controller
         $this->assign('subject', $review['subject']);
         $this->assign('date', $review['date']);
         $this->assign('score', $review['score']);
-        $this->assign('image', $_FILES['newImage']['tmp_name']);
+        $this->assign('img', $_FILES['newImage']['tmp_name']);
     }
 
 

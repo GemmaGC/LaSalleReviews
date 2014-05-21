@@ -11,6 +11,7 @@ class PracticaHomeController extends Controller
     protected $view = 'practica/home.tpl';
     protected $model;
     protected $view_error = 'practica/error/errorP404.tpl';
+    protected $login = 'practica/formulariLogin.tpl';
 
 
     /**
@@ -38,15 +39,25 @@ class PracticaHomeController extends Controller
                     Session::getInstance()->set('mail', $u['email']);
                     Session::getInstance()->set('header', 1);
 
-                    if(!empty($usuari) && strcmp($usuari['actiu'], "1"))
-                    {
-                        Session::getInstance()->set('nom', $usuari[0]['nom']); //Només mostrarem el nom
-                        Session::getInstance()->set('login', $usuari[0]['login']);
-                        Session::getInstance()->set('log', 1);
-                        $this->setLayout($this->view);
+                    $u['email'] = Session::getInstance()->get('mail');
+                    $usuari = $this->model->buscaUsuariMail($u['email']);
 
-                    }else{
+                    if($usuari[0]["actiu"] == 0){
+                        Session::getInstance()->set('actiu', 0);
                         header('Location: /logIn',true,301);
+                        $this->setLayout($this->login);
+                    }else{
+
+                        if(!empty($usuari) && strcmp($usuari['actiu'], "1"))
+                        {
+                            Session::getInstance()->set('nom', $usuari[0]['nom']); //Només mostrarem el nom
+                            Session::getInstance()->set('login', $usuari[0]['login']);
+                            Session::getInstance()->set('log', 1);
+                            $this->setLayout($this->view);
+
+                        }else{
+                            header('Location: /logIn',true,301);
+                        }
                     }
                 }else{
                     $this->setLayout($this->view);

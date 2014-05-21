@@ -34,7 +34,7 @@
 
             <div class="section_review_buttons">
                 <a href="/editReview/{$r.id}" class="welcome_button button_Option">EDIT</a>
-                <a href="/deleteReview/{$r.id}" class="welcome_button button_Option" onclick="return confirmDelete();">DELETE</a>  <!-- D'aqui que vagi a duesOpcions i digui si vols eliminar o no -->
+                <a href="/deleteReview/{$r.id}" class="welcome_button button_Option">DELETE</a>  <!-- D'aqui que vagi a duesOpcions i digui si vols eliminar o no -->
             </div>
 
         </section>
