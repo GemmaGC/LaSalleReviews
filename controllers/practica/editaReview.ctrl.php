@@ -77,10 +77,8 @@ class PracticaEditaReviewController extends Controller
 
 
                     //Guardem la imatge en altres tamanys
-                    //IMATGE 100x100
-                    $this->canviaTamanyImatge($attachtmp, 100, 100, $dir, $nomImg);
-                    //IMATGE 704x528
-                    $this->canviaTamanyImatge($attachtmp, 704, 528, $dir, $nomImg);
+                    $this->canviaTamanyImatge($attachtmp, 100, 100, $dir, $nomImg); //IMATGE 100x100
+                    $this->canviaTamanyImatge($attachtmp, 704, 528, $dir, $nomImg); //IMATGE 704x528
 
                     /***********************/
                     /*       MODEL         */
@@ -100,22 +98,33 @@ class PracticaEditaReviewController extends Controller
 
                     //Redirigim al llistat de reviews
                     header('Location: /myReviews/0',true,301);
-                }else{
+                }
+
+                //Si algun dels camps és incorrecte...
+                else{
                     $this->assign('ok', false);
                     $this->retornaCamps($review);
                 }
 
-            }else{
+            }
+
+            //Si encara no ha fet submit ens guardem la imatge...
+            else{
                 $this->assign('img', $r[0]['image']);
                 Session::getInstance()->set('img', $r[0]['image']);
             }
 
+            //Carreguem el template
             $this->setLayout( $this->view );
         }
+
+        //Si ha posat una url incorrecta...
         else if(isset($info['url_arguments']))
         {
             $this->setLayout($this->view_error404);
         }
+
+        //Si no està logejat....
         else if($login == 0)
         {
             $this->setLayout($this->view_error403);
@@ -200,8 +209,6 @@ class PracticaEditaReviewController extends Controller
         $this->assign('img', $_FILES['newImage']['tmp_name']);
 
     }
-
-
 
 
     public function loadModules() {
