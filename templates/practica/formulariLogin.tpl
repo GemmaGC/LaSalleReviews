@@ -7,7 +7,7 @@
                 <p>All the fields marked with a <strong>*</strong> are required.</p>
             </div>
 
-            <form name="login-form" class="form" method="post" onsubmit="return(validateFormLogin());">
+            <form name="signup_form" class="form" method="post" onsubmit="return validarLogIn();">
 
                 {if (!$ok)}<h1>{$error}</h1>{/if}
 		        <div class="content_form">
