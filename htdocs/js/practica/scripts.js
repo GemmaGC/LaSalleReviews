@@ -143,7 +143,6 @@ function validarAddReview(){
     }else{
         document.getElementById("date").style.borderColor = "#fff";
     }
-
 }
 
 
@@ -214,4 +213,9 @@ window.onload = function() {
 
 
 
-
+function confirmDelete(){
+    var result = confirm("Are you sure you want to delete the review?");
+    if (result==true) {
+        //Logic to delete the item
+    }
+}
