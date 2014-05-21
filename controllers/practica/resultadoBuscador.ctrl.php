@@ -3,7 +3,7 @@
 class PracticaResultadoBuscadorController extends Controller {
     protected $view = 'practica/resultadoBuscador.tpl';
     protected $view_error405 = 'practica/noResults.tpl';
-
+    protected $model;
 
     public function build( ){
         $info = $this->getParams();
@@ -17,6 +17,7 @@ class PracticaResultadoBuscadorController extends Controller {
 
         if(is_null($review))
         {
+            $this->assign('missatge', "Sorry, no reviews matched your search.<br>Please try again.");
             $this->setLayout($this->view_error405);
 
         }
@@ -27,8 +28,6 @@ class PracticaResultadoBuscadorController extends Controller {
 
             //Creem un array que mostri cada 10
             $r = array_slice ( $review , $info['url_arguments'][0] * 10, 10);
-
-            //$this->setParams( array( 'num' => $info['url_arguments'][0] ) );
 
             $this->assign('min', $min);
             $this->assign('max', $max);

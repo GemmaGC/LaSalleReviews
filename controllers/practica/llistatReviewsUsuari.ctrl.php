@@ -9,6 +9,7 @@
 class PracticaLlistatReviewsUsuariController extends Controller
 {
     protected $view = 'practica/llistatReviewsUsuari.tpl';
+    protected $view_error405 = 'practica/noResults.tpl';
     protected $model;
 
     /**
@@ -19,26 +20,32 @@ class PracticaLlistatReviewsUsuariController extends Controller
         $info = $this->getParams();
         $this->model = $this->getClass( 'PracticaReviewModel' );
 
-        $nom = Session::getInstance()->get('nom');
         $login = Session::getInstance()->get('login');
 
         $reviews = $this->model->getUsuariReview($login);
 
-        $max = round(count($reviews) / 10);
-        $min = 0;
+        if (!sizeof($reviews)){
 
-        //Creem un array que mostri cada 10
-        $r = array_slice ( $reviews , $info['url_arguments'][0] * 10, 10);
+            $this->assign("missatge", "You haven't posted any reviews yet.");
+            $this->setLayout($this->view_error405);
 
-        $this->assign('min', $min);
-        $this->assign('max', $max);
-        $this->assign('num', $info['url_arguments'][0]);
+        }else{
+            $max = round(count($reviews) / 10);
+            $min = 0;
 
-        $this->assign('url_ant', $info['url_arguments'][0]-1);
-        $this->assign('url_seg', $info['url_arguments'][0]+1);
+            //Creem un array que mostri cada 10
+            $r = array_slice ( $reviews , $info['url_arguments'][0] * 10, 10);
 
-        $this->assign('reviews', $r);
-        $this->setLayout($this->view);
+            $this->assign('min', $min);
+            $this->assign('max', $max);
+            $this->assign('num', $info['url_arguments'][0]);
+
+            $this->assign('url_ant', $info['url_arguments'][0]-1);
+            $this->assign('url_seg', $info['url_arguments'][0]+1);
+
+            $this->assign('reviews', $r);
+            $this->setLayout($this->view);
+        }
     }
 
 
