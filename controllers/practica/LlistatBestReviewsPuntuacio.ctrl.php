@@ -7,7 +7,7 @@ class PracticaLlistatBestReviewsPuntuacioController extends Controller {
     public function build( ){
 
         $info = $this->getParams();
-        if(sizeof($info['url_arguments']) == 1){
+        if(sizeof($info['url_arguments']) <= 1){
             $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
             //Recuperem totes les review
             $review = $this->model->getMaxDeuP();
