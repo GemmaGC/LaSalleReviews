@@ -36,7 +36,9 @@
 
                     {if $log == 0}
                         <!-- Si NO està loguejat l'usuari...-->
+                        <a href="{$url.global}/allReviews/0" class="register">ALL REVIEWS</a>
                         <a href="{$url.global}/register" class="register">SIGN UP</a>
+
 
                         <!-- PROVA JQUERY LOG IN -->
                         <nav class="login_desplegable">
@@ -63,6 +65,7 @@
 
                         <!-- Si JA està loguejat l'usuari...-->
                         <a href="{$url.global}/addReview" class="register">ADD REVIEW</a>
+                        <a href="{$url.global}/allReviews/0" class="register">ALL REVIEWS</a>
                         <a href="{$url.global}/myReviews/0" class="register">MY REVIEWS</a>
                         <a href="{$url.global}/myRatedReviews" class="register">RATED REVIEWS</a>
                         <div class="register user_info">{$nom} - {$login}</div>
