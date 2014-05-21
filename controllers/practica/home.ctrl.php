@@ -10,6 +10,7 @@ class PracticaHomeController extends Controller
 {
     protected $view = 'practica/home.tpl';
     protected $model;
+    protected $view_error = 'practica/error/errorP404.tpl';
 
 
     /**
@@ -17,40 +18,46 @@ class PracticaHomeController extends Controller
      */
     public function build()
     {
-        $log = Session::getInstance()->get('log');
+        $info = $this->getParams();
+        if(sizeof($info['url_arguments']) == 0){
+            $log = Session::getInstance()->get('log');
 
-        if(!isset($log)) Session::getInstance()->set('log', 0);
+            if(!isset($log)) Session::getInstance()->set('log', 0);
 
-        if ($log == 0)
-        {
-            if(Filter::getString('submitButton'))
+            if ($log == 0)
             {
-                $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
-
-                $u['email'] = Filter::getString("Email");
-                $u['password'] = Filter::getString("Password");
-
-                $usuari = $this->model->buscaUsuari($u['email'], $u['password']);
-
-                Session::getInstance()->set('mail', $u['email']);
-                Session::getInstance()->set('header', 1);
-
-                if(!empty($usuari) && strcmp($usuari['actiu'], "1"))
+                if(Filter::getString('submitButton'))
                 {
-                    Session::getInstance()->set('nom', $usuari[0]['nom']); //Només mostrarem el nom
-                    Session::getInstance()->set('login', $usuari[0]['login']);
-                    Session::getInstance()->set('log', 1);
-                    $this->setLayout($this->view);
+                    $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
+                    $u['email'] = Filter::getString("Email");
+                    $u['password'] = Filter::getString("Password");
+
+                    $usuari = $this->model->buscaUsuari($u['email'], $u['password']);
+
+                    Session::getInstance()->set('mail', $u['email']);
+                    Session::getInstance()->set('header', 1);
+
+                    if(!empty($usuari) && strcmp($usuari['actiu'], "1"))
+                    {
+                        Session::getInstance()->set('nom', $usuari[0]['nom']); //Només mostrarem el nom
+                        Session::getInstance()->set('login', $usuari[0]['login']);
+                        Session::getInstance()->set('log', 1);
+                        $this->setLayout($this->view);
+
+                    }else{
+                        header('Location: /logIn',true,301);
+                    }
                 }else{
-                    header('Location: /logIn',true,301);
+                    $this->setLayout($this->view);
                 }
             }else{
+
                 $this->setLayout($this->view);
             }
-        }else{
 
-            $this->setLayout($this->view);
+        }else{
+            $this->setLayout( $this->view_error );
         }
     }
 

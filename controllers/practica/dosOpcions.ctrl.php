@@ -3,20 +3,28 @@
 class PracticaDosOpcionsController extends Controller
 {
     protected $view = 'practica/duesOpcions.tpl';
+    protected $view_error = 'practica/error/errorP404.tpl';
 
     protected $title;
     protected $subtitle;
 
     public function build( )
     {
-        $this::carregaTitols();
-        $this->assign('title', $this->title);
-        $this->assign('subtitle', $this->subtitle);
+        $info = $this->getParams();
 
-        $log = Session::getInstance()->get('log');
-        $this->assign('log', $log);
+        if(sizeof($info['url_arguments']) == 1){
+            $this::carregaTitols();
+            $this->assign('title', $this->title);
+            $this->assign('subtitle', $this->subtitle);
 
-        $this->setLayout( $this->view );
+            $log = Session::getInstance()->get('log');
+            $this->assign('log', $log);
+
+            $this->setLayout( $this->view );
+
+        }else{
+            $this->setLayout( $this->view_error );
+        }
     }
 
 

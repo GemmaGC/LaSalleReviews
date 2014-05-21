@@ -2,11 +2,12 @@
 
 class PracticaResultadoBuscadorController extends Controller {
     protected $view = 'practica/resultadoBuscador.tpl';
-    protected $view_error405 = 'practica/noResults.tpl';
+    protected $view_noresults = 'practica/noResults.tpl';
     protected $model;
 
     public function build( ){
         $info = $this->getParams();
+        
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
         $palabra = Filter::getString('palabra');
@@ -18,7 +19,7 @@ class PracticaResultadoBuscadorController extends Controller {
         if(is_null($review))
         {
             $this->assign('missatge', "Sorry, no reviews matched your search.<br>Please try again.");
-            $this->setLayout($this->view_error405);
+            $this->setLayout($this->view_noresults);
 
         }
         else{

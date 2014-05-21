@@ -13,72 +13,78 @@ class PracticaFacebookController extends Controller
 
     public function build(){
         $info = $this->getParams();
-        $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
-        $this->assign('url_creu', '../imag/creu2.png');
+        if(sizeof($info['url_arguments']) > 1) {
+            $this->setLayout($this->error);
+        }else{
 
-        $facebook = new Facebook(array(
-            'appId'  => '292309604263355',
-            'secret' => '06d50faaafd96c3986a6a8e9d749cf3d',
-            'cookie' => true
-        ));
+            $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
-        $this->assign(
-            'loginFacebookURL',
-            $loginUrl = $facebook->getLoginUrl(array(
-                'scope'	=> 'email', // Permissions to request from the user
-                'redirect_uri' => 'http://g1.local/facebook/hola'
-            )));
+            $this->assign('url_creu', '../imag/creu2.png');
 
-        // Get User ID
-        $user = $facebook->getUser();
+            $facebook = new Facebook(array(
+                'appId'  => '292309604263355',
+                'secret' => '06d50faaafd96c3986a6a8e9d749cf3d',
+                'cookie' => true
+            ));
 
-        if ($user) {
-            try {
-                // Proceed knowing you have a logged in user who's authenticated.
-                $user_profile = $facebook->api('/me');
-            } catch (FacebookApiException $e) {
-                error_log($e);
-                $user = null;
-            }
-        }
+            $this->assign(
+                'loginFacebookURL',
+                $loginUrl = $facebook->getLoginUrl(array(
+                    'scope'	=> 'email', // Permissions to request from the user
+                    'redirect_uri' => 'http://g1.local/facebook/hola'
+                )));
 
-        //LOG IN AMB FACEBOOK
-        if(!strcmp($info['url_arguments'][0],"logIn"))
-        {
-            Session::getInstance()->set('nom', $user_profile['first_name']);
-            Session::getInstance()->set('login', '');
-            Session::getInstance()->set('log', 1);
-            header('Location: /LaSalleReview',true,301);
-        }
+            // Get User ID
+            $user = $facebook->getUser();
 
-        //REGISTRAR-SE AMB FACEBOOK
-        else if (!strcmp($info['url_arguments'][0],"register"))
-        {
-            if (Filter::getString('submit_button'))
-            {
-                $this->usuari['nom'] = $user_profile['first_name'];
-                $this->usuari['email'] = $user_profile['email'];
-                $this->usuari['login'] = Filter::getString('login');
-                $this->usuari['password'] = Filter::getString('password');
-                $this->usuari['url'] = $this->generaUrlActivacio($this->usuari);
-
-                if($this->comprovaCamps($this->usuari))
-                {
-                    $this->model->afegeixUsuari($this->usuari['login'], $this->usuari['nom'], $this->usuari['email'], $this->usuari['password'], $this->usuari['url']);
-                    $this->model->activaUsuari($this->usuari['login']);
-
-                    //Fem el login (guardem les variables de sessió corresponents)
-                    Session::getInstance()->set('nom', $this->usuari['nom']);
-                    Session::getInstance()->set('login', $this->usuari['login']);
-                    Session::getInstance()->set('log', 1);
-                    header('Location: /LaSalleReview',true,301);
+            if ($user) {
+                try {
+                    // Proceed knowing you have a logged in user who's authenticated.
+                    $user_profile = $facebook->api('/me');
+                } catch (FacebookApiException $e) {
+                    error_log($e);
+                    $user = null;
                 }
             }
 
-            $this->setLayout($this->view);
-        }else{
-            $this->setLayout($this->error);
+            //LOG IN AMB FACEBOOK
+            if(!strcmp($info['url_arguments'][0],"logIn"))
+            {
+                Session::getInstance()->set('nom', $user_profile['first_name']);
+                Session::getInstance()->set('login', '');
+                Session::getInstance()->set('log', 1);
+                header('Location: /LaSalleReview',true,301);
+            }
+
+            //REGISTRAR-SE AMB FACEBOOK
+            else if (!strcmp($info['url_arguments'][0],"register"))
+            {
+                if (Filter::getString('submit_button'))
+                {
+                    $this->usuari['nom'] = $user_profile['first_name'];
+                    $this->usuari['email'] = $user_profile['email'];
+                    $this->usuari['login'] = Filter::getString('login');
+                    $this->usuari['password'] = Filter::getString('password');
+                    $this->usuari['url'] = $this->generaUrlActivacio($this->usuari);
+
+                    if($this->comprovaCamps($this->usuari))
+                    {
+                        $this->model->afegeixUsuari($this->usuari['login'], $this->usuari['nom'], $this->usuari['email'], $this->usuari['password'], $this->usuari['url']);
+                        $this->model->activaUsuari($this->usuari['login']);
+
+                        //Fem el login (guardem les variables de sessió corresponents)
+                        Session::getInstance()->set('nom', $this->usuari['nom']);
+                        Session::getInstance()->set('login', $this->usuari['login']);
+                        Session::getInstance()->set('log', 1);
+                        header('Location: /LaSalleReview',true,301);
+                    }
+                }
+
+                $this->setLayout($this->view);
+            }else{
+                $this->setLayout($this->error);
+            }
         }
     }
 

@@ -9,6 +9,7 @@
 class PracticaMyRatedReviewsController extends Controller
 {
     protected $view = 'practica/myRatedReviews.tpl';
+    protected $view_error = 'practica/error/errorP404.tpl';
 
 
     /**
@@ -16,7 +17,13 @@ class PracticaMyRatedReviewsController extends Controller
      */
     public function build()
     {
-        $this->setLayout($this->view);
+        $info = $this->getParams();
+
+        if(sizeof($info['url_arguments']) == 0 || sizeof($info['url_arguments']) == 1 ){
+            $this->setLayout($this->view);
+        }else{
+            $this->setLayout( $this->view_error );
+        }
     }
 
 

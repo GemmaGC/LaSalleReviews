@@ -15,7 +15,7 @@ class PracticaLoginController extends Controller
         $info = $this->getParams();
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
-       // if(sizeof($info['url_arguments']) > 2){
+        if(sizeof($info['url_arguments']) == 0){
 
             if(Session::getInstance()->get('header') == 1)
             {
@@ -84,9 +84,9 @@ class PracticaLoginController extends Controller
                     'redirect_uri' => 'http://g1.local/facebook/logIn'
                 )));
 
-        /*}else{
+        }else{
             $this->setLayout( $this->view_error );
-        }*/
+        }
 
 
 

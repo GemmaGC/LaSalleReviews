@@ -3,7 +3,7 @@
 class PracticaBestReviewController extends Controller {
 
     protected $view = 'practica/bestReview.tpl';
-    protected $view_error405 = 'practica/noResults.tpl';
+    protected $view_noresults = 'practica/noResults.tpl';
     protected $model;
 
     public function build( ){
@@ -12,7 +12,7 @@ class PracticaBestReviewController extends Controller {
 
         if(is_null($review))
         {
-            $this->setLayout( $this->view_error405 );
+            $this->setLayout( $this->view_noresults );
         }else{
 
             $this->assign('mostrarReview', $review);

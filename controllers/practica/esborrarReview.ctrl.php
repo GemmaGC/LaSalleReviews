@@ -10,6 +10,7 @@ class PracticaEsborraReviewController extends PracticaDosOpcionsController
     {
 
         $info = $this->getParams();
+
         $this->assign('esborrar', true);
 
         $nom = Session::getInstance()->get('nom');
