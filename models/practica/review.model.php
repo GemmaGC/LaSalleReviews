@@ -213,13 +213,14 @@ QUERY;
      */
     public function buscaReviewTitle ($urlTitle)
     {
+        $url = str_replace('-', ' ', $urlTitle);
         $sql = <<<QUERY
         SELECT
             *
         FROM
             review
         WHERE
-            url_titol = "$urlTitle"
+            url_titol = "$urlTitle" OR old_title = '$url'
 QUERY;
         $result = $this->getAll($sql);
         return $result;

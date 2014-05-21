@@ -17,11 +17,11 @@ class PracticaMostrarReviewController extends Controller {
         $l = Session::getInstance()->get('login');
 
         //Mirem si cal redirigir...
-        if(!strcmp($info['url_arguments'][0], str_replace(' ', '-', $reviews[0]['new_title']))){
+        if($reviews[0]['old_title'] != null && !strcmp($info['url_arguments'][0], str_replace(' ', '-', $reviews[0]['old_title']))){
             $nova = true;
             $this->assign('nova', $nova);
         }
-        if(is_null($reviews[0]['new_title']) || $nova){
+        if(is_null($reviews[0]['old_title']) || $nova){
             //Si no hi ha nou titol i el titol que hi ha a la url és el nou titol...
             //Busquem l'usuari que ha escrit la review
             $login = $reviews[0]['login'];
@@ -96,8 +96,7 @@ class PracticaMostrarReviewController extends Controller {
 
         }else{
             //Sino... redirigim al nou titol
-
-            $url = $reviews[0]['new_title'];
+            $url = $reviews[0]['old_title'];
             $url = str_replace(' ', '-', $url);
             header('Location: /r/'.$url,true,301);
         }
