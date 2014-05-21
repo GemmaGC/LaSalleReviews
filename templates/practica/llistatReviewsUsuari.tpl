@@ -45,7 +45,7 @@
     <div class="block_paginacio">
 
          <a class="boto_link separacio_links" href="{$url_ant}"> {if $num >= 1}<<{/if} </a>
-        {if $num < $max-1} <a class="boto_link" href="{$url_seg}"> >> </a> {/if}
+        {if $num < $max} <a class="boto_link" href="{$url_seg}"> >> </a> {/if}
     </div>
 
 
