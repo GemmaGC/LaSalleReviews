@@ -27,7 +27,6 @@
                     <p class="titol_review">{$r.score} / 10</p>
                 </div>
 
-                
                 <div class="section_review_body">
                     {$r.description|truncate:50}
                 </div>
