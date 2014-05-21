@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.6
+-- version 4.1.8
 -- http://www.phpmyadmin.net
 --
--- Servidor: localhost
--- Tiempo de generación: 20-05-2014 a las 22:37:04
--- Versión del servidor: 5.6.16
--- Versión de PHP: 5.5.9
+-- Servidor: localhost:8889
+-- Tiempo de generación: 21-05-2014 a las 13:36:18
+-- Versión del servidor: 5.5.34
+-- Versión de PHP: 5.5.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -91,14 +91,7 @@ CREATE TABLE `puntuacions` (
   `id_review` int(11) NOT NULL,
   `puntuacio` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
-
---
--- Volcado de datos para la tabla `puntuacions`
---
-
-INSERT INTO `puntuacions` (`id`, `login_user`, `id_review`, `puntuacio`) VALUES
-(2, 'ls25714', 1, 6);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -120,34 +113,24 @@ CREATE TABLE `review` (
   `data_creacio` date NOT NULL,
   `url_titol` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=23 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Volcado de datos para la tabla `review`
 --
 
 INSERT INTO `review` (`id`, `title`, `old_title`, `description`, `subject`, `date`, `score`, `image`, `nom`, `login`, `data_creacio`, `url_titol`) VALUES
-(1, 'review 1', '', '<p>sfgdsfg</p>', 'sdfgsdfg', '2014-05-21', 1, '1_DSC_0611.jpg', 'Claudia', 'ls25714', '2014-05-20', 'review-1'),
-(2, 'proporcions', '', '<p>adfg</p>', 'zxcv', '2014-05-16', 1, '2_DSC_0611.jpg', 'Claudia', 'ls25714', '2014-05-20', 'proporcions'),
-(3, 'yle', '', '', 'ewfe', '2014-05-03', 4, '3_Penguins.jpg', 'ylenia', 'ls23994', '2014-05-20', 'yle'),
-(4, 'a', '', '<p>sdnfhbaejfcnkWJNF fcmeffe</p>', 's', '2014-05-10', 3, '4_Lighthouse.jpg', 'ylenia', 'ls23994', '2014-05-20', 'a'),
-(5, 'b', '', '<p>sdnfhbaejfcnkWJNF fcmeffe</p>', 's', '2014-05-24', 9, '5_Lighthouse.jpg', 'ylenia', 'ls23994', '2014-05-20', 'b'),
-(6, 'qq', '', '<p>qqqsdnfhbaejfcnkWJNF fcmeffe</p>', 'qq', '2014-05-16', 7, '6_Jellyfish.jpg', 'ylenia', 'ls23994', '2014-05-20', 'qq'),
-(7, 'coub', 'c', '<p>bbbbbbbbbbbbbbbbbbbb</p>', 'ssd', '2014-05-09', 5, '7_Penguins.jpg', 'ylenia', 'ls23994', '2014-05-20', 'c'),
-(8, 'd', '', '<p>sdnfhbaejfcnkWJNF fcmeffe</p>', 's', '2014-05-11', 6, '8_Jellyfish.jpg', 'ylenia', 'ls23994', '2014-05-20', 'd'),
-(9, 'dfsdf', '', '<p>sdnfhbaejfcnkWJNF fcmeffe</p>', 'd', '2014-05-10', 4, '9_Chrysanthemum.jpg', 'ylenia', 'ls23994', '2014-05-20', 'dfsdf'),
-(10, 'e', '', '<p>sdnfhbaejfcnkWJNF fcmeffe</p>', 's', '2014-05-31', 6, '10_Penguins.jpg', 'ylenia', 'ls23994', '2014-05-20', 'e'),
-(11, 'de', '', '', 'v', '2014-05-09', 4, '11_Koala.jpg', 'ylenia', 'ls23994', '2014-05-20', 'de'),
-(13, 'ss', '', '<p>ddsdnfhbaejfcnkWJNF fcmeffe</p>', 'd', '2014-05-03', 1, '13_Tulips.jpg', 'ylenia', 'ls23994', '2014-05-20', 'ss'),
-(14, 'gddfwaer', '', '<p>sdnfhbaejfcnkWJNF fcmeffe</p>', 'df', '2014-05-03', 1, '14_Desert.jpg', 'ylenia', 'ls23994', '2014-05-20', 'gddfwaer'),
-(15, 'wwwww', '', '<p>sdnfhbaejfcnkWJNF fcmeffe</p>', 'dd', '2014-05-09', 5, '15_Lighthouse.jpg', 'ylenia', 'ls23994', '2014-05-20', 'wwwww'),
-(16, 'aa', '', '<p>aaa</p>', 'aa', '2014-05-10', 5, '16_Penguins.jpg', 'Ylenia', 'ls23994', '2014-05-20', 'aa'),
-(17, 'aa4', '', '<p>aaaaaaaaaaaaaaa</p>', 'd', '2014-05-03', 4, '17_Chrysanthemum.jpg', 'Ylenia', 'ls23994', '2014-05-20', 'aa4'),
-(18, 'trydt', '', '<p>sysy</p>', 'yrtsy', '2014-05-23', 6, '18_Penguins.jpg', 'Ylenia', 'ls23994', '2014-05-20', 'trydt'),
-(19, 'gg', '', '<p>gg</p>', 'g', '2014-05-17', 1, '19_Penguins.jpg', 'Ylenia', 'ls23994', '2014-05-20', 'gg'),
-(20, 'probaImage', '', '<p>lololo</p>', 'ss', '2014-05-02', 4, '20_14038933578_bceddf001d_o.jpg', 'Ylenia', 'ls23994', '2014-05-20', 'probaImage'),
-(21, 'imagen2', '', '<p>dd</p>', 'dd', '2014-05-03', 4, '21_Mysalle2014.jpg', 'Ylenia', 'ls23994', '2014-05-20', 'imagen2'),
-(22, 'uoi', '', '<p>12</p>', '22', '2014-05-03', 5, '22_IMG_3382.JPG', 'Ylenia', 'ls23994', '2014-05-20', 'uoi');
+(1, 'review 1', '', '<p>descripci&oacute;&nbsp;<strong>review 1</strong></p>', 'projectes web', '2014-05-15', 8, '1_2.jpg', 'Claudia', 'ls25714', '2014-05-21', 'review-1'),
+(2, 'review 2', '', '<p style="text-align: center;">review&nbsp;<strong>2</strong>,&nbsp;<em>crsiva</em></p>', 'projecteeees!!', '2014-05-23', 6, '2_10.jpg', 'Claudia', 'ls25714', '2014-05-21', 'review-2'),
+(3, 'review 3', '', '<p>description</p>', 'subject', '2014-05-22', 1, '3_10.jpg', 'Claudia', 'ls25714', '2014-05-21', 'review-3'),
+(4, 'review 4', '', '<p style="text-align: right;">ara escric a la&nbsp;<strong>dreta</strong></p>', 'subject', '2014-05-23', 7, '4_2.jpg', 'Claudia', 'ls25714', '2014-05-21', 'review-4'),
+(5, 'review 5', '', '<p>descripci&oacute; de la classe&nbsp;<strong>en negreta&nbsp;<em>i cursiva</em></strong></p>\r\n<ul>\r\n<li>a</li>\r\n<li>b</li>\r\n<li>c</li>\r\n</ul>', 'subject', '2014-05-10', 9, '5_8.jpg', 'Claudia', 'ls25714', '2014-05-21', 'review-5'),
+(6, 'review 6', '', '<p>descripcio</p>', 'subject', '2014-05-21', 6, '6_8.jpg', 'Claudia', 'ls25714', '2014-05-21', 'review-6'),
+(7, 'review 7', '', '<p>descripcio</p>', 'subject', '2014-05-06', 1, '7_2.jpg', 'Claudia', 'ls25714', '2014-05-21', 'review-7'),
+(8, 'review 8', '', '<p>descripcio</p>', 'subject', '2014-05-23', 5, '8_2.jpg', 'Claudia', 'ls25714', '2014-05-21', 'review-8'),
+(9, 'review 9', '', '<p>descripcio</p>', 'subject', '2014-05-05', 1, '9_3.jpg', 'Claudia', 'ls25714', '2014-05-21', 'review-9'),
+(10, 'review 10', '', '<p>descripcio 10</p>', 'subject', '2014-05-24', 5, '10_1.jpg', 'Claudia', 'ls25714', '2014-05-21', 'review-10'),
+(11, 'review 11', '', '<p>descripcio</p>', 'subject', '2014-05-16', 6, '11_10.jpg', 'Claudia', 'ls25714', '2014-05-21', 'review-11');
 
 -- --------------------------------------------------------
 
@@ -166,13 +149,4 @@ CREATE TABLE `usuaris` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `nom` (`nom`,`email`),
   UNIQUE KEY `login` (`login`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Usuaris/es de la pàgina web La Salle Review' AUTO_INCREMENT=11 ;
-
---
--- Volcado de datos para la tabla `usuaris`
---
-
-INSERT INTO `usuaris` (`id`, `login`, `nom`, `email`, `password`, `actiu`, `urlActivacio`) VALUES
-(00001, 'ls25714', 'Claudia', 'cldauden@gmail.com', 'password', 1, '77a7e7f6b63464d55dd1b101e51bdb5e'),
-(00009, 'ls24057', 'Gemma', 'geemmaa.05@gmail.com', 'holaquetal', 0, '212785fe3512897edca5e5cf2c918985'),
-(00010, 'ls23994', 'Ylenia', 'yleniagr@hotmail.com', 'Practica', 0, '06c6b956d7f5a87d8a16f1cdc247aae6');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Usuaris/es de la pàgina web La Salle Review' AUTO_INCREMENT=1 ;
