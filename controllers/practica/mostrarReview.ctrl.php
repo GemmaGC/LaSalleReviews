@@ -41,10 +41,6 @@ class PracticaMostrarReviewController extends Controller {
                 //Si ja ha valorat aquesta review...
                 $this->assign("fet", 1);
                 $this->assign("score", $u[0]['puntuacio']);
-                echo "entra1";
-
-
-
 
             //Si vol editar la valoracio...
             if(Filter::getString('submit_edit')){

@@ -8,7 +8,7 @@
             <img class="section_last_img" src="imag/img_usuaris/100_{$r.image}">
 
            
-            <img class="section_last_img" src='imag/img_usuaris/704_{$r.image}'>
+            <!--<img class="section_last_img" src='imag/img_usuaris/704_{*$r.image*}'>-->
 
         {/foreach}
     </div>
