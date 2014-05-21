@@ -7,7 +7,7 @@ class PracticaResultadoBuscadorController extends Controller {
 
     public function build( ){
         $info = $this->getParams();
-        
+
         $this->model = $this->getClass( 'PracticaReviewModel' ); //Importem el model
 
         $palabra = Filter::getString('palabra');

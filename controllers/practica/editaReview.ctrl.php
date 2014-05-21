@@ -125,7 +125,7 @@ class PracticaEditaReviewController extends Controller
         }
 
         //Si no està logejat....
-        else if($login == 0)
+        if($login == 0)
         {
             $this->setLayout($this->view_error403);
         }

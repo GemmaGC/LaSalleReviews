@@ -12,7 +12,7 @@ class PracticaDosOpcionsController extends Controller
     {
         $info = $this->getParams();
 
-        if(sizeof($info['url_arguments']) == 1){
+        if(sizeof($info['url_arguments']) <= 1 ){
             $this::carregaTitols();
             $this->assign('title', $this->title);
             $this->assign('subtitle', $this->subtitle);
