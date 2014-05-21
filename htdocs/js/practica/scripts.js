@@ -63,6 +63,29 @@ function validarLogIn(){
 
 }
 
+var timer_signup3 = setInterval(function(){validarLogInFB()}, 1000);
+
+function validarLogInFB(){
+
+    var value_login = document.signup_form.login.value;
+    var value_password = document.signup_form.password.value;
+
+    if(value_login == "" || value_login.length < 7 || value_login.replace(/[^0-9]/g,"").length != 5)
+    {
+        document.getElementById("login").style.borderColor = "red";
+    }else{
+        document.getElementById("login").style.borderColor = "#fff";
+    }
+
+    if(value_password == "" || value_password.length < 6 || value_password.length > 20)
+    {
+        document.getElementById("Password").style.borderColor = "red";
+    }else{
+        document.getElementById("Password").style.borderColor = "#fff";
+    }
+
+}
+
 
 function submitirFormularioOculto(){
     document.getElementById("review").submit();

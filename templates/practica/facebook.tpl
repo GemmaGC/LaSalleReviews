@@ -4,7 +4,7 @@
         <p>Please complete the next fields to finish the sign up.</p>
     </div>
 
-    <form name="signup-form" class="form" method="post">
+    <form name="signup_form" class="form" method="post" onsubmit="return validarLogInFB();">
 
         <section>
             <label for="login">LOGIN <strong>*</strong>
