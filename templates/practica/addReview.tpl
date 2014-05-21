@@ -7,7 +7,7 @@
 				<p>All the fields marked with a <strong>*</strong> are required.</p>
 			</div>
 
-			<form name="review-form" class="review_form" method="post" enctype="multipart/form-data" >
+			<form name="review_form" class="review_form" method="post" enctype="multipart/form-data" onsubmit="return validarAddReview();>
 
 		       
 

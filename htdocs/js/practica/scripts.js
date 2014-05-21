@@ -100,6 +100,56 @@ function validarLogInFB(){
 
 }
 
+
+/**
+ *
+ * Funció que s'encarrega de comprovar el formulari d'afegir review
+ */
+
+var timer_addReview = setInterval(function(){validarAddReview()}, 1000);
+
+function validarAddReview(){
+
+    var value_title = document.review_form.newTitle.value;
+    var value_description = document.review_form.newDescription.value;
+    var value_subject = document.review_form.newSubject.value;
+    var value_date = document.review_form.newDate.value;
+
+
+    if(value_title == "" || value_title.length > 100)
+    {
+        document.getElementById("title").style.borderColor = "red";
+    }else{
+        document.getElementById("title").style.borderColor = "#fff";
+    }
+
+    if(value_description == "")
+    {
+        document.getElementById("description").style.borderColor = "red";
+    }else{
+        document.getElementById("description").style.borderColor = "#fff";
+    }
+
+    if(value_subject == "" || value_subject.length > 20)
+    {
+        document.getElementById("subject").style.borderColor = "red";
+    }else{
+        document.getElementById("subject").style.borderColor = "#fff";
+    }
+
+    if(value_date == "")
+    {
+        document.getElementById("date").style.borderColor = "red";
+    }else{
+        document.getElementById("date").style.borderColor = "#fff";
+    }
+
+}
+
+
+
+
+
 /**
  *
  * Funció que s'encarrega de fer submit del formulari ocult
